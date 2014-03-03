@@ -1,0 +1,1 @@
+d:\srv\python27\python.exe d:\srv\vamp\log_excel.py log_40613

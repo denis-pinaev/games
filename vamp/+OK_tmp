@@ -1,0 +1,51 @@
+session	String	8498TU6YQa6byTB.Idf2M281wd87xXG3x34ayTC3M73bPUkWO362y1DTR6
+ServerVersion	Integer	0
+SystemID	String	4
+sig	String	65b4fe27f60a84e1789e64f2e83d7601
+userId	String	909428586714
+
+vars	Object	
+session_key	String Reference	8498TU6YQa6byTB.Idf2M281wd87xXG3x34ayTC3M73bPUkWO362y1DTR6   +++++++++
+session_secret_key	String	ec4660d5b3e85b93c5bdace2fc985bdc
+authorized	String	1
+logged_user_id	String Reference	909428586714    +++++++++++++++++
+ip_geo_location	String	RU,85,Vologda
+refplace	String	user_apps
+sig	String	abd297b4fafffba1cc416891e6574e36
+api_server	String	http://api.odnoklassniki.ru/
+application_key	String	CBAMJDABABABABABA
+new_sig	String Reference	1
+auth_sig	String Reference	65b4fe27f60a84e1789e64f2e83d7601 +++++++++++++++++++++++++
+apiconnection	String	170752_1378727784844
+web_server	String	www.odnoklassniki.ru
+first_start	String	0
+clientLog	String Reference	0
+
+
+
+ServerVersion	Integer	6614
+auth_sig=65b4fe27f60a84e1789e64f2e83d7601
+
+
+ClanDBID	Integer	1134529
+
+demonika6 !666666 zam kl
+DBID	Integer	1047154
+
+darkorhids !2345234 holycrack kl
+userId	String	196891662342
+sig	String	5e0d81abc1a4586252630f0c1c8b76fa
+session	String Reference	e4d8MRj.P9d3MRhzJ529T382Q75eL.hOOd94K.8zs422xU9QId74w0GXLb1
+DBID	Integer	1035220
+
+0930539632 !23123
+session	String	c839MQGVL8f4JTl3xe6dRSFzs704zUlSw2e9yXCXvea2R1AWKce8P.G1R4b
+sig	String Reference	fc617ac75c3d51835cb205e7f66bf768
+userId	String Reference	153010015330
+DBID	Integer	912472
+
+DARK
+session	String Reference	0cddL3lXt479S.jUK20cu2l0L283vQiTPe84KRGTHeadKQDRJ210QTCYKc7
+sig	String Reference	83c111e36bd4047ac673cc520eb36221
+userId	String Reference	908125232471
+DBID	Integer	1025367

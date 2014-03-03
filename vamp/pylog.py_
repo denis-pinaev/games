@@ -1,0 +1,16 @@
+f = open('log_38427', 'r')
+data = f.read()
+f.close()
+data = data.split('\n')
+data2 = []
+for i in range(310):
+    data2.append(data[i])
+for i in range(100):
+    data2.append(data[len(data) - 100 + i - 1])
+data2 = "\n".join(data2)
+f = open('log_38427_', 'a')
+f.write(data2)
+f.close()
+
+
+#adamblek@inbox.ru +79089098848 ifjrdig63hhd f11cb70ec6c4515c53901e8cf80acd73 107402663

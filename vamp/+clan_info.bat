@@ -1,0 +1,1 @@
+d:\srv\python27\python.exe d:\srv\vamp\clan_info.py 2316470 1

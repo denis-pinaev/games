@@ -1,0 +1,1 @@
+d:\srv\python27\python.exe d:\srv\hero\hero_move.py ss

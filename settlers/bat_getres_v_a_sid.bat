@@ -1,0 +1,1 @@
+d:\srv\python27\python.exe getres_fill.py 75 fill vic_sid alena_sid

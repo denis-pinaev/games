@@ -1,0 +1,401 @@
+[01.03 19:53:34] 64765
+[01.03 19:53:34] [
+    {
+        "Name": "NirvanA", 
+        "Ladder": 3290, 
+        "Winner": 0, 
+        "BattleDBID": 64752, 
+        "Players": 6, 
+        "EnemyDBID": 2318302
+    }, 
+    {
+        "Name": "\u0420\u0438\u0434\u0438\u043a\u0438", 
+        "Ladder": 4396, 
+        "Winner": 0, 
+        "BattleDBID": 64765, 
+        "Players": 37, 
+        "EnemyDBID": 876211
+    }, 
+    {
+        "Name": "\u043e\u0447\u043a\u043e\u0448\u043d\u0438\u043a\u0438", 
+        "Ladder": 4312, 
+        "Winner": 2316470, 
+        "BattleDBID": 64730, 
+        "Players": 23, 
+        "EnemyDBID": 879702
+    }, 
+    {
+        "Name": "\u041b\u0443\u043d\u043d\u0430\u044f \u0421\u043e\u043d\u0430\u0442\u0430", 
+        "Ladder": 3610, 
+        "Winner": 882098, 
+        "BattleDBID": 64713, 
+        "Players": 12, 
+        "EnemyDBID": 882098
+    }, 
+    {
+        "Name": "Cranberry", 
+        "Ladder": 3818, 
+        "Winner": 878569, 
+        "BattleDBID": 64696, 
+        "Players": 8, 
+        "EnemyDBID": 878569
+    }, 
+    {
+        "Name": "\u041b\u0415\u0414\u042f\u041d\u041e\u0415 \u0414\u042b\u0425\u0410\u041d\u0418\u0415", 
+        "Ladder": 4330, 
+        "Winner": 2316470, 
+        "BattleDBID": 64687, 
+        "Players": 24, 
+        "EnemyDBID": 1220531
+    }, 
+    {
+        "Name": "\u0423\u0433\u0440\u044e\u043c\u044b\u0439 \u041f\u0438\u043d\u0433\u0432\u0438\u043d", 
+        "Ladder": 3887, 
+        "Winner": 2336997, 
+        "BattleDBID": 64678, 
+        "Players": 1, 
+        "EnemyDBID": 2336997
+    }, 
+    {
+        "Name": "NirvanA", 
+        "Ladder": 3290, 
+        "Winner": 2318302, 
+        "BattleDBID": 64669, 
+        "Players": 6, 
+        "EnemyDBID": 2318302
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4384, 
+        "Winner": 2316470, 
+        "BattleDBID": 64653, 
+        "Players": 34, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "\u041c\u041e\u0413\u0423\u0429\u0415\u0421\u0422\u0412\u041e \u041d\u041e\u0427\u0418", 
+        "Ladder": 3904, 
+        "Winner": 1332289, 
+        "BattleDBID": 64649, 
+        "Players": 10, 
+        "EnemyDBID": 1332289
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3783, 
+        "Winner": 1466624, 
+        "BattleDBID": 64641, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "NirvanA", 
+        "Ladder": 3290, 
+        "Winner": 2318302, 
+        "BattleDBID": 64634, 
+        "Players": 6, 
+        "EnemyDBID": 2318302
+    }, 
+    {
+        "Name": "Schwarz Herz", 
+        "Ladder": 4277, 
+        "Winner": 2316470, 
+        "BattleDBID": 64622, 
+        "Players": 14, 
+        "EnemyDBID": 874183
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3783, 
+        "Winner": 1466624, 
+        "BattleDBID": 64617, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u0414\u0416\u0410\u0412\u0410\u041d\u041d\u0418", 
+        "Ladder": 3553, 
+        "Winner": 2196555, 
+        "BattleDBID": 64590, 
+        "Players": 2, 
+        "EnemyDBID": 2196555
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4384, 
+        "Winner": 2316470, 
+        "BattleDBID": 64587, 
+        "Players": 37, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3783, 
+        "Winner": 1466624, 
+        "BattleDBID": 64575, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "Cranberry", 
+        "Ladder": 3818, 
+        "Winner": 878569, 
+        "BattleDBID": 64567, 
+        "Players": 9, 
+        "EnemyDBID": 878569
+    }, 
+    {
+        "Name": "UNCONTROLLABLE", 
+        "Ladder": 4359, 
+        "Winner": 2316470, 
+        "BattleDBID": 64554, 
+        "Players": 20, 
+        "EnemyDBID": 2304754
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4384, 
+        "Winner": 2316470, 
+        "BattleDBID": 64522, 
+        "Players": 32, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "\u0414\u0416\u0410\u0412\u0410\u041d\u041d\u0418", 
+        "Ladder": 3553, 
+        "Winner": 2196555, 
+        "BattleDBID": 64504, 
+        "Players": 2, 
+        "EnemyDBID": 2196555
+    }, 
+    {
+        "Name": "\u0420\u0438\u0434\u0438\u043a\u0438", 
+        "Ladder": 4396, 
+        "Winner": 2316470, 
+        "BattleDBID": 64480, 
+        "Players": 42, 
+        "EnemyDBID": 876211
+    }
+]
+
+[01.03 19:53:34] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 19:53:34] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 19:53:34] Left time 86396
+
+[01.03 20:23:34] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 20:23:34] Left time 84596
+
+[01.03 20:53:34] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 20:53:34] Left time 82796
+
+[01.03 21:23:35] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 21:23:35] Left time 80996
+
+[01.03 21:53:35] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 21:53:35] Left time 79195
+
+[01.03 22:23:35] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 22:23:35] Left time 77395
+
+[01.03 22:53:35] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 22:53:35] Left time 75595
+
+[01.03 23:23:35] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 23:23:35] Left time 73795
+
+[01.03 23:53:35] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 23:53:35] Left time 71995
+
+[02.03 00:23:36] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 00:23:36] Left time 70195
+
+[02.03 00:53:36] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 00:53:36] Left time 68394
+
+[02.03 01:23:36] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 01:23:36] Left time 66594
+
+[02.03 01:53:36] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 01:53:36] Left time 64794
+
+[02.03 02:23:36] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 02:23:36] Left time 62994
+
+[02.03 02:53:36] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 02:53:36] Left time 61194
+
+[02.03 03:23:37] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 03:23:37] Left time 59394
+
+[02.03 03:53:37] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 03:53:37] Left time 57593
+
+[02.03 04:23:37] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 04:23:37] Left time 55793
+
+[02.03 04:53:37] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 04:53:37] Left time 53993
+
+[02.03 05:23:37] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 05:23:37] Left time 52193
+
+[02.03 05:53:37] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 05:53:37] Left time 50393
+
+[02.03 06:23:37] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 06:23:37] Left time 48593
+
+[02.03 06:53:38] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 06:53:38] Left time 46793
+
+[02.03 07:23:38] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 07:23:38] Left time 44993
+
+[02.03 07:53:38] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 07:53:38] Left time 43192
+
+[02.03 08:23:38] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 08:23:38] Left time 41392
+
+[02.03 08:53:38] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 08:53:38] Left time 39592
+
+[02.03 09:23:39] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 09:23:39] Left time 37792
+
+[02.03 09:53:39] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 09:53:39] Left time 35991
+
+[02.03 10:23:39] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 10:23:39] Left time 34191
+
+[02.03 10:53:39] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 10:53:39] Left time 32391
+
+[02.03 11:23:39] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 11:23:39] Left time 30591
+
+[02.03 11:53:39] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 11:53:39] Left time 28791
+
+[02.03 12:23:39] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 12:23:39] Left time 26991
+
+[02.03 12:53:40] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 12:53:40] Left time 25191
+
+[02.03 13:23:40] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 13:23:40] Left time 23391
+
+[02.03 13:53:40] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 13:53:40] Left time 21590
+
+[02.03 14:23:40] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 14:23:40] Left time 19790
+
+[02.03 14:53:40] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 14:53:40] Left time 17990
+
+[02.03 15:23:40] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 15:23:40] Left time 16190
+
+[02.03 15:53:41] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 15:53:41] Left time 14390
+
+[02.03 16:23:41] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 16:23:41] Left time 12590
+
+[02.03 16:53:41] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 16:53:41] Left time 10789
+
+[02.03 17:23:41] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 17:23:41] Left time 8989
+
+[02.03 17:53:41] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 17:53:41] Left time 7189
+
+[02.03 18:23:42] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 18:23:42] Left time 5389
+
+[02.03 18:53:42] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 18:53:42] Left time 3588
+
+[02.03 19:23:36] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:23:36] Left time 1794
+
+[02.03 19:38:34] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:38:34] Left time 897
+
+[02.03 19:46:02] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:46:02] Left time 448
+
+[02.03 19:49:46] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:49:46] Left time 224
+
+[02.03 19:51:38] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:51:38] Left time 112
+
+[02.03 19:52:35] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:52:35] Left time 56
+
+[02.03 19:53:03] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:03] Left time 27
+
+[02.03 19:53:16] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:16] Left time 14
+
+[02.03 19:53:23] start heal_up
+
+[02.03 19:53:24] User: tanazia, Command: AMFService.Hospital, Code: 300
+[02.03 19:53:24] user info got
+[02.03 19:53:24] need heal 169
+[02.03 19:53:24] start heal
+[02.03 19:53:24] User: tanazia, Command: AMFService.Hospital, Code: 0
+[02.03 19:53:24] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:24] Left time 6
+
+[02.03 19:53:27] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:27] Left time 3
+
+[02.03 19:53:28] User: tanazia, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:28] Left time 2
+
+[02.03 19:53:29] attack ready
+[02.03 19:53:30] User: tanazia, Command: AMFService.UserInit, Code: 0
+[02.03 19:53:30] User: tanazia, Command: AMFService.ClanFightAttack, Code: 1126
+[02.03 19:53:30] attack ready
+[02.03 19:53:31] User: tanazia, Command: AMFService.UserInit, Code: 0
+[02.03 19:53:31] User: tanazia, Command: AMFService.ClanFightAttack, Code: 1000
+[02.03 19:53:31] attack ready
+[02.03 19:53:31] User: tanazia, Command: AMFService.UserInit, Code: 0
+[02.03 19:53:32] User: tanazia, Command: AMFService.ClanFightAttack, Code: 0
+[02.03 19:53:32] attack ready
+[02.03 19:53:32] User: tanazia, Command: AMFService.UserInit, Code: 0
+[02.03 19:53:32] User: tanazia, Command: AMFService.ClanFightAttack, Code: 1123
+[02.03 19:53:32] start missions
+
+[02.03 19:53:32] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:32] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:32] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:33] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:33] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:33] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:33] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:33] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:33] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:34] User: tanazia, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:34] User: tanazia, Command: AMFService.ClanOfficerSet, Code: 0
+[02.03 19:53:34] User: tanazia, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:34] User: tanazia, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:34] User: tanazia, Command: AMFService.ClanJoin, Code: 0
+[02.03 19:53:34] User: tanazia, Command: AMFService.ClanAccept, Code: 0
+[02.03 19:53:34] User: tanazia, Command: AMFService.ClanOfficerSet, Code: 0
+[02.03 19:53:35] User: tanazia, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:35] User: tanazia, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:35] User: tanazia, Command: AMFService.ClanJoin, Code: 0
+[02.03 19:53:35] User: tanazia, Command: AMFService.ClanAccept, Code: 0
+[02.03 19:53:35] User: tanazia, Command: AMFService.ClanOfficerSet, Code: 0
+[02.03 19:53:35] User: tanazia, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:35] User: tanazia, Command: AMFService.ClanJoin, Code: 0
+[02.03 19:53:35] User: tanazia, Command: AMFService.ClanAccept, Code: 0
+

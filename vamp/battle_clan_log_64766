@@ -1,0 +1,420 @@
+[01.03 19:53:46] 64766
+[01.03 19:53:46] [
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3783, 
+        "Winner": 0, 
+        "BattleDBID": 64734, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u0420\u0438\u0434\u0438\u043a\u0438", 
+        "Ladder": 4396, 
+        "Winner": 0, 
+        "BattleDBID": 64766, 
+        "Players": 37, 
+        "EnemyDBID": 876211
+    }, 
+    {
+        "Name": "\u0414\u0416\u0410\u0412\u0410\u041d\u041d\u0418", 
+        "Ladder": 3553, 
+        "Winner": 0, 
+        "BattleDBID": 64753, 
+        "Players": 1, 
+        "EnemyDBID": 2196555
+    }, 
+    {
+        "Name": "\u043e\u0447\u043a\u043e\u0448\u043d\u0438\u043a\u0438", 
+        "Ladder": 4219, 
+        "Winner": 2305215, 
+        "BattleDBID": 64731, 
+        "Players": 23, 
+        "EnemyDBID": 879702
+    }, 
+    {
+        "Name": "\u041b\u0415\u0414\u042f\u041d\u041e\u0415 \u0414\u042b\u0425\u0410\u041d\u0418\u0415", 
+        "Ladder": 4330, 
+        "Winner": 2305215, 
+        "BattleDBID": 64688, 
+        "Players": 24, 
+        "EnemyDBID": 1220531
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3783, 
+        "Winner": 1466624, 
+        "BattleDBID": 64686, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u041c\u041e\u0413\u0423\u0429\u0415\u0421\u0422\u0412\u041e \u041d\u041e\u0427\u0418", 
+        "Ladder": 3904, 
+        "Winner": 1332289, 
+        "BattleDBID": 64681, 
+        "Players": 10, 
+        "EnemyDBID": 1332289
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4384, 
+        "Winner": 2305215, 
+        "BattleDBID": 64654, 
+        "Players": 34, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "Cranberry", 
+        "Ladder": 3818, 
+        "Winner": 878569, 
+        "BattleDBID": 64637, 
+        "Players": 8, 
+        "EnemyDBID": 878569
+    }, 
+    {
+        "Name": "Schwarz Herz", 
+        "Ladder": 4277, 
+        "Winner": 2305215, 
+        "BattleDBID": 64623, 
+        "Players": 14, 
+        "EnemyDBID": 874183
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4384, 
+        "Winner": 878291, 
+        "BattleDBID": 64588, 
+        "Players": 37, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "Malkavian", 
+        "Ladder": 3648, 
+        "Winner": 874217, 
+        "BattleDBID": 64570, 
+        "Players": 3, 
+        "EnemyDBID": 874217
+    }, 
+    {
+        "Name": "UNCONTROLLABLE", 
+        "Ladder": 4359, 
+        "Winner": 2305215, 
+        "BattleDBID": 64555, 
+        "Players": 20, 
+        "EnemyDBID": 2304754
+    }, 
+    {
+        "Name": "\u0414\u0416\u0410\u0412\u0410\u041d\u041d\u0418", 
+        "Ladder": 3553, 
+        "Winner": 2196555, 
+        "BattleDBID": 64536, 
+        "Players": 2, 
+        "EnemyDBID": 2196555
+    }, 
+    {
+        "Name": "Malkavian", 
+        "Ladder": 3648, 
+        "Winner": 874217, 
+        "BattleDBID": 64534, 
+        "Players": 3, 
+        "EnemyDBID": 874217
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4384, 
+        "Winner": 878291, 
+        "BattleDBID": 64523, 
+        "Players": 32, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "Drak", 
+        "Ladder": 3750, 
+        "Winner": 2313129, 
+        "BattleDBID": 64509, 
+        "Players": 4, 
+        "EnemyDBID": 2313129
+    }, 
+    {
+        "Name": "Cranberry", 
+        "Ladder": 3818, 
+        "Winner": 878569, 
+        "BattleDBID": 64499, 
+        "Players": 9, 
+        "EnemyDBID": 878569
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3783, 
+        "Winner": 1466624, 
+        "BattleDBID": 64485, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u0420\u0438\u0434\u0438\u043a\u0438", 
+        "Ladder": 4396, 
+        "Winner": 2305215, 
+        "BattleDBID": 64481, 
+        "Players": 42, 
+        "EnemyDBID": 876211
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3783, 
+        "Winner": 1466624, 
+        "BattleDBID": 64446, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4384, 
+        "Winner": 2305215, 
+        "BattleDBID": 64444, 
+        "Players": 32, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "\u0414\u043e\u043c\u0438\u043d\u0430\u043d\u0442\u0430", 
+        "Ladder": 3751, 
+        "Winner": 1623894, 
+        "BattleDBID": 64426, 
+        "Players": 2, 
+        "EnemyDBID": 1623894
+    }
+]
+
+[01.03 19:53:46] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 19:53:47] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 19:53:47] Left time 86396
+
+[01.03 20:23:47] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 20:23:47] Left time 84596
+
+[01.03 20:53:47] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 20:53:47] Left time 82796
+
+[01.03 21:23:47] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 21:23:47] Left time 80996
+
+[01.03 21:53:48] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 21:53:48] Left time 79196
+
+[01.03 22:23:48] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 22:23:48] Left time 77395
+
+[01.03 22:53:48] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 22:53:48] Left time 75595
+
+[01.03 23:23:48] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 23:23:48] Left time 73794
+
+[01.03 23:53:49] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[01.03 23:53:49] Left time 71994
+
+[02.03 00:23:49] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 00:23:49] Left time 70194
+
+[02.03 00:53:49] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 00:53:49] Left time 68394
+
+[02.03 01:23:49] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 01:23:49] Left time 66594
+
+[02.03 01:53:49] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 01:53:49] Left time 64794
+
+[02.03 02:23:49] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 02:23:49] Left time 62994
+
+[02.03 02:53:50] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 02:53:50] Left time 61193
+
+[02.03 03:23:50] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 03:23:50] Left time 59393
+
+[02.03 03:53:50] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 03:53:50] Left time 57593
+
+[02.03 04:23:50] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 04:23:50] Left time 55793
+
+[02.03 04:53:50] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 04:53:50] Left time 53993
+
+[02.03 05:23:50] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 05:23:50] Left time 52193
+
+[02.03 05:53:50] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 05:53:50] Left time 50392
+
+[02.03 06:23:51] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 06:23:51] Left time 48592
+
+[02.03 06:53:51] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 06:53:51] Left time 46792
+
+[02.03 07:23:51] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 07:23:51] Left time 44992
+
+[02.03 07:53:51] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 07:53:51] Left time 43192
+
+[02.03 08:23:51] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 08:23:51] Left time 41392
+
+[02.03 08:53:52] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 08:53:52] Left time 39592
+
+[02.03 09:23:52] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 09:23:52] Left time 37791
+
+[02.03 09:53:52] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 09:53:52] Left time 35991
+
+[02.03 10:23:52] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 10:23:52] Left time 34191
+
+[02.03 10:53:52] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 10:53:52] Left time 32391
+
+[02.03 11:23:52] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 11:23:52] Left time 30591
+
+[02.03 11:53:52] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 11:53:52] Left time 28791
+
+[02.03 12:23:53] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 12:23:53] Left time 26990
+
+[02.03 12:53:53] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 12:53:53] Left time 25190
+
+[02.03 13:23:53] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 13:23:53] Left time 23390
+
+[02.03 13:53:53] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 13:53:53] Left time 21590
+
+[02.03 14:23:53] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 14:23:53] Left time 19789
+
+[02.03 14:53:54] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 14:53:54] Left time 17989
+
+[02.03 15:23:54] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 15:23:54] Left time 16189
+
+[02.03 15:53:54] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 15:53:54] Left time 14389
+
+[02.03 16:23:54] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 16:23:54] Left time 12589
+
+[02.03 16:53:55] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 16:53:55] Left time 10788
+
+[02.03 17:23:55] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 17:23:55] Left time 8988
+
+[02.03 17:53:55] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 17:53:55] Left time 7188
+
+[02.03 18:23:55] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 18:23:55] Left time 5388
+
+[02.03 18:53:56] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 18:53:56] Left time 3587
+
+[02.03 19:23:49] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:23:49] Left time 1794
+
+[02.03 19:38:46] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:38:46] Left time 897
+
+[02.03 19:46:15] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:46:15] Left time 448
+
+[02.03 19:49:59] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:49:59] Left time 224
+
+[02.03 19:51:52] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:51:52] Left time 112
+
+[02.03 19:52:48] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:52:48] Left time 55
+
+[02.03 19:53:15] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:15] Left time 28
+
+[02.03 19:53:29] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:29] Left time 14
+
+[02.03 19:53:36] start heal_up
+
+[02.03 19:53:37] User: gludia4, Command: AMFService.Hospital, Code: 300
+[02.03 19:53:37] user info got
+[02.03 19:53:37] need heal 320
+[02.03 19:53:37] start heal
+[02.03 19:53:37] User: gludia4, Command: AMFService.Hospital, Code: 0
+[02.03 19:53:37] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:37] Left time 6
+
+[02.03 19:53:40] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:40] Left time 3
+
+[02.03 19:53:42] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:42] Left time 1
+
+[02.03 19:53:42] attack ready
+[02.03 19:53:42] User: gludia4, Command: AMFService.UserInit, Code: 0
+[02.03 19:53:42] User: gludia4, Command: AMFService.ClanFightAttack, Code: 1000
+[02.03 19:53:42] attack ready
+[02.03 19:53:43] User: gludia4, Command: AMFService.UserInit, Code: 0
+[02.03 19:53:44] User: gludia4, Command: AMFService.ClanFightAttack, Code: 0
+[02.03 19:53:44] attack ready
+[02.03 19:53:44] User: gludia4, Command: AMFService.UserInit, Code: 0
+[02.03 19:53:45] User: gludia4, Command: AMFService.ClanFightAttack, Code: 501
+[02.03 19:53:45] User: gludia4, Command: AMFService.Hospital, Code: 300
+[02.03 19:53:45] user info got
+[02.03 19:53:45] need heal 111
+[02.03 19:53:45] start heal
+[02.03 19:53:45] User: gludia4, Command: AMFService.Hospital, Code: 0
+[02.03 19:53:45] attack ready
+[02.03 19:53:45] User: gludia4, Command: AMFService.UserInit, Code: 0
+[02.03 19:53:46] User: gludia4, Command: AMFService.ClanFightAttack, Code: 0
+[02.03 19:53:46] attack ready
+[02.03 19:53:46] User: gludia4, Command: AMFService.UserInit, Code: 0
+[02.03 19:53:46] User: gludia4, Command: AMFService.ClanFightAttack, Code: 1123
+[02.03 19:53:46] start missions
+
+[02.03 19:53:46] User: gludia4, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:47] User: gludia4, Command: AMFService.DoMission, Code: 0
+[02.03 19:53:47] User: gludia4, Command: AMFService.DoMission, Code: 0
+[02.03 19:53:47] User: gludia4, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:47] User: gludia4, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:47] User: gludia4, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:47] User: gludia4, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:47] User: gludia4, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:48] User: gludia4, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:48] User: gludia4, Command: AMFService.DoMission, Code: 1001
+[02.03 19:53:48] User: gludia4, Command: AMFService.ClanOfficerSet, Code: 0
+[02.03 19:53:48] User: gludia4, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:48] User: gludia4, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:49] User: gludia4, Command: AMFService.ClanJoin, Code: 0
+[02.03 19:53:49] User: gludia4, Command: AMFService.ClanAccept, Code: 0
+[02.03 19:53:49] User: gludia4, Command: AMFService.ClanOfficerSet, Code: 0
+[02.03 19:53:49] User: gludia4, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:49] User: gludia4, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:49] User: gludia4, Command: AMFService.ClanJoin, Code: 0
+[02.03 19:53:50] User: gludia4, Command: AMFService.ClanAccept, Code: 0
+[02.03 19:53:50] User: gludia4, Command: AMFService.ClanOfficerSet, Code: 0
+[02.03 19:53:50] User: gludia4, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:51] User: gludia4, Command: AMFService.ClanJoin, Code: 0
+[02.03 19:53:51] User: gludia4, Command: AMFService.ClanAccept, Code: 0
+[02.03 19:53:52] User: gludia4, Command: AMFService.ClanLeave, Code: 0
+[02.03 19:53:52] User: gludia4, Command: AMFService.ClanJoin, Code: 0
+[02.03 19:53:52] User: gludia4, Command: AMFService.ClanAccept, Code: 0
+

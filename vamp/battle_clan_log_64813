@@ -1,0 +1,516 @@
+[02.03 19:53:59] 64813
+[02.03 19:53:59] [
+    {
+        "Name": "\u0413\u041b\u0410\u0414\u0418\u0410\u0422\u041e\u0420\u042b", 
+        "Ladder": 3894, 
+        "Winner": 0, 
+        "BattleDBID": 64787, 
+        "Players": 1, 
+        "EnemyDBID": 2275320
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3822, 
+        "Winner": 0, 
+        "BattleDBID": 64772, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u041b\u0415\u0414\u042f\u041d\u041e\u0415 \u0414\u042b\u0425\u0410\u041d\u0418\u0415", 
+        "Ladder": 4414, 
+        "Winner": 0, 
+        "BattleDBID": 64813, 
+        "Players": 21, 
+        "EnemyDBID": 1220531
+    }, 
+    {
+        "Name": "Cranberry", 
+        "Ladder": 3818, 
+        "Winner": 0, 
+        "BattleDBID": 64788, 
+        "Players": 8, 
+        "EnemyDBID": 878569
+    }, 
+    {
+        "Name": "\u0420\u0438\u0434\u0438\u043a\u0438", 
+        "Ladder": 4132, 
+        "Winner": 2305215, 
+        "BattleDBID": 64766, 
+        "Players": 38, 
+        "EnemyDBID": 876211
+    }, 
+    {
+        "Name": "\u0414\u0416\u0410\u0412\u0410\u041d\u041d\u0418", 
+        "Ladder": 3581, 
+        "Winner": 2196555, 
+        "BattleDBID": 64753, 
+        "Players": 1, 
+        "EnemyDBID": 2196555
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3822, 
+        "Winner": 1466624, 
+        "BattleDBID": 64734, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u043e\u0447\u043a\u043e\u0448\u043d\u0438\u043a\u0438", 
+        "Ladder": 4231, 
+        "Winner": 2305215, 
+        "BattleDBID": 64731, 
+        "Players": 23, 
+        "EnemyDBID": 879702
+    }, 
+    {
+        "Name": "\u041b\u0415\u0414\u042f\u041d\u041e\u0415 \u0414\u042b\u0425\u0410\u041d\u0418\u0415", 
+        "Ladder": 4414, 
+        "Winner": 2305215, 
+        "BattleDBID": 64688, 
+        "Players": 24, 
+        "EnemyDBID": 1220531
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3822, 
+        "Winner": 1466624, 
+        "BattleDBID": 64686, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u041c\u041e\u0413\u0423\u0429\u0415\u0421\u0422\u0412\u041e \u041d\u041e\u0427\u0418", 
+        "Ladder": 3837, 
+        "Winner": 1332289, 
+        "BattleDBID": 64681, 
+        "Players": 10, 
+        "EnemyDBID": 1332289
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4413, 
+        "Winner": 2305215, 
+        "BattleDBID": 64654, 
+        "Players": 34, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "Cranberry", 
+        "Ladder": 3818, 
+        "Winner": 878569, 
+        "BattleDBID": 64637, 
+        "Players": 8, 
+        "EnemyDBID": 878569
+    }, 
+    {
+        "Name": "Schwarz Herz", 
+        "Ladder": 4306, 
+        "Winner": 2305215, 
+        "BattleDBID": 64623, 
+        "Players": 14, 
+        "EnemyDBID": 874183
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4413, 
+        "Winner": 878291, 
+        "BattleDBID": 64588, 
+        "Players": 37, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "Malkavian", 
+        "Ladder": 3608, 
+        "Winner": 874217, 
+        "BattleDBID": 64570, 
+        "Players": 3, 
+        "EnemyDBID": 874217
+    }, 
+    {
+        "Name": "UNCONTROLLABLE", 
+        "Ladder": 4393, 
+        "Winner": 2305215, 
+        "BattleDBID": 64555, 
+        "Players": 20, 
+        "EnemyDBID": 2304754
+    }, 
+    {
+        "Name": "\u0414\u0416\u0410\u0412\u0410\u041d\u041d\u0418", 
+        "Ladder": 3581, 
+        "Winner": 2196555, 
+        "BattleDBID": 64536, 
+        "Players": 2, 
+        "EnemyDBID": 2196555
+    }, 
+    {
+        "Name": "Malkavian", 
+        "Ladder": 3608, 
+        "Winner": 874217, 
+        "BattleDBID": 64534, 
+        "Players": 3, 
+        "EnemyDBID": 874217
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4413, 
+        "Winner": 878291, 
+        "BattleDBID": 64523, 
+        "Players": 32, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "Drak", 
+        "Ladder": 3817, 
+        "Winner": 2313129, 
+        "BattleDBID": 64509, 
+        "Players": 4, 
+        "EnemyDBID": 2313129
+    }, 
+    {
+        "Name": "Cranberry", 
+        "Ladder": 3818, 
+        "Winner": 878569, 
+        "BattleDBID": 64499, 
+        "Players": 9, 
+        "EnemyDBID": 878569
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3822, 
+        "Winner": 1466624, 
+        "BattleDBID": 64485, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u0420\u0438\u0434\u0438\u043a\u0438", 
+        "Ladder": 4132, 
+        "Winner": 2305215, 
+        "BattleDBID": 64481, 
+        "Players": 42, 
+        "EnemyDBID": 876211
+    }
+]
+
+[02.03 19:53:59] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:59] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 19:53:59] Left time 86397
+
+[02.03 20:24:00] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 20:24:00] Left time 84597
+
+[02.03 20:54:00] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 20:54:00] Left time 82796
+
+[02.03 21:24:00] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 21:24:00] Left time 80996
+
+[02.03 21:54:00] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 21:54:00] Left time 79196
+
+[02.03 22:24:00] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 22:24:00] Left time 77396
+
+[02.03 22:54:00] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 22:54:00] Left time 75596
+
+[02.03 23:24:01] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 23:24:01] Left time 73795
+
+[02.03 23:54:01] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[02.03 23:54:01] Left time 71995
+
+[03.03 00:24:01] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 00:24:01] Left time 70195
+
+[03.03 00:54:01] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 00:54:01] Left time 68395
+
+[03.03 01:24:01] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 01:24:01] Left time 66595
+
+[03.03 01:54:01] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 01:54:01] Left time 64795
+
+[03.03 02:24:02] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 02:24:02] Left time 62995
+
+[03.03 02:54:02] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 02:54:02] Left time 61194
+
+[03.03 03:24:02] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 03:24:02] Left time 59394
+
+[03.03 03:54:02] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 03:54:02] Left time 57594
+
+[03.03 04:24:03] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 04:24:03] Left time 55794
+
+[03.03 04:54:03] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 04:54:03] Left time 53993
+
+[03.03 05:24:03] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 05:24:03] Left time 52193
+
+[03.03 05:54:03] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 05:54:03] Left time 50393
+
+[03.03 06:24:04] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 06:24:04] Left time 48593
+
+[03.03 06:54:04] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 06:54:04] Left time 46792
+
+[03.03 07:24:04] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 07:24:04] Left time 44992
+
+[03.03 07:54:04] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 07:54:04] Left time 43192
+
+[03.03 08:24:04] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 08:24:04] Left time 41392
+
+[03.03 08:54:04] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 08:54:04] Left time 39592
+
+[03.03 09:22:05] 64813
+[03.03 09:22:05] [
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3848, 
+        "Winner": 0, 
+        "BattleDBID": 64817, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u041b\u0415\u0414\u042f\u041d\u041e\u0415 \u0414\u042b\u0425\u0410\u041d\u0418\u0415", 
+        "Ladder": 4398, 
+        "Winner": 0, 
+        "BattleDBID": 64813, 
+        "Players": 21, 
+        "EnemyDBID": 1220531
+    }, 
+    {
+        "Name": "Cranberry", 
+        "Ladder": 3857, 
+        "Winner": 878569, 
+        "BattleDBID": 64788, 
+        "Players": 8, 
+        "EnemyDBID": 878569
+    }, 
+    {
+        "Name": "\u0413\u041b\u0410\u0414\u0418\u0410\u0422\u041e\u0420\u042b", 
+        "Ladder": 3928, 
+        "Winner": 2275320, 
+        "BattleDBID": 64787, 
+        "Players": 1, 
+        "EnemyDBID": 2275320
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3848, 
+        "Winner": 1466624, 
+        "BattleDBID": 64772, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u0420\u0438\u0434\u0438\u043a\u0438", 
+        "Ladder": 4132, 
+        "Winner": 2305215, 
+        "BattleDBID": 64766, 
+        "Players": 38, 
+        "EnemyDBID": 876211
+    }, 
+    {
+        "Name": "\u0414\u0416\u0410\u0412\u0410\u041d\u041d\u0418", 
+        "Ladder": 3613, 
+        "Winner": 2196555, 
+        "BattleDBID": 64753, 
+        "Players": 1, 
+        "EnemyDBID": 2196555
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3848, 
+        "Winner": 1466624, 
+        "BattleDBID": 64734, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u043e\u0447\u043a\u043e\u0448\u043d\u0438\u043a\u0438", 
+        "Ladder": 4231, 
+        "Winner": 2305215, 
+        "BattleDBID": 64731, 
+        "Players": 23, 
+        "EnemyDBID": 879702
+    }, 
+    {
+        "Name": "\u041b\u0415\u0414\u042f\u041d\u041e\u0415 \u0414\u042b\u0425\u0410\u041d\u0418\u0415", 
+        "Ladder": 4398, 
+        "Winner": 2305215, 
+        "BattleDBID": 64688, 
+        "Players": 24, 
+        "EnemyDBID": 1220531
+    }, 
+    {
+        "Name": "\u0442\u044c\u043c\u0430", 
+        "Ladder": 3848, 
+        "Winner": 1466624, 
+        "BattleDBID": 64686, 
+        "Players": 2, 
+        "EnemyDBID": 1466624
+    }, 
+    {
+        "Name": "\u041c\u041e\u0413\u0423\u0429\u0415\u0421\u0422\u0412\u041e \u041d\u041e\u0427\u0418", 
+        "Ladder": 3817, 
+        "Winner": 1332289, 
+        "BattleDBID": 64681, 
+        "Players": 10, 
+        "EnemyDBID": 1332289
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4467, 
+        "Winner": 2305215, 
+        "BattleDBID": 64654, 
+        "Players": 34, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "Cranberry", 
+        "Ladder": 3857, 
+        "Winner": 878569, 
+        "BattleDBID": 64637, 
+        "Players": 8, 
+        "EnemyDBID": 878569
+    }, 
+    {
+        "Name": "Schwarz Herz", 
+        "Ladder": 4268, 
+        "Winner": 2305215, 
+        "BattleDBID": 64623, 
+        "Players": 14, 
+        "EnemyDBID": 874183
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4467, 
+        "Winner": 878291, 
+        "BattleDBID": 64588, 
+        "Players": 37, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "Malkavian", 
+        "Ladder": 3608, 
+        "Winner": 874217, 
+        "BattleDBID": 64570, 
+        "Players": 3, 
+        "EnemyDBID": 874217
+    }, 
+    {
+        "Name": "UNCONTROLLABLE", 
+        "Ladder": 4476, 
+        "Winner": 2305215, 
+        "BattleDBID": 64555, 
+        "Players": 20, 
+        "EnemyDBID": 2304754
+    }, 
+    {
+        "Name": "\u0414\u0416\u0410\u0412\u0410\u041d\u041d\u0418", 
+        "Ladder": 3613, 
+        "Winner": 2196555, 
+        "BattleDBID": 64536, 
+        "Players": 2, 
+        "EnemyDBID": 2196555
+    }, 
+    {
+        "Name": "Malkavian", 
+        "Ladder": 3608, 
+        "Winner": 874217, 
+        "BattleDBID": 64534, 
+        "Players": 3, 
+        "EnemyDBID": 874217
+    }, 
+    {
+        "Name": "\u0425\u0435\u043b\u044c\u0445\u0435\u0439\u043c", 
+        "Ladder": 4467, 
+        "Winner": 878291, 
+        "BattleDBID": 64523, 
+        "Players": 32, 
+        "EnemyDBID": 878291
+    }, 
+    {
+        "Name": "Drak", 
+        "Ladder": 3799, 
+        "Winner": 2313129, 
+        "BattleDBID": 64509, 
+        "Players": 4, 
+        "EnemyDBID": 2313129
+    }
+]
+
+[03.03 09:22:05] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 09:22:05] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 09:22:05] Left time 37917
+
+[03.03 09:52:05] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 09:52:05] Left time 36117
+
+[03.03 10:22:06] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 10:22:06] Left time 34316
+
+[03.03 10:52:06] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 10:52:06] Left time 32516
+
+[03.03 11:22:06] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 11:22:06] Left time 30716
+
+[03.03 11:52:06] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 11:52:06] Left time 28916
+
+[03.03 12:22:07] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 12:22:07] Left time 27116
+
+[03.03 12:52:07] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 12:52:07] Left time 25315
+
+[03.03 13:22:07] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 13:22:07] Left time 23515
+
+[03.03 13:52:07] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 13:52:07] Left time 21715
+
+[03.03 14:22:07] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 14:22:07] Left time 19915
+
+[03.03 14:52:08] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 14:52:08] Left time 18114
+
+[03.03 15:22:08] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 15:22:08] Left time 16314
+
+[03.03 15:52:08] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 15:52:08] Left time 14514
+
+[03.03 16:22:08] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 16:22:08] Left time 12714
+
+[03.03 16:52:08] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 16:52:08] Left time 10914
+
+[03.03 17:22:08] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 17:22:08] Left time 9114
+
+[03.03 17:52:09] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 17:52:09] Left time 7314
+
+[03.03 18:22:09] User: gludia4, Command: AMFService.ClanFightInfoGet, Code: 0
+[03.03 18:22:09] Left time 5514
+

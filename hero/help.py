@@ -147,7 +147,7 @@ def sendHelp(pers, hbid, pid):
         log(resp["data"], True)
         if not "FRIEND" in error:
             data, gid, sid = init(pid, auth)
-            sendHelp(pers, hbid)
+            sendHelp(pers, hbid, pid)
         else: exceptions.append(pid); print 'add exception', pid
         
         

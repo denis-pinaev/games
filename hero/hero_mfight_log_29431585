@@ -102,3 +102,7 @@
 [03.03 10:12:00] battleFinish done
 [03.03 18:11:13] Knights.initialize:initialize {"sig": 514096858, "pid": "29431585", "cmd": "Knights.initialize", "data": "{\"age\":30,\"gender\":1,\"rnd\":197,\"referralType\":6,\"newDay\":false,\"owner_id\":\"\",\"hash\":{},\"auth_key\":\"55f56ea187574da9b2ed69474db78ac0\",\"sessionKey\":\"\",\"ctr\":0}", "gid": 0}
 [03.03 18:11:14] sid: 53148cfec31bb4.24215429, gid: 5316
+[04.03 00:43:47] Knights.initialize:initialize {"sig": 468881367, "pid": "29431585", "cmd": "Knights.initialize", "data": "{\"age\":30,\"gender\":1,\"rnd\":919,\"referralType\":6,\"newDay\":false,\"owner_id\":\"\",\"hash\":{},\"auth_key\":\"55f56ea187574da9b2ed69474db78ac0\",\"sessionKey\":\"\",\"ctr\":0}", "gid": 0}
+[04.03 00:43:48] sid: 5314e993729644.06114558, gid: 5316
+[04.03 00:46:59] Knights.initialize:initialize {"sig": 3866823298, "pid": "29431585", "cmd": "Knights.initialize", "data": "{\"age\":30,\"gender\":1,\"rnd\":757,\"referralType\":6,\"newDay\":false,\"owner_id\":\"\",\"hash\":{},\"auth_key\":\"55f56ea187574da9b2ed69474db78ac0\",\"sessionKey\":\"\",\"ctr\":0}", "gid": 0}
+[04.03 00:47:01] sid: 5314ea544fab22.03007014, gid: 5316

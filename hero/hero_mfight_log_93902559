@@ -143,3 +143,5 @@
 [03.03 18:14:59] battleUpdate done
 [03.03 18:14:59] Knights.doAction:battleFinish {"sig": 1355645056, "pid": "93902559", "cmd": "Knights.doAction", "data": "{\"reason\":\"win\",\"index\":\"default\",\"rnd\":707,\"ctr\":7,\"sessionKey\":\"53148dd9608470.94868727\",\"method\":\"battleFinish\"}", "gid": "1019539"}
 [03.03 18:15:00] battleFinish done
+[04.03 00:47:36] Knights.initialize:initialize {"sig": 2346338821, "pid": "93902559", "cmd": "Knights.initialize", "data": "{\"age\":30,\"gender\":1,\"rnd\":613,\"referralType\":6,\"newDay\":false,\"owner_id\":\"\",\"hash\":{},\"auth_key\":\"d40ce5e63d99e92fd57859c7be81729c\",\"sessionKey\":\"\",\"ctr\":0}", "gid": 0}
+[04.03 00:47:37] sid: 5314ea787b81c6.92122577, gid: 1019539

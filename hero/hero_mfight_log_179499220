@@ -52,3 +52,5 @@
 [20.02 17:58:23] sid: 53060982180867.15068628, gid: 1130505
 [28.02 08:05:28] Knights.initialize:initialize {"sig": 1409263539, "pid": "179499220", "cmd": "Knights.initialize", "data": "{\"age\":30,\"gender\":1,\"rnd\":553,\"referralType\":6,\"newDay\":false,\"owner_id\":\"\",\"hash\":{},\"auth_key\":\"49e1540eb72f701a7c0924054ef10fc1\",\"sessionKey\":\"\",\"ctr\":0}", "gid": 0}
 [28.02 08:05:29] sid: 53100a8bb6efb8.21010269, gid: 1130505
+[04.03 00:47:09] Knights.initialize:initialize {"sig": 1538906254, "pid": "179499220", "cmd": "Knights.initialize", "data": "{\"age\":30,\"gender\":1,\"rnd\":121,\"referralType\":6,\"newDay\":false,\"owner_id\":\"\",\"hash\":{},\"auth_key\":\"49e1540eb72f701a7c0924054ef10fc1\",\"sessionKey\":\"\",\"ctr\":0}", "gid": 0}
+[04.03 00:47:10] sid: 5314ea5d5b1a90.12545510, gid: 1130505

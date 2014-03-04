@@ -96,3 +96,5 @@
 [25.02 15:57:21] battleFinish done
 [26.02 13:12:45] Knights.initialize:initialize {"sig": 1202490435, "pid": "124520", "cmd": "Knights.initialize", "data": "{\"age\":30,\"gender\":1,\"rnd\":558,\"referralType\":6,\"newDay\":false,\"owner_id\":\"\",\"hash\":{},\"auth_key\":\"1e365d477c3207804013abaddbb6a0c4\",\"sessionKey\":\"\",\"ctr\":0}", "gid": 0}
 [26.02 13:12:46] sid: 530daf90de7800.79904761, gid: 999038
+[04.03 00:45:04] Knights.initialize:initialize {"sig": 3572283557, "pid": "124520", "cmd": "Knights.initialize", "data": "{\"age\":30,\"gender\":1,\"rnd\":770,\"referralType\":6,\"newDay\":false,\"owner_id\":\"\",\"hash\":{},\"auth_key\":\"1e365d477c3207804013abaddbb6a0c4\",\"sessionKey\":\"\",\"ctr\":0}", "gid": 0}
+[04.03 00:45:05] sid: 5314e9e09d01c4.37874176, gid: 999038

@@ -57,9 +57,18 @@ if True:
     sid =  pers['sid']
     
     data, gid, sid = init(pid, auth)
+    
+    start_value = 98
+    rest_value = 0
+    
+    lvl_need = (start_value + 1) * 5
 
-    total = 3000
+    total = 30000
+    s_i = 4115
     i = 0
-    while i<=total:
-        sendHelp(str(i), '1,2,3,4,'+str(i))
-        i += 1
+    while s_i<=total:
+        sendHelp(str(s_i), '1,2,3,4,'+str(s_i))
+        i += 5
+        s_i += 1
+        if i>lvl_need: lvl_need+=5;rest_value+=1;i=0
+        print rest_value, i*100/lvl_need

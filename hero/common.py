@@ -116,6 +116,7 @@ def init(npid, nauth):
         log("pid: %s, sid: %s, gid: %s" % (str(npid), str(sid), str(gid)), True)
     else:
         log(resp["data"], True)
+        if "BANNED" in error: time.sleep(9999999)
         
     return (o, gid, sid)
     

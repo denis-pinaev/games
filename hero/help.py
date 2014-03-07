@@ -55,7 +55,7 @@ persons = [
               {"pid":"199648989","auth":"14279d90af4c929b3f645e777e6b30fb","gid":0,"sid":""},#misha_zhukov1
               {"pid":"56518190","auth":"22f411e60eebd913b689b19705900ab2","gid":0,"sid":""},#ulia
               {"pid":"93902559","auth":"d40ce5e63d99e92fd57859c7be81729c","gid":0,"sid":""},#vadimbot0
-              {"pid":"217858589","auth":"8b9107a32674785b79463d5585ec4918","gid":0,"sid":""},#vadimbot1
+              #ban 09.03#{"pid":"217858589","auth":"8b9107a32674785b79463d5585ec4918","gid":0,"sid":""},#vadimbot1
               {"pid":"65706308","auth":"a889a08c37aa0430b62ae6a5928e6950","gid":0,"sid":""},#vadimbot2
               {"pid":"217752865","auth":"bc8251178d92e9f671d7f23f19fbb4a7","gid":0,"sid":""},#vadimbot3
               {"pid":"107564843","auth":"81af0508db36b84e869e2b77a9b4a142","gid":0,"sid":""},#vadimbot4
@@ -81,7 +81,7 @@ persons = [
               {"pid":"29431585","auth":"55f56ea187574da9b2ed69474db78ac0","gid":0,"sid":""},#natali_vlasova
               {"pid":"49809104","auth":"faeaec9d6c41db027a1f8a2dc7244c38","gid":0,"sid":""},#misha_zhukov
               {"pid":"218661879","auth":"4a7a2ac0efcadd1a42499e34ed217e8b","gid":0,"sid":""},#nikita
-              {"pid":"179499220","auth":"49e1540eb72f701a7c0924054ef10fc1","gid":0,"sid":""},#yura
+              #ban 16.03#{"pid":"179499220","auth":"49e1540eb72f701a7c0924054ef10fc1","gid":0,"sid":""},#yura
               {"pid":"169768611","auth":"9bc9bdd4929458a2108f1ae419906f66","gid":0,"sid":""},#lenaSv
               {"pid":"73940623","auth":"9ba0d48c2a9b701ffa031504b5232451","gid":0,"sid":""},#VitaShani
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""}#corc
@@ -101,7 +101,8 @@ init_log("hero_help_log")
 
 exceptions = []
 
-ctr = 0
+ctr = int(random.random()*10000)
+
 def getCTR():
     global ctr
     ctr += 1
@@ -145,10 +146,28 @@ def sendHelp(pers, hbid, pid):
         log("friendHelpApply done", True)
     else:
         log(resp["data"], True)
-        if not "FRIEND" in error:
+        if not "FRIEND" in error and not "BANNED" in error:
             data, gid, sid = init(pid, auth)
             sendHelp(pers, hbid, pid)
         else: exceptions.append(pid); print 'add exception', pid
+        
+        
+def getWorld(pers):
+    global sid, gid, service, method
+    service = actionCommand
+    method = 'friendsGetWorld'
+    init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
+    dataString = '{"rnd":%s,"friendId":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getRandom(), pers, getCTR(), sid, method)
+    params = createData(method, dataString)
+    log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log("getWorld %s done" % pers, True)
+    else:
+        log(resp["data"], True)
+    return o
         
         
 
@@ -188,9 +207,21 @@ for i in range(t_count):
         auth = pers['auth']
         gid =  pers['gid']
         sid =  pers['sid']
-        print t_count, pid
-        if count<maxco: sendHelp(persons[0], hbid, pid)
-        count += 1
+        print i, pid
+        #w = getWorld(persons[0]['pid'])
+        w = {'friend':data}
+        canHelp = True
+        try:
+            if w["friend"].has_key("interaction"):
+                if len(w["friend"]["interaction"])>0 and w["friend"]["interaction"].has_key(persons[0]['pid']):
+                    hcount = int(w["friend"]["interaction"][persons[0]['pid']]["help"])
+                    if hcount>=5: canHelp = False
+                    print pid+' used help: '+str(hcount)
+        except: canHelp = False
+        
+        if canHelp: sendHelp(persons[0], hbid, pid)
+        else: exceptions.append(pid)
+        
         
     pers = persons[0]
     if True:
@@ -203,6 +234,6 @@ for i in range(t_count):
         pers['sid'] = sid
         for p in persons[start_p:end_p]:
             if p['pid'] in exceptions: print 'in exceptions',p['pid'];continue
-            if count<maxco: getHelp(p)
+            getHelp(p)
     
 

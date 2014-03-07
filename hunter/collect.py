@@ -229,7 +229,7 @@ def refreshTimers():
     doCommand('Players.getPlayer', {})
     
 def getGoodQuest(quest):
-    wanted = 25
+    wanted = 20
     count = 0
     quests = getQuestPlayer()
     if quests: count = getMobsInQuest(quest, quests)

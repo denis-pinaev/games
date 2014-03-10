@@ -55,7 +55,7 @@ persons = [
               {"pid":"199648989","auth":"14279d90af4c929b3f645e777e6b30fb","gid":0,"sid":""},#misha_zhukov1
               {"pid":"56518190","auth":"22f411e60eebd913b689b19705900ab2","gid":0,"sid":""},#ulia
               {"pid":"93902559","auth":"d40ce5e63d99e92fd57859c7be81729c","gid":0,"sid":""},#vadimbot0
-              #ban 09.03#{"pid":"217858589","auth":"8b9107a32674785b79463d5585ec4918","gid":0,"sid":""},#vadimbot1
+              {"pid":"217858589","auth":"8b9107a32674785b79463d5585ec4918","gid":0,"sid":""},#vadimbot1
               {"pid":"65706308","auth":"a889a08c37aa0430b62ae6a5928e6950","gid":0,"sid":""},#vadimbot2
               {"pid":"217752865","auth":"bc8251178d92e9f671d7f23f19fbb4a7","gid":0,"sid":""},#vadimbot3
               {"pid":"107564843","auth":"81af0508db36b84e869e2b77a9b4a142","gid":0,"sid":""},#vadimbot4
@@ -193,8 +193,9 @@ if end_p>777: end_p = len(persons)
 if start_p<1: start_p = 1
 
 for i in range(t_count):
+    pc = start_p
     for pers in persons[start_p:end_p]:
-        if pers['pid'] in exceptions: print 'in exceptions',pers['pid'];continue
+        if pers['pid'] in exceptions: print 'in exceptions',pers['pid'];pc+=1;continue
         if True:
             pid = pers['pid']
             auth = pers['auth']
@@ -207,7 +208,8 @@ for i in range(t_count):
         auth = pers['auth']
         gid =  pers['gid']
         sid =  pers['sid']
-        print i, pid
+        print i, pc, pid
+        pc += 1
         #w = getWorld(persons[0]['pid'])
         w = {'friend':data}
         canHelp = True

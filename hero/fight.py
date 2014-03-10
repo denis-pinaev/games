@@ -46,6 +46,9 @@ gid = 0
 sid = ''
 action = 'hp'
 init_info = None
+
+select_stage = True
+
 # 
 not_attack = [
                  {'id':'159662551','name':'ORDEN'},
@@ -164,6 +167,7 @@ def init():
         
 
 def killEnemy(dataj2, create, first=False):
+    global select_stage
     
     if create and dataj2.has_key("mission") and dataj2["mission"].has_key("pvpInfo"):
         fid = str(dataj2["mission"]["pvpInfo"]["id"])
@@ -178,6 +182,9 @@ def killEnemy(dataj2, create, first=False):
     sunits = ''
     if dataj2.has_key("mission") and dataj2["mission"].has_key("entities"):
         dataj = dataj2["mission"]["entities"]
+        
+        for e in dataj:
+            if str(dataj[e]['owner']) == '1': select_stage = False
         
         new_cheat2 = int(dataj2["mission"]["actionId"])
         if new_cheat2 > new_cheat: new_cheat = new_cheat2
@@ -222,6 +229,7 @@ def battleInit():
     return o
     
 def battleUpdate(killstring):
+    if select_stage: print "ERROR IN battleUpdate!!! select_stage = "+str(select_stage) ;return False
     global sid, gid, service, method
     service = actionCommand
     method = 'battleUpdate'
@@ -272,6 +280,7 @@ def loadPerson(initdata):
     #    print "error taking person"
 
 def battleStart():
+    if not select_stage: print "ERROR IN battleStart!!! select_stage = "+str(select_stage) ;return False
     global sid, gid, service, method
     service = actionCommand
     method = 'battleStart'
@@ -291,6 +300,7 @@ def battleStart():
     return o
 
 def battleFinish():
+    if select_stage: print "ERROR IN battleFinish!!! select_stage = "+str(select_stage) ;return False
     global sid, gid, service, method
     service = actionCommand
     method = 'battleFinish'
@@ -327,6 +337,7 @@ def printResults(o):
 
 
 def cycle_proc():
+    global select_stage
     if create:
         try:
             if gogo and phaza==0: o = battleCreate(); print "battleCreate ok"
@@ -348,6 +359,7 @@ def cycle_proc():
             return False
         try:
             if gogo and phaza<=1: battleStart(); print "battleStart ok"
+            select_stage = False
         except:
             print "error in battleStart"
             return False
@@ -355,7 +367,7 @@ def cycle_proc():
     try:
         if gogo: mission = init_info["missions"]["default"]["id"]; print "mission = " + str(mission)
     except:
-        print "error in missions get INFO = " + str(not (init_info == None))
+        print "no mission found"
         if not create:
             return False
     try:
@@ -381,6 +393,8 @@ def cycle_proc():
             print "Unexpected error:\n", sys.exc_info()
             print "error in battleFinish"
     
+    select_stage = True
+
     return True
     
 

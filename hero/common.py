@@ -53,10 +53,10 @@ def init_params(npid=None, nauth=None, ngid=None, nsid=None, nmethod=None, nserv
 def getRandom():
     return str(int(random.random()*1000))
     
-def log(s, pr=False):
+def log(s, pr=False, filename=False):
     s = "[" + datetime.datetime.now().strftime('%d.%m %H:%M:%S')+"] " + s
     if pr: print s
-    fatype = "hero_"+log_file+"_log"
+    fatype = filename if filename else "hero_"+log_file+"_log"
     try:
         tfile = open(fatype, "a")
         tfile.write(s.encode('utf-8')+'\n')

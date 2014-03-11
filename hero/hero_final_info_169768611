@@ -280,6 +280,7 @@
 [10.03 01:37:38]  Rang:12 cash: 17 epower: 427096 money: 22299(5770) wood: 10285(720) stone: 4781(386) iron: 1736(46)
 [10.03 01:37:42]  Rang:11 cash: 17 epower: 427096 money: 32283(9984) wood: 10873(588) stone: 5139(358) iron: 1804(68)
 [10.03 01:37:46]  Rang:10 cash: 17 epower: 427096 money: 51523(19240) wood: 11709(836) stone: 5663(524) iron: 1850(46)
+<<<<<<< HEAD
 [10.03 19:24:14]  Rang:15 cash: 22 epower: 430552 money: 40475(29592) wood: 2353(1512) stone: 7051(364) iron: 1529(80)
 [10.03 19:24:22]  Rang:14 cash: 22 epower: 430552 money: 59779(19304) wood: 4297(1944) stone: 7935(884) iron: 1613(84)
 [10.03 19:24:29]  Rang:13 cash: 22 epower: 430552 money: 89475(29696) wood: 5537(1240) stone: 8631(696) iron: 1673(60)
@@ -290,3 +291,18 @@
 [10.03 23:38:03]  Rang:13 cash: 22 epower: 431038 money: 75707(13210) wood: 3141(914) stone: 9971(394) iron: 2107(80)
 [10.03 23:38:09]  Rang:12 cash: 22 epower: 431038 money: 84673(8966) wood: 3737(596) stone: 10337(366) iron: 2163(56)
 [10.03 23:38:14]  Rang:11 cash: 22 epower: 431038 money: 91245(6572) wood: 4293(556) stone: 10691(354) iron: 2225(62)
+=======
+[11.03 12:09:08]  Rang:11 cash: 22 epower: 431038 money: 83929(21544) wood: 3253(1704) stone: 10539(520) iron: 2236(144)
+[11.03 12:09:09]  Rang:10 cash: 22 epower: 431038 money: 110537(26608) wood: 4165(912) stone: 11000(788) iron: 2260(228)
+[11.03 12:09:10]  Rang:9 cash: 22 epower: 431038 money: 140653(30116) wood: 4949(784) stone: 11000 iron: 2260
+[11.03 12:09:11]  Rang:9 cash: 22 epower: 431038 money: 152597(11944) wood: 5773(824) stone: 11000 iron: 2260
+[11.03 12:09:15]  Rang:8 cash: 22 epower: 431038 money: 166441(13844) wood: 6833(1060) stone: 11000 iron: 2260
+[11.03 12:09:17]  Rang:7 cash: 22 epower: 431038 money: 182949(16508) wood: 7633(800) stone: 11000 iron: 2260
+[11.03 18:51:32]  Rang:19 cash: 22 epower: 431038 money: 26502(13888) wood: 5697(552) stone: 9096(288) iron: 1673(68)
+[11.03 18:51:40]  Rang:18 cash: 22 epower: 431038 money: 41094(14592) wood: 6037(340) stone: 9544(448) iron: 1759(86)
+[11.03 18:51:43]  Rang:17 cash: 22 epower: 431038 money: 50736(9642) wood: 6837(800) stone: 9826(282) iron: 1819(60)
+[11.03 18:51:47]  Rang:16 cash: 22 epower: 431038 money: 63502(12766) wood: 7663(826) stone: 10208(382) iron: 1899(80)
+[11.03 18:51:49]  Rang:14 cash: 22 epower: 431038 money: 81850(18348) wood: 8589(926) stone: 10586(378) iron: 1973(74)
+[11.03 18:51:54]  Rang:14 cash: 22 epower: 431038 money: 92512(10662) wood: 9237(648) stone: 11000(480) iron: 2039(66)
+[11.03 18:51:56]  Rang:13 cash: 22 epower: 431038 money: 104500(11988) wood: 9665(428) stone: 11000 iron: 2107(68)
+>>>>>>> 911a3b5... gfsdfg

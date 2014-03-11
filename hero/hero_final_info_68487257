@@ -340,6 +340,7 @@
 [10.03 01:38:06]  Rang:30 cash: 39 epower: 495880 money: 4889596(10446) wood: 25316(430) stone: 13400 iron: 2644
 [10.03 01:38:10]  Rang:28 cash: 39 epower: 495880 money: 4900532(10936) wood: 26292(976) stone: 13400 iron: 2644
 [10.03 01:38:18]  Rang:26 cash: 39 epower: 495880 money: 4910706(10174) wood: 27000(1324) stone: 13400 iron: 2644
+<<<<<<< HEAD
 [10.03 19:25:01]  Rang:37 cash: 39 epower: 495880 money: 4436927(17292) wood: 25260(960) stone: 13056(996) iron: 2467(88)
 [10.03 19:25:05]  Rang:35 cash: 39 epower: 495880 money: 4493947(57020) wood: 26572(1312) stone: 13400(1128) iron: 2644(212)
 [10.03 19:25:10]  Rang:32 cash: 39 epower: 495880 money: 4528783(34836) wood: 27000(1968) stone: 13400 iron: 2644
@@ -351,3 +352,18 @@
 [10.03 23:38:23]  Rang:21 cash: 39 epower: 495880 money: 4666205(12412) wood: 27000 stone: 13400 iron: 2644
 [10.03 23:38:29]  Rang:19 cash: 39 epower: 495880 money: 4679759(13554) wood: 27000 stone: 13400 iron: 2644
 [10.03 23:38:34]  Rang:18 cash: 39 epower: 495880 money: 4688893(9134) wood: 27000 stone: 13400 iron: 2644
+=======
+[11.03 12:09:27]  Rang:17 cash: 44 epower: 495880 money: 4708273(19380) wood: 27000 stone: 13400 iron: 2644
+[11.03 12:09:29]  Rang:16 cash: 44 epower: 495880 money: 4725113(16840) wood: 27000 stone: 13400 iron: 2644
+[11.03 12:09:31]  Rang:15 cash: 44 epower: 495880 money: 4754177(29064) wood: 27000 stone: 13400 iron: 2644
+[11.03 12:09:33]  Rang:14 cash: 44 epower: 495880 money: 4770961(16784) wood: 27000 stone: 13400 iron: 2644
+[11.03 12:09:34]  Rang:13 cash: 44 epower: 495880 money: 4810577(39616) wood: 27000 stone: 13400 iron: 2644
+[11.03 12:09:35]  Rang:12 cash: 44 epower: 495880 money: 4849437(38860) wood: 27000 stone: 13400 iron: 2644
+[11.03 18:52:10]  Rang:24 cash: 44 epower: 495880 money: 4872315(22878) wood: 27000 stone: 13400 iron: 2644
+[11.03 18:52:12]  Rang:22 cash: 44 epower: 495880 money: 4893403(21088) wood: 27000 stone: 13400 iron: 2644
+[11.03 18:52:15]  Rang:21 cash: 44 epower: 495880 money: 4915831(22428) wood: 27000 stone: 13400 iron: 2644
+[11.03 18:52:18]  Rang:19 cash: 44 epower: 495880 money: 4939869(24038) wood: 27000 stone: 13400 iron: 2644
+[11.03 18:52:22]  Rang:18 cash: 44 epower: 495880 money: 4958519(18650) wood: 27000 stone: 13400 iron: 2644
+[11.03 18:52:24]  Rang:17 cash: 44 epower: 495880 money: 4972389(13870) wood: 27000 stone: 13400 iron: 2644
+[11.03 18:52:29]  Rang:16 cash: 44 epower: 495880 money: 4994369(21980) wood: 27000 stone: 13400 iron: 2644
+>>>>>>> 911a3b5... gfsdfg

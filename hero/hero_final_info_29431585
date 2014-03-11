@@ -305,9 +305,20 @@
 [10.03 01:36:23]  Rang:10 cash: 1 epower: 440672 money: 1890283(10728) wood: 12153(768) stone: 11073(380) iron: 2420(164)
 [10.03 01:36:27]  Rang:9 cash: 1 epower: 440672 money: 1926367(36084) wood: 13141(988) stone: 11957(884) iron: 2500(88)
 [10.03 01:36:32]  Rang:8 cash: 1 epower: 440672 money: 1937555(11188) wood: 13943(802) stone: 12283(326) iron: 2500
+<<<<<<< HEAD
 [10.03 19:17:52]  Rang:8 cash: 1 epower: 440672 money: 1977563(40008) wood: 15955(2012) stone: 12771(488) iron: 2500
 [10.03 19:17:57]  Rang:7 cash: 1 epower: 440672 money: 1991531(13968) wood: 16647(692) stone: 13331(560) iron: 2500
 [10.03 19:18:02]  Rang:7 cash: 1 epower: 440672 money: 2019991(28460) wood: 18987(2340) stone: 13400(1000) iron: 2500
 [10.03 19:18:06]  Rang:6 cash: 1 epower: 440672 money: 2042399(22408) wood: 21355(2368) stone: 13400 iron: 2500
 [10.03 19:18:10]  Rang:6 cash: 1 epower: 440672 money: 2073663(31264) wood: 22383(1028) stone: 13400 iron: 2500
 [10.03 19:18:20]  Rang:5 cash: 1 epower: 440672 money: 2107535(33872) wood: 23807(1424) stone: 13400 iron: 2500
+=======
+[11.03 12:07:53]  Rang:5 cash: 1 epower: 441050 money: 1812743(24008) wood: 2155(1528) stone: 10480(596) iron: 1339(132)
+[11.03 12:07:54]  Rang:5 cash: 1 epower: 441050 money: 1839807(27064) wood: 3475(1320) stone: 10900(420) iron: 1455(116)
+[11.03 12:07:55]  Rang:5 cash: 1 epower: 441050 money: 1871491(31684) wood: 4827(1352) stone: 11364(464) iron: 1667(212)
+[11.03 12:07:57]  Rang:4 cash: 1 epower: 441050 money: 1914331(42840) wood: 6255(1428) stone: 11836(472) iron: 1815(148)
+[11.03 12:08:01]  Rang:4 cash: 1 epower: 441050 money: 1933251(18920) wood: 7031(776) stone: 12636(800) iron: 2015(200)
+[11.03 12:08:04]  Rang:4 cash: 1 epower: 441050 money: 1971843(38592) wood: 8899(1868) stone: 13400(952) iron: 2211(196)
+[11.03 18:48:29]  Rang:14 cash: 1 epower: 441050 money: 1754518(15058) wood: 2377(654) stone: 11682(418) iron: 2255(58)
+[11.03 18:48:30]  Rang:13 cash: 1 epower: 441050 money: 1767268(12750) wood: 2995(618) stone: 12052(370) iron: 2363(108)
+>>>>>>> 911a3b5... gfsdfg

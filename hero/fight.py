@@ -324,7 +324,7 @@ def printResults(o):
     s = ''
     if o.has_key('honorValue'): s = '%s Rang:%s' % (s, str(o['honorValue']))
     if o.has_key('player') and o.has_key('awards'):
-        ss = ["cash","epower","money","wood","stone","iron"]
+        ss = ["cash","epower","money","wood","stone","iron","experience"]
         for i in range(len(ss)):
             res = ss[i]
             s = '%s %s:' % (s, res)

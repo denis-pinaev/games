@@ -245,9 +245,18 @@
 [18.03 17:17:37]  Rang:18 cash: 23 epower: 587032 money: 405297(6520) wood: 14727(456) stone: 13156(238) iron: 1908(54) experience: 23549(134)
 [18.03 17:17:38]  Rang:16 cash: 23 epower: 587032 money: 419131(13834) wood: 15499(772) stone: 13400(292) iron: 1958(50) experience: 23637(88)
 [18.03 17:17:43]  Rang:15 cash: 23 epower: 587032 money: 439187(20056) wood: 16489(990) stone: 13400 iron: 1998(40)
+<<<<<<< HEAD
 [18.03 23:55:41]  Rang:14 cash: 23 epower: 587032 money: 321613(13546) wood: 13447(502) stone: 13012(422) iron: 1652(68) experience: 25135(108)
 [18.03 23:55:46]  Rang:13 cash: 23 epower: 587032 money: 332455(10842) wood: 14339(892) stone: 13400(464) iron: 1762(110) experience: 25309(174)
 [18.03 23:55:50]  Rang:12 cash: 23 epower: 587032 money: 340257(7802) wood: 14649(310) stone: 13400 iron: 1790(28) experience: 25465(156)
 [18.03 23:55:55]  Rang:11 cash: 23 epower: 587032 money: 346011(5754) wood: 15207(558) stone: 13400 iron: 1844(54) experience: 25613(148)
 [18.03 23:56:00]  Rang:11 cash: 23 epower: 587032 money: 354169(8158) wood: 15853(646) stone: 13400 iron: 1924(80) experience: 25767(154)
 [18.03 23:56:05]  Rang:10 cash: 23 epower: 587032 money: 369241(15072) wood: 16559(706) stone: 13400 iron: 2004(80) experience: 25893(126)
+=======
+[19.03 12:19:30]  Rang:9 cash: 23 epower: 587032 money: 392585(23344) wood: 18993(784) stone: 13400 iron: 2120(116) experience: 26061(168)
+[19.03 12:19:31]  Rang:8 cash: 23 epower: 587032 money: 415521(22936) wood: 20101(1108) stone: 13400 iron: 2228(108) experience: 26461(400)
+[19.03 12:19:32]  Rang:8 cash: 23 epower: 587032 money: 449749(34228) wood: 21397(1296) stone: 13400 iron: 2316(88) experience: 26817(356)
+[19.03 12:19:33]  Rang:7 cash: 23 epower: 587032 money: 477713(27964) wood: 22037(640) stone: 13400 iron: 2428(112) experience: 27149(332)
+[19.03 12:19:34]  Rang:7 cash: 23 epower: 587032 money: 509581(31868) wood: 22685(648) stone: 13400 iron: 2500(96) experience: 27301(152)
+[19.03 12:19:36]  Rang:6 cash: 23 epower: 587032 money: 534197(24616) wood: 24481(1796) stone: 13400 iron: 2500 experience: 27605(304)
+>>>>>>> ce059dc... df

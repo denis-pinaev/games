@@ -282,7 +282,37 @@ def main_ccollect():
         refreshTimers()
         builds = check_session(getResBuilds())
         if builds: collectBuildings(builds)
+        main_boss()
         time.sleep(10*60)
+        
+def main_boss():
+    if check_session(getPlayer(), True):
+        print datetime.datetime.now().strftime('%H:%M:%S')
+        refreshTimers()
+        player = check_session(getPlayer())
+        e = 0
+        try:
+            if player: e = int(player['energy'])
+        except: e = 0
+        print 'energy:', e
+        while e>=30:
+            res = doCommand('Quest.startBoss', {'name':'Denis Pinaev','id':1101})
+            if not res: print 'error in boss start'; return
+            res = doCommand('Quest.getInfoBossFight', {'id':41312})
+            if not res: print 'error in getInfoBossFight'; return
+            res = doCommand('Quest.getInfoBossPlayer', {'id':41312})
+            if not res: print 'error in getInfoBossPlayer'; return
+            boss_life = 1
+            while boss_life>0:
+                res = doCommand('Quest.updateBoss', {})
+                if not res: print 'error in updateBoss'; return
+                boss_life = int(res['boss_life'])
+                print 'boss life:', boss_life
+            res = doCommand('Quest.updateAtack', {'id':101})
+            res = doCommand('Quest.getAwardOnBoss', {'type':False})
+            e -= 30
+            print 'energy:', e
+        
         
 def main_cccf():
     while check_session(getPlayer(), True):
@@ -342,6 +372,7 @@ for a in sys.argv[1:]:
     if a == 'cccf': main_cccf()
     if a == 'f': main_fight()
     if a == 'i': main_info()
+    if a == 'b': main_boss()
     if a == 'z': main()
 #if True:
 #    try:

@@ -21,10 +21,11 @@ building_constants = {
                          'runa':'1074334687',
                          'gnom':'239693933',
                          'plav':'1766343544',
-                         'rist':'2101222815'
+                         'rist':'2101222815',
+                         'palatka':'482206421'
                      }
                      
-buildinds_priority = ['ars','hram','altar','runa','main','gnom','plav','kuzn','rist','wood','stone','iron','sklad','gold']
+buildinds_priority = ['ars','hram','altar','runa','main','gnom','plav','kuzn','rist','wood','stone','iron','sklad','gold','palatka']
 
 actionCommand = 'Knights.doAction'
 log_file = 'test'

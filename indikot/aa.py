@@ -34,7 +34,7 @@ data_start_level = {
 'action':'start',
 'boost_ids':'',
 'sig':'e2c0f96c298c7f49bfe75e40f5e51a2f',
-'flashvars':'{"auth_key":"7407366522de227fab8b092baba5e476","pf_version":"177","user_id":"166794948","pf_language":"ru","hash":"","referrer":"request","viewer_id":"124520"}',
+'flashvars':'{"auth_key":"7407366522de227fab8b092baba5e476","pf_version":"177","user_id":"166794948","pf_language":"ru","hash":"","referrer":"unknown","viewer_id":"124520"}',
 'level_id':'1'
 }
 
@@ -48,8 +48,20 @@ data_end_level = {
 'complete':'yes',
 'point':'7080',
 'level_id':'1',
-'flashvars':'{"auth_key":"7407366522de227fab8b092baba5e476","pf_version":"177","user_id":"166794948","pf_language":"ru","hash":"","referrer":"request","viewer_id":"124520"}',
+'flashvars':'{"auth_key":"7407366522de227fab8b092baba5e476","pf_version":"177","user_id":"166794948","pf_language":"ru","hash":"","referrer":"unknown","viewer_id":"124520"}',
 'method':'level'
+}
+
+data_virality = {
+'action_id':'0',
+'flashvars':'{"auth_key":"7407366522de227fab8b092baba5e476","hash":"","user_id":"124520","pf_version":"177","referrer":"unknown","pf_language":"ru","viewer_id":"124520"}',
+'sig':'76abdfc39b880bfaa9fe815652af1458',
+'sid':'442',
+'method':'virality',
+'format':'json',
+'uid':'44211',
+'action':'status',
+'time':'1395772445'
 }
 
 
@@ -70,7 +82,7 @@ def getSig(string, key):
     return hashlib.md5(string+key).hexdigest()
     
 def getTime():
-    return str(int(time.mktime(time.gmtime())))
+    return str(int(time.mktime(time.localtime())))
    
    
 def sortParams(data):
@@ -103,10 +115,18 @@ def endLevel(level, point):
     data['sig'] = sig
     sendRequest('', data)
    
+def virality():
+    data = data_virality
+    data['time'] = getTime()
+    data['sid'] = sid
+    sd = sortParams(data)
+    sig = getSig(sd, auth_key)
+    data['sig'] = sig
+    sendRequest('', data)
    
 level = 1
 point = 7891
-sid = 439
+sid = 444
 
 if len(sys.argv) > 1:
     level = sys.argv[1]
@@ -119,3 +139,4 @@ if len(sys.argv) > 3:
     
 startLevel(level)
 endLevel(level,point)
+virality()

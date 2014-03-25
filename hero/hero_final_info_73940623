@@ -288,6 +288,7 @@
 [23.03 13:01:36]  Rang:14 cash: 19 epower: 595780 money: 218726(13992) wood: 5879(1104) stone: 9567(428) iron: 1946(64) experience: 8303(596)
 [23.03 13:01:41]  Rang:13 cash: 19 epower: 595780 money: 240342(21616) wood: 6779(900) stone: 10367(800) iron: 2074(128) experience: 8675(372)
 [23.03 13:01:59]  Rang:12 cash: 19 epower: 595780 money: 254194(13852) wood: 8475(1696) stone: 11239(872) iron: 2218(144)
+<<<<<<< 1edf45bab573ad2f3a23cd2a57d4b737a70c6fa7
 [24.03 12:16:08]  Rang:31 cash: 19 epower: 596968 money: 39096(38836) wood: 1809(1744) stone: 2300(944) iron: 1428(200) experience: 16475(700)
 [24.03 12:16:10]  Rang:29 cash: 19 epower: 596968 money: 76176(37080) wood: 3017(1208) stone: 2776(476) iron: 1516(88) experience: 17091(616)
 [24.03 12:16:13]  Rang:27 cash: 19 epower: 596968 money: 97412(21236) wood: 4517(1500) stone: 3304(528) iron: 1680(164)
@@ -298,3 +299,10 @@
 [24.03 18:48:09]  Rang:29 cash: 19 epower: 596968 money: 185260(13180) wood: 9881(780) stone: 6084(428) iron: 2156(52) experience: 19659(256)
 [24.03 18:48:09]  Rang:27 cash: 19 epower: 596968 money: 197932(12672) wood: 10797(916) stone: 6390(306) iron: 2248(92) experience: 19807(148)
 [24.03 18:48:13]  Rang:25 cash: 19 epower: 596968 money: 208850(10918) wood: 11461(664) stone: 6730(340) iron: 2328(80)
+=======
+[25.03 02:49:04]  Rang:23 cash: 19 epower: 596968 money: 140698(17208) wood: 8145(604) stone: 6418(232) iron: 2384(62) experience: 22679(276)
+[25.03 02:49:08]  Rang:21 cash: 19 epower: 596968 money: 148918(8220) wood: 8749(604) stone: 6574(156) iron: 2462(78) experience: 22833(154)
+[25.03 02:49:12]  Rang:20 cash: 19 epower: 596968 money: 168508(19590) wood: 9459(710) stone: 7040(466) iron: 2500(78) experience: 23095(262)
+[25.03 02:49:17]  Rang:18 cash: 19 epower: 596968 money: 187294(18786) wood: 9923(464) stone: 7384(344) iron: 2500 experience: 23425(330)
+[25.03 02:49:21]  Rang:17 cash: 19 epower: 596968 money: 194730(7436) wood: 10781(858) stone: 7620(236) iron: 2500 experience: 23709(284)
+>>>>>>> 2577eda401aeba4051744614e68567a8dca694b1

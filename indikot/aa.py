@@ -1,7 +1,11 @@
+# -*- coding: utf-8 -*-
+
 import hashlib
 import requests
 import time
 import sys
+import random
+from level_data import level_data
 
 data_init = {
 'format':'json',
@@ -123,10 +127,20 @@ def virality():
     sig = getSig(sd, auth_key)
     data['sig'] = sig
     sendRequest('', data)
+    
+    
+def getLevelData(level):
+    lvls = sorted(level_data['level']['item'], key=lambda x : x['title'], reverse=False)
+    for l in lvls:
+        if 'Уровень '+str(level) in l['title']:
+            #print l['title'], l['id']
+            return l
+    return False
    
 level = 1
 point = 7891
 sid = 444
+need_info = False
 
 if len(sys.argv) > 1:
     level = sys.argv[1]
@@ -135,8 +149,25 @@ if len(sys.argv) > 2:
     point = sys.argv[2]
 
 if len(sys.argv) > 3:
-    sid = sys.argv[3]
+    need_info = True
+    level_end = sys.argv[2]
+
+if len(sys.argv) > 4:
+    sid = sys.argv[4]
     
-startLevel(level)
-endLevel(level,point)
-virality()
+    
+if need_info:
+    rlvl = int(level)
+    while rlvl<=int(level_end):
+        lvl = getLevelData(rlvl)
+        if not lvl: print 'no lvl found!'; time.sleep(99999)
+        level = lvl['id']
+        point = int(lvl['grading_points1'])*2 + int(random.random()*2000)*10+5000
+        
+        print rlvl, level, point
+        
+        startLevel(level)
+        endLevel(level,point)
+        virality()
+        
+        rlvl += 1

@@ -26,7 +26,7 @@ actionCommand = 'Knights.doAction'
 
 init_log("help_priority")
     
-ctr = 0
+ctr = 1631
 def getCTR():
     global ctr
     ctr += 1
@@ -58,13 +58,13 @@ if True:
     
     data, gid, sid = init(pid, auth)
     
-    start_value = 98
+    start_value = 65
     rest_value = 0
     
     lvl_need = (start_value + 1) * 5
 
-    total = 30000
-    s_i = 4115
+    total = 2600
+    s_i = 1601
     i = 0
     while s_i<=total:
         sendHelp(str(s_i), '1,2,3,4,'+str(s_i))

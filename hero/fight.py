@@ -15,8 +15,8 @@ method = ''
 #49e1540eb72f701a7c0924054ef10fc1 179499220
 
 
-#65857702
-#161702967
+#13721794
+#50958901
 
 phaza = 0#0 - create, #1 - start #2 - update#3 - finnish
 person = 0
@@ -60,7 +60,7 @@ not_attack = [
                  {'id':'170312666','name':'ORDEN'},
                  {'id':'68487257','name':'ORDEN'},
                  {'id':'692795','name':'ORDEN'},
-                 {'id':'13721794','name':'ORDEN'},
+                 {'id':'50958901','name':'ORDEN'},
                  {'id':'116189705','name':'ORDEN'},
                  {'id':'35006200','name':'ORDEN'},
                  {'id':'179499220','name':'ORDEN'},

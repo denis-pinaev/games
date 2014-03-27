@@ -799,6 +799,7 @@
 [26.03 18:18:16]  Rang:2 cash: 55 epower: 780167 money: 6975679(6482) wood: 2752(606) stone: 4928(350) iron: 1930(50) experience: 102(316)
 [26.03 18:18:16]  Rang:2 cash: 55 epower: 780167 money: 6986681(11002) wood: 3024(272) stone: 5156(228) iron: 1998(68) experience: 102(316)
 [26.03 18:18:19]  Rang:2 cash: 55 epower: 780167 money: 6998605(11924) wood: 3524(500) stone: 5478(322) iron: 2046(48) experience: 102(144)
+<<<<<<< HEAD
 [27.03 00:12:09]  Rang:16 cash: 55 epower: 781895 money: 6859133(12228) wood: 1122(528) stone: 2020(362) iron: 1592(36) experience: 102(218)
 [27.03 00:12:13]  Rang:15 cash: 55 epower: 781895 money: 6871839(12706) wood: 1602(480) stone: 2340(320) iron: 1674(82) experience: 102(230)
 [27.03 00:12:18]  Rang:14 cash: 55 epower: 781895 money: 6889065(17226) wood: 1990(388) stone: 2596(256) iron: 1714(40) experience: 102(152)
@@ -822,3 +823,10 @@
 [28.03 02:14:51]  Rang:12 cash: 55 epower: 787079 money: 6238104(14146) wood: 5687(580) stone: 1951(434) iron: 1061(90) experience: 102(146)
 [28.03 02:14:56]  Rang:11 cash: 55 epower: 787079 money: 6246674(8570) wood: 6227(540) stone: 2243(292) iron: 1117(56) experience: 102(282)
 [28.03 02:53:51]  Rang:11 cash: 55 epower: 787079 money: 6261104(14430) wood: 6617(390) stone: 2509(266) iron: 1169(52) experience: 102(198)
+=======
+[27.03 12:22:40]  Rang:13 cash: 55 epower: 781895 money: 6432208(36428) wood: 4211(932) stone: 1709(372) iron: 1105(196) experience: 102(652)
+[27.03 12:22:42]  Rang:13 cash: 55 epower: 781895 money: 6455752(23544) wood: 5019(808) stone: 2517(808) iron: 1297(192) experience: 102(460)
+[27.03 12:22:43]  Rang:12 cash: 55 epower: 781895 money: 6488444(32692) wood: 6491(1472) stone: 3169(652) iron: 1485(188) experience: 102(488)
+[27.03 12:22:44]  Rang:11 cash: 55 epower: 781895 money: 6522896(34452) wood: 7799(1308) stone: 3825(656) iron: 1633(148) experience: 102(700)
+[27.03 12:42:30]  Rang:11 cash: 55 epower: 783623 money: 6503492(15476) wood: 6583(1252) stone: 3321(636) iron: 1823(128) experience: 102(324)
+>>>>>>> 8b8fba7... f

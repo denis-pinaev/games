@@ -159,7 +159,10 @@ if start_p>2:#misha;
 f = flist[person]
 j = 0
 
-
+#comment below!
+#sendSTR = '828'
+#flist = ['144536559']
+#persons = persons[:18]
 
 #if True:
 for f in flist:

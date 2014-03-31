@@ -162,7 +162,7 @@ if need_info:
         lvl = getLevelData(rlvl)
         if not lvl: print 'no lvl found!'; time.sleep(99999)
         level = lvl['id']
-        point = int(lvl['grading_points1'])*2 + int(random.random()*2000)*10+5000
+        point = int(lvl['grading_points3']) + int(random.random()*2000)*10+15000
         
         print rlvl, level, point
         
@@ -171,3 +171,9 @@ if need_info:
         virality()
         
         rlvl += 1
+        
+else:
+    startLevel(level)
+    endLevel(level,point)
+    virality()
+

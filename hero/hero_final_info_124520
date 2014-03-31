@@ -878,6 +878,7 @@
 [30.03 20:29:16]  Rang:1 cash: 60 epower: 794639 money: 5786188(12972) wood: 20667(770) stone: 2397(276) iron: 307(56) experience: 102(546)
 [30.03 20:29:20]  Rang:1 cash: 60 epower: 794639 money: 5794940(8752) wood: 21077(410) stone: 2785(388) iron: 343(36) experience: 102(372)
 [30.03 22:05:27]  Rang:1 cash: 60 epower: 794639 money: 5806520(11580) wood: 21595(518) stone: 2943(158) iron: 393(50) experience: 102(408)
+<<<<<<< 46c7a7bbb17171fbfc4d63aee52f46e7effe617f
 =======
 [28.03 11:58:59]  Rang:10 cash: 60 epower: 787079 money: 6224204(18580) wood: 6173(1356) stone: 1541(472) iron: 977(96) experience: 102(348)
 [28.03 11:59:00]  Rang:9 cash: 60 epower: 787079 money: 6250916(26712) wood: 7929(1756) stone: 1949(408) iron: 1153(176) experience: 102(696)
@@ -900,3 +901,11 @@
 [31.03 13:54:48]  Rang:1 cash: 60 epower: 795935 money: 5910336(16080) wood: 28195(1600) stone: 6434(544) iron: 1007(124) experience: 102(828)
 [31.03 13:54:49]  Rang:1 cash: 60 epower: 795935 money: 5944708(34372) wood: 29299(1104) stone: 7242(808) iron: 1115(108) experience: 102(648)
 [31.03 13:54:49]  Rang:1 cash: 60 epower: 795935 money: 5957880(13172) wood: 30607(1308) stone: 7830(588) iron: 1251(136) experience: 102(584)
+=======
+[31.03 07:47:09]  Rang:2 cash: 60 epower: 795935 money: 5758298(12418) wood: 19849(390) stone: 2005(454) iron: 269(102) experience: 102(462)
+[31.03 07:47:14]  Rang:2 cash: 60 epower: 795935 money: 5769792(11494) wood: 20261(412) stone: 2399(394) iron: 351(82) experience: 102(372)
+[31.03 07:47:20]  Rang:1 cash: 60 epower: 795935 money: 5777064(7272) wood: 21233(972) stone: 2679(280) iron: 397(46) experience: 102(462)
+[31.03 07:47:24]  Rang:1 cash: 60 epower: 795935 money: 5788922(11858) wood: 22063(830) stone: 2929(250) iron: 431(34) experience: 102(474)
+[31.03 07:47:29]  Rang:1 cash: 60 epower: 795935 money: 5798984(10062) wood: 22613(550) stone: 3155(226) iron: 473(42) experience: 102(282)
+[31.03 07:47:33]  Rang:1 cash: 60 epower: 795935 money: 5813508(14524) wood: 23207(594) stone: 3447(292) iron: 511(38) experience: 102(378)
+>>>>>>> 437358c5c48945fb9df36ba368a1dd6cd043f1d5

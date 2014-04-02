@@ -282,7 +282,7 @@ def main_ccollect():
         refreshTimers()
         builds = check_session(getResBuilds())
         if builds: collectBuildings(builds)
-        main_boss()
+        #main_boss()
         time.sleep(10*60)
         
 def main_boss():

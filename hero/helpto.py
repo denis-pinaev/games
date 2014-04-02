@@ -157,7 +157,6 @@ if start_p>2:#misha;
     
 
 f = flist[person]
-j = 0
 
 #comment below!
 #sendSTR = '828'
@@ -165,19 +164,20 @@ j = 0
 #persons = persons[:18]
 
 #if True:
-for f in flist:
-    j = j + 1
-    i = 0
-    total = len(persons)
-    while i<total:
-        pers = persons[i]
-        pid = pers['pid']
-        auth = pers['auth']
-        gid =  pers['gid']
-        sid =  pers['sid']
-        data, gid, sid = init(pid, auth)
+i = 0
+total = len(persons)
+while i<total:
+    pers = persons[i]
+    pid = pers['pid']
+    auth = pers['auth']
+    gid =  pers['gid']
+    sid =  pers['sid']
+    data, gid, sid = init(pid, auth)
 
-        i += 1
+    i += 1
+    j = 0
+    for f in flist:
+        j = j + 1
         print "%d/%d (%d%%) | %d/%d (%d%%)" % (i, total, int(100*i/total), j, len(flist), int(100*j/len(flist)))
         
         if len(sendSTR)>1:

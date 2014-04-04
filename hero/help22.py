@@ -26,7 +26,7 @@ actionCommand = 'Knights.doAction'
 
 init_log("help_priority")
     
-ctr = 3001
+ctr = 1
 def getCTR():
     global ctr
     ctr += 1
@@ -67,8 +67,8 @@ if True:
     
     lvl_need = (start_value + 1) * 5
 
-    total = 6000
-    s_i = 3001
+    total = 3000
+    s_i = 1
     i = 0
     while s_i<=total:
         sendHelp(str(s_i), '%s,%s,%s,%s,%s' % (getRandomB(),getRandomB(),getRandomB(),getRandomB(),getRandomB()))

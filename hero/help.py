@@ -175,18 +175,47 @@ def getWorld(pers):
 count = 0
 maxco = 9999
         
-#       hutor zhelez dere kamen
-#res = [66750,65562,66751,65554]
-#hbid = "66765"#runa
-#hbid = "103"#alter
-#hbid = "65570"#kazar
-#kuz1 65653
-#kuz2 65571
-#kuz3 65588
-#kuz4 65635
-#65651
-
-hbid = "66765"
+'''
+ars:
+   67165 x=13,y=0
+hram:
+   83 x=6,y=10
+main:
+   828 x=8,y=-10
+mag:
+   67164 x=16,y=0
+kuzn:
+   65653 x=12,y=-15
+   65571 x=6,y=-15
+   65588 x=9,y=-15
+   65635 x=3,y=-15
+plav:
+   65651 x=13,y=-12
+   65652 x=13,y=-7
+   65596 x=13,y=-10
+altar:
+   103 x=2,y=6
+gnom:
+   66766 x=10,y=-6
+runa:
+   66765 x=19,y=-3
+rist:
+wood:
+   66751 x=1,y=9
+stone:
+   65554 x=3,y=9
+iron:
+   65562 x=1,y=11
+sklad:
+   66541 x=36,y=18
+   65593 x=6,y=-6
+   65569 x=3,y=-9
+   65616 x=3,y=-12
+gold:
+   66750 x=3,y=-6
+palatka:
+'''
+hbid = "67165"
 if len(need_b)>1 : hbid = need_b
 
 #persons = persons[0:1]+persons[-2:-1]

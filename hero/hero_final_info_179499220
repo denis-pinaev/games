@@ -296,6 +296,7 @@
 [03.04 23:32:20]  Rang:3 cash: 16 epower: 440595 money: 335229(17556) wood: 20744(708) stone: 9100(450) iron: 2260 experience: 89(122)
 [04.04 11:15:36]  Rang:2 cash: 16 epower: 440595 money: 376497(16072) wood: 18592(1100) stone: 10575(556) iron: 2260 experience: 89(608)
 [04.04 18:30:13]  Rang:2 cash: 16 epower: 440595 money: 411647(12710) wood: 19720(282) stone: 11000(360) iron: 2260 experience: 89(166)
+<<<<<<< HEAD
 [04.04 22:33:10]  Rang:4 cash: 16 epower: 444699 money: 375325(8078) wood: 19650(710) stone: 10583(362) iron: 2260 experience: 89(170)
 [04.04 22:33:18]  Rang:3 cash: 16 epower: 444699 money: 389207(13882) wood: 20048(398) stone: 10801(218) iron: 2260 experience: 89(200)
 [04.04 22:33:24]  Rang:3 cash: 16 epower: 444699 money: 405111(15904) wood: 20404(356) stone: 11000(346) iron: 2260 experience: 89(222)
@@ -313,3 +314,11 @@
 [06.04 00:51:06]  Rang:11 cash: 1 epower: 445023 money: 260928(6710) wood: 11978(446) stone: 11000 iron: 2183(78) experience: 89(122)
 [07.04 02:00:53]  Rang:11 cash: 1 epower: 445023 money: 244494(30344) wood: 21579(1224) stone: 9041(872) iron: 1913(104) experience: 89(264)
 [07.04 02:00:57]  Rang:10 cash: 1 epower: 445023 money: 261578(17084) wood: 22200(820) stone: 9457(416) iron: 1979(66) experience: 89(110)
+=======
+[07.04 11:10:10]  Rang:10 cash: 6 epower: 445347 money: 263310(15552) wood: 22200 stone: 9643(532) iron: 2063(88) experience: 89(608)
+[07.04 11:10:11]  Rang:9 cash: 6 epower: 445347 money: 296050(32740) wood: 22200 stone: 10023(380) iron: 2219(156) experience: 89(432)
+[07.04 11:10:12]  Rang:8 cash: 6 epower: 445347 money: 338778(42728) wood: 22200 stone: 10995(972) iron: 2260(88) experience: 89(392)
+[07.04 11:10:12]  Rang:8 cash: 6 epower: 445347 money: 355734(16956) wood: 22200 stone: 11000(640) iron: 2260 experience: 89(240)
+[07.04 11:10:13]  Rang:7 cash: 6 epower: 445347 money: 392882(37148) wood: 22200 stone: 11000 iron: 2260 experience: 89(324)
+[07.04 11:10:14]  Rang:7 cash: 6 epower: 445347 money: 413974(21092) wood: 22200 stone: 11000 iron: 2260 experience: 89(368)
+>>>>>>> fde8720... f

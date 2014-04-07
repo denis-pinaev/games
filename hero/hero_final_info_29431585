@@ -622,6 +622,7 @@
 [04.04 18:29:23]  Rang:19 cash: 36 epower: 502325 money: 1364542(10512) wood: 21548(572) stone: 9079(242) iron: 2481(76) experience: 135(206)
 [04.04 18:29:24]  Rang:17 cash: 36 epower: 502325 money: 1373600(9058) wood: 22006(458) stone: 9363(284) iron: 2523(42) experience: 135(172)
 [04.04 18:29:25]  Rang:16 cash: 36 epower: 502325 money: 1380366(6766) wood: 22462(456) stone: 9673(310) iron: 2593(70) experience: 135(160)
+<<<<<<< HEAD
 [04.04 22:29:29]  Rang:15 cash: 36 epower: 502325 money: 1401074(20228) wood: 21984(554) stone: 9917(336) iron: 2681(42) experience: 135(342)
 [04.04 22:29:43]  Rang:14 cash: 36 epower: 502325 money: 1417688(16614) wood: 22726(742) stone: 10415(498) iron: 2721(40) experience: 135(186)
 [04.04 22:29:49]  Rang:13 cash: 36 epower: 502325 money: 1426608(8920) wood: 23436(710) stone: 10681(266) iron: 2740(50) experience: 135(186)
@@ -645,3 +646,11 @@
 [07.04 01:59:34]  Rang:12 cash: 36 epower: 504269 money: 2835070(12660) wood: 31800(616) stone: 15712(270) iron: 2155(68) experience: 135(214)
 [07.04 01:59:38]  Rang:11 cash: 36 epower: 504269 money: 2850374(15304) wood: 31800 stone: 15800(380) iron: 2263(108) experience: 135(172)
 [07.04 01:59:42]  Rang:11 cash: 36 epower: 504269 money: 2857526(7152) wood: 31800 stone: 15800 iron: 2299(36) experience: 135(280)
+=======
+[07.04 11:08:42]  Rang:10 cash: 36 epower: 504269 money: 2900410(42884) wood: 31800 stone: 15800 iron: 2443(144) experience: 135(316)
+[07.04 11:08:43]  Rang:9 cash: 36 epower: 504269 money: 2933170(32760) wood: 31800 stone: 15800 iron: 2607(164) experience: 135(740)
+[07.04 11:08:46]  Rang:9 cash: 36 epower: 504269 money: 2951830(18660) wood: 31800 stone: 15800 iron: 2735(128) experience: 135(496)
+[07.04 11:08:48]  Rang:8 cash: 36 epower: 504269 money: 2984714(32884) wood: 31800 stone: 15800 iron: 2740(68) experience: 135(672)
+[07.04 11:08:49]  Rang:7 cash: 36 epower: 504269 money: 3002878(18164) wood: 31800 stone: 15800 iron: 2740 experience: 135(376)
+[07.04 11:08:52]  Rang:7 cash: 36 epower: 504269 money: 3036598(33720) wood: 31800 stone: 15800 iron: 2740 experience: 135(628)
+>>>>>>> fde8720... f

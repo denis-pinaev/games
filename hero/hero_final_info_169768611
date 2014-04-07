@@ -648,6 +648,7 @@
 [04.04 18:30:27]  Rang:18 cash: 50 epower: 481474 money: 109577(11432) wood: 19513(894) stone: 9982(318) iron: 1941(52) experience: 1(138)
 [04.04 18:30:28]  Rang:17 cash: 50 epower: 481474 money: 122643(13066) wood: 19983(470) stone: 10216(234) iron: 2013(72) experience: 1(164)
 [04.04 18:30:32]  Rang:16 cash: 50 epower: 481474 money: 129543(6900) wood: 20691(708) stone: 10564(348) iron: 2049(36)
+<<<<<<< HEAD
 [04.04 22:33:44]  Rang:15 cash: 50 epower: 481474 money: 136181(6638) wood: 21429(738) stone: 10810(246) iron: 2127(78) experience: 1(216)
 [04.04 22:33:50]  Rang:14 cash: 50 epower: 481474 money: 145035(8854) wood: 22191(762) stone: 10980(170) iron: 2211(84) experience: 1(308)
 [04.04 22:33:57]  Rang:13 cash: 50 epower: 481474 money: 160737(15702) wood: 22200(662) stone: 11000(368) iron: 2260(98) experience: 1(142)
@@ -677,3 +678,11 @@
 [07.04 02:01:41]  Rang:25 cash: 50 epower: 482662 money: 141364(26108) wood: 20655(808) stone: 10022(904) iron: 1910(172) experience: 1(272)
 [07.04 02:01:45]  Rang:23 cash: 50 epower: 482662 money: 148166(6802) wood: 21203(548) stone: 10292(270) iron: 1994(84) experience: 1(248)
 [07.04 02:02:03]  Rang:22 cash: 50 epower: 482662 money: 163152(14986) wood: 21631(428) stone: 10736(444) iron: 2080(86)
+=======
+[07.04 11:10:24]  Rang:20 cash: 50 epower: 482662 money: 185696(22544) wood: 22200(1768) stone: 11000(864) iron: 2260(128) experience: 1(384)
+[07.04 11:10:24]  Rang:19 cash: 50 epower: 482662 money: 215476(29780) wood: 22200 stone: 11000 iron: 2260 experience: 1(292)
+[07.04 11:10:25]  Rang:17 cash: 50 epower: 482662 money: 245904(30428) wood: 22200 stone: 11000 iron: 2260 experience: 1(376)
+[07.04 11:10:27]  Rang:16 cash: 50 epower: 482662 money: 261004(15100) wood: 22200 stone: 11000 iron: 2260 experience: 1(256)
+[07.04 11:10:28]  Rang:15 cash: 50 epower: 482662 money: 291104(30100) wood: 22200 stone: 11000 iron: 2260 experience: 1(624)
+[07.04 11:10:29]  Rang:14 cash: 50 epower: 482662 money: 321168(30064) wood: 22200 stone: 11000 iron: 2260 experience: 1(456)
+>>>>>>> fde8720... f

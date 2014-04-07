@@ -396,6 +396,7 @@
 [04.04 18:31:07]  Rang:12 cash: 11 epower: 630556 money: 131197(12004) wood: 22072(652) stone: 7131(424) iron: 693(82) experience: 330(400)
 [04.04 18:31:08]  Rang:11 cash: 11 epower: 630556 money: 147339(16142) wood: 22442(370) stone: 7507(376) iron: 781(88) experience: 330(166)
 [04.04 18:31:08]  Rang:10 cash: 11 epower: 630556 money: 168779(21440) wood: 23398(956) stone: 8007(500) iron: 873(92) experience: 330(470)
+<<<<<<< HEAD
 [04.04 22:34:53]  Rang:7 cash: 10 epower: 630556 money: 168075(7020) wood: 20838(580) stone: 9679(338) iron: 1134(62) experience: 330(220)
 [04.04 22:34:57]  Rang:6 cash: 10 epower: 630556 money: 177647(9572) wood: 21570(732) stone: 10053(374) iron: 1224(90) experience: 330(172)
 [04.04 22:35:02]  Rang:6 cash: 10 epower: 630556 money: 193689(16042) wood: 21986(416) stone: 10299(246) iron: 1302(78) experience: 330(254)
@@ -413,3 +414,10 @@
 [05.04 19:47:16]  Rang:3 cash: 10 epower: 635524 money: 270997(20496) wood: 27000 stone: 12532(404) iron: 2028(94) experience: 330(330)
 [07.04 02:02:18]  Rang:2 cash: 10 epower: 638008 money: 79595(33136) wood: 15404(1216) stone: 2802(644) iron: 245(176) experience: 330(736)
 [07.04 02:02:22]  Rang:2 cash: 10 epower: 638008 money: 105499(25904) wood: 17096(1692) stone: 3226(424) iron: 405(160) experience: 330(736)
+=======
+[07.04 11:11:13]  Rang:2 cash: 10 epower: 638008 money: 88319(21140) wood: 15692(1096) stone: 1793(832) iron: 514(168) experience: 330(772)
+[07.04 11:11:14]  Rang:2 cash: 10 epower: 638008 money: 118515(30196) wood: 17008(1316) stone: 2505(712) iron: 738(224) experience: 330(1100)
+[07.04 11:11:18]  Rang:1 cash: 10 epower: 638008 money: 133687(15172) wood: 18060(1052) stone: 2817(312) iron: 810(72) experience: 330(496)
+[07.04 11:11:24]  Rang:1 cash: 10 epower: 638008 money: 159859(26172) wood: 19252(1192) stone: 3637(820) iron: 962(152) experience: 330(584)
+[07.04 11:11:25]  Rang:1 cash: 10 epower: 638008 money: 195299(35440) wood: 21504(2252) stone: 4553(916) iron: 1058(96) experience: 330(904)
+>>>>>>> fde8720... f

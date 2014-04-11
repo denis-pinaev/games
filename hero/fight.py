@@ -68,7 +68,7 @@ not_attack = [
                  {'id':'79670506','name':'ORDEN'},
                  {'id':'203263126','name':'ORDEN'},#was! Ruslan
                  {'id':'196086079','name':'ORDEN'},
-                 {'id':'151253340','name':'ORDEN'},
+                 {'id':'11305565','name':'ORDEN'},
                  {'id':'202787673','name':'ORDEN'},
                  {'id':'169768611','name':'ORDEN'},
                  {'id':'98890676','name':'ORDEN'},

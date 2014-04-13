@@ -739,6 +739,7 @@
 [11.04 12:12:20]  Rang:4 cash: 55 epower: 490114 money: 107397(15588) wood: 22200(1496) stone: 9326(412) iron: 2192(88) experience: 1(352)
 [11.04 12:12:23]  Rang:3 cash: 55 epower: 490114 money: 128297(20900) wood: 22200 stone: 9766(440) iron: 2260(96) experience: 1(568)
 [11.04 12:12:26]  Rang:3 cash: 55 epower: 490114 money: 163781(35484) wood: 22200 stone: 10694(928) iron: 2260 experience: 1(328)
+<<<<<<< fdd9aeb8323b4820d4d25763d3e066eb8b8a4d45
 [12.04 15:54:39]  Rang:14 cash: 55 epower: 494110 money: 28833(28368) wood: 19476(1640) stone: 10402(696) iron: 2251(176) experience: 1(504)
 [12.04 15:54:43]  Rang:13 cash: 55 epower: 494110 money: 69065(40232) wood: 21384(1908) stone: 11000(604) iron: 2260(80) experience: 1(464)
 [12.04 15:54:45]  Rang:12 cash: 55 epower: 494110 money: 87545(18480) wood: 22200(1856) stone: 11000 iron: 2260 experience: 1(416)
@@ -757,3 +758,11 @@
 [13.04 10:58:03]  Rang:12 cash: 55 epower: 494110 money: 319334(23804) wood: 22200 stone: 11000 iron: 2260 experience: 1(576)
 [13.04 10:58:05]  Rang:11 cash: 55 epower: 494110 money: 341246(21912) wood: 22200 stone: 11000 iron: 2260 experience: 1(636)
 [13.04 10:58:09]  Rang:10 cash: 55 epower: 494110 money: 379270(38024) wood: 22200 stone: 11000 iron: 2260 experience: 1(652)
+=======
+[11.04 23:19:48]  Rang:3 cash: 55 epower: 490114 money: 95449(12428) wood: 20508(468) stone: 9964(194) iron: 2116(36) experience: 1(140)
+[11.04 23:19:56]  Rang:3 cash: 55 epower: 490114 money: 109839(14390) wood: 21102(594) stone: 10258(294) iron: 2196(80) experience: 1(214)
+[11.04 23:20:02]  Rang:2 cash: 55 epower: 490114 money: 123471(13632) wood: 21916(814) stone: 10410(152) iron: 2256(60) experience: 1(160)
+[11.04 23:20:08]  Rang:2 cash: 55 epower: 490114 money: 132533(9062) wood: 22200(378) stone: 10836(426) iron: 2260(46) experience: 1(180)
+[11.04 23:20:15]  Rang:2 cash: 55 epower: 490114 money: 141205(8672) wood: 22200 stone: 11000(206) iron: 2260 experience: 1(114)
+[11.04 23:20:22]  Rang:2 cash: 55 epower: 490114 money: 150461(9256) wood: 22200 stone: 11000 iron: 2260 experience: 1(312)
+>>>>>>> 6fed03bb9a5be3c39828512e4a2b5fdd13992252

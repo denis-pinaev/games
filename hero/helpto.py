@@ -156,16 +156,21 @@ person = 0
 #flist = ['217858589']#vlad
 sendSTR = ''
 
+lim = 26
+
 #persons = persons[:36]
 
+flist_dop = ["56518190", "218661879", "217858589","106358745",     '11305565','50958901','215526318','159662551','73940623','114233049','161702967','68487257','692795','31568442','13721794','116189705','35006200','179499220','79670506','203263126','196086079','151253340','202787673','169768611','9499004','29431585']
+
 if start_p>1:
-    flist = ["56518190", "218661879", "217858589","106358745",     '11305565','50958901','215526318','159662551','73940623','114233049','161702967','68487257','692795','31568442','13721794','116189705','35006200','179499220','79670506','203263126','196086079','151253340','202787673','169768611','9499004','29431585']
+    flist = flist_dop
     #flist = ['161702967']#comment!
     if end_p != 999: flist = [str(end_p)]
-    persons = persons[:26]
+    persons = persons[:lim]
 
 if start_p>2:#misha;
     flist = ['49809104'];
+    flist_dop = []
     persons = persons_misha
     
 
@@ -179,6 +184,7 @@ f = flist[person]
 #if True:
 i = 0
 total = len(persons)
+flist = flist + flist_dop
 while i<total:
     pers = persons[i]
     pid = pers['pid']
@@ -190,6 +196,7 @@ while i<total:
     i += 1
     j = 0
     for f in flist:
+        if f in flist_dop and i>lim: continue
         j = j + 1
         print "%d/%d (%d%%) | %d/%d (%d%%)" % (i, total, int(100*i/total), j, len(flist), int(100*j/len(flist)))
         

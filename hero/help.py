@@ -75,6 +75,7 @@ persons = [
               {"pid":"208142478","auth":"717417917b86a9c7803e57b08d2f2c93","gid":0,"sid":""},#natali_bot
               {"pid":"187983220","auth":"780ab57c2e9d076af714a03c5af687d0","gid":0,"sid":""},#some_bot
               {"pid":"187982281","auth":"1a352b0edca4bd66d8353bcacf43faf0","gid":0,"sid":""},#some_bot
+              {"pid":"74163736","auth":"8943b2c7e241b1a97342d3c87346de23","gid":0,"sid":""},#NAZAR
               {"pid":"6432236","auth":"f51966179add0bc14b234ca5d7de9211","gid":0,"sid":""},#KUUSAMO
               {"pid":"68487257","auth":"4f66fe9422f3b5f17ab1e90ce34a42d3","gid":0,"sid":""},#Nagaina
               {"pid":"144536559","auth":"731331d4e19d1f5483acd67abf424b58","gid":0,"sid":""},#polya

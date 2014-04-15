@@ -17,6 +17,7 @@ person = 0
 error = 0
 start_p = 1
 end_p = 999
+skipCollect = False
 if len(sys.argv) > 1:
     start_p = int(sys.argv[1])
 if len(sys.argv) > 2:
@@ -27,6 +28,8 @@ if len(sys.argv) > 3:
 need_b = ''
 if len(sys.argv) > 4:
     need_b = sys.argv[4]
+if len(sys.argv) > 5:
+    skipCollect = True
 
 persons = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc
@@ -259,7 +262,7 @@ for i in range(t_count):
         
         
     pers = persons[0]
-    if True:
+    if not skipCollect:
         pid = pers['pid']
         auth = pers['auth']
         gid =  pers['gid']

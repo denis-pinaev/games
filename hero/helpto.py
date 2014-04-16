@@ -28,6 +28,7 @@ if len(sys.argv) > 2:
 
 persons = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc
+              {"pid":"10700095","auth":"ae8c0a04a4fe4e9a909e17aa45cd6fd3","gid":0,"sid":""},#mariKr_bot
               {"pid":"133569922","auth":"994c8cc961e087a786c64694c886fcaa","gid":0,"sid":""},#lenaSv_bot
               {"pid":"107402663","auth":"81ac464a55f116dcd1c0441c4e11cb49","gid":0,"sid":""},#alex black
               {"pid":"155908147","auth":"38e6c4c6f1a3ca43a78a6c499879ba7e","gid":0,"sid":""},#margo
@@ -156,7 +157,7 @@ person = 0
 #flist = ['217858589']#vlad
 sendSTR = ''
 
-lim = 26
+lim = 27
 
 #persons = persons[:36]
 

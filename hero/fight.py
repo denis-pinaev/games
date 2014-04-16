@@ -164,6 +164,7 @@ def init():
         log("sid: %s, gid: %s" % (str(sid), str(gid)), True)
     else:
         log(resp["data"], True)
+        time.sleep(999999)
         
     return resp["data"]
         
@@ -228,6 +229,7 @@ def battleInit():
         log("battleInit done", True)
     else:
         log(resp["data"], True)
+        time.sleep(999999)
     return o
     
 def battleUpdate(killstring):
@@ -244,6 +246,7 @@ def battleUpdate(killstring):
         log("battleUpdate done", True)
     else:
         log(resp["data"], True)
+        time.sleep(999999)
     return o
 
 def battleCreate():
@@ -261,6 +264,7 @@ def battleCreate():
         log("battleCreate done", True)
     else:
         log(resp["data"], True)
+        time.sleep(999999)
     return o
 
 def loadPerson(initdata):
@@ -299,6 +303,7 @@ def battleStart():
         log("battleStart done", True)
     else:
         log(resp["data"], True)
+        time.sleep(999999)
     return o
 
 def battleFinish():
@@ -319,6 +324,7 @@ def battleFinish():
         log("battleFinish done", True)
     else:
         log(resp["data"], True)
+        time.sleep(999999)
     return o
     
     
@@ -416,7 +422,7 @@ gogo = energy_value>0 or not create or phaza>0
 
 cycle = 1
 if len(sys.argv) > 3:
-    cycle = int(sys.argv[3])
+    cycle = min(int(sys.argv[3]),energy_value)
     
 if not gogo: cycle = 0
 

@@ -346,9 +346,18 @@ def printResults(o):
 
 def cycle_proc():
     global select_stage
+    isBattle = False
+    try:
+        if gogo: mission = init_info["missions"]["default"]["id"]; isBattle = True; init_info["missions"] = None; print "mission = " + str(mission)
+    except:
+        print "no mission found"
+        if not create:
+            return False
+            
     if create:
         try:
-            if gogo and phaza==0: o = battleCreate(); print "battleCreate ok"
+            if gogo and phaza==0 and not isBattle: o = battleCreate(); print "battleCreate ok"
+            isBattle = False
             #if phaza==0 and o["success"] == False: print "battleCreate - not energy!"; gogo = False
         except:
             print "Unexpected error:\n", sys.exc_info()
@@ -372,12 +381,6 @@ def cycle_proc():
             print "error in battleStart"
             return False
     
-    try:
-        if gogo: mission = init_info["missions"]["default"]["id"]; print "mission = " + str(mission)
-    except:
-        print "no mission found"
-        if not create:
-            return False
     try:
         if gogo: inito = battleInit(); print "battleInit done"
     except:

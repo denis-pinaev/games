@@ -123,7 +123,7 @@ def moveBuilding(bid, x, y, d):
 
 
 sendSTR = []
-hide_b = 'ars'
+hide_b = 'kazarma'
 
 person = 0
 gid = 0

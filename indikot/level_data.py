@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 level_data = {
-
   "level": {
     "item": [
       {
@@ -63,9 +62,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 7 000 очков, сделав не более 20 ходов.",
         "grading_points1": "7000",
         "grading_points2": "10000",
@@ -227,6 +223,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "15"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -527,9 +529,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 1000 очков, используя не более 12 ходов",
         "grading_points1": "1500",
         "grading_points2": "2500",
@@ -636,9 +635,6 @@ level_data = {
         },
         "type": "special",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "grading_points1": "190000",
         "grading_points2": "200000",
         "grading_points3": "210000",
@@ -685,9 +681,6 @@ level_data = {
         },
         "type": "special",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "grading_points1": "15000",
         "grading_points2": "20000",
         "grading_points3": "25000",
@@ -1147,9 +1140,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 5 000 очков, используя не более 15 ходов.",
         "grading_points1": "5000",
         "grading_points2": "8000",
@@ -1506,6 +1496,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "44"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -2376,9 +2372,6 @@ level_data = {
             ]
           }
         },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 600 очков за 10 ходов, меняя местами камни и собирая из них различные комбинации",
         "grading_points1": "600",
         "grading_points2": "1200",
@@ -2441,9 +2434,6 @@ level_data = {
               }
             ]
           }
-        },
-        "condition_list": {
-          "item": { "type": "0" }
         },
         "description": "Набери 50000 очков, потратив не более 80 секунд",
         "grading_points1": "25000",
@@ -2675,9 +2665,6 @@ level_data = {
               }
             ]
           }
-        },
-        "condition_list": {
-          "item": { "type": "0" }
         },
         "description": "Заработай 40 000 очков, потратив не больше 300 секунд.",
         "grading_points1": "40000",
@@ -2927,9 +2914,6 @@ level_data = {
         "needs": { "total_stars": "24" },
         "type": "bonus",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 45 000 очков потратив не больше 50 ходов",
         "grading_points1": "45000",
         "grading_points2": "55000",
@@ -3012,9 +2996,6 @@ level_data = {
               }
             ]
           }
-        },
-        "condition_list": {
-          "item": { "type": "0" }
         },
         "description": "Набери 50 000 очков за 150 секунд.",
         "grading_points1": "50000",
@@ -3225,9 +3206,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 20 000 очков  не более чем за 40 ходов.",
         "grading_points1": "20000",
         "grading_points2": "35000",
@@ -3799,9 +3777,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 50 000 очков за 340 секунд.",
         "grading_points1": "50000",
         "grading_points2": "55000",
@@ -4354,9 +4329,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 50 000 очков за 240 секунд.",
         "grading_points1": "50000",
         "grading_points2": "65000",
@@ -4507,9 +4479,6 @@ level_data = {
         "needs": { "total_stars": "81" },
         "type": "bonus",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 150 000 очков за 240 секунд",
         "grading_points1": "150000",
         "grading_points2": "170000",
@@ -7552,21 +7521,6 @@ level_data = {
           "type": "on_count_action",
           "value": "50"
         },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "11" },
-            { "id": "6" },
-            { "id": "1" },
-            { "id": "14" }
-          ]
-        },
         "boost_after_losing": {
           "item": { "id": "12" }
         },
@@ -8797,9 +8751,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 190 000 очков, потратив не больше 20 ходов.",
         "grading_points1": "190000",
         "grading_points2": "200000",
@@ -9503,9 +9454,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 220 000 очков, потратив не больше 15 ходов.",
         "grading_points1": "220000",
         "grading_points2": "250000",
@@ -9570,9 +9518,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 130 000 очков, потратив не больше 60 ходов.",
         "grading_points1": "120000",
         "grading_points2": "125000",
@@ -10661,9 +10606,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 170 000 очков потратив не больше 50 ходов.",
         "grading_points1": "170000",
         "grading_points2": "180000",
@@ -11591,9 +11533,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "150000",
         "grading_points2": "160000",
@@ -13272,9 +13211,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 200 000 очков, потратив не больше 40 ходов.",
         "grading_points1": "200000",
         "grading_points2": "220000",
@@ -15741,9 +15677,6 @@ level_data = {
         },
         "type": "usual",
         "condition_main": { "type": "0" },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 170 000 очков, потратив не больше 20 ходов.",
         "grading_points1": "170000",
         "grading_points2": "180000",
@@ -26991,9 +26924,6 @@ level_data = {
             ]
           }
         },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 600 очков за 10 ходов, меняя местами камни и собирая из них различные комбинации",
         "grading_points1": "130000",
         "grading_points2": "140000",
@@ -29397,6 +29327,23 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "60"
+                },
+                {
+                  "id": "2",
+                  "count": "70"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "110000",
         "grading_points2": "120000",
@@ -29485,6 +29432,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "69"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "210000",
         "grading_points2": "220000",
@@ -29570,6 +29523,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "57"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "130000",
         "grading_points2": "140000",
@@ -29608,90 +29567,6 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "722",
-        "winning_action": "line"
-      },
-      {
-        "id": "869",
-        "title": "Уровень 724",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "1"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "800",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" },
-            { "id": "6" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "724",
         "winning_action": "line"
       },
       {
@@ -29739,6 +29614,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "68"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "140000",
         "grading_points2": "150000",
@@ -29778,91 +29659,6 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "1",
-        "winning_action": "line"
-      },
-      {
-        "id": "969",
-        "title": "Апрель 2",
-        "needs": {
-          
-        },
-        "type": "advertising",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "180000",
-        "grading_points2": "190000",
-        "grading_points3": "200000",
-        "map_id": "897",
-        "global_map_id": "23",
-        "background_id": "26",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "2",
         "winning_action": "line"
       },
       {
@@ -29908,6 +29704,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "10"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -29994,6 +29796,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "67"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -30085,6 +29893,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "69"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "130000",
         "grading_points2": "140000",
@@ -30172,6 +29986,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "15"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -30262,6 +30082,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "80000",
         "grading_points2": "90000",
@@ -30304,187 +30130,6 @@ level_data = {
         "special_generator": {
           "item": { "id": "1" }
         }
-      },
-      {
-        "id": "975",
-        "title": "Апрель 8",
-        "needs": {
-          
-        },
-        "type": "advertising",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "3"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "210000",
-        "grading_points3": "220000",
-        "map_id": "903",
-        "global_map_id": "25",
-        "background_id": "26",
-        "color_list": {
-          "item": [
-            { "id": "4" },
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "3" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "25"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "8",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "976",
-        "title": "Апрель 9",
-        "needs": {
-          
-        },
-        "type": "advertising",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "3"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "3"
-              },
-              {
-                "id": "1",
-                "count": "3"
-              },
-              {
-                "id": "3",
-                "count": "1"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "120000",
-        "grading_points2": "130000",
-        "grading_points3": "140000",
-        "map_id": "904",
-        "global_map_id": "25",
-        "background_id": "26",
-        "color_list": {
-          "item": [
-            { "id": "5" },
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "3" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "9",
-        "winning_action": "line"
       },
       {
         "id": "977",
@@ -30541,6 +30186,12 @@ level_data = {
             ]
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "57"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "150000",
         "grading_points2": "160000",
@@ -30584,19 +30235,19 @@ level_data = {
         }
       },
       {
-        "id": "978",
-        "title": "Апрель 11",
+        "id": "969",
+        "title": "Апрель 2",
         "needs": {
           
         },
         "type": "advertising",
         "condition_main": {
-          "type": "3",
+          "type": "1",
           "condition_gem": {
             "item": [
               {
                 "id": "6",
-                "count": "1"
+                "count": "2"
               },
               {
                 "id": "10",
@@ -30604,7 +30255,7 @@ level_data = {
               },
               {
                 "id": "11",
-                "count": "3"
+                "count": "2"
               }
             ]
           },
@@ -30612,152 +30263,61 @@ level_data = {
             "item": [
               {
                 "id": "5",
-                "count": "105"
+                "count": "180"
               },
               {
                 "id": "6",
-                "count": "115"
-              },
-              {
-                "id": "1",
-                "count": "125"
+                "count": "8"
               }
             ]
           },
           "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "3"
-              },
-              {
-                "id": "1",
-                "count": "3"
-              },
-              {
-                "id": "3",
-                "count": "1"
-              }
-            ]
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "906",
-        "global_map_id": "25",
+        "grading_points1": "180000",
+        "grading_points2": "190000",
+        "grading_points3": "200000",
+        "map_id": "897",
+        "global_map_id": "23",
         "background_id": "26",
         "color_list": {
           "item": [
-            { "id": "1" },
-            { "id": "6" },
             { "id": "3" },
             { "id": "2" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "180"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "11",
-        "winning_action": "line"
-      },
-      {
-        "id": "980",
-        "title": "Апрель 13",
-        "needs": {
-          
-        },
-        "type": "advertising",
-        "condition_main": {
-          "type": "2",
-          "value": "58",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "3"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "105"
-              },
-              {
-                "id": "6",
-                "count": "115"
-              },
-              {
-                "id": "1",
-                "count": "125"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "3"
-              },
-              {
-                "id": "1",
-                "count": "3"
-              },
-              {
-                "id": "3",
-                "count": "1"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "120000",
-        "grading_points2": "130000",
-        "grading_points3": "140000",
-        "map_id": "908",
-        "global_map_id": "25",
-        "background_id": "26",
-        "color_list": {
-          "item": [
-            { "id": "3" },
+            { "id": "4" },
             { "id": "5" },
-            { "id": "4" }
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "35"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -30777,109 +30337,7 @@ level_data = {
         "boost_after_losing": {
           "item": { "id": "12" }
         },
-        "point_id": "13",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "982",
-        "title": "Апрель 15",
-        "needs": {
-          
-        },
-        "type": "advertising",
-        "condition_main": {
-          "type": "5",
-          "value": "25",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "1"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "105"
-              },
-              {
-                "id": "6",
-                "count": "115"
-              },
-              {
-                "id": "1",
-                "count": "125"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "3"
-              },
-              {
-                "id": "1",
-                "count": "3"
-              },
-              {
-                "id": "3",
-                "count": "1"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "910",
-        "global_map_id": "25",
-        "background_id": "26",
-        "color_list": {
-          "item": [
-            { "id": "5" },
-            { "id": "4" },
-            { "id": "3" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "180"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "15",
+        "point_id": "2",
         "winning_action": "line"
       },
       {
@@ -33971,7 +33429,9 @@ level_data = {
         },
         "point_id": "316",
         "winning_action": "line",
-        "generate_movable_garbage": "yes"
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "348",
@@ -66580,4243 +66040,6 @@ level_data = {
         "winning_action": "line"
       },
       {
-        "id": "743",
-        "title": "Уровень 623",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "22",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "5",
-            "value": "22"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "677",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "623",
-        "winning_action": "line"
-      },
-      {
-        "id": "744",
-        "title": "Уровень 624",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "55",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "2",
-            "value": "55"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "678",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "624",
-        "winning_action": "line"
-      },
-      {
-        "id": "745",
-        "title": "Уровень 625",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "14",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "5",
-            "value": "14"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "679",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "625",
-        "winning_action": "line"
-      },
-      {
-        "id": "746",
-        "title": "Уровень 626",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "57",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "2",
-            "value": "57"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "680",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "626",
-        "winning_action": "line"
-      },
-      {
-        "id": "747",
-        "title": "Уровень 627",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "20",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "5",
-            "value": "20"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "110000",
-        "grading_points2": "120000",
-        "grading_points3": "130000",
-        "map_id": "681",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "2" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "627",
-        "winning_action": "line"
-      },
-      {
-        "id": "748",
-        "title": "Уровень 628",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "22",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "5",
-            "value": "22"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "682",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "628",
-        "winning_action": "line"
-      },
-      {
-        "id": "750",
-        "title": "Уровень 630",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "53",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "2",
-            "value": "53"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "684",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "150"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "630",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "751",
-        "title": "Уровень 631",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "15",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "5",
-            "value": "15"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "685",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "631",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "752",
-        "title": "Уровень 632",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "17",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "5",
-            "value": "17"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "80000",
-        "grading_points2": "90000",
-        "grading_points3": "100000",
-        "map_id": "686",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "632",
-        "winning_action": "line"
-      },
-      {
-        "id": "753",
-        "title": "Уровень 633",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "61",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "2",
-            "value": "61"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "687",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "1" },
-            { "id": "5" },
-            { "id": "6" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "633",
-        "winning_action": "line"
-      },
-      {
-        "id": "754",
-        "title": "Уровень 634",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "57",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "2",
-            "value": "57"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "210000",
-        "grading_points3": "220000",
-        "map_id": "688",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "634",
-        "winning_action": "line"
-      },
-      {
-        "id": "755",
-        "title": "Уровень 635",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "20",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "5",
-            "value": "20"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "689",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "635",
-        "winning_action": "line"
-      },
-      {
-        "id": "756",
-        "title": "Уровень 636",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "59",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "2",
-            "value": "59"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "180000",
-        "grading_points2": "190000",
-        "grading_points3": "200000",
-        "map_id": "690",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "180"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "636",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "757",
-        "title": "Уровень 637",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "21",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "5",
-            "value": "21"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "691",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "637",
-        "winning_action": "line"
-      },
-      {
-        "id": "758",
-        "title": "Уровень 638",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "60",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "2",
-            "value": "60"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "692",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "638",
-        "winning_action": "line"
-      },
-      {
-        "id": "760",
-        "title": "Уровень 640",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "49",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "2",
-            "value": "49"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "155000",
-        "grading_points3": "165000",
-        "map_id": "694",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "4" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "640",
-        "winning_action": "line"
-      },
-      {
-        "id": "761",
-        "title": "Уровень 641",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "66",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "165000",
-        "map_id": "695",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "55"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "641",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "762",
-        "title": "Уровень 642",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "16",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "696",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "2" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "642",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "763",
-        "title": "Уровень 643",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "65",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "697",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "643",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "764",
-        "title": "Уровень 644",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "220000",
-        "grading_points2": "230000",
-        "grading_points3": "240000",
-        "map_id": "698",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "5" },
-            { "id": "6" },
-            { "id": "4" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "644",
-        "winning_action": "line"
-      },
-      {
-        "id": "765",
-        "title": "Уровень 645",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "69",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "220000",
-        "grading_points2": "240000",
-        "grading_points3": "260000",
-        "map_id": "699",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "645",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "766",
-        "title": "Уровень 646",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "13",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "700",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "1" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "646",
-        "winning_action": "line"
-      },
-      {
-        "id": "767",
-        "title": "Уровень 647",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "56",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "120000",
-        "grading_points2": "130000",
-        "grading_points3": "140000",
-        "map_id": "701",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "5" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "55"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "647",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "768",
-        "title": "Уровень 648",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "20",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "120000",
-        "grading_points2": "130000",
-        "grading_points3": "140000",
-        "map_id": "702",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "648",
-        "winning_action": "line"
-      },
-      {
-        "id": "769",
-        "title": "Уровень 649",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "67",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "703",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "649",
-        "winning_action": "line"
-      },
-      {
-        "id": "770",
-        "title": "Уровень 650",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "71",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "704",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "650",
-        "winning_action": "line"
-      },
-      {
-        "id": "771",
-        "title": "Уровень 651",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "15",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "80000",
-        "grading_points2": "90000",
-        "grading_points3": "100000",
-        "map_id": "705",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "651",
-        "winning_action": "line"
-      },
-      {
-        "id": "772",
-        "title": "Уровень 652",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "3"
-              },
-              {
-                "id": "11",
-                "count": "4"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "250000",
-        "grading_points2": "270000",
-        "grading_points3": "290000",
-        "map_id": "706",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "652",
-        "winning_action": "line"
-      },
-      {
-        "id": "773",
-        "title": "Уровень 653",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "64",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "707",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "4" },
-            { "id": "6" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "180"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "653",
-        "winning_action": "line"
-      },
-      {
-        "id": "774",
-        "title": "Уровень 654",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "18",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "708",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "654",
-        "winning_action": "line"
-      },
-      {
-        "id": "775",
-        "title": "Уровень 655",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "61",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "709",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "655",
-        "winning_action": "line"
-      },
-      {
-        "id": "776",
-        "title": "Уровень 656",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "4",
-                "count": "5"
-              },
-              {
-                "id": "1",
-                "count": "5"
-              },
-              {
-                "id": "3",
-                "count": "5"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "710",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "656",
-        "winning_action": "line"
-      },
-      {
-        "id": "777",
-        "title": "Уровень 657",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "56",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "170000",
-        "grading_points2": "180000",
-        "grading_points3": "190000",
-        "map_id": "711",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "657",
-        "winning_action": "line"
-      },
-      {
-        "id": "778",
-        "title": "Уровень 658",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "3"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "170000",
-        "grading_points2": "180000",
-        "grading_points3": "190000",
-        "map_id": "712",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "2" },
-            { "id": "6" },
-            { "id": "1" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "658",
-        "winning_action": "line"
-      },
-      {
-        "id": "780",
-        "title": "Уровень 660",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "59",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "165000",
-        "grading_points2": "175000",
-        "grading_points3": "185000",
-        "map_id": "714",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "200"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "660",
-        "winning_action": "line"
-      },
-      {
-        "id": "781",
-        "title": "Уровень 661",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "58",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "715",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "661",
-        "winning_action": "line"
-      },
-      {
-        "id": "782",
-        "title": "Уровень 662",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "67",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "130000",
-        "grading_points2": "140000",
-        "grading_points3": "150000",
-        "map_id": "716",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "662",
-        "winning_action": "line"
-      },
-      {
-        "id": "783",
-        "title": "Уровень 663",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "10"
-              },
-              {
-                "id": "1",
-                "count": "10"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "130000",
-        "grading_points2": "140000",
-        "grading_points3": "150000",
-        "map_id": "717",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "25"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "663",
-        "winning_action": "line"
-      },
-      {
-        "id": "784",
-        "title": "Уровень 664",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "60",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "718",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "1" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "20"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "664",
-        "winning_action": "line"
-      },
-      {
-        "id": "785",
-        "title": "Уровень 665",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "28",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "210000",
-        "grading_points3": "220000",
-        "map_id": "719",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "120"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "665",
-        "winning_action": "line"
-      },
-      {
-        "id": "786",
-        "title": "Уровень 666",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "210000",
-        "grading_points3": "220000",
-        "map_id": "720",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "4" },
-            { "id": "2" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "666",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
         "id": "841",
         "title": "Март 1",
         "needs": {
@@ -70859,6 +66082,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "55"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -70944,6 +66173,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "15"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -71033,6 +66268,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "69"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "150000",
         "grading_points2": "160000",
@@ -71119,6 +66360,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "69"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "150000",
         "grading_points2": "160000",
@@ -71203,6 +66450,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "55"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -71292,6 +66545,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "27"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "150000",
         "grading_points2": "160000",
@@ -71376,6 +66635,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "65"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -71466,6 +66731,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "150000",
         "grading_points2": "160000",
@@ -71552,6 +66823,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "150000",
         "grading_points2": "160000",
@@ -71633,6 +66910,27 @@ level_data = {
             "item": {
               "id": "5",
               "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
             }
           }
         },
@@ -71725,6 +67023,27 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "60"
+                },
+                {
+                  "id": "6",
+                  "count": "50"
+                },
+                {
+                  "id": "1",
+                  "count": "60"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "120000",
         "grading_points2": "130000",
@@ -71811,6 +67130,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "63"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "130000",
         "grading_points2": "140000",
@@ -71877,9 +67202,6 @@ level_data = {
               }
             ]
           }
-        },
-        "condition_list": {
-          "item": { "type": "0" }
         },
         "description": "Набери 1800 очков, используя не более 10 ходов",
         "grading_points1": "1800",
@@ -72108,140 +67430,6 @@ level_data = {
         "adv_metrics_links": "http://thz-engine.com/counter?cid=9005813892721138&mid=40947&uid={userPID}|http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=429582&pid=1396315&bid=3029845&bn=3029845&rnd=790985246"
       },
       {
-        "id": "738",
-        "title": "Уровень 618",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "5"
-              },
-              {
-                "id": "1",
-                "count": "5"
-              },
-              {
-                "id": "2",
-                "count": "5"
-              }
-            ]
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "4",
-            "collection": {
-              "item": [
-                {
-                  "id": "5",
-                  "count": "5"
-                },
-                {
-                  "id": "1",
-                  "count": "5"
-                },
-                {
-                  "id": "2",
-                  "count": "5"
-                }
-              ]
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "672",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "2" },
-            { "id": "6" },
-            { "id": "1" },
-            { "id": "5" },
-            { "id": "3" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "618",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
         "id": "854",
         "title": "Март 14",
         "needs": {
@@ -72284,6 +67472,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "68"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -72369,6 +67563,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "57"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -73795,9 +68995,6 @@ level_data = {
             ]
           }
         },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 600 очков за 10 ходов, меняя местами камни и собирая из них различные комбинации",
         "grading_points1": "220000",
         "grading_points2": "280000",
@@ -74618,9 +69815,6 @@ level_data = {
             ]
           }
         },
-        "condition_list": {
-          "item": { "type": "0" }
-        },
         "description": "Набери 600 очков за 10 ходов, меняя местами камни и собирая из них различные комбинации",
         "grading_points1": "130000",
         "grading_points2": "140000",
@@ -74663,5523 +69857,6 @@ level_data = {
         "point_id": "14",
         "winning_action": "line",
         "adv_metrics_links": "http://thz-engine.com/counter?cid=9005813892721138&mid=40947&uid={userPID}|http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=429582&pid=1396315&bid=3029845&bn=3029845&rnd=790985246"
-      },
-      {
-        "id": "737",
-        "title": "Уровень 617",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          "levels_completed": {
-            "item": { "id": "726" }
-          },
-          "levels_quest": {
-            "item": { "id": "14" }
-          }
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "13",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "6",
-              "count": "13"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "671",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "617",
-        "winning_action": "line"
-      },
-      {
-        "id": "740",
-        "title": "Уровень 620",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "12",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "5",
-            "value": "12"
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "70000",
-        "grading_points2": "80000",
-        "grading_points3": "90000",
-        "map_id": "674",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "3" },
-            { "id": "1" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "620",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "741",
-        "title": "Уровень 621",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "1",
-            "collection": {
-              "item": [
-                {
-                  "id": "6",
-                  "count": "2"
-                },
-                {
-                  "id": "10",
-                  "count": "2"
-                },
-                {
-                  "id": "11",
-                  "count": "2"
-                }
-              ]
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "170000",
-        "grading_points2": "180000",
-        "grading_points3": "190000",
-        "map_id": "675",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "25"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "621",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "742",
-        "title": "Уровень 622",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "10"
-              },
-              {
-                "id": "1",
-                "count": "10"
-              }
-            ]
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "4",
-            "collection": {
-              "item": [
-                {
-                  "id": "5",
-                  "count": "10"
-                },
-                {
-                  "id": "1",
-                  "count": "10"
-                }
-              ]
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "676",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "180"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "622",
-        "winning_action": "line"
-      },
-      {
-        "id": "749",
-        "title": "Уровень 629",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "3"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "3"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "1",
-            "collection": {
-              "item": [
-                {
-                  "id": "6",
-                  "count": "3"
-                },
-                {
-                  "id": "10",
-                  "count": "2"
-                },
-                {
-                  "id": "11",
-                  "count": "3"
-                }
-              ]
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "190000",
-        "grading_points2": "200000",
-        "grading_points3": "210000",
-        "map_id": "683",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "2" },
-            { "id": "4" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "629",
-        "winning_action": "line"
-      },
-      {
-        "id": "759",
-        "title": "Уровень 639",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "70"
-              },
-              {
-                "id": "6",
-                "count": "80"
-              },
-              {
-                "id": "3",
-                "count": "90"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "3",
-            "collection": {
-              "item": [
-                {
-                  "id": "5",
-                  "count": "70"
-                },
-                {
-                  "id": "6",
-                  "count": "80"
-                },
-                {
-                  "id": "3",
-                  "count": "90"
-                }
-              ]
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "693",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "1" },
-            { "id": "5" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "639",
-        "winning_action": "line"
-      },
-      {
-        "id": "779",
-        "title": "Уровень 659",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "5"
-              },
-              {
-                "id": "1",
-                "count": "5"
-              },
-              {
-                "id": "4",
-                "count": "5"
-              },
-              {
-                "id": "3",
-                "count": "5"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "713",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "659",
-        "winning_action": "line"
-      },
-      {
-        "id": "787",
-        "title": "Уровень 667",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "66",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "130000",
-        "grading_points2": "140000",
-        "grading_points3": "150000",
-        "map_id": "721",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "1" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "667",
-        "winning_action": "line"
-      },
-      {
-        "id": "788",
-        "title": "Уровень 668",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "20",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "120000",
-        "grading_points2": "130000",
-        "grading_points3": "140000",
-        "map_id": "722",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "668",
-        "winning_action": "line"
-      },
-      {
-        "id": "789",
-        "title": "Уровень 669",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "66",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "240000",
-        "grading_points2": "260000",
-        "grading_points3": "280000",
-        "map_id": "723",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "1" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "669",
-        "winning_action": "line"
-      },
-      {
-        "id": "790",
-        "title": "Уровень 670",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "3"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "724",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "25"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "670",
-        "winning_action": "line"
-      },
-      {
-        "id": "791",
-        "title": "Уровень 671",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "63",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "220000",
-        "grading_points2": "240000",
-        "grading_points3": "260000",
-        "map_id": "725",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "2" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "240"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "671",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "792",
-        "title": "Уровень 672",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "41",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "90000",
-        "grading_points2": "100000",
-        "grading_points3": "110000",
-        "map_id": "726",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "55"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "672",
-        "winning_action": "line"
-      },
-      {
-        "id": "793",
-        "title": "Уровень 673",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "73",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "2",
-            "value": "73",
-            "collection": {
-              "item": {
-                "id": "5",
-                "count": "14"
-              }
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "210000",
-        "grading_points2": "220000",
-        "grading_points3": "230000",
-        "map_id": "727",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "673",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "794",
-        "title": "Уровень 674",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "3",
-                "count": "65"
-              },
-              {
-                "id": "6",
-                "count": "75"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "728",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "674",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "795",
-        "title": "Уровень 675",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "59",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "729",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "2" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "675",
-        "winning_action": "line"
-      },
-      {
-        "id": "796",
-        "title": "Уровень 676",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "730",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "676",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "797",
-        "title": "Уровень 677",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "29",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "110000",
-        "grading_points2": "120000",
-        "grading_points3": "130000",
-        "map_id": "731",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "677",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "798",
-        "title": "Уровень 678",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "55",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "732",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "240"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "678",
-        "winning_action": "line"
-      },
-      {
-        "id": "799",
-        "title": "Уровень 679",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "12",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "733",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "679",
-        "winning_action": "line"
-      },
-      {
-        "id": "800",
-        "title": "Уровень 680",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "68",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "170000",
-        "grading_points2": "180000",
-        "grading_points3": "190000",
-        "map_id": "734",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "680",
-        "winning_action": "line"
-      },
-      {
-        "id": "801",
-        "title": "Уровень 681",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "3"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "1"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "210000",
-        "grading_points3": "220000",
-        "map_id": "735",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "2" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "681",
-        "winning_action": "line"
-      },
-      {
-        "id": "802",
-        "title": "Уровень 682",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "3",
-                "count": "8"
-              },
-              {
-                "id": "1",
-                "count": "8"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "170000",
-        "grading_points2": "180000",
-        "grading_points3": "190000",
-        "map_id": "736",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "682",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "803",
-        "title": "Уровень 683",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "25",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "737",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "60"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "683",
-        "winning_action": "line"
-      },
-      {
-        "id": "805",
-        "title": "Уровень 685",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "24",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "80000",
-        "grading_points2": "90000",
-        "grading_points3": "100000",
-        "map_id": "739",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "685",
-        "winning_action": "line"
-      },
-      {
-        "id": "806",
-        "title": "Уровень 686",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": {
-              "id": "11",
-              "count": "8"
-            }
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "195000",
-        "grading_points2": "205000",
-        "grading_points3": "215000",
-        "map_id": "740",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "686",
-        "winning_action": "line"
-      },
-      {
-        "id": "807",
-        "title": "Уровень 687",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "69",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "180000",
-        "grading_points2": "190000",
-        "grading_points3": "200000",
-        "map_id": "741",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "55"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "687",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "808",
-        "title": "Уровень 688",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "54",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "120000",
-        "grading_points2": "130000",
-        "grading_points3": "140000",
-        "map_id": "742",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "240"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "688",
-        "winning_action": "line"
-      },
-      {
-        "id": "809",
-        "title": "Уровень 689",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "3"
-              },
-              {
-                "id": "1",
-                "count": "3"
-              },
-              {
-                "id": "2",
-                "count": "3"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "743",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "2" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" },
-            { "id": "3" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "689",
-        "winning_action": "line"
-      },
-      {
-        "id": "810",
-        "title": "Уровень 690",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "67",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "744",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "1" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "690",
-        "winning_action": "line"
-      },
-      {
-        "id": "811",
-        "title": "Уровень 691",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "55",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "240000",
-        "grading_points3": "280000",
-        "map_id": "745",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "1" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "691",
-        "winning_action": "line"
-      },
-      {
-        "id": "812",
-        "title": "Уровень 692",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "56",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "746",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "692",
-        "winning_action": "line"
-      },
-      {
-        "id": "813",
-        "title": "Уровень 693",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "15",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "747",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "693",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "814",
-        "title": "Уровень 694",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "10"
-              },
-              {
-                "id": "1",
-                "count": "10"
-              }
-            ]
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "4",
-            "collection": {
-              "item": {
-                "id": "5",
-                "count": "14"
-              }
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "130000",
-        "grading_points2": "140000",
-        "grading_points3": "150000",
-        "map_id": "748",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "25"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "694",
-        "winning_action": "line"
-      },
-      {
-        "id": "815",
-        "title": "Уровень 695",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "190000",
-        "grading_points2": "200000",
-        "grading_points3": "210000",
-        "map_id": "749",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "695",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "816",
-        "title": "Уровень 696",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "68",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "190000",
-        "grading_points2": "210000",
-        "grading_points3": "230000",
-        "map_id": "750",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "240"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "696",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "817",
-        "title": "Уровень 697",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "20",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "20"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "751",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "697",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "819",
-        "title": "Уровень 699",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "58",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "753",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "699",
-        "winning_action": "line"
-      },
-      {
-        "id": "820",
-        "title": "Уровень 700",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "20",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "754",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "700",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "821",
-        "title": "Уровень 701",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "65",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "755",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "55"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "701",
-        "winning_action": "line"
-      },
-      {
-        "id": "822",
-        "title": "Уровень 702",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "170000",
-        "grading_points2": "180000",
-        "grading_points3": "190000",
-        "map_id": "756",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "702",
-        "winning_action": "line"
-      },
-      {
-        "id": "823",
-        "title": "Уровень 703",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "55"
-              },
-              {
-                "id": "6",
-                "count": "60"
-              },
-              {
-                "id": "3",
-                "count": "65"
-              },
-              {
-                "id": "2",
-                "count": "70"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "757",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "2" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "703",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "824",
-        "title": "Уровень 704",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "73",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "210000",
-        "grading_points3": "220000",
-        "map_id": "758",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "704",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "825",
-        "title": "Уровень 705",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "9"
-              },
-              {
-                "id": "3",
-                "count": "9"
-              }
-            ]
-          }
-        },
-        "condition_list": {
-          "item": {
-            "type": "4",
-            "collection": {
-              "item": {
-                "id": "5",
-                "count": "14"
-              }
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "110000",
-        "grading_points2": "120000",
-        "grading_points3": "130000",
-        "map_id": "759",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "60"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "705",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
-      },
-      {
-        "id": "826",
-        "title": "Уровень 706",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "61",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "760",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "706",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "827",
-        "title": "Уровень 707",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "10"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "761",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "707",
-        "winning_action": "line"
-      },
-      {
-        "id": "828",
-        "title": "Уровень 708",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "762",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "708",
-        "winning_action": "line"
-      },
-      {
-        "id": "829",
-        "title": "Уровень 709",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "66",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "763",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "60"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "709",
-        "winning_action": "line"
-      },
-      {
-        "id": "830",
-        "title": "Уровень 710",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "51",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "130000",
-        "grading_points2": "140000",
-        "grading_points3": "150000",
-        "map_id": "764",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "710",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "832",
-        "title": "Уровень 712",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "18",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "120000",
-        "grading_points2": "130000",
-        "grading_points3": "140000",
-        "map_id": "766",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "712",
-        "winning_action": "line"
-      },
-      {
-        "id": "833",
-        "title": "Уровень 713",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "3"
-              },
-              {
-                "id": "10",
-                "count": "3"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "180000",
-        "grading_points2": "190000",
-        "grading_points3": "200000",
-        "map_id": "767",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" },
-            { "id": "2" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "713",
-        "winning_action": "line"
-      },
-      {
-        "id": "834",
-        "title": "Уровень 714",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "5",
-          "value": "27",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "130000",
-        "grading_points2": "140000",
-        "grading_points3": "155000",
-        "map_id": "768",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "60"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "714",
-        "winning_action": "line"
-      },
-      {
-        "id": "835",
-        "title": "Уровень 715",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "2",
-          "value": "36",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "769",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "715",
-        "winning_action": "line"
       },
       {
         "id": "837",
@@ -80242,6 +69919,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "59"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -80673,6 +70356,27 @@ level_data = {
             ]
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "5"
+                },
+                {
+                  "id": "1",
+                  "count": "5"
+                },
+                {
+                  "id": "2",
+                  "count": "5"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "110000",
         "grading_points2": "120000",
@@ -80832,100 +70536,6 @@ level_data = {
         "custom_fill": "[{\"x\":2,\"y\":0,\"color_id\":5},{\"x\":3,\"y\":0,\"color_id\":4},{\"x\":4,\"y\":0,\"color_id\":3},{\"x\":5,\"y\":0,\"color_id\":1},{\"x\":6,\"y\":0,\"color_id\":5},{\"x\":8,\"y\":0,\"color_id\":6},{\"x\":0,\"y\":1,\"color_id\":3},{\"x\":2,\"y\":1,\"color_id\":4},{\"x\":3,\"y\":1,\"color_id\":3},{\"x\":4,\"y\":1,\"color_id\":1},{\"x\":5,\"y\":1,\"color_id\":1},{\"x\":6,\"y\":1,\"color_id\":5},{\"x\":8,\"y\":1,\"color_id\":3},{\"x\":0,\"y\":2,\"color_id\":3},{\"x\":2,\"y\":2,\"color_id\":5},{\"x\":3,\"y\":2,\"color_id\":3},{\"x\":4,\"y\":2,\"color_id\":4},{\"x\":5,\"y\":2,\"color_id\":4},{\"x\":6,\"y\":2,\"color_id\":3},{\"x\":8,\"y\":2,\"color_id\":4},{\"x\":0,\"y\":3,\"color_id\":5},{\"x\":2,\"y\":3,\"color_id\":1},{\"x\":3,\"y\":3,\"color_id\":1},{\"x\":4,\"y\":3,\"color_id\":5},{\"x\":5,\"y\":3,\"color_id\":5},{\"x\":6,\"y\":3,\"color_id\":4},{\"x\":8,\"y\":3,\"color_id\":4},{\"x\":0,\"y\":4,\"color_id\":5},{\"x\":2,\"y\":4,\"color_id\":4},{\"x\":3,\"y\":4,\"color_id\":1},{\"x\":4,\"y\":4,\"color_id\":3},{\"x\":5,\"y\":4,\"color_id\":3},{\"x\":6,\"y\":4,\"color_id\":5},{\"x\":8,\"y\":4,\"color_id\":3},{\"x\":0,\"y\":5,\"color_id\":4},{\"x\":2,\"y\":5,\"color_id\":4},{\"x\":3,\"y\":5,\"color_id\":4},{\"x\":4,\"y\":5,\"color_id\":1},{\"x\":5,\"y\":5,\"color_id\":3},{\"x\":6,\"y\":5,\"color_id\":3},{\"x\":8,\"y\":5,\"color_id\":1},{\"x\":0,\"y\":6,\"color_id\":3},{\"x\":2,\"y\":6,\"color_id\":1},{\"x\":3,\"y\":6,\"color_id\":4},{\"x\":4,\"y\":6,\"color_id\":3},{\"x\":5,\"y\":6,\"color_id\":5},{\"x\":6,\"y\":6,\"color_id\":5},{\"x\":8,\"y\":6,\"color_id\":5},{\"x\":0,\"y\":7,\"color_id\":1},{\"x\":2,\"y\":7,\"color_id\":1},{\"x\":3,\"y\":7,\"color_id\":1},{\"x\":4,\"y\":7,\"color_id\":5},{\"x\":5,\"y\":7,\"color_id\":4},{\"x\":6,\"y\":7,\"color_id\":4},{\"x\":8,\"y\":7,\"color_id\":3},{\"x\":0,\"y\":8,\"color_id\":2},{\"x\":2,\"y\":8,\"color_id\":3},{\"x\":3,\"y\":8,\"color_id\":3},{\"x\":4,\"y\":8,\"color_id\":4},{\"x\":5,\"y\":8,\"color_id\":1},{\"x\":6,\"y\":8,\"color_id\":1}]"
       },
       {
-        "id": "818",
-        "title": "Уровень 698",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": {
-              "id": "3",
-              "count": "6"
-            }
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "140000",
-        "grading_points2": "150000",
-        "grading_points3": "160000",
-        "map_id": "752",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "1" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "698",
-        "winning_action": "line",
-        "custom_fill": "[{\"x\":0,\"y\":0,\"color_id\":3},{\"x\":2,\"y\":0,\"color_id\":1},{\"x\":3,\"y\":0,\"color_id\":2},{\"x\":4,\"y\":0,\"color_id\":4},{\"x\":5,\"y\":0,\"color_id\":5},{\"x\":6,\"y\":0,\"color_id\":1},{\"x\":8,\"y\":0,\"color_id\":3},{\"x\":2,\"y\":1,\"color_id\":2},{\"x\":3,\"y\":1,\"color_id\":4},{\"x\":4,\"y\":1,\"color_id\":5},{\"x\":5,\"y\":1,\"color_id\":5},{\"x\":6,\"y\":1,\"color_id\":1},{\"x\":0,\"y\":2,\"color_id\":2},{\"x\":1,\"y\":2,\"color_id\":4},{\"x\":2,\"y\":2,\"color_id\":5},{\"x\":6,\"y\":2,\"color_id\":5},{\"x\":7,\"y\":2,\"color_id\":1},{\"x\":8,\"y\":2,\"color_id\":2},{\"x\":0,\"y\":3,\"color_id\":4},{\"x\":1,\"y\":3,\"color_id\":5},{\"x\":2,\"y\":3,\"color_id\":1},{\"x\":4,\"y\":3,\"color_id\":3},{\"x\":6,\"y\":3,\"color_id\":2},{\"x\":7,\"y\":3,\"color_id\":2},{\"x\":8,\"y\":3,\"color_id\":4},{\"x\":0,\"y\":4,\"color_id\":5},{\"x\":1,\"y\":4,\"color_id\":1},{\"x\":2,\"y\":4,\"color_id\":2},{\"x\":6,\"y\":4,\"color_id\":5},{\"x\":7,\"y\":4,\"color_id\":5},{\"x\":8,\"y\":4,\"color_id\":4},{\"x\":0,\"y\":5,\"color_id\":2},{\"x\":1,\"y\":5,\"color_id\":1},{\"x\":2,\"y\":5,\"color_id\":5},{\"x\":4,\"y\":5,\"color_id\":3},{\"x\":6,\"y\":5,\"color_id\":4},{\"x\":7,\"y\":5,\"color_id\":2},{\"x\":8,\"y\":5,\"color_id\":1},{\"x\":0,\"y\":6,\"color_id\":4},{\"x\":1,\"y\":6,\"color_id\":5},{\"x\":2,\"y\":6,\"color_id\":5},{\"x\":6,\"y\":6,\"color_id\":1},{\"x\":7,\"y\":6,\"color_id\":5},{\"x\":8,\"y\":6,\"color_id\":5},{\"x\":2,\"y\":7,\"color_id\":4},{\"x\":3,\"y\":7,\"color_id\":4},{\"x\":4,\"y\":7,\"color_id\":2},{\"x\":5,\"y\":7,\"color_id\":4},{\"x\":6,\"y\":7,\"color_id\":4},{\"x\":0,\"y\":8,\"color_id\":3},{\"x\":2,\"y\":8,\"color_id\":5},{\"x\":3,\"y\":8,\"color_id\":2},{\"x\":4,\"y\":8,\"color_id\":4},{\"x\":5,\"y\":8,\"color_id\":2},{\"x\":6,\"y\":8,\"color_id\":5},{\"x\":8,\"y\":8,\"color_id\":3}]"
-      },
-      {
         "id": "831",
         "title": "Уровень 711",
         "drops_points1": {
@@ -80978,6 +70588,17 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": {
+                "id": "1",
+                "count": "9"
+              }
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "80000",
         "grading_points2": "90000",
@@ -81018,106 +70639,6 @@ level_data = {
         "point_id": "711",
         "winning_action": "line",
         "custom_fill": "[{\"x\":0,\"y\":0,\"color_id\":6},{\"x\":1,\"y\":0,\"color_id\":5},{\"x\":2,\"y\":0,\"color_id\":4},{\"x\":3,\"y\":0,\"color_id\":3},{\"x\":4,\"y\":0,\"color_id\":3},{\"x\":5,\"y\":0,\"color_id\":4},{\"x\":6,\"y\":0,\"color_id\":5},{\"x\":7,\"y\":0,\"color_id\":6},{\"x\":8,\"y\":0,\"color_id\":6},{\"x\":0,\"y\":1,\"color_id\":6},{\"x\":1,\"y\":1,\"color_id\":5},{\"x\":2,\"y\":1,\"color_id\":4},{\"x\":3,\"y\":1,\"color_id\":3},{\"x\":4,\"y\":1,\"color_id\":4},{\"x\":5,\"y\":1,\"color_id\":4},{\"x\":6,\"y\":1,\"color_id\":5},{\"x\":7,\"y\":1,\"color_id\":5},{\"x\":8,\"y\":1,\"color_id\":6},{\"x\":0,\"y\":2,\"color_id\":3},{\"x\":1,\"y\":2,\"color_id\":4},{\"x\":4,\"y\":2,\"color_id\":1},{\"x\":7,\"y\":2,\"color_id\":5},{\"x\":8,\"y\":2,\"color_id\":5},{\"x\":0,\"y\":3,\"color_id\":5},{\"x\":1,\"y\":3,\"color_id\":4},{\"x\":3,\"y\":3,\"color_id\":1},{\"x\":5,\"y\":3,\"color_id\":1},{\"x\":7,\"y\":3,\"color_id\":3},{\"x\":8,\"y\":3,\"color_id\":6},{\"x\":0,\"y\":4,\"color_id\":5},{\"x\":1,\"y\":4,\"color_id\":6},{\"x\":2,\"y\":4,\"color_id\":1},{\"x\":4,\"y\":4,\"color_id\":1},{\"x\":6,\"y\":4,\"color_id\":1},{\"x\":7,\"y\":4,\"color_id\":6},{\"x\":8,\"y\":4,\"color_id\":5},{\"x\":0,\"y\":5,\"color_id\":4},{\"x\":1,\"y\":5,\"color_id\":4},{\"x\":3,\"y\":5,\"color_id\":1},{\"x\":5,\"y\":5,\"color_id\":1},{\"x\":7,\"y\":5,\"color_id\":3},{\"x\":8,\"y\":5,\"color_id\":3},{\"x\":0,\"y\":6,\"color_id\":6},{\"x\":1,\"y\":6,\"color_id\":4},{\"x\":4,\"y\":6,\"color_id\":1},{\"x\":7,\"y\":6,\"color_id\":3},{\"x\":8,\"y\":6,\"color_id\":5},{\"x\":0,\"y\":7,\"color_id\":6},{\"x\":1,\"y\":7,\"color_id\":5},{\"x\":2,\"y\":7,\"color_id\":4},{\"x\":3,\"y\":7,\"color_id\":3},{\"x\":4,\"y\":7,\"color_id\":6},{\"x\":5,\"y\":7,\"color_id\":5},{\"x\":6,\"y\":7,\"color_id\":4},{\"x\":7,\"y\":7,\"color_id\":4},{\"x\":8,\"y\":7,\"color_id\":3},{\"x\":0,\"y\":8,\"color_id\":3},{\"x\":1,\"y\":8,\"color_id\":4},{\"x\":2,\"y\":8,\"color_id\":5},{\"x\":3,\"y\":8,\"color_id\":6},{\"x\":4,\"y\":8,\"color_id\":3},{\"x\":5,\"y\":8,\"color_id\":4},{\"x\":6,\"y\":8,\"color_id\":5},{\"x\":7,\"y\":8,\"color_id\":6},{\"x\":8,\"y\":8,\"color_id\":6}]"
-      },
-      {
-        "id": "836",
-        "title": "Уровень 716",
-        "drops_points1": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points2": {
-          "statue_suites": {
-            
-          }
-        },
-        "drops_points3": {
-          "statue_suites": {
-            
-          }
-        },
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "770",
-        "global_map_id": "18",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "716",
-        "winning_action": "line",
-        "custom_fill": "[{\"x\":0,\"y\":0,\"color_id\":6},{\"x\":4,\"y\":0,\"color_id\":6},{\"x\":8,\"y\":0,\"color_id\":6},{\"x\":1,\"y\":1,\"color_id\":2},{\"x\":2,\"y\":1,\"color_id\":3},{\"x\":3,\"y\":1,\"color_id\":4},{\"x\":4,\"y\":1,\"color_id\":5},{\"x\":5,\"y\":1,\"color_id\":2},{\"x\":6,\"y\":1,\"color_id\":4},{\"x\":7,\"y\":1,\"color_id\":4},{\"x\":1,\"y\":2,\"color_id\":4},{\"x\":2,\"y\":2,\"color_id\":5},{\"x\":3,\"y\":2,\"color_id\":3},{\"x\":4,\"y\":2,\"color_id\":4},{\"x\":5,\"y\":2,\"color_id\":3},{\"x\":6,\"y\":2,\"color_id\":2},{\"x\":7,\"y\":2,\"color_id\":3},{\"x\":1,\"y\":3,\"color_id\":3},{\"x\":2,\"y\":3,\"color_id\":5},{\"x\":3,\"y\":3,\"color_id\":3},{\"x\":4,\"y\":3,\"color_id\":4},{\"x\":5,\"y\":3,\"color_id\":3},{\"x\":6,\"y\":3,\"color_id\":3},{\"x\":7,\"y\":3,\"color_id\":4},{\"x\":0,\"y\":4,\"color_id\":6},{\"x\":1,\"y\":4,\"color_id\":5},{\"x\":2,\"y\":4,\"color_id\":4},{\"x\":3,\"y\":4,\"color_id\":2},{\"x\":4,\"y\":4,\"color_id\":3},{\"x\":5,\"y\":4,\"color_id\":4},{\"x\":6,\"y\":4,\"color_id\":5},{\"x\":7,\"y\":4,\"color_id\":5},{\"x\":8,\"y\":4,\"color_id\":6},{\"x\":1,\"y\":5,\"color_id\":5},{\"x\":2,\"y\":5,\"color_id\":4},{\"x\":3,\"y\":5,\"color_id\":3},{\"x\":4,\"y\":5,\"color_id\":2},{\"x\":5,\"y\":5,\"color_id\":2},{\"x\":6,\"y\":5,\"color_id\":5},{\"x\":7,\"y\":5,\"color_id\":2},{\"x\":1,\"y\":6,\"color_id\":2},{\"x\":2,\"y\":6,\"color_id\":2},{\"x\":3,\"y\":6,\"color_id\":4},{\"x\":4,\"y\":6,\"color_id\":4},{\"x\":5,\"y\":6,\"color_id\":2},{\"x\":6,\"y\":6,\"color_id\":3},{\"x\":7,\"y\":6,\"color_id\":3},{\"x\":1,\"y\":7,\"color_id\":3},{\"x\":2,\"y\":7,\"color_id\":3},{\"x\":3,\"y\":7,\"color_id\":5},{\"x\":4,\"y\":7,\"color_id\":5},{\"x\":5,\"y\":7,\"color_id\":3},{\"x\":6,\"y\":7,\"color_id\":2},{\"x\":7,\"y\":7,\"color_id\":5},{\"x\":0,\"y\":8,\"color_id\":6},{\"x\":4,\"y\":8,\"color_id\":6},{\"x\":8,\"y\":8,\"color_id\":6}]"
       },
       {
         "id": "862",
@@ -81169,6 +70690,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "63"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "140000",
         "grading_points2": "150000",
@@ -81208,99 +70735,6 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "717",
-        "winning_action": "line"
-      },
-      {
-        "id": "870",
-        "title": "Уровень 725",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "60"
-              },
-              {
-                "id": "6",
-                "count": "65"
-              },
-              {
-                "id": "4",
-                "count": "60"
-              },
-              {
-                "id": "2",
-                "count": "65"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "801",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "6" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "725",
         "winning_action": "line"
       },
       {
@@ -81348,6 +70782,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "67"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "170000",
         "grading_points2": "180000",
@@ -81386,96 +70826,6 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "726",
-        "winning_action": "line"
-      },
-      {
-        "id": "872",
-        "title": "Уровень 727",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "10"
-              },
-              {
-                "id": "2",
-                "count": "10"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "803",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "6" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "25"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "727",
         "winning_action": "line"
       },
       {
@@ -81523,6 +70873,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "62"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "190000",
         "grading_points2": "200000",
@@ -81561,184 +70917,6 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "728",
-        "winning_action": "line"
-      },
-      {
-        "id": "874",
-        "title": "Уровень 729",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "1",
-                "count": "6"
-              },
-              {
-                "id": "2",
-                "count": "6"
-              },
-              {
-                "id": "4",
-                "count": "6"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "805",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "1" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "729",
-        "winning_action": "line"
-      },
-      {
-        "id": "875",
-        "title": "Уровень 730",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "806",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "730",
         "winning_action": "line"
       },
       {
@@ -81782,6 +70960,23 @@ level_data = {
             "item": {
               "id": "5",
               "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "90"
+                },
+                {
+                  "id": "2",
+                  "count": "85"
+                }
+              ]
             }
           }
         },
@@ -81873,6 +71068,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "63"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "140000",
         "grading_points2": "150000",
@@ -81959,6 +71160,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "39"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "140000",
         "grading_points2": "150000",
@@ -81997,181 +71204,6 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "733",
-        "winning_action": "line"
-      },
-      {
-        "id": "879",
-        "title": "Уровень 734",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "3",
-                "count": "10"
-              },
-              {
-                "id": "1",
-                "count": "10"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "810",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "734",
-        "winning_action": "line"
-      },
-      {
-        "id": "880",
-        "title": "Уровень 735",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "180000",
-        "grading_points2": "190000",
-        "grading_points3": "200000",
-        "map_id": "811",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "6" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "735",
         "winning_action": "line"
       },
       {
@@ -82217,6 +71249,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "67"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -82302,6 +71340,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "15"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -82391,6 +71435,23 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "60"
+                },
+                {
+                  "id": "4",
+                  "count": "65"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "110000",
         "grading_points2": "120000",
@@ -82477,6 +71538,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "62"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "170000",
         "grading_points2": "180000",
@@ -82515,90 +71582,6 @@ level_data = {
           "item": { "id": "4" }
         },
         "point_id": "739",
-        "winning_action": "line"
-      },
-      {
-        "id": "885",
-        "title": "Уровень 740",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "3"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "816",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "740",
         "winning_action": "line"
       },
       {
@@ -82644,6 +71627,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "12"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -82734,6 +71723,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "64"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "150000",
         "grading_points2": "160000",
@@ -82819,6 +71814,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "14"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "120000",
         "grading_points2": "130000",
@@ -82858,182 +71859,6 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "743",
-        "winning_action": "line"
-      },
-      {
-        "id": "889",
-        "title": "Уровень 744",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "1"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
-        "map_id": "820",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "744",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "890",
-        "title": "Уровень 745",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "90"
-              },
-              {
-                "id": "3",
-                "count": "90"
-              },
-              {
-                "id": "1",
-                "count": "90"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "130000",
-        "grading_points2": "140000",
-        "grading_points3": "150000",
-        "map_id": "821",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "745",
         "winning_action": "line"
       },
       {
@@ -83079,6 +71904,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "18"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -83169,6 +72000,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "53"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "130000",
         "grading_points2": "140000",
@@ -83207,183 +72044,6 @@ level_data = {
         },
         "point_id": "747",
         "winning_action": "line"
-      },
-      {
-        "id": "893",
-        "title": "Уровень 748",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "824",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "35"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "748",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
-      },
-      {
-        "id": "894",
-        "title": "Уровень 749",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "3",
-                "count": "70"
-              },
-              {
-                "id": "4",
-                "count": "75"
-              },
-              {
-                "id": "5",
-                "count": "70"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "90000",
-        "grading_points2": "100000",
-        "grading_points3": "110000",
-        "map_id": "825",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "749",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
       },
       {
         "id": "895",
@@ -83428,6 +72088,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "22"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -83513,6 +72179,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "49"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -83601,6 +72273,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "180000",
         "grading_points2": "190000",
@@ -83640,93 +72318,6 @@ level_data = {
         },
         "point_id": "752",
         "winning_action": "line"
-      },
-      {
-        "id": "898",
-        "title": "Уровень 753",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "3"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "1"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "190000",
-        "grading_points2": "200000",
-        "grading_points3": "210000",
-        "map_id": "829",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "6" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_time",
-          "value": "120"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "3" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "4" }
-        },
-        "point_id": "753",
-        "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "1" }
-        }
       },
       {
         "id": "899",
@@ -83769,6 +72360,23 @@ level_data = {
             "item": {
               "id": "5",
               "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "60"
+                },
+                {
+                  "id": "1",
+                  "count": "60"
+                }
+              ]
             }
           }
         },
@@ -83858,6 +72466,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "53"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "100000",
         "grading_points2": "110000",
@@ -83900,100 +72514,6 @@ level_data = {
         "winning_action": "line"
       },
       {
-        "id": "901",
-        "title": "Уровень 756",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "5",
-                "count": "8"
-              },
-              {
-                "id": "1",
-                "count": "8"
-              },
-              {
-                "id": "2",
-                "count": "8"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "110000",
-        "grading_points2": "120000",
-        "grading_points3": "130000",
-        "map_id": "832",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "1" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "756",
-        "winning_action": "line"
-      },
-      {
         "id": "902",
         "title": "Уровень 757",
         "needs": {
@@ -84030,6 +72550,23 @@ level_data = {
             "item": {
               "id": "5",
               "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                }
+              ]
             }
           }
         },
@@ -84119,6 +72656,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "59"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "140000",
         "grading_points2": "150000",
@@ -84200,6 +72743,23 @@ level_data = {
             "item": {
               "id": "5",
               "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "4",
+                  "count": "70"
+                },
+                {
+                  "id": "6",
+                  "count": "65"
+                }
+              ]
             }
           }
         },
@@ -84288,6 +72848,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "120000",
         "grading_points2": "130000",
@@ -84374,6 +72940,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "62"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "220000",
         "grading_points2": "240000",
@@ -84415,182 +72987,6 @@ level_data = {
         "special_generator": {
           "item": { "id": "1" }
         }
-      },
-      {
-        "id": "907",
-        "title": "Уровень 762",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "4",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": [
-              {
-                "id": "3",
-                "count": "10"
-              },
-              {
-                "id": "4",
-                "count": "10"
-              }
-            ]
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "100000",
-        "grading_points2": "110000",
-        "grading_points3": "120000",
-        "map_id": "838",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "50"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "762",
-        "winning_action": "line"
-      },
-      {
-        "id": "908",
-        "title": "Уровень 763",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "1"
-              },
-              {
-                "id": "10",
-                "count": "1"
-              },
-              {
-                "id": "11",
-                "count": "1"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "110000",
-        "grading_points2": "120000",
-        "grading_points3": "130000",
-        "map_id": "839",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "763",
-        "winning_action": "line"
       },
       {
         "id": "909",
@@ -84635,6 +73031,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "16"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -84723,6 +73125,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "64"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "190000",
         "grading_points2": "200000",
@@ -84764,94 +73172,6 @@ level_data = {
         "winning_action": "line"
       },
       {
-        "id": "911",
-        "title": "Уровень 766",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "90"
-              },
-              {
-                "id": "6",
-                "count": "90"
-              },
-              {
-                "id": "4",
-                "count": "90"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "160000",
-        "grading_points2": "170000",
-        "grading_points3": "180000",
-        "map_id": "842",
-        "global_map_id": "23",
-        "background_id": "25",
-        "color_list": {
-          "item": [
-            { "id": "6" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "30"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "766",
-        "winning_action": "line"
-      },
-      {
         "id": "912",
         "title": "Уровень 767",
         "needs": {
@@ -84859,7 +73179,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "65",
           "condition_gem": {
             "item": [
               {
@@ -84895,19 +73216,25 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "65"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
         "map_id": "843",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
@@ -84933,7 +73260,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "767",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "913",
@@ -84943,7 +73273,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "32",
           "condition_gem": {
             "item": [
               {
@@ -84979,24 +73310,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "32"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
         "map_id": "844",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "2" },
+            { "id": "6" },
             { "id": "4" },
             { "id": "5" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -85017,174 +73354,6 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "768",
-        "winning_action": "line"
-      },
-      {
-        "id": "914",
-        "title": "Уровень 769",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "845",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "769",
-        "winning_action": "line"
-      },
-      {
-        "id": "915",
-        "title": "Уровень 770",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "846",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "770",
         "winning_action": "line"
       },
       {
@@ -85215,12 +73384,12 @@ level_data = {
           "condition_color_gem": {
             "item": [
               {
-                "id": "5",
-                "count": "180"
+                "id": "2",
+                "count": "100"
               },
               {
-                "id": "6",
-                "count": "8"
+                "id": "1",
+                "count": "100"
               }
             ]
           },
@@ -85231,24 +73400,41 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "2",
+                  "count": "100"
+                },
+                {
+                  "id": "1",
+                  "count": "100"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
         "map_id": "847",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "1" }
           ]
         },
         "restriction": {
-          "type": "on_count_action",
-          "value": "45"
+          "type": "on_time",
+          "value": "180"
         },
         "boost_before_starts": {
           "item": [
@@ -85262,14 +73448,17 @@ level_data = {
             { "id": "1" },
             { "id": "6" },
             { "id": "11" },
-            { "id": "14" }
+            { "id": "3" }
           ]
         },
         "boost_after_losing": {
-          "item": { "id": "12" }
+          "item": { "id": "4" }
         },
         "point_id": "771",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "917",
@@ -85279,7 +73468,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "61",
           "condition_gem": {
             "item": [
               {
@@ -85315,18 +73505,24 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
         "map_id": "848",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
+            { "id": "1" },
+            { "id": "6" },
             { "id": "5" }
           ]
         },
@@ -85363,7 +73559,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "20",
           "condition_gem": {
             "item": [
               {
@@ -85399,24 +73596,31 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
         "map_id": "849",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -85447,7 +73651,7 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "1",
           "condition_gem": {
             "item": [
               {
@@ -85456,10 +73660,6 @@ level_data = {
               },
               {
                 "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
                 "count": "2"
               }
             ]
@@ -85483,24 +73683,41 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "200000",
         "grading_points2": "220000",
         "grading_points3": "240000",
         "map_id": "850",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
-            { "id": "3" },
+            { "id": "1" },
             { "id": "2" },
-            { "id": "4" },
+            { "id": "6" },
             { "id": "5" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -85531,7 +73748,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "70",
           "condition_gem": {
             "item": [
               {
@@ -85567,24 +73785,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "70"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "170000",
+        "grading_points2": "180000",
+        "grading_points3": "190000",
         "map_id": "851",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "6" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "40"
         },
         "boost_before_starts": {
           "item": [
@@ -85605,7 +73829,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "775",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "921",
@@ -85615,7 +73842,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "65",
           "condition_gem": {
             "item": [
               {
@@ -85651,24 +73879,29 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "65"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "260000",
+        "grading_points2": "280000",
+        "grading_points3": "300000",
         "map_id": "852",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
+            { "id": "6" },
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -85689,7 +73922,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "776",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "922",
@@ -85699,7 +73935,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "21",
           "condition_gem": {
             "item": [
               {
@@ -85735,24 +73972,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "21"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
         "map_id": "853",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "2" },
+            { "id": "6" },
             { "id": "4" },
             { "id": "5" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "30"
         },
         "boost_before_starts": {
           "item": [
@@ -85773,91 +74016,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "777",
-        "winning_action": "line"
-      },
-      {
-        "id": "923",
-        "title": "Уровень 778",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "854",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "778",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "924",
@@ -85867,22 +74029,12 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "1",
           "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
+            "item": {
+              "id": "6",
+              "count": "5"
+            }
           },
           "condition_color_gem": {
             "item": [
@@ -85903,24 +74055,35 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": {
+                "id": "6",
+                "count": "5"
+              }
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "180000",
+        "grading_points2": "190000",
+        "grading_points3": "200000",
         "map_id": "855",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "40"
         },
         "boost_before_starts": {
           "item": [
@@ -85941,91 +74104,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "779",
-        "winning_action": "line"
-      },
-      {
-        "id": "925",
-        "title": "Уровень 780",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "856",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "780",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "926",
@@ -86055,12 +74137,12 @@ level_data = {
           "condition_color_gem": {
             "item": [
               {
-                "id": "5",
-                "count": "180"
+                "id": "1",
+                "count": "85"
               },
               {
-                "id": "6",
-                "count": "8"
+                "id": "3",
+                "count": "90"
               }
             ]
           },
@@ -86071,24 +74153,42 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "1",
+                  "count": "85"
+                },
+                {
+                  "id": "3",
+                  "count": "90"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
         "map_id": "857",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
-            { "id": "3" },
+            { "id": "1" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "3" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -86119,7 +74219,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "63",
           "condition_gem": {
             "item": [
               {
@@ -86155,24 +74256,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "63"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
         "map_id": "858",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
+            { "id": "1" },
+            { "id": "6" },
             { "id": "5" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -86193,7 +74300,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "782",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "928",
@@ -86203,7 +74313,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "5",
           "condition_gem": {
             "item": [
               {
@@ -86239,24 +74350,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "5"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "80000",
+        "grading_points2": "90000",
+        "grading_points3": "100000",
         "map_id": "859",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
-            { "id": "4" },
+            { "id": "6" },
             { "id": "5" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "30"
         },
         "boost_before_starts": {
           "item": [
@@ -86287,7 +74404,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "63",
           "condition_gem": {
             "item": [
               {
@@ -86323,24 +74441,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "63"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
         "map_id": "860",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
-            { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -86364,90 +74488,6 @@ level_data = {
         "winning_action": "line"
       },
       {
-        "id": "930",
-        "title": "Уровень 785",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "861",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "785",
-        "winning_action": "line"
-      },
-      {
         "id": "931",
         "title": "Уровень 786",
         "needs": {
@@ -86455,7 +74495,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "26",
           "condition_gem": {
             "item": [
               {
@@ -86491,24 +74532,31 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "26"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
         "map_id": "862",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "6" }
           ]
         },
         "restriction": {
-          "type": "on_count_action",
-          "value": "45"
+          "type": "on_time",
+          "value": "180"
         },
         "boost_before_starts": {
           "item": [
@@ -86522,14 +74570,17 @@ level_data = {
             { "id": "1" },
             { "id": "6" },
             { "id": "11" },
-            { "id": "14" }
+            { "id": "3" }
           ]
         },
         "boost_after_losing": {
-          "item": { "id": "12" }
+          "item": { "id": "4" }
         },
         "point_id": "786",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "932",
@@ -86559,12 +74610,12 @@ level_data = {
           "condition_color_gem": {
             "item": [
               {
-                "id": "5",
-                "count": "180"
+                "id": "3",
+                "count": "80"
               },
               {
                 "id": "6",
-                "count": "8"
+                "count": "80"
               }
             ]
           },
@@ -86575,24 +74626,41 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "80"
+                },
+                {
+                  "id": "6",
+                  "count": "80"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
         "map_id": "863",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "6" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "35"
         },
         "boost_before_starts": {
           "item": [
@@ -86623,7 +74691,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "48",
           "condition_gem": {
             "item": [
               {
@@ -86659,24 +74728,29 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "48"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
         "map_id": "864",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
+            { "id": "4" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "55"
         },
         "boost_before_starts": {
           "item": [
@@ -86697,7 +74771,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "788",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "934",
@@ -86707,7 +74784,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "20",
           "condition_gem": {
             "item": [
               {
@@ -86743,24 +74821,31 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "90000",
+        "grading_points2": "100000",
+        "grading_points3": "110000",
         "map_id": "865",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -86812,11 +74897,11 @@ level_data = {
             "item": [
               {
                 "id": "5",
-                "count": "180"
+                "count": "80"
               },
               {
-                "id": "6",
-                "count": "8"
+                "id": "3",
+                "count": "80"
               }
             ]
           },
@@ -86827,24 +74912,41 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "80"
+                },
+                {
+                  "id": "3",
+                  "count": "80"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
         "map_id": "866",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "6" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -86865,7 +74967,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "790",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "936",
@@ -86875,7 +74980,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "28",
           "condition_gem": {
             "item": [
               {
@@ -86911,24 +75017,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "28"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
         "map_id": "867",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "1" }
           ]
         },
         "restriction": {
-          "type": "on_count_action",
-          "value": "45"
+          "type": "on_time",
+          "value": "120"
         },
         "boost_before_starts": {
           "item": [
@@ -86942,14 +75054,17 @@ level_data = {
             { "id": "1" },
             { "id": "6" },
             { "id": "11" },
-            { "id": "14" }
+            { "id": "3" }
           ]
         },
         "boost_after_losing": {
-          "item": { "id": "12" }
+          "item": { "id": "4" }
         },
         "point_id": "791",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "937",
@@ -86959,7 +75074,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "60",
           "condition_gem": {
             "item": [
               {
@@ -86995,24 +75111,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "60"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
         "map_id": "868",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "6" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -87033,7 +75155,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "792",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "938",
@@ -87043,7 +75168,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "20",
           "condition_gem": {
             "item": [
               {
@@ -87079,24 +75205,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "80000",
+        "grading_points2": "90000",
+        "grading_points3": "100000",
         "map_id": "869",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
-            { "id": "3" },
-            { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "6" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -87120,90 +75252,6 @@ level_data = {
         "winning_action": "line"
       },
       {
-        "id": "939",
-        "title": "Уровень 794",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "870",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "794",
-        "winning_action": "line"
-      },
-      {
         "id": "940",
         "title": "Уровень 795",
         "needs": {
@@ -87211,7 +75259,7 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "1",
           "condition_gem": {
             "item": [
               {
@@ -87220,11 +75268,7 @@ level_data = {
               },
               {
                 "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
+                "count": "3"
               }
             ]
           },
@@ -87247,24 +75291,42 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "3"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
         "map_id": "871",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -87285,7 +75347,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "795",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "941",
@@ -87295,7 +75360,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "25",
           "condition_gem": {
             "item": [
               {
@@ -87331,24 +75397,31 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "25"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
         "map_id": "872",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "6" },
+            { "id": "1" }
           ]
         },
         "restriction": {
-          "type": "on_count_action",
-          "value": "45"
+          "type": "on_time",
+          "value": "180"
         },
         "boost_before_starts": {
           "item": [
@@ -87362,11 +75435,11 @@ level_data = {
             { "id": "1" },
             { "id": "6" },
             { "id": "11" },
-            { "id": "14" }
+            { "id": "3" }
           ]
         },
         "boost_after_losing": {
-          "item": { "id": "12" }
+          "item": { "id": "4" }
         },
         "point_id": "796",
         "winning_action": "line"
@@ -87379,7 +75452,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "59",
           "condition_gem": {
             "item": [
               {
@@ -87415,24 +75489,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "59"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
         "map_id": "873",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -87453,7 +75533,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "797",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "943",
@@ -87483,12 +75566,12 @@ level_data = {
           "condition_color_gem": {
             "item": [
               {
-                "id": "5",
-                "count": "180"
+                "id": "4",
+                "count": "70"
               },
               {
-                "id": "6",
-                "count": "8"
+                "id": "3",
+                "count": "70"
               }
             ]
           },
@@ -87499,24 +75582,41 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "4",
+                  "count": "70"
+                },
+                {
+                  "id": "3",
+                  "count": "70"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "80000",
+        "grading_points2": "90000",
+        "grading_points3": "100000",
         "map_id": "874",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -87547,7 +75647,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "61",
           "condition_gem": {
             "item": [
               {
@@ -87583,13 +75684,19 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "180000",
+        "grading_points2": "190000",
+        "grading_points3": "200000",
         "map_id": "875",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
@@ -87600,7 +75707,7 @@ level_data = {
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "40"
         },
         "boost_before_starts": {
           "item": [
@@ -87631,7 +75738,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "20",
           "condition_gem": {
             "item": [
               {
@@ -87667,24 +75775,29 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
         "map_id": "876",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
-            { "id": "3" },
             { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
+            { "id": "1" },
+            { "id": "6" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -87705,259 +75818,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "800",
-        "winning_action": "line"
-      },
-      {
-        "id": "946",
-        "title": "Уровень 801",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "877",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "801",
-        "winning_action": "line"
-      },
-      {
-        "id": "947",
-        "title": "Уровень 802",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "878",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "802",
-        "winning_action": "line"
-      },
-      {
-        "id": "948",
-        "title": "Уровень 803",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "879",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "803",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "949",
@@ -87967,7 +75831,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "63",
           "condition_gem": {
             "item": [
               {
@@ -88003,24 +75868,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "63"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
         "map_id": "880",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
-            { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -88041,7 +75912,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "804",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "950",
@@ -88072,11 +75946,11 @@ level_data = {
             "item": [
               {
                 "id": "5",
-                "count": "180"
+                "count": "100"
               },
               {
-                "id": "6",
-                "count": "8"
+                "id": "3",
+                "count": "100"
               }
             ]
           },
@@ -88087,24 +75961,41 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "100"
+                },
+                {
+                  "id": "3",
+                  "count": "100"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
         "map_id": "881",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
-          "type": "on_count_action",
-          "value": "45"
+          "type": "on_time",
+          "value": "120"
         },
         "boost_before_starts": {
           "item": [
@@ -88118,14 +76009,17 @@ level_data = {
             { "id": "1" },
             { "id": "6" },
             { "id": "11" },
-            { "id": "14" }
+            { "id": "3" }
           ]
         },
         "boost_after_losing": {
-          "item": { "id": "12" }
+          "item": { "id": "4" }
         },
         "point_id": "805",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "951",
@@ -88135,7 +76029,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "25",
           "condition_gem": {
             "item": [
               {
@@ -88171,13 +76066,19 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "25"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
         "map_id": "882",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
@@ -88188,7 +76089,7 @@ level_data = {
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -88212,90 +76113,6 @@ level_data = {
         "winning_action": "line"
       },
       {
-        "id": "952",
-        "title": "Уровень 807",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "883",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "807",
-        "winning_action": "line"
-      },
-      {
         "id": "953",
         "title": "Уровень 808",
         "needs": {
@@ -88303,7 +76120,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "62",
           "condition_gem": {
             "item": [
               {
@@ -88339,24 +76157,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "62"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
         "map_id": "884",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
-            { "id": "3" },
             { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "6" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "55"
         },
         "boost_before_starts": {
           "item": [
@@ -88407,12 +76231,12 @@ level_data = {
           "condition_color_gem": {
             "item": [
               {
-                "id": "5",
-                "count": "180"
+                "id": "1",
+                "count": "70"
               },
               {
-                "id": "6",
-                "count": "8"
+                "id": "4",
+                "count": "70"
               }
             ]
           },
@@ -88423,19 +76247,37 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "1",
+                  "count": "70"
+                },
+                {
+                  "id": "4",
+                  "count": "70"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
         "map_id": "885",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
@@ -88464,90 +76306,6 @@ level_data = {
         "winning_action": "line"
       },
       {
-        "id": "955",
-        "title": "Уровень 810",
-        "needs": {
-          
-        },
-        "type": "usual",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "180"
-              },
-              {
-                "id": "6",
-                "count": "8"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
-        "map_id": "886",
-        "global_map_id": "23",
-        "background_id": "21",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "2" },
-            { "id": "4" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "810",
-        "winning_action": "line"
-      },
-      {
         "id": "956",
         "title": "Уровень 811",
         "needs": {
@@ -88555,7 +76313,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "64",
           "condition_gem": {
             "item": [
               {
@@ -88591,24 +76350,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "64"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
         "map_id": "887",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "2" },
+            { "id": "1" },
             { "id": "4" },
             { "id": "5" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "30"
         },
         "boost_before_starts": {
           "item": [
@@ -88629,7 +76394,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "811",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
       },
       {
         "id": "957",
@@ -88639,7 +76407,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "4",
           "condition_gem": {
             "item": [
               {
@@ -88675,24 +76444,30 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "4"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "70000",
+        "grading_points2": "80000",
+        "grading_points3": "90000",
         "map_id": "888",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
-            { "id": "4" },
+            { "id": "1" },
             { "id": "5" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "25"
         },
         "boost_before_starts": {
           "item": [
@@ -88713,7 +76488,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "812",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "958",
@@ -88723,12 +76501,12 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "1",
           "condition_gem": {
             "item": [
               {
                 "id": "6",
-                "count": "2"
+                "count": "1"
               },
               {
                 "id": "10",
@@ -88736,7 +76514,7 @@ level_data = {
               },
               {
                 "id": "11",
-                "count": "2"
+                "count": "1"
               }
             ]
           },
@@ -88759,13 +76537,34 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "1"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "180000",
+        "grading_points2": "190000",
+        "grading_points3": "200000",
         "map_id": "889",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
@@ -88775,8 +76574,8 @@ level_data = {
           ]
         },
         "restriction": {
-          "type": "on_count_action",
-          "value": "45"
+          "type": "on_time",
+          "value": "100"
         },
         "boost_before_starts": {
           "item": [
@@ -88790,11 +76589,11 @@ level_data = {
             { "id": "1" },
             { "id": "6" },
             { "id": "11" },
-            { "id": "14" }
+            { "id": "3" }
           ]
         },
         "boost_after_losing": {
-          "item": { "id": "12" }
+          "item": { "id": "4" }
         },
         "point_id": "813",
         "winning_action": "line"
@@ -88828,11 +76627,11 @@ level_data = {
             "item": [
               {
                 "id": "5",
-                "count": "180"
+                "count": "70"
               },
               {
-                "id": "6",
-                "count": "8"
+                "id": "2",
+                "count": "70"
               }
             ]
           },
@@ -88843,24 +76642,41 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "70"
+                },
+                {
+                  "id": "2",
+                  "count": "70"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
         "map_id": "890",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
-            { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "6" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "40"
         },
         "boost_before_starts": {
           "item": [
@@ -88881,7 +76697,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "814",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "960",
@@ -88891,7 +76710,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "2",
+          "value": "61",
           "condition_gem": {
             "item": [
               {
@@ -88927,13 +76747,19 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
         "map_id": "891",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
@@ -88944,7 +76770,7 @@ level_data = {
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -88965,7 +76791,10 @@ level_data = {
           "item": { "id": "12" }
         },
         "point_id": "815",
-        "winning_action": "line"
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
       },
       {
         "id": "961",
@@ -88975,7 +76804,8 @@ level_data = {
         },
         "type": "usual",
         "condition_main": {
-          "type": "3",
+          "type": "5",
+          "value": "10",
           "condition_gem": {
             "item": [
               {
@@ -89011,24 +76841,31 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "10"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "220000",
-        "grading_points3": "240000",
+        "grading_points1": "70000",
+        "grading_points2": "80000",
+        "grading_points3": "90000",
         "map_id": "892",
         "global_map_id": "23",
-        "background_id": "21",
+        "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
             { "id": "2" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "6" }
           ]
         },
         "restriction": {
           "type": "on_count_action",
-          "value": "45"
+          "value": "50"
         },
         "boost_before_starts": {
           "item": [
@@ -89114,6 +76951,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "150000",
         "grading_points2": "160000",
@@ -89179,14 +77022,14 @@ level_data = {
         },
         "needs": {
           "levels_completed": {
-            "item": { "id": "764" }
+            "item": { "id": "922" }
           },
-          "total_stars": "2625"
+          "total_stars": "2080"
         },
         "type": "bonus",
         "condition_main": {
           "type": "2",
-          "value": "59",
+          "value": "61",
           "condition_gem": {
             "item": [
               {
@@ -89222,19 +77065,25 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
         "map_id": "894",
         "global_map_id": "23",
         "background_id": "25",
         "color_list": {
           "item": [
             { "id": "3" },
-            { "id": "6" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
@@ -89261,9 +77110,8 @@ level_data = {
         },
         "point_id": "18",
         "winning_action": "line",
-        "special_generator": {
-          "item": { "id": "2" }
-        }
+        "picture": "http://dw3.playflock.com/indikot-vk/level/ico_bonuslvl_18.swf",
+        "preview": "http://dw1.playflock.com/indikot-vk/level/ico_bonuslvl_18_1397205861.swf"
       },
       {
         "id": "964",
@@ -89285,14 +77133,14 @@ level_data = {
         },
         "needs": {
           "levels_completed": {
-            "item": { "id": "764" }
+            "item": { "id": "958" }
           },
-          "total_stars": "2625"
+          "total_stars": "2140"
         },
         "type": "bonus",
         "condition_main": {
           "type": "2",
-          "value": "59",
+          "value": "58",
           "condition_gem": {
             "item": [
               {
@@ -89328,10 +77176,16 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "58"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "150000",
-        "grading_points2": "160000",
-        "grading_points3": "170000",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
         "map_id": "895",
         "global_map_id": "23",
         "background_id": "25",
@@ -89340,7 +77194,8 @@ level_data = {
             { "id": "3" },
             { "id": "6" },
             { "id": "4" },
-            { "id": "5" }
+            { "id": "5" },
+            { "id": "1" }
           ]
         },
         "restriction": {
@@ -89369,7 +77224,8 @@ level_data = {
         "winning_action": "line",
         "special_generator": {
           "item": { "id": "2" }
-        }
+        },
+        "preview": "http://dw3.playflock.com/indikot-vk/level/ico_bonuslvl_19.swf"
       },
       {
         "id": "857",
@@ -89416,6 +77272,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "15"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "125000",
         "grading_points2": "135000",
@@ -89457,92 +77319,6 @@ level_data = {
         "point_id": "2",
         "winning_action": "line",
         "adv_metrics_links": "http://thz-engine.com/counter?cid=1009&mid=41523&uid={userPID}|http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=457445&pid=1587128&bid=3257322&bn=3257322&rnd=1985480685"
-      },
-      {
-        "id": "858",
-        "title": "Gillette 3",
-        "needs": {
-          
-        },
-        "type": "advertising",
-        "condition_main": {
-          "type": "1",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "5",
-                "count": "50"
-              },
-              {
-                "id": "6",
-                "count": "50"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "200000",
-        "grading_points2": "210000",
-        "grading_points3": "220000",
-        "map_id": "790",
-        "global_map_id": "22",
-        "background_id": "24",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "2" },
-            { "id": "1" },
-            { "id": "5" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "45"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "3",
-        "winning_action": "line",
-        "adv_metrics_links": "http://thz-engine.com/counter?cid=1009&mid=41524&uid={userPID}|http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=457445&pid=1587129&bid=3257323&bn=3257323&rnd=1693282732"
       },
       {
         "id": "859",
@@ -89587,6 +77363,12 @@ level_data = {
               "id": "5",
               "count": "14"
             }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "13"
           }
         },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
@@ -89676,6 +77458,12 @@ level_data = {
             }
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "67"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "140000",
         "grading_points2": "150000",
@@ -89717,96 +77505,6 @@ level_data = {
         "point_id": "5",
         "winning_action": "line",
         "adv_metrics_links": "http://thz-engine.com/counter?cid=1009&mid=41526&uid={userPID}|http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=457445&pid=1587131&bid=3257325&bn=3257325&rnd=1675313278"
-      },
-      {
-        "id": "861",
-        "title": "Gillette 6",
-        "needs": {
-          
-        },
-        "type": "advertising",
-        "condition_main": {
-          "type": "3",
-          "condition_gem": {
-            "item": [
-              {
-                "id": "6",
-                "count": "2"
-              },
-              {
-                "id": "10",
-                "count": "2"
-              },
-              {
-                "id": "11",
-                "count": "2"
-              }
-            ]
-          },
-          "condition_color_gem": {
-            "item": [
-              {
-                "id": "1",
-                "count": "70"
-              },
-              {
-                "id": "6",
-                "count": "70"
-              },
-              {
-                "id": "3",
-                "count": "80"
-              }
-            ]
-          },
-          "condition_color_bird": {
-            "item": {
-              "id": "5",
-              "count": "14"
-            }
-          }
-        },
-        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
-        "grading_points1": "170000",
-        "grading_points2": "180000",
-        "grading_points3": "190000",
-        "map_id": "793",
-        "global_map_id": "22",
-        "background_id": "24",
-        "color_list": {
-          "item": [
-            { "id": "3" },
-            { "id": "6" },
-            { "id": "4" },
-            { "id": "2" },
-            { "id": "1" }
-          ]
-        },
-        "restriction": {
-          "type": "on_count_action",
-          "value": "40"
-        },
-        "boost_before_starts": {
-          "item": [
-            { "id": "7" },
-            { "id": "8" },
-            { "id": "10" }
-          ]
-        },
-        "boost_after_starts": {
-          "item": [
-            { "id": "1" },
-            { "id": "6" },
-            { "id": "11" },
-            { "id": "14" }
-          ]
-        },
-        "boost_after_losing": {
-          "item": { "id": "12" }
-        },
-        "point_id": "6",
-        "winning_action": "line",
-        "adv_metrics_links": "http://thz-engine.com/counter?cid=1009&mid=41527&uid={userPID}|http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=457445&pid=1587132&bid=3257326&bn=3257326&rnd=923855626"
       },
       {
         "id": "864",
@@ -90303,6 +78001,27 @@ level_data = {
             ]
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "1"
+                }
+              ]
+            }
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "180000",
         "grading_points2": "190000",
@@ -90403,6 +78122,12 @@ level_data = {
             ]
           }
         },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
         "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
         "grading_points1": "120000",
         "grading_points2": "130000",
@@ -90443,6 +78168,14755 @@ level_data = {
         },
         "point_id": "12",
         "winning_action": "line"
+      },
+      {
+        "id": "737",
+        "title": "Уровень 617",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          "levels_completed": {
+            "item": { "id": "726" }
+          },
+          "levels_quest": {
+            "item": { "id": "14" }
+          }
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "13",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "6",
+              "count": "13"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "13"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "671",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "617",
+        "winning_action": "line"
+      },
+      {
+        "id": "738",
+        "title": "Уровень 618",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "5"
+              },
+              {
+                "id": "1",
+                "count": "5"
+              },
+              {
+                "id": "2",
+                "count": "5"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "5"
+                },
+                {
+                  "id": "1",
+                  "count": "5"
+                },
+                {
+                  "id": "2",
+                  "count": "5"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "672",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "2" },
+            { "id": "6" },
+            { "id": "1" },
+            { "id": "5" },
+            { "id": "3" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "618",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "740",
+        "title": "Уровень 620",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "12",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "12"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "70000",
+        "grading_points2": "80000",
+        "grading_points3": "90000",
+        "map_id": "674",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "3" },
+            { "id": "1" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "620",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "741",
+        "title": "Уровень 621",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "170000",
+        "grading_points2": "180000",
+        "grading_points3": "190000",
+        "map_id": "675",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "25"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "621",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "742",
+        "title": "Уровень 622",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "10"
+              },
+              {
+                "id": "1",
+                "count": "10"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "10"
+                },
+                {
+                  "id": "1",
+                  "count": "10"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "676",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "180"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "622",
+        "winning_action": "line"
+      },
+      {
+        "id": "743",
+        "title": "Уровень 623",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "22",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "22"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "677",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "623",
+        "winning_action": "line"
+      },
+      {
+        "id": "744",
+        "title": "Уровень 624",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "55",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "55"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "678",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "624",
+        "winning_action": "line"
+      },
+      {
+        "id": "745",
+        "title": "Уровень 625",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "14",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "14"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "679",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "625",
+        "winning_action": "line"
+      },
+      {
+        "id": "746",
+        "title": "Уровень 626",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "57",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "57"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "680",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "626",
+        "winning_action": "line"
+      },
+      {
+        "id": "747",
+        "title": "Уровень 627",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "20",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
+        "map_id": "681",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "2" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "627",
+        "winning_action": "line"
+      },
+      {
+        "id": "748",
+        "title": "Уровень 628",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "22",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "22"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "682",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "628",
+        "winning_action": "line"
+      },
+      {
+        "id": "749",
+        "title": "Уровень 629",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "3"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "3"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "3"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "190000",
+        "grading_points2": "200000",
+        "grading_points3": "210000",
+        "map_id": "683",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "2" },
+            { "id": "4" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "629",
+        "winning_action": "line"
+      },
+      {
+        "id": "750",
+        "title": "Уровень 630",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "53",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "53"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "684",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "150"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "630",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "751",
+        "title": "Уровень 631",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "15",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "15"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "685",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "631",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "752",
+        "title": "Уровень 632",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "17",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "17"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "80000",
+        "grading_points2": "90000",
+        "grading_points3": "100000",
+        "map_id": "686",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "632",
+        "winning_action": "line"
+      },
+      {
+        "id": "753",
+        "title": "Уровень 633",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "61",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "687",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "1" },
+            { "id": "5" },
+            { "id": "6" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "633",
+        "winning_action": "line"
+      },
+      {
+        "id": "754",
+        "title": "Уровень 634",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "57",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "57"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "210000",
+        "grading_points3": "220000",
+        "map_id": "688",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "634",
+        "winning_action": "line"
+      },
+      {
+        "id": "755",
+        "title": "Уровень 635",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "20",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "689",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "635",
+        "winning_action": "line"
+      },
+      {
+        "id": "756",
+        "title": "Уровень 636",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "59",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "59"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "180000",
+        "grading_points2": "190000",
+        "grading_points3": "200000",
+        "map_id": "690",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "180"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "636",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "757",
+        "title": "Уровень 637",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "21",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "21"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "691",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "637",
+        "winning_action": "line"
+      },
+      {
+        "id": "758",
+        "title": "Уровень 638",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "60",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "60"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "692",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "638",
+        "winning_action": "line"
+      },
+      {
+        "id": "759",
+        "title": "Уровень 639",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "70"
+              },
+              {
+                "id": "6",
+                "count": "80"
+              },
+              {
+                "id": "3",
+                "count": "90"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "70"
+                },
+                {
+                  "id": "6",
+                  "count": "80"
+                },
+                {
+                  "id": "3",
+                  "count": "90"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "693",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "1" },
+            { "id": "5" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "639",
+        "winning_action": "line"
+      },
+      {
+        "id": "760",
+        "title": "Уровень 640",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "49",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "49"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "155000",
+        "grading_points3": "165000",
+        "map_id": "694",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "4" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "640",
+        "winning_action": "line"
+      },
+      {
+        "id": "761",
+        "title": "Уровень 641",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "66",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "66"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "165000",
+        "map_id": "695",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "55"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "641",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "762",
+        "title": "Уровень 642",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "16",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "16"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "696",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "2" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "642",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "763",
+        "title": "Уровень 643",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "65",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "65"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "697",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "643",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "764",
+        "title": "Уровень 644",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "220000",
+        "grading_points2": "230000",
+        "grading_points3": "240000",
+        "map_id": "698",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "5" },
+            { "id": "6" },
+            { "id": "4" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "644",
+        "winning_action": "line"
+      },
+      {
+        "id": "765",
+        "title": "Уровень 645",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "69",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "69"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "220000",
+        "grading_points2": "240000",
+        "grading_points3": "260000",
+        "map_id": "699",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "645",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "766",
+        "title": "Уровень 646",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "13",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "13"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "700",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "1" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "646",
+        "winning_action": "line"
+      },
+      {
+        "id": "767",
+        "title": "Уровень 647",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "56",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "56"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "701",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "5" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "55"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "647",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "768",
+        "title": "Уровень 648",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "20",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "702",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "648",
+        "winning_action": "line"
+      },
+      {
+        "id": "769",
+        "title": "Уровень 649",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "67",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "67"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "703",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "649",
+        "winning_action": "line"
+      },
+      {
+        "id": "770",
+        "title": "Уровень 650",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "71",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "71"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "704",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "650",
+        "winning_action": "line"
+      },
+      {
+        "id": "771",
+        "title": "Уровень 651",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "15",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "15"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "80000",
+        "grading_points2": "90000",
+        "grading_points3": "100000",
+        "map_id": "705",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "651",
+        "winning_action": "line"
+      },
+      {
+        "id": "772",
+        "title": "Уровень 652",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "3"
+              },
+              {
+                "id": "11",
+                "count": "4"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "3"
+                },
+                {
+                  "id": "11",
+                  "count": "4"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "250000",
+        "grading_points2": "270000",
+        "grading_points3": "290000",
+        "map_id": "706",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "652",
+        "winning_action": "line"
+      },
+      {
+        "id": "773",
+        "title": "Уровень 653",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "64",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "64"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "707",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "4" },
+            { "id": "6" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "180"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "653",
+        "winning_action": "line"
+      },
+      {
+        "id": "774",
+        "title": "Уровень 654",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "18",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "18"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "708",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "654",
+        "winning_action": "line"
+      },
+      {
+        "id": "775",
+        "title": "Уровень 655",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "61",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "709",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "655",
+        "winning_action": "line"
+      },
+      {
+        "id": "776",
+        "title": "Уровень 656",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "4",
+                "count": "5"
+              },
+              {
+                "id": "1",
+                "count": "5"
+              },
+              {
+                "id": "3",
+                "count": "5"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "4",
+                  "count": "5"
+                },
+                {
+                  "id": "1",
+                  "count": "5"
+                },
+                {
+                  "id": "3",
+                  "count": "5"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "710",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "656",
+        "winning_action": "line"
+      },
+      {
+        "id": "777",
+        "title": "Уровень 657",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "56",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "56"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "170000",
+        "grading_points2": "180000",
+        "grading_points3": "190000",
+        "map_id": "711",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "657",
+        "winning_action": "line"
+      },
+      {
+        "id": "778",
+        "title": "Уровень 658",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "3"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "170000",
+        "grading_points2": "180000",
+        "grading_points3": "190000",
+        "map_id": "712",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "2" },
+            { "id": "6" },
+            { "id": "1" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "658",
+        "winning_action": "line"
+      },
+      {
+        "id": "779",
+        "title": "Уровень 659",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "5"
+              },
+              {
+                "id": "1",
+                "count": "5"
+              },
+              {
+                "id": "4",
+                "count": "5"
+              },
+              {
+                "id": "3",
+                "count": "5"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "5"
+                },
+                {
+                  "id": "1",
+                  "count": "5"
+                },
+                {
+                  "id": "4",
+                  "count": "5"
+                },
+                {
+                  "id": "3",
+                  "count": "5"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "713",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "659",
+        "winning_action": "line"
+      },
+      {
+        "id": "780",
+        "title": "Уровень 660",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "59",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "59"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "165000",
+        "grading_points2": "175000",
+        "grading_points3": "185000",
+        "map_id": "714",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "200"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "660",
+        "winning_action": "line"
+      },
+      {
+        "id": "781",
+        "title": "Уровень 661",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "58",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "58"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "715",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "661",
+        "winning_action": "line"
+      },
+      {
+        "id": "782",
+        "title": "Уровень 662",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "67",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "67"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "130000",
+        "grading_points2": "140000",
+        "grading_points3": "150000",
+        "map_id": "716",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "662",
+        "winning_action": "line"
+      },
+      {
+        "id": "783",
+        "title": "Уровень 663",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "10"
+              },
+              {
+                "id": "1",
+                "count": "10"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "10"
+                },
+                {
+                  "id": "1",
+                  "count": "10"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "130000",
+        "grading_points2": "140000",
+        "grading_points3": "150000",
+        "map_id": "717",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "25"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "663",
+        "winning_action": "line"
+      },
+      {
+        "id": "784",
+        "title": "Уровень 664",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "60",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "60"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "718",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "1" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "20"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "664",
+        "winning_action": "line"
+      },
+      {
+        "id": "785",
+        "title": "Уровень 665",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "28",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "28"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "210000",
+        "grading_points3": "220000",
+        "map_id": "719",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "120"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "665",
+        "winning_action": "line"
+      },
+      {
+        "id": "786",
+        "title": "Уровень 666",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "210000",
+        "grading_points3": "220000",
+        "map_id": "720",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "4" },
+            { "id": "2" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "666",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "787",
+        "title": "Уровень 667",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "66",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "66"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "130000",
+        "grading_points2": "140000",
+        "grading_points3": "150000",
+        "map_id": "721",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "1" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "667",
+        "winning_action": "line"
+      },
+      {
+        "id": "788",
+        "title": "Уровень 668",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "20",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "722",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "668",
+        "winning_action": "line"
+      },
+      {
+        "id": "789",
+        "title": "Уровень 669",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "66",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "66"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "240000",
+        "grading_points2": "260000",
+        "grading_points3": "280000",
+        "map_id": "723",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "1" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "669",
+        "winning_action": "line"
+      },
+      {
+        "id": "790",
+        "title": "Уровень 670",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "3"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "724",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "25"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "670",
+        "winning_action": "line"
+      },
+      {
+        "id": "791",
+        "title": "Уровень 671",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "63",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "63"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "220000",
+        "grading_points2": "240000",
+        "grading_points3": "260000",
+        "map_id": "725",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "2" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "240"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "671",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "792",
+        "title": "Уровень 672",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "41",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "41"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "90000",
+        "grading_points2": "100000",
+        "grading_points3": "110000",
+        "map_id": "726",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "55"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "672",
+        "winning_action": "line"
+      },
+      {
+        "id": "793",
+        "title": "Уровень 673",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "73",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "73"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "210000",
+        "grading_points2": "220000",
+        "grading_points3": "230000",
+        "map_id": "727",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "673",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "794",
+        "title": "Уровень 674",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "3",
+                "count": "65"
+              },
+              {
+                "id": "6",
+                "count": "75"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "65"
+                },
+                {
+                  "id": "6",
+                  "count": "75"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "728",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "674",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "795",
+        "title": "Уровень 675",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "59",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "59"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "729",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "2" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "675",
+        "winning_action": "line"
+      },
+      {
+        "id": "796",
+        "title": "Уровень 676",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "730",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "676",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "797",
+        "title": "Уровень 677",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "29",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "29"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
+        "map_id": "731",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "677",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "798",
+        "title": "Уровень 678",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "55",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "55"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "732",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "240"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "678",
+        "winning_action": "line"
+      },
+      {
+        "id": "799",
+        "title": "Уровень 679",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "12",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "12"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "733",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "679",
+        "winning_action": "line"
+      },
+      {
+        "id": "800",
+        "title": "Уровень 680",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "68",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "68"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "170000",
+        "grading_points2": "180000",
+        "grading_points3": "190000",
+        "map_id": "734",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "680",
+        "winning_action": "line"
+      },
+      {
+        "id": "801",
+        "title": "Уровень 681",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "3"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "1"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "3"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "1"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "210000",
+        "grading_points3": "220000",
+        "map_id": "735",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "2" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "681",
+        "winning_action": "line"
+      },
+      {
+        "id": "802",
+        "title": "Уровень 682",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "3",
+                "count": "8"
+              },
+              {
+                "id": "1",
+                "count": "8"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "8"
+                },
+                {
+                  "id": "1",
+                  "count": "8"
+                },
+                {
+                  "id": "6",
+                  "count": "8"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "170000",
+        "grading_points2": "180000",
+        "grading_points3": "190000",
+        "map_id": "736",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "682",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "803",
+        "title": "Уровень 683",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "25",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "25"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "737",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "60"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "683",
+        "winning_action": "line"
+      },
+      {
+        "id": "805",
+        "title": "Уровень 685",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "24",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "24"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "80000",
+        "grading_points2": "90000",
+        "grading_points3": "100000",
+        "map_id": "739",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "685",
+        "winning_action": "line"
+      },
+      {
+        "id": "806",
+        "title": "Уровень 686",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": {
+              "id": "11",
+              "count": "8"
+            }
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": {
+                "id": "11",
+                "count": "8"
+              }
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "195000",
+        "grading_points2": "205000",
+        "grading_points3": "215000",
+        "map_id": "740",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "686",
+        "winning_action": "line"
+      },
+      {
+        "id": "807",
+        "title": "Уровень 687",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "69",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "69"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "180000",
+        "grading_points2": "190000",
+        "grading_points3": "200000",
+        "map_id": "741",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "55"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "687",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "808",
+        "title": "Уровень 688",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "54",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "54"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "742",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "240"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "688",
+        "winning_action": "line"
+      },
+      {
+        "id": "809",
+        "title": "Уровень 689",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "3"
+              },
+              {
+                "id": "1",
+                "count": "3"
+              },
+              {
+                "id": "2",
+                "count": "3"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "3"
+                },
+                {
+                  "id": "1",
+                  "count": "3"
+                },
+                {
+                  "id": "2",
+                  "count": "3"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "743",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "2" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "3" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "689",
+        "winning_action": "line"
+      },
+      {
+        "id": "810",
+        "title": "Уровень 690",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "67",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "67"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "744",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "1" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "690",
+        "winning_action": "line"
+      },
+      {
+        "id": "811",
+        "title": "Уровень 691",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "55",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "55"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "240000",
+        "grading_points3": "280000",
+        "map_id": "745",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "1" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "691",
+        "winning_action": "line"
+      },
+      {
+        "id": "812",
+        "title": "Уровень 692",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "56",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "56"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "746",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "692",
+        "winning_action": "line"
+      },
+      {
+        "id": "813",
+        "title": "Уровень 693",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "15",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "15"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "747",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "693",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "814",
+        "title": "Уровень 694",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "10"
+              },
+              {
+                "id": "1",
+                "count": "10"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "10"
+                },
+                {
+                  "id": "1",
+                  "count": "10"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "130000",
+        "grading_points2": "140000",
+        "grading_points3": "150000",
+        "map_id": "748",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "25"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "694",
+        "winning_action": "line"
+      },
+      {
+        "id": "815",
+        "title": "Уровень 695",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "190000",
+        "grading_points2": "200000",
+        "grading_points3": "210000",
+        "map_id": "749",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "695",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "816",
+        "title": "Уровень 696",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "68",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "68"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "190000",
+        "grading_points2": "210000",
+        "grading_points3": "230000",
+        "map_id": "750",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "240"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "696",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "817",
+        "title": "Уровень 697",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "20",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "20"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "751",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "697",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "818",
+        "title": "Уровень 698",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": {
+              "id": "3",
+              "count": "6"
+            }
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": {
+                "id": "3",
+                "count": "6"
+              }
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "752",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "698",
+        "winning_action": "line",
+        "custom_fill": "[{\"x\":0,\"y\":0,\"color_id\":3},{\"x\":2,\"y\":0,\"color_id\":1},{\"x\":3,\"y\":0,\"color_id\":2},{\"x\":4,\"y\":0,\"color_id\":4},{\"x\":5,\"y\":0,\"color_id\":5},{\"x\":6,\"y\":0,\"color_id\":1},{\"x\":8,\"y\":0,\"color_id\":3},{\"x\":2,\"y\":1,\"color_id\":2},{\"x\":3,\"y\":1,\"color_id\":4},{\"x\":4,\"y\":1,\"color_id\":5},{\"x\":5,\"y\":1,\"color_id\":5},{\"x\":6,\"y\":1,\"color_id\":1},{\"x\":0,\"y\":2,\"color_id\":2},{\"x\":1,\"y\":2,\"color_id\":4},{\"x\":2,\"y\":2,\"color_id\":5},{\"x\":6,\"y\":2,\"color_id\":5},{\"x\":7,\"y\":2,\"color_id\":1},{\"x\":8,\"y\":2,\"color_id\":2},{\"x\":0,\"y\":3,\"color_id\":4},{\"x\":1,\"y\":3,\"color_id\":5},{\"x\":2,\"y\":3,\"color_id\":1},{\"x\":4,\"y\":3,\"color_id\":3},{\"x\":6,\"y\":3,\"color_id\":2},{\"x\":7,\"y\":3,\"color_id\":2},{\"x\":8,\"y\":3,\"color_id\":4},{\"x\":0,\"y\":4,\"color_id\":5},{\"x\":1,\"y\":4,\"color_id\":1},{\"x\":2,\"y\":4,\"color_id\":2},{\"x\":6,\"y\":4,\"color_id\":5},{\"x\":7,\"y\":4,\"color_id\":5},{\"x\":8,\"y\":4,\"color_id\":4},{\"x\":0,\"y\":5,\"color_id\":2},{\"x\":1,\"y\":5,\"color_id\":1},{\"x\":2,\"y\":5,\"color_id\":5},{\"x\":4,\"y\":5,\"color_id\":3},{\"x\":6,\"y\":5,\"color_id\":4},{\"x\":7,\"y\":5,\"color_id\":2},{\"x\":8,\"y\":5,\"color_id\":1},{\"x\":0,\"y\":6,\"color_id\":4},{\"x\":1,\"y\":6,\"color_id\":5},{\"x\":2,\"y\":6,\"color_id\":5},{\"x\":6,\"y\":6,\"color_id\":1},{\"x\":7,\"y\":6,\"color_id\":5},{\"x\":8,\"y\":6,\"color_id\":5},{\"x\":2,\"y\":7,\"color_id\":4},{\"x\":3,\"y\":7,\"color_id\":4},{\"x\":4,\"y\":7,\"color_id\":2},{\"x\":5,\"y\":7,\"color_id\":4},{\"x\":6,\"y\":7,\"color_id\":4},{\"x\":0,\"y\":8,\"color_id\":3},{\"x\":2,\"y\":8,\"color_id\":5},{\"x\":3,\"y\":8,\"color_id\":2},{\"x\":4,\"y\":8,\"color_id\":4},{\"x\":5,\"y\":8,\"color_id\":2},{\"x\":6,\"y\":8,\"color_id\":5},{\"x\":8,\"y\":8,\"color_id\":3}]"
+      },
+      {
+        "id": "819",
+        "title": "Уровень 699",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "58",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "58"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "753",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "699",
+        "winning_action": "line"
+      },
+      {
+        "id": "820",
+        "title": "Уровень 700",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "20",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "20"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "754",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "700",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "821",
+        "title": "Уровень 701",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "65",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "65"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "755",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "55"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "701",
+        "winning_action": "line"
+      },
+      {
+        "id": "822",
+        "title": "Уровень 702",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "170000",
+        "grading_points2": "180000",
+        "grading_points3": "190000",
+        "map_id": "756",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "702",
+        "winning_action": "line"
+      },
+      {
+        "id": "823",
+        "title": "Уровень 703",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "55"
+              },
+              {
+                "id": "6",
+                "count": "60"
+              },
+              {
+                "id": "3",
+                "count": "65"
+              },
+              {
+                "id": "2",
+                "count": "70"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "55"
+                },
+                {
+                  "id": "6",
+                  "count": "60"
+                },
+                {
+                  "id": "3",
+                  "count": "65"
+                },
+                {
+                  "id": "2",
+                  "count": "70"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "757",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "2" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "703",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "824",
+        "title": "Уровень 704",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "73",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "73"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "210000",
+        "grading_points3": "220000",
+        "map_id": "758",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "704",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "825",
+        "title": "Уровень 705",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "9"
+              },
+              {
+                "id": "3",
+                "count": "9"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "9"
+                },
+                {
+                  "id": "3",
+                  "count": "9"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
+        "map_id": "759",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "60"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "705",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "826",
+        "title": "Уровень 706",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "61",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "61"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "760",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "706",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "827",
+        "title": "Уровень 707",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "10"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": {
+                "id": "5",
+                "count": "10"
+              }
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "761",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "707",
+        "winning_action": "line"
+      },
+      {
+        "id": "828",
+        "title": "Уровень 708",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "762",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "708",
+        "winning_action": "line"
+      },
+      {
+        "id": "829",
+        "title": "Уровень 709",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "66",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "66"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "763",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "60"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "709",
+        "winning_action": "line"
+      },
+      {
+        "id": "830",
+        "title": "Уровень 710",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "51",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "51"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "130000",
+        "grading_points2": "140000",
+        "grading_points3": "150000",
+        "map_id": "764",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "710",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "832",
+        "title": "Уровень 712",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "18",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "18"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "766",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "712",
+        "winning_action": "line"
+      },
+      {
+        "id": "833",
+        "title": "Уровень 713",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "3"
+              },
+              {
+                "id": "10",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "3"
+                },
+                {
+                  "id": "10",
+                  "count": "3"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "180000",
+        "grading_points2": "190000",
+        "grading_points3": "200000",
+        "map_id": "767",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "2" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "713",
+        "winning_action": "line"
+      },
+      {
+        "id": "834",
+        "title": "Уровень 714",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "5",
+          "value": "27",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "27"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "130000",
+        "grading_points2": "140000",
+        "grading_points3": "155000",
+        "map_id": "768",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "60"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "714",
+        "winning_action": "line"
+      },
+      {
+        "id": "835",
+        "title": "Уровень 715",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "2",
+          "value": "36",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "36"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "140000",
+        "grading_points2": "150000",
+        "grading_points3": "160000",
+        "map_id": "769",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "715",
+        "winning_action": "line"
+      },
+      {
+        "id": "836",
+        "title": "Уровень 716",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "180"
+                },
+                {
+                  "id": "6",
+                  "count": "8"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "770",
+        "global_map_id": "18",
+        "background_id": "21",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "716",
+        "winning_action": "line",
+        "custom_fill": "[{\"x\":0,\"y\":0,\"color_id\":6},{\"x\":4,\"y\":0,\"color_id\":6},{\"x\":8,\"y\":0,\"color_id\":6},{\"x\":1,\"y\":1,\"color_id\":2},{\"x\":2,\"y\":1,\"color_id\":3},{\"x\":3,\"y\":1,\"color_id\":4},{\"x\":4,\"y\":1,\"color_id\":5},{\"x\":5,\"y\":1,\"color_id\":2},{\"x\":6,\"y\":1,\"color_id\":4},{\"x\":7,\"y\":1,\"color_id\":4},{\"x\":1,\"y\":2,\"color_id\":4},{\"x\":2,\"y\":2,\"color_id\":5},{\"x\":3,\"y\":2,\"color_id\":3},{\"x\":4,\"y\":2,\"color_id\":4},{\"x\":5,\"y\":2,\"color_id\":3},{\"x\":6,\"y\":2,\"color_id\":2},{\"x\":7,\"y\":2,\"color_id\":3},{\"x\":1,\"y\":3,\"color_id\":3},{\"x\":2,\"y\":3,\"color_id\":5},{\"x\":3,\"y\":3,\"color_id\":3},{\"x\":4,\"y\":3,\"color_id\":4},{\"x\":5,\"y\":3,\"color_id\":3},{\"x\":6,\"y\":3,\"color_id\":3},{\"x\":7,\"y\":3,\"color_id\":4},{\"x\":0,\"y\":4,\"color_id\":6},{\"x\":1,\"y\":4,\"color_id\":5},{\"x\":2,\"y\":4,\"color_id\":4},{\"x\":3,\"y\":4,\"color_id\":2},{\"x\":4,\"y\":4,\"color_id\":3},{\"x\":5,\"y\":4,\"color_id\":4},{\"x\":6,\"y\":4,\"color_id\":5},{\"x\":7,\"y\":4,\"color_id\":5},{\"x\":8,\"y\":4,\"color_id\":6},{\"x\":1,\"y\":5,\"color_id\":5},{\"x\":2,\"y\":5,\"color_id\":4},{\"x\":3,\"y\":5,\"color_id\":3},{\"x\":4,\"y\":5,\"color_id\":2},{\"x\":5,\"y\":5,\"color_id\":2},{\"x\":6,\"y\":5,\"color_id\":5},{\"x\":7,\"y\":5,\"color_id\":2},{\"x\":1,\"y\":6,\"color_id\":2},{\"x\":2,\"y\":6,\"color_id\":2},{\"x\":3,\"y\":6,\"color_id\":4},{\"x\":4,\"y\":6,\"color_id\":4},{\"x\":5,\"y\":6,\"color_id\":2},{\"x\":6,\"y\":6,\"color_id\":3},{\"x\":7,\"y\":6,\"color_id\":3},{\"x\":1,\"y\":7,\"color_id\":3},{\"x\":2,\"y\":7,\"color_id\":3},{\"x\":3,\"y\":7,\"color_id\":5},{\"x\":4,\"y\":7,\"color_id\":5},{\"x\":5,\"y\":7,\"color_id\":3},{\"x\":6,\"y\":7,\"color_id\":2},{\"x\":7,\"y\":7,\"color_id\":5},{\"x\":0,\"y\":8,\"color_id\":6},{\"x\":4,\"y\":8,\"color_id\":6},{\"x\":8,\"y\":8,\"color_id\":6}]"
+      },
+      {
+        "id": "948",
+        "title": "Уровень 803",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "45"
+              },
+              {
+                "id": "6",
+                "count": "40"
+              },
+              {
+                "id": "1",
+                "count": "45"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "45"
+                },
+                {
+                  "id": "6",
+                  "count": "40"
+                },
+                {
+                  "id": "1",
+                  "count": "45"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "879",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "6" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "803",
+        "winning_action": "line"
+      },
+      {
+        "id": "952",
+        "title": "Уровень 807",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "3"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "883",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "2" },
+            { "id": "3" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "807",
+        "winning_action": "line"
+      },
+      {
+        "id": "1091",
+        "title": "Уровень 271",
+        "drops_points1": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points2": {
+          "statue_suites": {
+            
+          }
+        },
+        "drops_points3": {
+          "statue_suites": {
+            
+          }
+        },
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "4",
+                "count": "7"
+              },
+              {
+                "id": "6",
+                "count": "7"
+              },
+              {
+                "id": "5",
+                "count": "7"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "4",
+                  "count": "7"
+                },
+                {
+                  "id": "6",
+                  "count": "7"
+                },
+                {
+                  "id": "5",
+                  "count": "7"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "250000",
+        "map_id": "277",
+        "global_map_id": "5",
+        "background_id": "10",
+        "color_list": {
+          "item": [
+            { "id": "2" },
+            { "id": "3" },
+            { "id": "1" },
+            { "id": "4" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "271",
+        "winning_action": "line",
+        "generate_movable_garbage": "yes",
+        "non_standard_description": ". Уровень с секретом. Ищите спрятанные комбинации.",
+        "custom_fill": "[{\"x\":2,\"y\":0,\"color_id\":4},{\"x\":1,\"y\":3,\"color_id\":2},{\"x\":1,\"y\":4,\"color_id\":3},{\"x\":4,\"y\":0,\"color_id\":5},{\"x\":2,\"y\":3,\"color_id\":3},{\"x\":4,\"y\":3,\"color_id\":3},{\"x\":3,\"y\":1,\"color_id\":6},{\"x\":0,\"y\":3,\"color_id\":2},{\"x\":0,\"y\":4,\"color_id\":3},{\"x\":6,\"y\":0,\"color_id\":6},{\"x\":5,\"y\":1,\"color_id\":4},{\"x\":6,\"y\":1,\"color_id\":6},{\"x\":6,\"y\":2,\"color_id\":6},{\"x\":7,\"y\":2,\"color_id\":5},{\"x\":8,\"y\":2,\"color_id\":4},{\"x\":5,\"y\":3,\"color_id\":3},{\"x\":7,\"y\":3,\"color_id\":6},{\"x\":8,\"y\":4,\"color_id\":5},{\"x\":0,\"y\":5,\"color_id\":3},{\"x\":1,\"y\":5,\"color_id\":2},{\"x\":2,\"y\":5,\"color_id\":3},{\"x\":4,\"y\":5,\"color_id\":3},{\"x\":7,\"y\":5,\"color_id\":4},{\"x\":0,\"y\":6,\"color_id\":2},{\"x\":1,\"y\":6,\"color_id\":1},{\"x\":2,\"y\":6,\"color_id\":1},{\"x\":4,\"y\":6,\"color_id\":1},{\"x\":8,\"y\":6,\"color_id\":6},{\"x\":3,\"y\":7,\"color_id\":1},{\"x\":4,\"y\":7,\"color_id\":2},{\"x\":5,\"y\":7,\"color_id\":3},{\"x\":3,\"y\":8,\"color_id\":3},{\"x\":4,\"y\":8,\"color_id\":3},{\"x\":5,\"y\":8,\"color_id\":2},{\"x\":3,\"y\":5,\"color_id\":2},{\"x\":3,\"y\":6,\"color_id\":2},{\"x\":5,\"y\":6,\"color_id\":1},{\"x\":2,\"y\":7,\"color_id\":3},{\"x\":2,\"y\":8,\"color_id\":1},{\"x\":0,\"y\":0,\"color_id\":6},{\"x\":7,\"y\":0,\"color_id\":5},{\"x\":8,\"y\":0,\"color_id\":4},{\"x\":1,\"y\":1,\"color_id\":5},{\"x\":7,\"y\":1,\"color_id\":5},{\"x\":8,\"y\":1,\"color_id\":4},{\"x\":3,\"y\":3,\"color_id\":2},{\"x\":2,\"y\":4,\"color_id\":2},{\"x\":3,\"y\":4,\"color_id\":3},{\"x\":4,\"y\":4,\"color_id\":2},{\"x\":5,\"y\":4,\"color_id\":2},{\"x\":5,\"y\":5,\"color_id\":1},{\"x\":0,\"y\":7,\"color_id\":2},{\"x\":1,\"y\":7,\"color_id\":1},{\"x\":7,\"y\":7,\"color_id\":5},{\"x\":0,\"y\":8,\"color_id\":3},{\"x\":1,\"y\":8,\"color_id\":3},{\"x\":8,\"y\":8,\"color_id\":4}]"
+      },
+      {
+        "id": "869",
+        "title": "Уровень 724",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "1"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "1"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "800",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "6" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "724",
+        "winning_action": "line"
+      },
+      {
+        "id": "975",
+        "title": "Апрель 8",
+        "needs": {
+          
+        },
+        "type": "advertising",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "3"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "210000",
+        "grading_points3": "220000",
+        "map_id": "903",
+        "global_map_id": "25",
+        "background_id": "26",
+        "color_list": {
+          "item": [
+            { "id": "4" },
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "3" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "25"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "8",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "976",
+        "title": "Апрель 9",
+        "needs": {
+          
+        },
+        "type": "advertising",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "3"
+              },
+              {
+                "id": "1",
+                "count": "3"
+              },
+              {
+                "id": "3",
+                "count": "1"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "3"
+                },
+                {
+                  "id": "1",
+                  "count": "3"
+                },
+                {
+                  "id": "3",
+                  "count": "1"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "904",
+        "global_map_id": "25",
+        "background_id": "26",
+        "color_list": {
+          "item": [
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "3" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "9",
+        "winning_action": "line"
+      },
+      {
+        "id": "978",
+        "title": "Апрель 11",
+        "needs": {
+          
+        },
+        "type": "advertising",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "105"
+              },
+              {
+                "id": "6",
+                "count": "115"
+              },
+              {
+                "id": "1",
+                "count": "125"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "3"
+              },
+              {
+                "id": "1",
+                "count": "3"
+              },
+              {
+                "id": "3",
+                "count": "1"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "105"
+                },
+                {
+                  "id": "6",
+                  "count": "115"
+                },
+                {
+                  "id": "1",
+                  "count": "125"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "906",
+        "global_map_id": "25",
+        "background_id": "26",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "180"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "11",
+        "winning_action": "line"
+      },
+      {
+        "id": "980",
+        "title": "Апрель 13",
+        "needs": {
+          
+        },
+        "type": "advertising",
+        "condition_main": {
+          "type": "2",
+          "value": "58",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "105"
+              },
+              {
+                "id": "6",
+                "count": "115"
+              },
+              {
+                "id": "1",
+                "count": "125"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "3"
+              },
+              {
+                "id": "1",
+                "count": "3"
+              },
+              {
+                "id": "3",
+                "count": "1"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "2",
+            "value": "58"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "908",
+        "global_map_id": "25",
+        "background_id": "26",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "5" },
+            { "id": "4" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "13",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "982",
+        "title": "Апрель 15",
+        "needs": {
+          
+        },
+        "type": "advertising",
+        "condition_main": {
+          "type": "5",
+          "value": "25",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "1"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "105"
+              },
+              {
+                "id": "6",
+                "count": "115"
+              },
+              {
+                "id": "1",
+                "count": "125"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "3"
+              },
+              {
+                "id": "1",
+                "count": "3"
+              },
+              {
+                "id": "3",
+                "count": "1"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "5",
+            "value": "25"
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "910",
+        "global_map_id": "25",
+        "background_id": "26",
+        "color_list": {
+          "item": [
+            { "id": "5" },
+            { "id": "4" },
+            { "id": "3" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "180"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "15",
+        "winning_action": "line"
+      },
+      {
+        "id": "870",
+        "title": "Уровень 725",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "60"
+              },
+              {
+                "id": "6",
+                "count": "65"
+              },
+              {
+                "id": "4",
+                "count": "60"
+              },
+              {
+                "id": "2",
+                "count": "65"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "60"
+                },
+                {
+                  "id": "6",
+                  "count": "65"
+                },
+                {
+                  "id": "4",
+                  "count": "60"
+                },
+                {
+                  "id": "2",
+                  "count": "65"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "801",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "6" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "725",
+        "winning_action": "line"
+      },
+      {
+        "id": "872",
+        "title": "Уровень 727",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "10"
+              },
+              {
+                "id": "2",
+                "count": "10"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "10"
+                },
+                {
+                  "id": "2",
+                  "count": "10"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "803",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "6" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "25"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "727",
+        "winning_action": "line"
+      },
+      {
+        "id": "874",
+        "title": "Уровень 729",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "1",
+                "count": "6"
+              },
+              {
+                "id": "2",
+                "count": "6"
+              },
+              {
+                "id": "4",
+                "count": "6"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "1",
+                  "count": "6"
+                },
+                {
+                  "id": "2",
+                  "count": "6"
+                },
+                {
+                  "id": "4",
+                  "count": "6"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "805",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "729",
+        "winning_action": "line"
+      },
+      {
+        "id": "875",
+        "title": "Уровень 730",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "806",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "730",
+        "winning_action": "line"
+      },
+      {
+        "id": "879",
+        "title": "Уровень 734",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "3",
+                "count": "10"
+              },
+              {
+                "id": "1",
+                "count": "10"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "10"
+                },
+                {
+                  "id": "1",
+                  "count": "10"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "810",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "734",
+        "winning_action": "line"
+      },
+      {
+        "id": "880",
+        "title": "Уровень 735",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "180000",
+        "grading_points2": "190000",
+        "grading_points3": "200000",
+        "map_id": "811",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "6" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "735",
+        "winning_action": "line"
+      },
+      {
+        "id": "885",
+        "title": "Уровень 740",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "3"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "3"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "816",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "740",
+        "winning_action": "line"
+      },
+      {
+        "id": "889",
+        "title": "Уровень 744",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "1"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "1"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "150000",
+        "grading_points2": "160000",
+        "grading_points3": "170000",
+        "map_id": "820",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "744",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "890",
+        "title": "Уровень 745",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "90"
+              },
+              {
+                "id": "3",
+                "count": "90"
+              },
+              {
+                "id": "1",
+                "count": "90"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "90"
+                },
+                {
+                  "id": "3",
+                  "count": "90"
+                },
+                {
+                  "id": "1",
+                  "count": "90"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "130000",
+        "grading_points2": "140000",
+        "grading_points3": "150000",
+        "map_id": "821",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "745",
+        "winning_action": "line"
+      },
+      {
+        "id": "893",
+        "title": "Уровень 748",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "824",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "748",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "894",
+        "title": "Уровень 749",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "3",
+                "count": "70"
+              },
+              {
+                "id": "4",
+                "count": "75"
+              },
+              {
+                "id": "5",
+                "count": "70"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "70"
+                },
+                {
+                  "id": "4",
+                  "count": "75"
+                },
+                {
+                  "id": "5",
+                  "count": "70"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "90000",
+        "grading_points2": "100000",
+        "grading_points3": "110000",
+        "map_id": "825",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "749",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "898",
+        "title": "Уровень 753",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "3"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "1"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "3"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "1"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "190000",
+        "grading_points2": "200000",
+        "grading_points3": "210000",
+        "map_id": "829",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "6" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "120"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "753",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "1" }
+        }
+      },
+      {
+        "id": "901",
+        "title": "Уровень 756",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "8"
+              },
+              {
+                "id": "1",
+                "count": "8"
+              },
+              {
+                "id": "2",
+                "count": "8"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "8"
+                },
+                {
+                  "id": "1",
+                  "count": "8"
+                },
+                {
+                  "id": "2",
+                  "count": "8"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
+        "map_id": "832",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "1" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "756",
+        "winning_action": "line"
+      },
+      {
+        "id": "907",
+        "title": "Уровень 762",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "3",
+                "count": "10"
+              },
+              {
+                "id": "4",
+                "count": "10"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "10"
+                },
+                {
+                  "id": "4",
+                  "count": "10"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "100000",
+        "grading_points2": "110000",
+        "grading_points3": "120000",
+        "map_id": "838",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "762",
+        "winning_action": "line"
+      },
+      {
+        "id": "908",
+        "title": "Уровень 763",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "1"
+              },
+              {
+                "id": "10",
+                "count": "1"
+              },
+              {
+                "id": "11",
+                "count": "1"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "1"
+                },
+                {
+                  "id": "10",
+                  "count": "1"
+                },
+                {
+                  "id": "11",
+                  "count": "1"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
+        "map_id": "839",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "763",
+        "winning_action": "line"
+      },
+      {
+        "id": "911",
+        "title": "Уровень 766",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "90"
+              },
+              {
+                "id": "6",
+                "count": "90"
+              },
+              {
+                "id": "4",
+                "count": "90"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "90"
+                },
+                {
+                  "id": "6",
+                  "count": "90"
+                },
+                {
+                  "id": "4",
+                  "count": "90"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "160000",
+        "grading_points2": "170000",
+        "grading_points3": "180000",
+        "map_id": "842",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "30"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "766",
+        "winning_action": "line"
+      },
+      {
+        "id": "914",
+        "title": "Уровень 769",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "3",
+                "count": "65"
+              },
+              {
+                "id": "6",
+                "count": "60"
+              },
+              {
+                "id": "2",
+                "count": "70"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "3",
+                  "count": "65"
+                },
+                {
+                  "id": "6",
+                  "count": "60"
+                },
+                {
+                  "id": "2",
+                  "count": "70"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "110000",
+        "grading_points2": "120000",
+        "grading_points3": "130000",
+        "map_id": "845",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "6" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "769",
+        "winning_action": "line"
+      },
+      {
+        "id": "915",
+        "title": "Уровень 770",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "210000",
+        "grading_points2": "230000",
+        "grading_points3": "250000",
+        "map_id": "846",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "6" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "770",
+        "winning_action": "line"
+      },
+      {
+        "id": "923",
+        "title": "Уровень 778",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "8"
+              },
+              {
+                "id": "1",
+                "count": "8"
+              },
+              {
+                "id": "4",
+                "count": "8"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "8"
+                },
+                {
+                  "id": "1",
+                  "count": "8"
+                },
+                {
+                  "id": "4",
+                  "count": "8"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "854",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" },
+            { "id": "6" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "55"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "778",
+        "winning_action": "line"
+      },
+      {
+        "id": "925",
+        "title": "Уровень 780",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "4",
+                "count": "90"
+              },
+              {
+                "id": "2",
+                "count": "90"
+              },
+              {
+                "id": "1",
+                "count": "90"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "4",
+                  "count": "90"
+                },
+                {
+                  "id": "2",
+                  "count": "90"
+                },
+                {
+                  "id": "1",
+                  "count": "90"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "856",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_time",
+          "value": "160"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "3" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "4" }
+        },
+        "point_id": "780",
+        "winning_action": "line",
+        "special_generator": {
+          "item": { "id": "2" }
+        }
+      },
+      {
+        "id": "930",
+        "title": "Уровень 785",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "220000",
+        "grading_points3": "240000",
+        "map_id": "861",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "6" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "785",
+        "winning_action": "line"
+      },
+      {
+        "id": "939",
+        "title": "Уровень 794",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "60"
+              },
+              {
+                "id": "2",
+                "count": "70"
+              },
+              {
+                "id": "1",
+                "count": "80"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "60"
+                },
+                {
+                  "id": "2",
+                  "count": "70"
+                },
+                {
+                  "id": "1",
+                  "count": "80"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "120000",
+        "grading_points2": "130000",
+        "grading_points3": "140000",
+        "map_id": "870",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "794",
+        "winning_action": "line"
+      },
+      {
+        "id": "946",
+        "title": "Уровень 801",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "180000",
+        "grading_points2": "190000",
+        "grading_points3": "200000",
+        "map_id": "877",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "35"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "801",
+        "winning_action": "line"
+      },
+      {
+        "id": "947",
+        "title": "Уровень 802",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "1"
+              },
+              {
+                "id": "4",
+                "count": "1"
+              },
+              {
+                "id": "2",
+                "count": "1"
+              },
+              {
+                "id": "3",
+                "count": "1"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "1"
+                },
+                {
+                  "id": "4",
+                  "count": "1"
+                },
+                {
+                  "id": "2",
+                  "count": "1"
+                },
+                {
+                  "id": "3",
+                  "count": "1"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "130000",
+        "grading_points2": "140000",
+        "grading_points3": "150000",
+        "map_id": "878",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "802",
+        "winning_action": "line"
+      },
+      {
+        "id": "955",
+        "title": "Уровень 810",
+        "needs": {
+          
+        },
+        "type": "usual",
+        "condition_main": {
+          "type": "4",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "180"
+              },
+              {
+                "id": "6",
+                "count": "8"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": [
+              {
+                "id": "5",
+                "count": "4"
+              },
+              {
+                "id": "3",
+                "count": "1"
+              },
+              {
+                "id": "2",
+                "count": "4"
+              }
+            ]
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "4",
+            "collection": {
+              "item": [
+                {
+                  "id": "5",
+                  "count": "4"
+                },
+                {
+                  "id": "3",
+                  "count": "1"
+                },
+                {
+                  "id": "2",
+                  "count": "4"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "80000",
+        "grading_points2": "90000",
+        "grading_points3": "100000",
+        "map_id": "886",
+        "global_map_id": "23",
+        "background_id": "25",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "2" },
+            { "id": "4" },
+            { "id": "5" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "50"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "810",
+        "winning_action": "line"
+      },
+      {
+        "id": "858",
+        "title": "Gillette 3",
+        "needs": {
+          
+        },
+        "type": "advertising",
+        "condition_main": {
+          "type": "1",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "5",
+                "count": "50"
+              },
+              {
+                "id": "6",
+                "count": "50"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "1",
+            "collection": {
+              "item": [
+                {
+                  "id": "6",
+                  "count": "2"
+                },
+                {
+                  "id": "10",
+                  "count": "2"
+                },
+                {
+                  "id": "11",
+                  "count": "2"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "200000",
+        "grading_points2": "210000",
+        "grading_points3": "220000",
+        "map_id": "790",
+        "global_map_id": "22",
+        "background_id": "24",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "2" },
+            { "id": "1" },
+            { "id": "5" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "45"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "3",
+        "winning_action": "line",
+        "adv_metrics_links": "http://thz-engine.com/counter?cid=1009&mid=41524&uid={userPID}|http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=457445&pid=1587129&bid=3257323&bn=3257323&rnd=1693282732"
+      },
+      {
+        "id": "861",
+        "title": "Gillette 6",
+        "needs": {
+          
+        },
+        "type": "advertising",
+        "condition_main": {
+          "type": "3",
+          "condition_gem": {
+            "item": [
+              {
+                "id": "6",
+                "count": "2"
+              },
+              {
+                "id": "10",
+                "count": "2"
+              },
+              {
+                "id": "11",
+                "count": "2"
+              }
+            ]
+          },
+          "condition_color_gem": {
+            "item": [
+              {
+                "id": "1",
+                "count": "70"
+              },
+              {
+                "id": "6",
+                "count": "70"
+              },
+              {
+                "id": "3",
+                "count": "80"
+              }
+            ]
+          },
+          "condition_color_bird": {
+            "item": {
+              "id": "5",
+              "count": "14"
+            }
+          }
+        },
+        "condition_list": {
+          "item": {
+            "type": "3",
+            "collection": {
+              "item": [
+                {
+                  "id": "1",
+                  "count": "70"
+                },
+                {
+                  "id": "6",
+                  "count": "70"
+                },
+                {
+                  "id": "3",
+                  "count": "80"
+                }
+              ]
+            }
+          }
+        },
+        "description": "Уничтожь 200 цветных камней и набери 150 000 очков, потратив не больше 25 ходов.",
+        "grading_points1": "170000",
+        "grading_points2": "180000",
+        "grading_points3": "190000",
+        "map_id": "793",
+        "global_map_id": "22",
+        "background_id": "24",
+        "color_list": {
+          "item": [
+            { "id": "3" },
+            { "id": "6" },
+            { "id": "4" },
+            { "id": "2" },
+            { "id": "1" }
+          ]
+        },
+        "restriction": {
+          "type": "on_count_action",
+          "value": "40"
+        },
+        "boost_before_starts": {
+          "item": [
+            { "id": "7" },
+            { "id": "8" },
+            { "id": "10" }
+          ]
+        },
+        "boost_after_starts": {
+          "item": [
+            { "id": "1" },
+            { "id": "6" },
+            { "id": "11" },
+            { "id": "14" }
+          ]
+        },
+        "boost_after_losing": {
+          "item": { "id": "12" }
+        },
+        "point_id": "6",
+        "winning_action": "line",
+        "adv_metrics_links": "http://thz-engine.com/counter?cid=1009&mid=41527&uid={userPID}|http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&bt=21&ad=457445&pid=1587132&bid=3257326&bn=3257326&rnd=923855626"
       }
     ]
   }

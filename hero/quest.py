@@ -11,9 +11,9 @@ person = 0
 quest_id = '302'
 
 if len(sys.argv) > 1:
-    person = int(sys.argv[2])
-if len(sys.argv) > 2:
-    person = int(sys.argv[2])
+    person = int(sys.argv[1])
+else:
+    raise Exception("#corc0 #vadimbot1 #polya2 #natali_vlasova3 #misha_zhukov4 #nikita5 #yura6 #lenaSv7 #VitaShani8 #mari kremer9")
     
 persons = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc0

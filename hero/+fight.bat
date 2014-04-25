@@ -10,7 +10,7 @@ d:\srv\python27\python.exe d:\srv\games\hero\fight.py 4 0 6
 d:\srv\python27\python.exe d:\srv\games\hero\mest.py 4
 d:\srv\python27\python.exe d:\srv\games\hero\fight.py 5 0 6
 d:\srv\python27\python.exe d:\srv\games\hero\mest.py 5
-d:\srv\python27\python.exe d:\srv\games\hero\fight.py 6 0 6
+d:\srv\python27\python.exe d:\srv\games\hero\fight.py 6 0 3
 d:\srv\python27\python.exe d:\srv\games\hero\mest.py 6
 d:\srv\python27\python.exe d:\srv\games\hero\fight.py 7 0 6
 d:\srv\python27\python.exe d:\srv\games\hero\mest.py 7

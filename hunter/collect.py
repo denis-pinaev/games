@@ -194,9 +194,11 @@ def get_sig():
     url = "http://armor5-two.ru/hunter/index.php?api_url=http://api.vk.com/api.php&api_id=3520886&api_settings=2367494&viewer_id=124520&viewer_type=2&sid=%s&secret=%s&access_token=%s&user_id=124520&group_id=0&is_app_user=1&auth_key=23fb9d636ea543ec00b3907e398ed839&language=0&parent_language=0&ad_info=ElsdCQBeRVBmBRIKQgYIC35tWxEKDw5VR0FVIxEIYxFKVTluVg==&is_secure=0&ads_app_id=3520886_3b7ad026113b3f4f46&referrer=user_apps&lc_name=%s&hash=" % (getRandom(), getRandom(), getRandom(), getRandom())
     resp = requests.get(url, allow_redirects=True)
     text = resp.text
-    s1 = text.find('<p>Session: ')
-    s2 = text.find(' <b>version:')
-    return text[s1+12:s2]
+    s1 = text.find("var sid         = '")
+    s2 = text.find("';",s1)
+    #s1 = text.find('<p>Session: ')
+    #s2 = text.find(' <b>version:')
+    return text[s1+19:s2]
 
 def getMobsInQuest(questt, quests):
     if len(quests)>0:

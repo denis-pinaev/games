@@ -45,9 +45,10 @@ elif len(sys.argv) > 1:
 
 persons = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc
+              {"pid":"191291100","auth":"76c06116794fa041156ac0014f8a6d18","gid":0,"sid":""},#Ivan bot1
               {"pid":"10700095","auth":"ae8c0a04a4fe4e9a909e17aa45cd6fd3","gid":0,"sid":""},#mariKr_bot
-              {"pid":"133569922","auth":"994c8cc961e087a786c64694c886fcaa","gid":0,"sid":""},#lenaSv_bot
               {"pid":"107402663","auth":"81ac464a55f116dcd1c0441c4e11cb49","gid":0,"sid":""},#alex black
+              {"pid":"133569922","auth":"994c8cc961e087a786c64694c886fcaa","gid":0,"sid":""},#lenaSv_bot
               {"pid":"155908147","auth":"38e6c4c6f1a3ca43a78a6c499879ba7e","gid":0,"sid":""},#margo
               {"pid":"156721888","auth":"fd0f8ffff11ba378e7bdae6a64e2bb1b","gid":0,"sid":""},#podolskaya irina
               {"pid":"108534050","auth":"be89b8b65bf6faea7d8a1a679f9b05db","gid":0,"sid":""},#vlad

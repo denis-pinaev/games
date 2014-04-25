@@ -23,11 +23,15 @@ if len(sys.argv) > 1:
     start_p = int(sys.argv[1])
 if len(sys.argv) > 2:
     end_p = int(sys.argv[2])
+lim = 27
+if len(sys.argv) > 3:
+    lim = int(sys.argv[3])
 
 
 
 persons = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc
+              {"pid":"191291100","auth":"76c06116794fa041156ac0014f8a6d18","gid":0,"sid":""},#Ivan bot1
               {"pid":"10700095","auth":"ae8c0a04a4fe4e9a909e17aa45cd6fd3","gid":0,"sid":""},#mariKr_bot
               {"pid":"133569922","auth":"994c8cc961e087a786c64694c886fcaa","gid":0,"sid":""},#lenaSv_bot
               {"pid":"107402663","auth":"81ac464a55f116dcd1c0441c4e11cb49","gid":0,"sid":""},#alex black
@@ -157,7 +161,6 @@ person = 0
 #flist = ['217858589']#vlad
 sendSTR = ''
 
-lim = 27
 
 #persons = persons[:36]
 

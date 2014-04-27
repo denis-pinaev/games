@@ -941,6 +941,7 @@
 [20.04 22:44:17]  Rang:14 cash: 31 epower: 504956 money: 6293777(9520) wood: 31800 stone: 15800 iron: 2884 experience: 51785(222)
 [20.04 22:44:22]  Rang:13 cash: 31 epower: 504956 money: 6301429(7652) wood: 31800 stone: 15800 iron: 2884 experience: 52119(334)
 [20.04 22:44:27]  Rang:12 cash: 31 epower: 504956 money: 6320063(18634) wood: 31800 stone: 15800 iron: 2884 experience: 52477(358)
+<<<<<<< 5057339cd137db43f0d77d87b35846b7ea36bc55
 [21.04 09:27:58]  Rang:11 cash: 31 epower: 504956 money: 6347703(27640) wood: 31800 stone: 15800 iron: 2884 experience: 53305(828)
 [21.04 09:28:01]  Rang:10 cash: 31 epower: 504956 money: 6363399(15696) wood: 31800 stone: 15800 iron: 2884 experience: 54061(756)
 [21.04 09:28:03]  Rang:9 cash: 32 epower: 504956 money: 6391195(27796) wood: 31800 stone: 15800 iron: 2884 experience: 65(660)
@@ -1063,3 +1064,11 @@
 [27.04 20:21:43]  Rang:3 cash: 37 epower: 504956 money: 7702832(15992) wood: 31800 stone: 15800 iron: 2884 experience: 51083(192)
 [27.04 20:21:45]  Rang:3 cash: 37 epower: 504956 money: 7720888(18056) wood: 31800 stone: 15800 iron: 2884 experience: 51249(166)
 [27.04 22:19:53]  Rang:3 cash: 37 epower: 504956 money: 7737414(16526) wood: 31800 stone: 15800 iron: 2884 experience: 51641(392)
+=======
+[26.04 04:44:30]  Rang:5 cash: 37 epower: 504956 money: 7113198(14274) wood: 31800 stone: 15800 iron: 2884 experience: 37265(414)
+[26.04 04:44:34]  Rang:5 cash: 37 epower: 504956 money: 7132156(18958) wood: 31800 stone: 15800 iron: 2884 experience: 37471(206)
+[26.04 04:44:38]  Rang:4 cash: 37 epower: 504956 money: 7140610(8454) wood: 31800 stone: 15800 iron: 2884 experience: 37855(384)
+[26.04 04:44:42]  Rang:4 cash: 37 epower: 504956 money: 7147866(7256) wood: 31800 stone: 15800 iron: 2884 experience: 38313(458)
+[26.04 04:44:46]  Rang:4 cash: 37 epower: 504956 money: 7167994(20128) wood: 31800 stone: 15800 iron: 2884 experience: 38475(162)
+[26.04 04:44:50]  Rang:3 cash: 37 epower: 504956 money: 7185576(17582) wood: 31800 stone: 15800 iron: 2884 experience: 38885(410)
+>>>>>>> 7edd6ee6eb73893a464aa02a1c78d6b6675625c6

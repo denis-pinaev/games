@@ -11,7 +11,7 @@ from pyamf.remoting.client import RemotingService
 data = {}
 all_data = []
 persons = {}
-sid = 22442
+sid = 11329
 
 def changeInfo(ltype):
     all_data.append(data[ltype])

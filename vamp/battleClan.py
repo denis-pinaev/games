@@ -8,7 +8,7 @@ from pyamf.remoting.client import RemotingService
 
 #time.sleep(60*12*60)
 
-sid = 22442
+sid = 11329
 stamina = 3
 bid = 1
 tgt = 1
@@ -16,7 +16,7 @@ person = 'gludia4'#'none'
 mission = True
 reenter_first = True
 clanID = 2305215
-targetClanID = 1220531#1349474
+targetClanID = 878291#1349474
 #sureClan = isFight = False
 sureClan = isFight = True
 firstA = False

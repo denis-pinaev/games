@@ -5,7 +5,7 @@ import datetime
 import time
 from pyamf.remoting.client import RemotingService
 
-sid = 22442
+sid = 11329
 bid = 1
 tgt = 1
 person = 'gludia4'

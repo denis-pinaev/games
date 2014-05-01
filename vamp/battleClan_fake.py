@@ -6,7 +6,7 @@ import time
 from pyamf.remoting.client import RemotingService
 
 
-sid = 22442
+sid = 11329
 stamina = 3
 bid = 1
 tgt = 1

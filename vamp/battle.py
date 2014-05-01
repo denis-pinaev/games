@@ -12,7 +12,7 @@ d:\srv\python27\python.exe d:\srv\vamp\battle.py lucky 46589 693482 3 0
 '''
 
 
-sid = 22442
+sid = 11329
 stamina = 3
 bid = 1
 tgt = 1

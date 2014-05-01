@@ -8,7 +8,7 @@ from pyamf.remoting.client import RemotingService
 
 #time.sleep(60*12*60)
 
-sid = 6614
+sid = 15446
 stamina = 3
 bid = 1
 tgt = 1

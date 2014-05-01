@@ -10,7 +10,7 @@ from pyamf.remoting.client import RemotingService
 
 
 # 889390 - Volturi
-sid = 22442
+sid = 11329
 cid = 1175663
 cname = ''
     

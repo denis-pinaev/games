@@ -10,7 +10,7 @@ from pyamf.remoting.client import RemotingService
 
 
 
-sid = 6614
+sid = 15446
 cid = 985939
 cname = ''
 params1 = {

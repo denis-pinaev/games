@@ -7,7 +7,7 @@ from pyamf.remoting.client import RemotingService
 
 client = RemotingService('http://dracula.irq.ru/Gateway.aspx')
 service = client.getService('MafiaAMF.AMFService')
-sid = 22442
+sid = 11329
 plist = [
         {"u":"124520", "s":"d6b9ab24005cf6447de56d505f09b9a9", 'n':"CorC"}, #me
         {"u":"155908147", "s":"27318498bd78868465f331f3c5c45fcd", 'n':"margo"}, #margo
@@ -26,10 +26,10 @@ plist = [
         {"u":"163834109", "s":"2145e7542c750385d38675b9f8f648d7", 'n':"gludia4"}, #Gludiya4
         {"u":"217858589", "s":"61ad63f2daa8afe9c0ea07d14a273064", 'n':"isida"}, #Isi
         {"u":"217752865", "s":"464118e98f82e3c85665566cb02ae04d", 'n':"tor"}, #Tor
-        {"u":"160511757", "s":"fdb5b7a95c9fe6aa5399ad4346799011", 'n':"tanazia"}, #Tanazia
-        {"u":"9602055", "s":"1882652382ae743634e8a9a7a3f71001", 'n':"demoniex"}, #Demoniex
-        {"u":"111562663", "s":"65d32fa6d170d1ff100c38c073b306c1", 'n':"lucky", "no_missions":True}, #LuckyRU
-        {"u":"44419226", "s":"a0b1d67c2388ae8f53a15f3f5de5067c", 'n':"vasilisk"}, #Vasilisk
+        {"u":"160511757", "s":"fdb5b7a95c9fe6aa5399ad4346799011", 'n':"tanazia", "no_chest":True}, #Tanazia
+        {"u":"9602055", "s":"1882652382ae743634e8a9a7a3f71001", 'n':"demoniex", "no_chest":True, "no_chest":True}, #Demoniex
+        {"u":"111562663", "s":"65d32fa6d170d1ff100c38c073b306c1", 'n':"lucky", "no_missions":True, "no_chest":True}, #LuckyRU
+        {"u":"44419226", "s":"a0b1d67c2388ae8f53a15f3f5de5067c", 'n':"vasilisk", "no_chest":True, "no_chest":True}, #Vasilisk
         {"u":"2959909", "s":"3b3c9c202351991b0de294584bfc2507", 'n':"di", "no_missions":True, "no_chest":True}, #Diana
         {"u":"34688001", "s":"a08e48565ce2bbb87ead6ce014016a0e", 'n':"magistra", "no_missions":True, "no_chest":True} #magistra
         #{"u":"18742782", "s":"37b2f9d03330b64531f3d665e50a72b9", 'n':"freez"} #freezze!	

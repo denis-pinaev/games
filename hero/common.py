@@ -27,7 +27,7 @@ building_constants = {
                          'kazarma':'335153735'
                      }
                      
-buildinds_priority = ['ars','kuzn','iron','hram','plav','runa','main','altar','gnom','mag','rist','wood','stone','sklad','gold','kazarma','palatka']
+buildinds_priority = ['ars','plav','iron','hram','kuzn','runa','main','altar','gnom','mag','rist','wood','stone','sklad','gold','kazarma','palatka']
 
 actionCommand = 'Knights.doAction'
 log_file = 'test'
@@ -70,17 +70,22 @@ def log(s, pr=False, filename=False):
         tfile.close()
 
 def sendRequest(command, params):
-    url = 'http://kn-vk-sc1.playkot.com/current/json-gate.php'
-    resp = requests.post(url, data=params, allow_redirects=True)
-    txt = resp.text.split('!', 1)[1]
-    first = txt.find("adInfo")
-    if txt.find('"adInfo":"[]"')>0: first = -1;
-    if first > 0:
-        second = txt.find('}', first)
-        txt = txt[:first]+"a\":\"0"+txt[second+1:]
-    txt = txt.replace('"a":"0,"', '"a":"0"},"')
-    
-    return {"data":txt}
+    try:
+        url = 'http://kn-vk-sc1.playkot.com/current/json-gate.php'
+        resp = requests.post(url, data=params, allow_redirects=True)
+        txt = resp.text.split('!', 1)[1]
+        first = txt.find("adInfo")
+        if txt.find('"adInfo":"[]"')>0: first = -1;
+        if first > 0:
+            second = txt.find('}', first)
+            txt = txt[:first]+"a\":\"0"+txt[second+1:]
+        txt = txt.replace('"a":"0,"', '"a":"0"},"')
+        
+        return {"data":txt}
+    except:
+        print "Error in sendRequest!"
+        time.sleep(5)
+        return sendRequest(command, params)
     
 def getSig2(myStr):
     return binascii.crc32(myStr) & 0xffffffff

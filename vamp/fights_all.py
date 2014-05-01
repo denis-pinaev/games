@@ -12,7 +12,7 @@ from pyamf.remoting.client import RemotingService
 
 data = {}
 bid = 40252
-sid = 22442
+sid = 11329
 name = 'fights_all'
 log_start = 2
 

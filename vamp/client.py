@@ -7,7 +7,7 @@ from pyamf.remoting.client import RemotingService
 
 data = {}
 bid = 38427
-sid = 22442
+sid = 11329
 
 def log(s):
     s = "[" + datetime.datetime.now().strftime('%H:%M:%S')+"]" + s

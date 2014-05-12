@@ -27,8 +27,7 @@ actionCommand = 'Knights.doAction'
 
 init_log("help_priority")
 
-    
-ctr = 0
+ctr = 1
 def getCTR():
     global ctr
     ctr += 1
@@ -46,13 +45,15 @@ def sendHelp(pers, hbid):
     o = json.loads(resp["data"])
     error = o["error"]
     if error == 0:
-        log("friendHelpApply done", True)
+        log("friendHelpApply done " + pers, True)
     else:
-        log(resp["data"], True)        
+        log(resp["data"], True)
+        
+        
+def getRandomB():
+    return  str(int(getRandom())+6200)
 
 
-no_help = []
-nohf = ''
 if True:
     pers = persons[person]
     pid = pers['pid']
@@ -60,11 +61,19 @@ if True:
     gid =  pers['gid']
     sid =  pers['sid']
     
-    
     data, gid, sid = init(pid, auth)
+    
+    start_value = 30
+    rest_value = 0
+    
+    lvl_need = (start_value + 1) * 5
 
-    total = 300
-    i = 1
-    while i<total:
-         sendHelp(str(i), '1,2,3,4,'+str(i))
-         i += 1
+    total = 1000
+    s_i = 1
+    i = 0
+    while s_i<=total:
+        sendHelp(str(s_i), '%s,%s,%s,%s,%s' % (getRandomB(),getRandomB(),getRandomB(),getRandomB(),getRandomB()))
+        i += 5
+        s_i += 1
+        if i>lvl_need: lvl_need+=5;rest_value+=1;i=0
+        print rest_value, i*100/lvl_need

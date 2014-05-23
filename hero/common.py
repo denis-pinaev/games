@@ -27,7 +27,7 @@ building_constants = {
                          'kazarma':'335153735'
                      }
                      
-buildinds_priority = ['ars','plav','iron','hram','kuzn','runa','main','altar','gnom','mag','rist','wood','stone','sklad','gold','kazarma','palatka']
+buildinds_priority = ['kuzn','ars','iron','hram','plav','runa','main','altar','gnom','mag','rist','wood','stone','sklad','gold','kazarma','palatka']
 
 actionCommand = 'Knights.doAction'
 log_file = 'test'

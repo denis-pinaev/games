@@ -175,6 +175,11 @@ def getWorld(pers):
     else:
         log(resp["data"], True)
     return o
+    
+    
+def getBid(hbid, hcount):
+    hcount = 5-hcount
+    return ','.join(hbid.split(',')[:hcount])
         
         
 
@@ -184,36 +189,38 @@ maxco = 9999
 '''
 ars:
    67165 x=13,y=0
+plav:
+   65651 x=12,y=-12
+   65652 x=12,y=-8
+   65596 x=12,y=-10
+   
+   65651,65596,65652
+iron:
+   65562 x=1,y=10
 hram:
-   83 x=6,y=10
-main:
-   828 x=8,y=-10
-mag:
-   67164 x=16,y=0
+   83 x=5,y=10
 kuzn:
    65653 x=12,y=-15
    65571 x=6,y=-15
    65588 x=9,y=-15
-   65635 x=3,y=-15
+   65635 x=15,y=-15
    
-   65635,65571,65588,65653
-plav:
-   65651 x=13,y=-12
-   65652 x=13,y=-7
-   65596 x=13,y=-10
-altar:
-   103 x=2,y=6
-gnom:
-   66766 x=10,y=-6
+   65571,65588,65653,65635
 runa:
-   66765 x=19,y=-3
+   66765 x=17,y=-4
+main:
+   828 x=8,y=-10
+altar:
+   103 x=2,y=3
+gnom:
+   66766 x=9,y=-6
+mag:
+   67164 x=16,y=0
 rist:
 wood:
-   66751 x=1,y=9
+   66751 x=1,y=8
 stone:
-   65554 x=3,y=9
-iron:
-   65562 x=1,y=11
+   65554 x=1,y=6
 sklad:
    66541 x=36,y=18
    65593 x=6,y=-6
@@ -221,7 +228,6 @@ sklad:
    65616 x=3,y=-12
 gold:
    66750 x=3,y=-6
-palatka:
 '''
 hbid = "67165"
 if len(need_b)>1 : hbid = need_b
@@ -251,6 +257,7 @@ for i in range(t_count):
         #w = getWorld(persons[0]['pid'])
         w = {'friend':data}
         canHelp = True
+        hcount = 0
         try:
             if w["friend"].has_key("interaction"):
                 if len(w["friend"]["interaction"])>0 and w["friend"]["interaction"].has_key(persons[0]['pid']):
@@ -259,7 +266,7 @@ for i in range(t_count):
                     print pid+' used help: '+str(hcount)
         except: canHelp = False
         
-        if canHelp: sendHelp(persons[0], hbid, pid)
+        if canHelp: sendHelp(persons[0], getBid(hbid, hcount), pid)
         else: exceptions.append(pid)
         
         

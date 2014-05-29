@@ -12,6 +12,14 @@ person_id = '124520'
 
 if len(sys.argv) > 1:
     person_id = sys.argv[1]
+    vks = "http://vk.com/id"
+    if vks in person_id:
+        person_id = person_id[len(vks):]
+        
+    vks = "http://vk.com/photos"
+    if vks in person_id:
+        person_id = person_id[len(vks):]
+        
 if len(sys.argv) > 2:
     person = int(sys.argv[2])
     

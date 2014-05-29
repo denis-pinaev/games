@@ -91,6 +91,7 @@ persons = [
               {"pid":"169768611","auth":"9bc9bdd4929458a2108f1ae419906f66","gid":0,"sid":""},#lenaSv
               {"pid":"73940623","auth":"9ba0d48c2a9b701ffa031504b5232451","gid":0,"sid":""},#VitaShani
               {"pid":"161702967","auth":"a5738509fb8e7486b45e8ba01436c6bb","gid":0,"sid":""},#mari kremer
+              {"pid":"114233049","auth":"b2c5894ec83e287b4c2563402b064248","gid":0,"sid":""},#ivan malinin
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""}#corc
           ]
 start_hero = ['{"rnd":%s,"units":[{"home":0,"x":1,"sceneId":68402,"y":14,"id":364860972,"owner":1,"type":"hero","dir":4}],"index":"default"}',

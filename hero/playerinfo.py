@@ -20,6 +20,10 @@ if len(sys.argv) > 1:
     if vks in person_id:
         person_id = person_id[len(vks):]
         
+    vks = "http://vk.com/albums"
+    if vks in person_id:
+        person_id = person_id[len(vks):]
+        
 if len(sys.argv) > 2:
     person = int(sys.argv[2])
     

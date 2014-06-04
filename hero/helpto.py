@@ -23,7 +23,7 @@ if len(sys.argv) > 1:
     start_p = int(sys.argv[1])
 if len(sys.argv) > 2:
     end_p = int(sys.argv[2])
-lim = 27
+lim = 29
 if len(sys.argv) > 3:
     lim = int(sys.argv[3])
 
@@ -31,6 +31,8 @@ if len(sys.argv) > 3:
 
 persons = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc
+              {"pid":"191288670","auth":"db466f4da075a381d7bb0e21101255b4","gid":0,"sid":""},#ivan malinin bot
+              {"pid":"190850909","auth":"67531b4203e16d19611db56645c42aec","gid":0,"sid":""},#ivan malinin bot
               {"pid":"191291100","auth":"76c06116794fa041156ac0014f8a6d18","gid":0,"sid":""},#Ivan bot1
               {"pid":"10700095","auth":"ae8c0a04a4fe4e9a909e17aa45cd6fd3","gid":0,"sid":""},#mariKr_bot
               {"pid":"133569922","auth":"994c8cc961e087a786c64694c886fcaa","gid":0,"sid":""},#lenaSv_bot

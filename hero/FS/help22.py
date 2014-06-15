@@ -10,12 +10,11 @@ service = ''
 method = ''
 
 
-
 person = 0
 error = 0
 
 persons = [
-              {"pid":"144536559","auth":"731331d4e19d1f5483acd67abf424b58","gid":0,"sid":""},#poly
+              {"pid":"3091478","auth":"7fb9f07a0c6156483701f8b24b79696a","gid":0,"sid":""},#corc
           ]
 
 pid = persons[person]["pid"]
@@ -26,7 +25,7 @@ data = ''
 actionCommand = 'Knights.doAction'
 
 init_log("help_priority")
-
+    
 ctr = 1
 def getCTR():
     global ctr
@@ -68,7 +67,7 @@ if True:
     
     lvl_need = (start_value + 1) * 5
 
-    total = 3000
+    total = 1000
     s_i = 1
     i = 0
     while s_i<=total:

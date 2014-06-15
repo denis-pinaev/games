@@ -24,11 +24,10 @@ building_constants = {
                          'rist':'2101222815',
                          'mag':'447398184',
                          'palatka':'482206421',
-                         'kazarma':'335153735',
-                         'strelbishe':'723972021'
+                         'kazarma':'335153735'
                      }
                      
-buildinds_priority = ['kuzn','ars','iron','hram','plav','runa','main','altar','gnom','mag','rist','wood','stone','sklad','gold','kazarma','strelbishe','palatka']
+buildinds_priority = ['kuzn','ars','iron','hram','plav','runa','main','altar','gnom','mag','rist','wood','stone','sklad','gold','kazarma','palatka']
 
 actionCommand = 'Knights.doAction'
 log_file = 'test'
@@ -72,7 +71,7 @@ def log(s, pr=False, filename=False):
 
 def sendRequest(command, params):
     try:
-        url = 'http://kn-vk-sc1.playkot.com/current/json-gate.php'
+        url = 'http://188.93.20.156/current/json-gate.php'
         resp = requests.post(url, data=params, allow_redirects=True)
         txt = resp.text.split('!', 1)[1]
         first = txt.find("adInfo")

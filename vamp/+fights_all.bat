@@ -1,1 +1,1 @@
-d:\srv\python27\python.exe d:\srv\vamp\fights_all.py
+d:\srv\python27\python.exe d:\srv\games\vamp\fights_all.py

@@ -7,8 +7,8 @@ from pyamf.remoting.client import RemotingService
 
 #usage: PERSON BID TARGET STAMINA MISSIONS
 '''
-d:\srv\python27\python.exe d:\srv\vamp\battle.py vasilisk 46589 1108736 3 0
-d:\srv\python27\python.exe d:\srv\vamp\battle.py lucky 46589 693482 3 0
+d:\srv\python27\python.exe d:\srv\games\vamp\battle.py vasilisk 46589 1108736 3 0
+d:\srv\python27\python.exe d:\srv\games\vamp\battle.py lucky 46589 693482 3 0
 '''
 
 

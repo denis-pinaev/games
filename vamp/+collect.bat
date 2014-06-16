@@ -1,1 +1,1 @@
-d:\srv\python27\python.exe d:\srv\vamp\collect.py
+d:\srv\python27\python.exe d:\srv\games\vamp\collect.py

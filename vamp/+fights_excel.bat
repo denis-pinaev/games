@@ -1,1 +1,1 @@
-d:\srv\python27\python.exe d:\srv\vamp\fights_excel.py
+d:\srv\python27\python.exe d:\srv\games\vamp\fights_excel.py

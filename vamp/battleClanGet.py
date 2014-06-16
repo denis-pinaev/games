@@ -145,7 +145,7 @@ def main():
             if ia == 0: print("EOL");return
             #log("%s %s, %s, NA:%s, S:%s" % (n, str(ia), na, str(nta), str(s)), True)
             log("d:\srv\python27\python.exe d:/srv/vamp/battle.py %s %s %s 1 1" % (n, str(bid), str(ia)), True, False)
-            #d:\srv\python27\python.exe d:\srv\vamp\battle.py margo 46589 380224 1 1
+            #d:\srv\python27\python.exe d:\srv\games\vamp\battle.py margo 46589 380224 1 1
             s = s - 1
             nta = nta - 1
 

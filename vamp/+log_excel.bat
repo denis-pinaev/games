@@ -1,1 +1,1 @@
-d:\srv\python27\python.exe d:\srv\vamp\log_excel.py log_40613
+d:\srv\python27\python.exe d:\srv\games\vamp\log_excel.py log_40613

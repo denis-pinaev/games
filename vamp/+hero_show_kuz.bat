@@ -1,1 +1,1 @@
-d:\srv\python27\python.exe d:\srv\vamp\hero_move.py sk
+d:\srv\python27\python.exe d:\srv\games\vamp\hero_move.py sk

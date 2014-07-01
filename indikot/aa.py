@@ -114,6 +114,7 @@ def endLevel(level, point):
     data['point'] = str(point)
     data['time'] = getTime()
     data['sid'] = sid
+    data['world_id'] = 2#comment!!!
     sd = sortParams(data)
     sig = getSig(sd, auth_key)
     data['sig'] = sig
@@ -132,7 +133,9 @@ def virality():
 def getLevelData(level):
     lvls = sorted(level_data['level']['item'], key=lambda x : x['title'], reverse=False)
     for l in lvls:
-        if 'Уровень '+str(level) in l['title']:
+        #if 'Уровень '+str(level) in l['title']:
+        if 'Кошачьи сны '+str(level) in l['title']:
+        #if 'Бонусный уровень '+str(level) in l['title']:
             #print l['title'], l['id']
             return l
     return False

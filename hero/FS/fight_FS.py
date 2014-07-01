@@ -278,7 +278,9 @@ def loadPerson(initdata):
         energy_value = int(initdata["player"]["energy"])
         
         if hero_is:
+            ts = '{"units":[{"owner":1,"id":%d,"type":"hero","params":null,"sceneId":99999,"x":1,"home":%d,"y":14,"dir":4}],"rnd":%s,"index":"default"}'
             dataString = ts % (hero_id, hero_home, getRandom())
+            start_hero = dataString
             print "taking person done"
             return
         

@@ -28,10 +28,10 @@ plist = [
         {"u":"217752865", "s":"464118e98f82e3c85665566cb02ae04d", 'n':"tor"}, #Tor
         {"u":"160511757", "s":"fdb5b7a95c9fe6aa5399ad4346799011", 'n':"tanazia", "no_chest":True}, #Tanazia
         {"u":"9602055", "s":"1882652382ae743634e8a9a7a3f71001", 'n':"demoniex", "no_chest":True, "no_chest":True}, #Demoniex
-        {"u":"111562663", "s":"65d32fa6d170d1ff100c38c073b306c1", 'n':"lucky", "no_missions":True, "no_chest":True}, #LuckyRU
-        {"u":"44419226", "s":"a0b1d67c2388ae8f53a15f3f5de5067c", 'n':"vasilisk", "no_chest":True, "no_chest":True}, #Vasilisk
+        {"u":"111562663", "s":"65d32fa6d170d1ff100c38c073b306c1", 'n':"lucky", "no_chest":True}, #LuckyRU
+        {"u":"44419226", "s":"a0b1d67c2388ae8f53a15f3f5de5067c", 'n':"vasilisk", "no_chest":True}, #Vasilisk
         {"u":"2959909", "s":"3b3c9c202351991b0de294584bfc2507", 'n':"di", "no_missions":True, "no_chest":True}, #Diana
-        {"u":"34688001", "s":"a08e48565ce2bbb87ead6ce014016a0e", 'n':"magistra", "no_missions":True, "no_chest":True} #magistra
+        {"u":"34688001", "s":"a08e48565ce2bbb87ead6ce014016a0e", 'n':"magistra", "no_chest":True} #magistra
         #{"u":"18742782", "s":"37b2f9d03330b64531f3d665e50a72b9", 'n':"freez"} #freezze!	
 
         ]

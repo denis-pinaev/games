@@ -123,9 +123,9 @@ def moveBuilding(bid, x, y, d):
 
 
 sendSTR = []
-hide_b = 'strelbishe'
+hide_b = 'palatka'
 
-person = 1
+person = 0
 gid = 0
 sid = ''
 pid = persons[person]["pid"]

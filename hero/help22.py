@@ -62,13 +62,13 @@ if True:
     
     data, gid, sid = init(pid, auth)
     
-    start_value = 30
-    rest_value = 0
+    start_value = 27
+    rest_value = 27
     
     lvl_need = (start_value + 1) * 5
 
-    total = 1000
-    s_i = 1
+    total = 4000
+    s_i = 2001
     i = 0
     while s_i<=total:
         sendHelp(str(s_i), '%s,%s,%s,%s,%s' % (getRandomB(),getRandomB(),getRandomB(),getRandomB(),getRandomB()))

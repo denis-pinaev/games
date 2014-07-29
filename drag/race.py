@@ -17,7 +17,7 @@ def sendRequest(params, method):
     except:
         print "Error in sendRequest!"
         time.sleep(5)
-        return sendRequest(params)
+        return sendRequest(params, method)
     return bytearray(resp.text, "utf-8")
 
 
@@ -119,7 +119,7 @@ def finish_race(sid, rid, rtime):
     return ba
     
     
-# friend # city3liga3 # quick # under14 # racers
+# friend # liga # quick # under12 # racers
 
 sid = None
 rid = None
@@ -141,7 +141,7 @@ for i in range(count):
     if not rid:
         if sid: rid = start_race(sid, "startrace_"+rtype)
     if sid: print "race_id = " + rid
-    if sid and rid: print finish_race(sid, rid, 6771)
+    if sid and rid: print finish_race(sid, rid, 5555)
     rid = None
 
 

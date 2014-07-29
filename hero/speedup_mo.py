@@ -12,10 +12,11 @@ method = ''
 from common import *
 
 persons = [
-              {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc
-              {"pid":"144536559","auth":"731331d4e19d1f5483acd67abf424b58","gid":0,"sid":""},#poly
-              {"pid":"160511757","auth":"6dc2dba90c1cc9d935542aa6a60c6fb4","gid":0,"sid":""},#vasya tanakan
-              {"pid":"161702967","auth":"a5738509fb8e7486b45e8ba01436c6bb","gid":0,"sid":""},#mari kremer
+              {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc 0 
+              {"pid":"144536559","auth":"731331d4e19d1f5483acd67abf424b58","gid":0,"sid":""},#poly 1
+              {"pid":"160511757","auth":"6dc2dba90c1cc9d935542aa6a60c6fb4","gid":0,"sid":""},#vasya tanakan 2
+              {"pid":"161702967","auth":"a5738509fb8e7486b45e8ba01436c6bb","gid":0,"sid":""},#mari kremer 3
+              {"pid":"218661879","auth":"4a7a2ac0efcadd1a42499e34ed217e8b","gid":0,"sid":""},#nikita 4
           ]
           
 
@@ -121,11 +122,12 @@ def moveBuilding(bid, x, y, d):
         log(resp["data"], True)
 
 
-
+#buildinds_priority = ['kuzn','ars','plav','hram','runa','main','altar','gnom','mag','rist','iron','wood','stone','sklad','gold','kazarma','strelbishe','palatka']
 sendSTR = []
-hide_b = 'palatka'
+#hide_b = 'gnom'
+hide_bs = ['gnom','mag','kazarma','strelbishe','rist']
 
-person = 0
+person = 4
 gid = 0
 sid = ''
 pid = persons[person]["pid"]
@@ -137,16 +139,17 @@ person_id = persons[person]["pid"]
 f = getWorld(person_id)
 
 extb = get_buildings_extend(f["friend"]["entities"])
-elinfo = extb[hide_b]
-x = 0
-y = 0
-for info in elinfo:
-    for data in info:
-        sendSTR.append(str(data))
-        x = int(info[data]['x'])
-        y = int(info[data]['y'])
-        break;
-        
+for hide_b in hide_bs:
+    elinfo = extb[hide_b]
+    x = 0
+    y = 0
+    for info in elinfo:
+        for data in info:
+            sendSTR.append(str(data))
+            x = int(info[data]['x'])
+            y = int(info[data]['y'])
+            break;
+
 print sendSTR
 if len(sendSTR)>0:
     hide(sendSTR)

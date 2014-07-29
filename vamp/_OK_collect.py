@@ -5,7 +5,7 @@ import datetime
 import time
 from pyamf.remoting.client import RemotingService
 
-sid = 15446
+sid = 20049
 plist = [
         {"ss":"8498TU6YQa6byTB.Idf2M281wd87xXG3x34ayTC3M73bPUkWO362y1DTR6", "u":"909428586714", "s":"65b4fe27f60a84e1789e64f2e83d7601", 'n':"Demonika"}, #me
         {"ss":"e4d8MRj.P9d3MRhzJ529T382Q75eL.hOOd94K.8zs422xU9QId74w0GXLb1", "u":"196891662342", "s":"5e0d81abc1a4586252630f0c1c8b76fa", 'n':"Holycrack"}, #me

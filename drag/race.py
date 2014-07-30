@@ -1,6 +1,7 @@
 import requests
 import sys
 import time
+import datetime
 
 def read(fname):
     fatype = fname
@@ -118,6 +119,10 @@ def finish_race(sid, rid, rtime):
     ba = sendRequest(ba, "races")
     return ba
     
+def log(s):
+    s = "[" + datetime.datetime.now().strftime('%d.%m %H:%M:%S')+"] " + s
+    print s
+    
     
 # friend # liga # quick # under12 # racers
 
@@ -136,11 +141,12 @@ if len(sys.argv) > 4:
     count = 1
     
 if not sid: sid = auth()
-print "session = " + sid
+log("session = " + sid)
 for i in range(count):
+    log(str(i+1))
     if not rid:
         if sid: rid = start_race(sid, "startrace_"+rtype)
-    if sid: print "race_id = " + rid
+    if sid: log("race_id = " + rid)
     if sid and rid: print finish_race(sid, rid, 7777)
     rid = None
 

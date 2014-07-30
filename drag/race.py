@@ -141,7 +141,7 @@ for i in range(count):
     if not rid:
         if sid: rid = start_race(sid, "startrace_"+rtype)
     if sid: print "race_id = " + rid
-    if sid and rid: print finish_race(sid, rid, 5555)
+    if sid and rid: print finish_race(sid, rid, 7777)
     rid = None
 
 

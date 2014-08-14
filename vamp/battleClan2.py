@@ -17,8 +17,8 @@ mission = True
 reenter_first = True
 clanID = 2316470
 targetClanID = 878291
-#sureClan = isFight = False
-sureClan = isFight = True
+sureClan = isFight = False
+#sureClan = isFight = True
 firstA = False
 
 exceptions = ["1349474", "888882"]

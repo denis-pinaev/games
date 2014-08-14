@@ -119,6 +119,17 @@ def finish_race(sid, rid, rtime):
     ba = sendRequest(ba, "races")
     return ba
     
+def finish_race_champion(sid, rid, rtime):
+    ba = readDataFile("finishrace_champion")
+    osid = getSession(ba)
+    ba = ba.replace(osid, sid)
+    orid = getRaceId(ba)
+    #time.sleep(10)
+    ba = ba.replace(orid, rid)
+    ba = setRaceTime(ba, rtime)
+    ba = sendRequest(ba, "races")
+    return ba
+    
 def log(s):
     s = "[" + datetime.datetime.now().strftime('%d.%m %H:%M:%S')+"] " + s
     print s
@@ -147,7 +158,11 @@ for i in range(count):
     if not rid:
         if sid: rid = start_race(sid, "startrace_"+rtype)
     if sid: log("race_id = " + rid)
-    if sid and rid: print finish_race(sid, rid, 7777)
+    if sid and rid:
+        if rtype == "champion":
+            print finish_race_champion(sid, rid, 16965)
+        else:
+            print finish_race(sid, rid, 7777)
     rid = None
 
 

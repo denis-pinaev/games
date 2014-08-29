@@ -125,9 +125,9 @@ def moveBuilding(bid, x, y, d):
 #buildinds_priority = ['kuzn','ars','plav','hram','runa','main','altar','gnom','mag','rist','iron','wood','stone','sklad','gold','kazarma','strelbishe','palatka']
 sendSTR = []
 #hide_b = 'gnom'
-hide_bs = ['gnom','mag','kazarma','strelbishe','rist']
+hide_bs = ['palatka']
 
-person = 4
+person = 0
 gid = 0
 sid = ''
 pid = persons[person]["pid"]

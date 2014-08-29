@@ -16,8 +16,8 @@ person = 'gludia4'#'none'
 mission = True
 reenter_first = True
 clanID = 2305215
-targetClanID = 878291#1349474
-sureClan = isFight = False
+targetClanID = 1220531#1349474
+sureClan = isFight = True
 #sureClan = isFight = True
 firstA = False
 

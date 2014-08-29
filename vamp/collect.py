@@ -10,11 +10,11 @@ service = client.getService('MafiaAMF.AMFService')
 sid = 11329
 plist = [
         {"u":"124520", "s":"d6b9ab24005cf6447de56d505f09b9a9", 'n':"CorC"}, #me
-        {"u":"155908147", "s":"27318498bd78868465f331f3c5c45fcd", 'n':"margo"}, #margo
+        {"u":"155908147", "s":"27318498bd78868465f331f3c5c45fcd", 'n':"margo", "no_chest":True}, #margo
         #{"u":"13200983", "s":"e2cffa0c183f41194776e5b48bf3e460", 'n':"noname 1"}, #no name 1
         #{"u":"56433778", "s":"1214f5cc84b0de0188e214c139a2f7d9", 'n':"noname 2"}, #no name 2
         #{"u":"16843363", "s":"72f0196726e1eb959166e8b524b49dfa", 'n':"frier"}, #frier
-        {"u":"47654405", "s":"5b58a05fa548b92ddc318a574ca44a2a", 'n':"luska"}, #Luska
+        {"u":"47654405", "s":"5b58a05fa548b92ddc318a574ca44a2a", 'n':"luska", "no_chest":True}, #Luska
         {"u":"120865611", "s":"a1d8f762dc70137348d2031a493b0e5b", 'n':"ladivictori"}, #LadyVictory
         {"u":"153969376", "s":"51b28aa0e28b9e1c78681c1b4edb92ff", 'n':"nemesis"}, #Nemesis
         {"u":"84324359", "s":"2e04ff007aa66f86827a68a9a566889a", 'n':"venom"}, #VictoriaVenom

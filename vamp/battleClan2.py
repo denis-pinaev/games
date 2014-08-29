@@ -16,8 +16,8 @@ person = 'tanazia'#'none'
 mission = True
 reenter_first = True
 clanID = 2316470
-targetClanID = 878291
-sureClan = isFight = False
+targetClanID = 1220531
+sureClan = isFight = True
 #sureClan = isFight = True
 firstA = False
 

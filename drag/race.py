@@ -43,7 +43,7 @@ def getRaceId(resp):
             isStart = True
             rid = chr(c)+rid
         elif isStart:
-            if rid[0:2] == "53":
+            if rid[0:2] == "53" or rid[0:2] == "54":
                 return rid
             else:
                 isStart = False
@@ -153,6 +153,7 @@ if len(sys.argv) > 4:
     
 if not sid: sid = auth()
 log("session = " + sid)
+
 for i in range(count):
     log(str(i+1))
     if not rid:
@@ -160,7 +161,7 @@ for i in range(count):
     if sid: log("race_id = " + rid)
     if sid and rid:
         if rtype == "champion":
-            print finish_race_champion(sid, rid, 16965)
+            print finish_race_champion(sid, rid, 9497)
         else:
             print finish_race(sid, rid, 7777)
     rid = None

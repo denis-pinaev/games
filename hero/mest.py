@@ -146,7 +146,7 @@ def killEnemy(dataj2, create, first=False):
         fid = str(dataj2["mission"]["pvpInfo"]["id"])
         for naid in not_attack:
             if fid == naid["id"]:
-                print "WARNING! Try to kill friend: "+naid["name"]
+                print "WARNING! Try to kill friend: "+naid["name"]+ "id: "+fid
                 return ''
         if first: log("FIGHT ID: vk.com/id"+fid, True, True)
     method = 'battleUpdate'

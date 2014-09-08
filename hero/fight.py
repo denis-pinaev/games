@@ -48,7 +48,7 @@ gid = 0
 sid = ''
 action = 'hp'
 init_info = None
-
+killFriend = False;
 select_stage = True
 
 # 
@@ -67,13 +67,13 @@ not_attack = [
                  {'id':'179499220','name':'ORDEN'},
                  {'id':'130161945','name':'ORDEN'},
                  {'id':'79670506','name':'ORDEN'},
-                 {'id':'203263126','name':'ORDEN'},#was! Ruslan
+                 #{'id':'203263126','name':'ORDEN'},#was! Ruslan
                  {'id':'196086079','name':'ORDEN'},
                  {'id':'11305565','name':'ORDEN'},
                  {'id':'202787673','name':'ORDEN'},
                  {'id':'169768611','name':'ORDEN'},
                  {'id':'98890676','name':'ORDEN'},
-                 {'id':'9499004','name':'ORDEN'},
+                 #{'id':'9499004','name':'ORDEN'},#was lena belozer
                  {'id':'29431585','name':'ORDEN'},
                  {'id':'215526318','name':'ORDEN'},
                  
@@ -177,8 +177,8 @@ def killEnemy(dataj2, create, first=False):
         fid = str(dataj2["mission"]["pvpInfo"]["id"])
         for naid in not_attack:
             if fid == naid["id"]:
-                print "WARNING! Try to kill friend: "+naid["name"]
-                return ''
+                print "WARNING! Try to kill friend: "+naid["name"]+" id: "+naid["id"]
+                if not killFriend: return ''
         if first: log("FIGHT ID: vk.com/id"+fid, True, True)
     method = 'battleUpdate'
     new_cheat = 0
@@ -427,6 +427,8 @@ gogo = energy_value>0 or not create or phaza>0
 cycle = 1
 if len(sys.argv) > 3:
     cycle = min(int(sys.argv[3]),energy_value)
+    
+if len(sys.argv) > 4: killFriend = True
     
 if not gogo: cycle = 0
 

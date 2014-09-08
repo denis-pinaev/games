@@ -59,7 +59,7 @@ not_attack = [
                  {'id':'202787673','name':'ORDEN'},
                  {'id':'169768611','name':'ORDEN'},
                  {'id':'98890676','name':'ORDEN'},
-                 {'id':'9499004','name':'ORDEN'},
+                 #{'id':'9499004','name':'ORDEN'},
                  {'id':'29431585','name':'ORDEN'},
                  {'id':'144536559','name':'Polina'},
                  {'id':'124520','name':'CorC'}

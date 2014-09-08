@@ -264,10 +264,12 @@ for i in range(t_count):
         hcount = 0
         try:
             if w["friend"].has_key("interaction"):
-                if len(w["friend"]["interaction"])>0 and w["friend"]["interaction"].has_key(persons[0]['pid']):
+                if len(w["friend"]["interaction"])>0 and w["friend"]["interaction"].has_key(persons[0]['pid']) and w["friend"]["interaction"][persons[0]['pid']].has_key("help"):
                     hcount = int(w["friend"]["interaction"][persons[0]['pid']]["help"])
                     if hcount>=5: canHelp = False
                     print pid+' used help: '+str(hcount)
+            else:
+                print pid+' NO INTERACTIONS'
         except: canHelp = False
         
         if canHelp: sendHelp(persons[0], getBid(hbid, hcount), pid)

@@ -15,8 +15,8 @@ method = ''
 #49e1540eb72f701a7c0924054ef10fc1 179499220
 
 
-#13721794
-#65857702
+#http://vk.com/id52437466 - new
+#http://vk.com/id116189705 - old
 
 phaza = 0#0 - create, #1 - start #2 - update#3 - finish
 person = 0
@@ -62,7 +62,7 @@ not_attack = [
                  {'id':'68487257','name':'ORDEN'},
                  {'id':'692795','name':'ORDEN'},
                  {'id':'50958901','name':'ORDEN'},
-                 {'id':'116189705','name':'ORDEN'},
+                 {'id':'52437466','name':'ORDEN'},
                  {'id':'65857702','name':'ORDEN'},
                  {'id':'179499220','name':'ORDEN'},
                  {'id':'130161945','name':'ORDEN'},

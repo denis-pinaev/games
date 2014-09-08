@@ -62,7 +62,7 @@ def getSession(resp):
             isStart = True
             rid = chr(c)+rid
         elif isStart:
-            if rid[0] == "$":
+            if rid[0] == "$" and len(rid)>10:
                 return rid
             else:
                 isStart = False
@@ -161,7 +161,7 @@ for i in range(count):
     if sid: log("race_id = " + rid)
     if sid and rid:
         if rtype == "champion":
-            print finish_race_champion(sid, rid, 9497)
+            print finish_race_champion(sid, rid, 9386)
         else:
             print finish_race(sid, rid, 7777)
     rid = None

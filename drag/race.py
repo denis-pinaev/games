@@ -161,7 +161,7 @@ for i in range(count):
     if sid: log("race_id = " + rid)
     if sid and rid:
         if rtype == "champion":
-            print finish_race_champion(sid, rid, 9386)
+            print finish_race_champion(sid, rid, 15882)
         else:
             print finish_race(sid, rid, 7777)
     rid = None

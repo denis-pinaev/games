@@ -67,8 +67,8 @@ if True:
     
     lvl_need = (start_value + 1) * 5
 
-    total = 1000
-    s_i = 1
+    total = 2000
+    s_i = 1001
     i = 0
     while s_i<=total:
         sendHelp(str(s_i), '%s,%s,%s,%s,%s' % (getRandomB(),getRandomB(),getRandomB(),getRandomB(),getRandomB()))

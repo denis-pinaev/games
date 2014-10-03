@@ -68,7 +68,7 @@ if True:
     
     lvl_need = (start_value + 1) * 5
 
-    total = 3000
+    total = 2000
     s_i = 1
     i = 0
     while s_i<=total:

@@ -17,11 +17,11 @@ mission = True
 reenter_first = True
 clanID = 2305215
 targetClanID = 1220531#1349474
-sureClan = isFight = True
+sureClan = isFight = False
 #sureClan = isFight = True
 firstA = False
 
-exceptions = ["1349474", "888882"]
+exceptions = ["1349474", "888882", "2316470", "2305215"]
 
 if len(sys.argv) > 1:
     person = sys.argv[1]

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import binascii
 import pyamf
 import sys
@@ -15,8 +17,8 @@ method = ''
 #49e1540eb72f701a7c0924054ef10fc1 179499220
 
 
-#http://vk.com/id52437466 - new
-#http://vk.com/id116189705 - old
+#http://vk.com/id68487257 - new
+#http://vk.com/id179331321 - old
 
 phaza = 0#0 - create, #1 - start #2 - update#3 - finish
 person = 0
@@ -51,38 +53,16 @@ init_info = None
 killFriend = False;
 select_stage = True
 
-# 
-not_attack = [
-                 {'id':'159662551','name':'ORDEN'},
-                 {'id':'73940623','name':'ORDEN'},
-                 {'id':'114233049','name':'ORDEN'},
-                 {'id':'161702967','name':'ORDEN'},
-                 {'id':'170312666','name':'ORDEN'},
-                 {'id':'23594947','name':'ORDEN'},
-                 {'id':'68487257','name':'ORDEN'},
-                 {'id':'692795','name':'ORDEN'},
-                 {'id':'50958901','name':'ORDEN'},
-                 {'id':'52437466','name':'ORDEN'},
-                 {'id':'65857702','name':'ORDEN'},
-                 {'id':'179499220','name':'ORDEN'},
-                 {'id':'130161945','name':'ORDEN'},
-                 {'id':'79670506','name':'ORDEN'},
-                 #{'id':'203263126','name':'ORDEN'},#was! Ruslan
-                 {'id':'196086079','name':'ORDEN'},
-                 {'id':'11305565','name':'ORDEN'},
-                 {'id':'202787673','name':'ORDEN'},
-                 {'id':'169768611','name':'ORDEN'},
-                 {'id':'98890676','name':'ORDEN'},
-                 #{'id':'9499004','name':'ORDEN'},#was lena belozer
-                 {'id':'29431585','name':'ORDEN'},
-                 {'id':'215526318','name':'ORDEN'},
-                 
-                 {'id':'9894033','name':'Vadim Tuma'},
+# corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6      lenaSv7     nagaina8   tanakan 9     VitalikSha10
+# vladimir 11    mari kramer 12    NAZAR 13    VanyaM 14     Oleg 15   Jenya16   LenaBRED17
+
+orden_Dark = [
+                 {'name':u'темный культ'}
+]
+
+user_not_attack = [
+                 {'id':'132569016','name':'Svetlana Vostokova'},
                  {'id':'9644769','name':'Andrew Ann'},
-                 {'id':'25497481','name':'Plolin drug'},
-                 {'id':'144536559','name':'Polina'},
-                 {'id':'124520','name':'CorC'},
-                 {'id':'197305999','name':'Julija Belinskaja'},
                  {'id':'185957394','name':'Ilnar Galiullin'},
                  {'id':'151757834','name':'Maksim Muljavka'},
                  {'id':'139046492','name':'Aleksej Mihajlichenko'},
@@ -90,9 +70,31 @@ not_attack = [
                  {'id':'43522563','name':'Evgenij Blinov'},
                  {'id':'166076867','name':'Mihail Smirnov'},
                  {'id':'132287081','name':'Natalia Shirokih'},
-                 {'id':'186282895','name':'Mrachnii Tip'},
-                 {'id':'166924744','name':'Vifur Tverdolobii'}
+                 {'id':'186282895','name':'Mrachnii Tip'}
              ]
+             
+not_attack = {"user":[user_not_attack], "orden":[orden_Dark]}
+
+if person in [8,9,11,13]:
+    not_attack = {"user":[], "orden":[orden_Dark]}
+    
+if person in [2,3,4]:
+    not_attack = {"user":[user_not_attack], "orden":[orden_Dark, [{'name':u'Лемберг'}]]}
+
+if person in [5,17]:
+    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'}]]}
+
+if person in [6]:
+    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Украина'}]]}
+
+
+def read(fname):
+    fatype = fname
+    tfile = open(fatype, "r")
+    d = tfile.read()
+    tfile.close()
+    return d
+
 ctr = 0
 def getCTR():
     global ctr
@@ -172,13 +174,35 @@ def init():
 
 def killEnemy(dataj2, create, first=False):
     global select_stage
-    
+
+    # mission => pvpInfo => clanInfo(?) + id + power + epower + level + powerlevel => name
     if create and dataj2.has_key("mission") and dataj2["mission"].has_key("pvpInfo"):
-        fid = str(dataj2["mission"]["pvpInfo"]["id"])
-        for naid in not_attack:
-            if fid == naid["id"]:
-                print "WARNING! Try to kill friend: "+naid["name"]+" id: "+naid["id"]
-                if not killFriend: return ''
+        info = dataj2["mission"]["pvpInfo"]
+        clanName = info['clanInfo']['name'] if info.has_key("clanInfo") else 'no clan'
+        ratingPlace = info['clanInfo']['ratingPlace'] if info.has_key("clanInfo") else '0'
+        fid = str(info['id']) if info.has_key("id") else ''
+        level = str(info['level']) if info.has_key("level") else ''
+        power = str(info['power']) if info.has_key("power") else ''
+        epower = str(info['epower']) if info.has_key("epower") else ''
+        powerlevel = str(info['powerlevel']) if info.has_key("powerlevel") else ''
+        
+        try:
+            if first: log("TRY: id:%s, level:%s, clan:%s, epower:%s, power:%s, powerlevel:%s" % (fid,level,clanName,epower,power,powerlevel), True, True)
+        except:
+            if first: log("TRY: id:%s, level:%s, clan:%s, epower:%s, power:%s, powerlevel:%s" % (fid,level,ratingPlace,epower,power,powerlevel), True, True)
+        
+        na_user = not_attack['user']
+        for uarr in na_user:
+            for naid in uarr:
+                if fid == naid["id"]:
+                    print "WARNING! Try to kill friend: "+naid["name"]+" id: "+naid["id"]
+                    if not killFriend: return ''
+        na_orden = not_attack['orden']
+        for oarr in na_orden:
+            for orden in oarr:
+                if clanName == orden["name"]:
+                    print "WARNING! Try to kill orden: "+orden["name"]
+                    if not killFriend: return ''
         if first: log("FIGHT ID: vk.com/id"+fid, True, True)
     method = 'battleUpdate'
     new_cheat = 0
@@ -444,4 +468,3 @@ for i_cycle in range(cycle):
     
     if phaza == 0: energy_value = energy_value - 1
     if create: print "energy_value = "+str(energy_value)
-    

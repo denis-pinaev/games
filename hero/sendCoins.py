@@ -10,27 +10,6 @@ service = ''
 method = ''
 
 
-#Knights.doBatchAction
-#{"rnd":554,"batchlist":{"0":{"count":1,"method":"recipeFinish","type":"entities","index":"65574"},"1":{"count":1,"method":"recipeFinish","type":"entities","index":"65577"}}}
-
-person = 0
-error = 0
-start_p = 1
-end_p = 999
-skipCollect = False
-if len(sys.argv) > 1:
-    start_p = int(sys.argv[1])
-if len(sys.argv) > 2:
-    end_p = int(sys.argv[2])
-t_count = 5
-if len(sys.argv) > 3:
-    t_count = int(sys.argv[3])
-need_b = ''
-if len(sys.argv) > 4:
-    need_b = sys.argv[4]
-if len(sys.argv) > 5:
-    skipCollect = True
-
 persons = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc
               {"pid":"194459289","auth":"e1fc9071463c5a1bad148235fbb4fbfc","gid":0,"sid":""},#LOH1
@@ -54,7 +33,6 @@ persons = [
               {"pid":"34688001","auth":"fc8c2f798036ef2af8bbd6fbc312f7fb","gid":0,"sid":""},#botelina1
               {"pid":"233828632","auth":"3cf7aac00f56163404482ed0550eb1dc","gid":0,"sid":""},#misha_zhukov7
               {"pid":"101053386","auth":"77a9e62eed9e7d25866efd2c8aeef30e","gid":0,"sid":""},#misha_zhukov6
-              {"pid":"124678851","auth":"f659c32017ecad7b4d36b862f68351ef","gid":0,"sid":""},#misha_zhukov5
               {"pid":"182933786","auth":"662b4add4856bc946f65e70d9254c862","gid":0,"sid":""},#misha_zhukov4
               {"pid":"209559126","auth":"02e68b3110fbeac985c6846649e3cee2","gid":0,"sid":""},#misha_zhukov3
               {"pid":"200139667","auth":"0be685ed1b3787bc144ef88cf0d2de1d","gid":0,"sid":""},#misha_zhukov2
@@ -88,31 +66,18 @@ persons = [
               {"pid":"68487257","auth":"4f66fe9422f3b5f17ab1e90ce34a42d3","gid":0,"sid":""},#Nagaina
               {"pid":"144536559","auth":"731331d4e19d1f5483acd67abf424b58","gid":0,"sid":""},#polya
               {"pid":"29431585","auth":"55f56ea187574da9b2ed69474db78ac0","gid":0,"sid":""},#natali_vlasova
-              {"pid":"49809104","auth":"faeaec9d6c41db027a1f8a2dc7244c38","gid":0,"sid":""},#misha_zhukov
               {"pid":"218661879","auth":"4a7a2ac0efcadd1a42499e34ed217e8b","gid":0,"sid":""},#nikita
               {"pid":"179499220","auth":"49e1540eb72f701a7c0924054ef10fc1","gid":0,"sid":""},#yura
               {"pid":"169768611","auth":"9bc9bdd4929458a2108f1ae419906f66","gid":0,"sid":""},#lenaSv
               {"pid":"73940623","auth":"9ba0d48c2a9b701ffa031504b5232451","gid":0,"sid":""},#VitaShani
               {"pid":"161702967","auth":"a5738509fb8e7486b45e8ba01436c6bb","gid":0,"sid":""},#mari kremer
               {"pid":"114233049","auth":"b2c5894ec83e287b4c2563402b064248","gid":0,"sid":""},#ivan malinin
-              {"pid":"11305565","auth":"40328e38ddaac299a62bafe98d4cfaac","gid":0,"sid":""},#Oleg bosyak
-              {"pid":"692795","auth":"77107b46d764d40148b967deaa8cd474","gid":0,"sid":""},#Jenya Babkin
-              {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""}#corc
+              {"pid":"11305565","auth":"40328e38ddaac299a62bafe98d4cfaac","gid":0,"sid":""}#Oleg bosyak
           ]
-start_hero = ['{"rnd":%s,"units":[{"home":0,"x":1,"sceneId":68402,"y":14,"id":364860972,"owner":1,"type":"hero","dir":4}],"index":"default"}',
-              '{"units":[{"owner":1,"id":437216723,"type":null,"sceneId":66087,"x":1,"home":65599,"y":14,"dir":4}],"rnd":%s,"index":"default"}',
-              '{"rnd":%s,"index":"default","units":[{"id":364860972,"type":"hero","y":14,"owner":1,"x":1,"dir":4,"home":0,"sceneId":69228}]}',
-              '']
-pid = persons[person]["pid"]
-auth = persons[person]["auth"]
-gid = 0
-sid = ''
-data = ''
+
 actionCommand = 'Knights.doAction'
 
-init_log("hero_help_log")
-
-exceptions = []
+init_log("hero_send_coins_log")
 
 ctr = int(random.random()*10000)
 
@@ -122,164 +87,29 @@ def getCTR():
     return str(ctr)
  
 
-    
-
-def getHelp(pers):
+#send present: {modules:{holidays:{sentCoins:{id:1}}}}
+#data	{"module":"holidays","ctr":2,"data":{"list":["9894033","144536559","11305565"],"name":"dreamscape"},"sessionKey":"542020e730cfc8.30775803","moduleMethod":"sendCoin","method":"moduleDoAction"}
+def sendGift(pid):
     global sid, gid, service, method
     service = actionCommand
-    method = 'friendHelpAccept'
+    method = 'moduleDoAction'
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
-    dataString = '{"rnd":%s,"friendId":"%s","help":true,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getRandom(), pers['pid'], getCTR(), sid, method)
-    params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
-    resp = sendRequest(service, params)
-    o = json.loads(resp["data"])
-    #print dataString
-    #o = {"error": 0}
-    error = o["error"]
-    if error == 0:
-        log("friendHelpAccept done", True)
-    else:
-        log(resp["data"], True)
-
-def sendHelp(pers, hbid, pid):
-    global sid, gid, service, method, exceptions
-    service = actionCommand
-    method = 'friendHelpApply'
-    init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
-    dataString = '{"friendId":"%s","list":[%s],"rnd":%s,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (pers['pid'], hbid, getRandom(), getCTR(), sid, method)
-    params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
-    resp = sendRequest(service, params)
-    o = json.loads(resp["data"])
-    #print dataString
-    #o = {"error": 0}
-    error = o["error"]
-    if error == 0:
-        log("friendHelpApply done", True)
-    else:
-        log(resp["data"], True)
-        if not "FRIEND" in error and not "BANNED" in error:
-            data, gid, sid = init(pid, auth)
-            sendHelp(pers, hbid, pid)
-        else: exceptions.append(pid); print 'add exception', pid
-        
-        
-def getWorld(pers):
-    global sid, gid, service, method
-    service = actionCommand
-    method = 'friendsGetWorld'
-    init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
-    dataString = '{"rnd":%s,"friendId":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getRandom(), pers, getCTR(), sid, method)
+    #dataString = '{"active":{"%s":null},"ctr":%s,"sessionKey":"%s","method":"%s","order":[%s],"stat":{"exercises":[[%s,0]]},"completed":{"%s":1},"resources":{}}' % (q,getCTR(),sid,method,restq,q,q)
+    dataString = '{"module":"holidays","ctr":%s,"data":{"list":["%s"],"name":"dreamscape"},"sessionKey":"%s","moduleMethod":"sendCoin","method":"%s"}' % (getCTR(),pid,sid,method)
     params = createData(method, dataString)
     log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
     if error == 0:
-        log("getWorld %s done" % pers, True)
+        log("sendCoin to %s done" % pid, True)
     else:
         log(resp["data"], True)
     return o
-    
-    
-def getBid(hbid, hcount):
-    hcount = 5-hcount
-    return ','.join(hbid.split(',')[:hcount])
-        
-        
 
-count = 0
-maxco = 9999
-        
-'''
-ars:
-   67165 x=13,y=0
-plav:
-   65651 x=12,y=-12
-   65652 x=12,y=-8
-   65596 x=12,y=-10
-   
-   65651,65596,65652
-iron:
-   65562 x=1,y=10
-hram:
-   83 x=5,y=10
-kuzn:
-   65653 x=12,y=-15
-   65571 x=6,y=-15
-   65588 x=9,y=-15
-   65635 x=15,y=-15
-   
-   65571,65588,65653,65635
-runa:
-   66765 x=17,y=-4
-main:
-   828 x=8,y=-10
-altar:
-   103 x=2,y=3
-gnom:
-   66766 x=9,y=-6
-mag:
-   67164 x=16,y=0
-rist:
-wood:
-   66751 x=1,y=8
-stone:
-   65554 x=1,y=6
-sklad:
-   66541 x=36,y=18
-   65593 x=6,y=-6
-   65569 x=3,y=-9
-   65616 x=3,y=-12
-gold:
-   66750 x=3,y=-6
-'''
-hbid = "67165"
-if len(need_b)>1 : hbid = need_b
 
-#persons = persons[0:1]+persons[-2:-1]
-if end_p>777: end_p = len(persons)
-if start_p<1: start_p = 1
-
-for i in range(t_count):
-    pc = start_p
-    for pers in persons[start_p:end_p]:
-        if pers['pid'] in exceptions: print 'in exceptions',pers['pid'];pc+=1;continue
-        if True:
-            pid = pers['pid']
-            auth = pers['auth']
-            gid =  pers['gid']
-            sid =  pers['sid']
-            data, gid, sid = init(pid, auth)
-            pers['gid'] = gid
-            pers['sid'] = sid
-        pid = pers['pid']
-        auth = pers['auth']
-        gid =  pers['gid']
-        sid =  pers['sid']
-        print i, pc, pid
-        pc += 1
-        #w = getWorld(persons[0]['pid'])
-        w = {'friend':data}
-        canHelp = True
-        hcount = 0
-        try:
-            if w["friend"].has_key("interaction"):
-                if len(w["friend"]["interaction"])>0 and w["friend"]["interaction"].has_key(persons[0]['pid']) and w["friend"]["interaction"][persons[0]['pid']].has_key("help"):
-                    hcount = int(w["friend"]["interaction"][persons[0]['pid']]["help"])
-                    if hcount>=5: canHelp = False
-                    print pid+' used help: '+str(hcount)
-            else:
-                print pid+' NO INTERACTIONS'
-        except: canHelp = False
-        
-        if canHelp: sendHelp(persons[0], getBid(hbid, hcount), pid)
-        else: exceptions.append(pid)
-        
-        
-    pers = persons[0]
-    if not skipCollect:
+if True:
+    for pers in persons:
         pid = pers['pid']
         auth = pers['auth']
         gid =  pers['gid']
@@ -287,8 +117,19 @@ for i in range(t_count):
         data, gid, sid = init(pid, auth)
         pers['gid'] = gid
         pers['sid'] = sid
-        for p in persons[start_p:end_p]:
-            if p['pid'] in exceptions: print 'in exceptions',p['pid'];continue
-            getHelp(p)
-    
+        pid = pers['pid']
+        auth = pers['auth']
+        gid =  pers['gid']
+        sid =  pers['sid']
+        
+        send = 0
+        try:
+            print 'level = '+str(data['player']['level'])
+            if int(data['player']['level'])>9:
+                coins=data['modules']['holidays']['sentCoins']
+                send = len(coins)
+                print coins
+            if send<3: sendGift("124520")
+#            if send<2: sendGift("144536559")
+        except: print 'error '+pid
 

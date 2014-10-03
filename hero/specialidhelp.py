@@ -45,6 +45,7 @@ elif len(sys.argv) > 1:
 
 persons = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc
+              {"pid":"194459289","auth":"e1fc9071463c5a1bad148235fbb4fbfc","gid":0,"sid":""},#LOH1
               {"pid":"191288670","auth":"db466f4da075a381d7bb0e21101255b4","gid":0,"sid":""},#ivan malinin bot
               {"pid":"190850909","auth":"67531b4203e16d19611db56645c42aec","gid":0,"sid":""},#ivan malinin bot
               {"pid":"191291100","auth":"76c06116794fa041156ac0014f8a6d18","gid":0,"sid":""},#Ivan bot1

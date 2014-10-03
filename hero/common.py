@@ -28,7 +28,7 @@ building_constants = {
                          'strelbishe':'723972021'
                      }
                      
-buildinds_priority = ['ars','hram','main','runa','plav','kuzn','altar','gnom','mag','rist','iron','wood','stone','sklad','gold','kazarma','strelbishe','palatka']
+buildinds_priority = ['ars','hram','main','altar','kuzn','plav','runa','gnom','mag','rist','iron','wood','stone','sklad','gold','kazarma','strelbishe','palatka']
 
 actionCommand = 'Knights.doAction'
 log_file = 'test'
@@ -57,8 +57,9 @@ def init_params(npid=None, nauth=None, ngid=None, nsid=None, nmethod=None, nserv
 def getRandom():
     return str(int(random.random()*1000))
     
-def log(s, pr=False, filename=False):
-    s = "[" + datetime.datetime.now().strftime('%d.%m %H:%M:%S')+"] " + s
+def log(s, pr=False, filename=False, needTime=True):
+    if needTime:
+        s = "[" + datetime.datetime.now().strftime('%d.%m %H:%M:%S')+"] " + s
     if pr: print s
     fatype = filename if filename else "hero_"+log_file+"_log"
     try:
@@ -103,15 +104,20 @@ def createData(method, data):
     o["pid"] = pid
     return o
     
-def init(npid, nauth):
+def init(npid, nauth, post=False):
     global sid, gid, service, method, pid, auth
     init_params(npid=npid, nauth=nauth)
     service = 'Knights.initialize'
     method = 'initialize'
-    initString = '{"age":30,"gender":1,"rnd":%s,"referralType":6,"newDay":false,"owner_id":"","hash":{},"auth_key":"%s","sid":""}'
+    initString = '{"age":30,"gender":1,"rnd":%s,"referralType":6,"newDay":false,"owner_id":"","hash":{%s}%s,"auth_key":"%s","sid":""}'
     sid = ''
     gid = 0
-    params = createData(method, initString % (getRandom(), auth))
+    postString = ''
+    hashString = ''
+    if post:
+        postString = '"post":"%s"' % (post)
+        hashString = ',"postHash":"%s"' % (post)
+    params = createData(method, initString % (getRandom(), postString, hashString, auth))
     log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     #print resp["data"][:100]

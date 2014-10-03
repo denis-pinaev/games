@@ -17,11 +17,11 @@ mission = True
 reenter_first = True
 clanID = 2316470
 targetClanID = 1220531
-sureClan = isFight = True
+sureClan = isFight = False
 #sureClan = isFight = True
 firstA = False
 
-exceptions = ["1349474", "888882"]
+exceptions = ["1349474", "888882", "2316470", "2305215"]
 
 client = RemotingService('http://dracula.irq.ru/Gateway.aspx')
 service = client.getService('MafiaAMF.AMFService')

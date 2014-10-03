@@ -45,12 +45,13 @@ not_attack = [
                  {'id':'114233049','name':'ORDEN'},
                  {'id':'161702967','name':'ORDEN'},
                  {'id':'170312666','name':'ORDEN'},
-                 {'id':'68487257','name':'ORDEN'},
+                 {'id':'179331321','name':'ORDEN'},
                  {'id':'31568442','name':'ORDEN'},
                  {'id':'13721794','name':'ORDEN'},
                  {'id':'52437466','name':'ORDEN'},
                  {'id':'35006200','name':'ORDEN'},
-                 {'id':'179499220','name':'ORDEN'},
+                 {'id':'20633660','name':'ORDEN'},#Sergey Udov
+                 #{'id':'179499220','name':'ORDEN'},Yura
                  {'id':'130161945','name':'ORDEN'},
                  {'id':'79670506','name':'ORDEN'},
                  {'id':'203263126','name':'ORDEN'},

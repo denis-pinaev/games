@@ -39,21 +39,59 @@ def getCTR():
     ctr += 1
     return str(ctr)
 
-def saveQuest():
+def addUser():
     global sid, gid, service, method
     service = 'Knights.doClanAction'
     method = 'addUserApplication'
+    
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
     
     dataString = '{"message":"1","clan":11,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
-
     params = createData(method, dataString)
     log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
     if error == 0:
-        log("addUserApplication %s done" % q, True)
+        log("%s %s done" % (method, q), True)
+    else:
+        log(resp["data"], True)
+    return o
+
+def getUser():
+    global sid, gid, service, method
+    service = 'Knights.doClanAction'
+    method = 'getUserApplications'
+    
+    init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
+    
+    dataString = '{"message":"1","clan":11,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
+    params = createData(method, dataString)
+    log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log("%s %s done" % (method, q), True)
+    else:
+        log(resp["data"], True)
+    return o
+
+def cancelUser():
+    global sid, gid, service, method
+    service = 'Knights.doClanAction'
+    method = 'cancelUserApplication'
+    
+    init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
+    
+    dataString = '{"message":"1","id":304109,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
+    params = createData(method, dataString)
+    log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log("%s %s done" % (method, q), True)
     else:
         log(resp["data"], True)
     return o
@@ -62,5 +100,5 @@ def saveQuest():
 data, gid, sid = init(pid, auth)
 
 try:
-    saveQuest()
+    addUser()
 except: print 'no quests'

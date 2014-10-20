@@ -63,11 +63,11 @@ orden_Dark = [
 user_not_attack = [
                  {'id':'132569016','name':'Svetlana Vostokova'},
                  {'id':'9644769','name':'Andrew Ann'},
-                 {'id':'185957394','name':'Ilnar Galiullin'},
+                 #{'id':'185957394','name':'Ilnar Galiullin'},
                  {'id':'151757834','name':'Maksim Muljavka'},
                  {'id':'139046492','name':'Aleksej Mihajlichenko'},
-                 {'id':'45991619','name':'Sergej Vasilkovskij'},
-                 {'id':'43522563','name':'Evgenij Blinov'},
+                 #{'id':'45991619','name':'Sergej Vasilkovskij'},
+                 #{'id':'43522563','name':'Evgenij Blinov'},
                  {'id':'166076867','name':'Mihail Smirnov'},
                  {'id':'132287081','name':'Natalia Shirokih'},
                  {'id':'186282895','name':'Mrachnii Tip'}
@@ -82,7 +82,7 @@ if person in [2,3,4]:
     not_attack = {"user":[user_not_attack], "orden":[orden_Dark, [{'name':u'Лемберг'}]]}
 
 if person in [5,17]:
-    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'}]]}
+    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'},{'name':u'Золотая Армия'},{'name':u'МЕДВЕДИ'},{'name':u'Академия Медведей'}]]}
 
 if person in [6]:
     not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Украина'}]]}

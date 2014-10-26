@@ -5,7 +5,8 @@ import requests
 import time
 import sys
 import random
-from level_data import level_data
+import json
+#from level_data import level_data
 
 data_init = {
 'format':'json',
@@ -72,7 +73,6 @@ data_virality = {
 #auth_key = '7407366522de227fab8b092baba5e476'
 auth_key = 'fe60c3f5c077d9cf53824c0be6f3b3ab'
 
-
 def sendRequest(command, params):
     url = 'http://indikot-vk.playflock.com/game.php'
     resp = requests.post(url, data=params, allow_redirects=True)
@@ -81,6 +81,11 @@ def sendRequest(command, params):
         print txt
         time.sleep(9999)
 
+def getLevels():
+    url = 'http://dw5.playflock.com/indikot-vk/control/lib_1413385393_ru_http.json'
+    resp = requests.get(url)
+    level_data = json.loads(resp.text)['library']
+    return sorted(level_data['level'], key=lambda x : x['title'], reverse=False)
 
 def getSig(string, key):
     return hashlib.md5(string+key).hexdigest()
@@ -131,11 +136,11 @@ def virality():
     
     
 def getLevelData(level):
-    lvls = sorted(level_data['level']['item'], key=lambda x : x['title'], reverse=False)
     for l in lvls:
-        #if 'Уровень '+str(level) in l['title']:
-        if 'Кошачьи сны '+str(level) in l['title']:
-        #if 'Бонусный уровень '+str(level) in l['title']:
+        #print l['title'], l['id'], u'Уровень '+str(level)
+        if u'Уровень '+str(level) in l['title']:
+        #if u'Кошачьи сны '+str(level) in l['title']:
+        #if u'Бонусный уровень '+str(level) in l['title']:
             #print l['title'], l['id']
             return l
     return False
@@ -144,6 +149,8 @@ level = 1
 point = 7891
 sid = 444
 need_info = False
+
+lvls = getLevels()
 
 if len(sys.argv) > 1:
     level = sys.argv[1]

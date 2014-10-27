@@ -7,7 +7,7 @@ from common import *
 
 print auth
 
-person = 0
+person = 11
 quest_id = '302'
 
 if len(sys.argv) > 1:
@@ -27,6 +27,7 @@ persons = [
               {"pid":"73940623","auth":"9ba0d48c2a9b701ffa031504b5232451","gid":0,"sid":""},#VitaShani8
               {"pid":"161702967","auth":"a5738509fb8e7486b45e8ba01436c6bb","gid":0,"sid":""},#mari kremer9
               {"pid":"68487257","auth":"4f66fe9422f3b5f17ab1e90ce34a42d3","gid":0,"sid":""},#Nagaina 10
+              {"pid":"202787673","auth":"03bda5b072c520d2fc767c708979ad00","gid":0,"sid":""},#DimaUsmar 11
               
           ]
 pid = persons[person]["pid"]

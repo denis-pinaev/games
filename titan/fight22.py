@@ -27,27 +27,27 @@ def sendRequest(params):
 req = []
 
 req.append('''
-random	387076316
+random	915547788
 viewerId	124520
-params	eNqrVspMUbIy0FEqLkksSVWyMtRRKikGUiaGJiZGphaGZrUApYQJBQ==
+params	eNqrVspMUbIy0FEqKVayMjQxNDExMjY0MNdRKi5JLEkFCtUCAJkVCPw=
 appId	4375733
 authKey	9037dffa6247a0c12e6846044660d736
 request	changeSquadState
 ''')
 
 req.append('''
-random	244564434
+random	602675342
 viewerId	124520
-params	eNpdi7ENgDAMBHf5OiDbsRPkbZCgoE6KIMTuOC3d3+n+wYAvdbWE64BTwg2Xia3v/Yyd0BuclVXFNi7BYyZiRoWqaK6SlUPHc/l7Ku8Hnq0W/A==
+params	eNoVyzEOgDAIheG7MNcGKBTsbUx0cC6Dxnh3cXvJ/70HLhiLVS1w7jCwQEwYJCTCjdAK3DD4zzO2OHKnyAtW6uysKiZqTW1NGmmlomFv3r1LE/T3A33hFvE=
 appId	4375733
 authKey	9037dffa6247a0c12e6846044660d736
 request	changeSquadState
 ''')
 
 req.append('''
-random	337078583
+random	481320737
 viewerId	124520
-params	eNpdi0EOQDAUBe/y1iXt96v1lw5g4wQNInZoJUTcXWNpOZmZGyeESuucJ83eONKaba2wjBCtcEGKv2anEFNIE6RSSBFi2DCT9Wwy73O/HSHvVH/UrUMbYo6b5wWUFRvk
+params	eNodjEEOwjAMBP/ic1TF9raOc+QBvfQFUVshbkCCBEL8vaHH3dnZL70px4FtFHf4ZNE1sUmg29ZBoFYpMxgQZfT6QxmDJkEysJnCxAPVVtpOWfv+eZ3v66XU/e+deXm8Sj9j/R2aOhv4
 appId	4375733
 authKey	9037dffa6247a0c12e6846044660d736
 request	changeSquadState

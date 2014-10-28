@@ -27,36 +27,36 @@ def sendRequest(params):
 req = []
 
 req.append('''
-random	387076316
+random	548307102
 viewerId	124520
-params	eNqrVspMUbIy0FEqLkksSVWyMtRRKikGUiaGJiZGphaGZrUApYQJBQ==
+params	eNqrVspMUbIy0FEqKVayMjQxNDExMrCwMNJRKi5JLEkFCtUCAJl2CQM=
 appId	4375733
 authKey	9037dffa6247a0c12e6846044660d736
 request	changeSquadState
 ''')
 
 req.append('''
-random	244564434
+random	225841857
 viewerId	124520
-params	eNpdi7ENgDAMBHf5OiDbsRPkbZCgoE6KIMTuOC3d3+n+wYAvdbWE64BTwg2Xia3v/Yyd0BuclVXFNi7BYyZiRoWqaK6SlUPHc/l7Ku8Hnq0W/A==
+params	eNoVizEOwCAMA/+SmaIADgn8plI7dIahVdW/N0y2T+eXbuqbRgl0HdQ50EM9rznmPk/vgeZSLKI2EQaUFajmfFBPSEBms+X5tUSYoqbm0aTk8v2J0xb/
 appId	4375733
 authKey	9037dffa6247a0c12e6846044660d736
 request	changeSquadState
 ''')
 
 req.append('''
-random	337078583
+random	121269221
 viewerId	124520
-params	eNpdi0EOQDAUBe/y1iXt96v1lw5g4wQNInZoJUTcXWNpOZmZGyeESuucJ83eONKaba2wjBCtcEGKv2anEFNIE6RSSBFi2DCT9Wwy73O/HSHvVH/UrUMbYo6b5wWUFRvk
+params	eNqrVqpQstK10LMwM7AwNAABCyMDSx2lzBQlKwMdpUolK2M9MxMLUzMLCyNjUzNjQzNDHaXiksSSVKCMjlJJUXpwYWliCozjV5DslFgMlStWsjI0MTQxMTKwsDCrBQBfyBsS
 appId	4375733
 authKey	9037dffa6247a0c12e6846044660d736
 request	changeSquadState
 ''')
 
 req.append('''
-random	388165203
+random	492845279
 viewerId	124520
-params	eNrVk+tOwzAMhd/Fv6MpdrKs7RvwDGhCWclYpd7UCzBNfXecsYyOdppAIMGvqsdufD735ABbgiSSRi2MijQaQiKpBbjSFXtIDtBUm6prIbk/wM7ZvNtBIgVkj/wYxETDGY1mNDWj6WE9CPCzUKPWq9VKGwGNa6u+SV3rzRSusznX2etSwJNlcakNCegbW2Z98f46nPyxXGZT7698gDy3vNTHeu6eXX5p+bO0FsAbIZ5mm2LmI/QdH9KmKvv2YXdxPIXNcWfdZKkbQZkY1ZlJmjETIu8VUlvbNOv2/n9JHtDta3c3s3Pmi06OvoGn/jQeKnN79JHnF9F9gOinCeegcATFQ83p7lxBwykaBjR9DU1eooU9x2Zqt7Ctv5tGf915uG/6H1i/YcnTTDBwGi4chStYU0aemYIPGjN0WcGJ4rRQ8KwpvsZPIevLMTAiE/vKFn2kEc0iMkRaRjGSHt4AkRi6Qw==
+params	eNrNU1lugzAQvYu/UeSxxw5wg54hiiqHOgWJTQbaRoi7d6AJIcWplI9K+YJ5s7xFcs+OgsXIgW8kqlCj1qAVBix7YzEPWNuwGBAQBY+AYGebqnOJJbhn74Y+KCXNFbY1+TiKMmCdM2XWFT/lEDBb2uI0LrjqUI0Xdz1LrcnbdOKYqIZghYEHEx5MejD0YGrYk5iuzM4SvoiCWp/1VOX2w+a3PL+h/RyLcYVnCcaJ2mWJndNRyPWcjo5gmY4CIIuzyoh613uJqU2StRRbyDnV9CNEwA5V2TWv6Y1kcYmQ2NtTbV8u2ZHB8EF//29suuf3Jx/3B2J9ymsY1obhvuGJy6cFFv3rSmGa8Z1onH1MgS4i0Gvp+gmVnx++/Fs58OeVjnell12e04EjjAZUBBu1RYFhJLYch280Q3cl
 appId	4375733
 authKey	9037dffa6247a0c12e6846044660d736
 request	battleResults

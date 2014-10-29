@@ -28,7 +28,8 @@ persons = [
               {"pid":"161702967","auth":"a5738509fb8e7486b45e8ba01436c6bb","gid":0,"sid":""},#mari kremer9
               {"pid":"160511757","auth":"6dc2dba90c1cc9d935542aa6a60c6fb4","gid":0,"sid":""},#vasya tanakan10
               {"pid":"56518190","auth":"22f411e60eebd913b689b19705900ab2","gid":0,"sid":""},#ulia 11
-              {"pid":"155908147","auth":"38e6c4c6f1a3ca43a78a6c499879ba7e","gid":0,"sid":""},#margo
+              {"pid":"155908147","auth":"38e6c4c6f1a3ca43a78a6c499879ba7e","gid":0,"sid":""},#margo 12
+              {"pid":"20633660","auth":"587e50e0738885a44b37faee0f214aa6","gid":0,"sid":""},#Udov 13
               
           ]
 pid = persons[person]["pid"]
@@ -63,16 +64,17 @@ def saveQuest(q, restq):
         log(resp["data"], True)
     return o
 
+for ddd in range(99):
+    data, gid, sid = init(pid, auth)
 
-data, gid, sid = init(pid, auth)
-
-try:
-    q_ar = []
-    for q in data['quests']['active']:
-        q_ar.append(q)
+    try:
+        q_ar = []
+        for q in data['quests']['active']:
+            q_ar.append(q)
         
     #while len(q_ar)>0:
-    if True:
-        q = q_ar.pop()
-        saveQuest(q, ','.join(q_ar))
-except: print 'no quests'
+        if True:
+            q = q_ar.pop()
+            saveQuest(q, ','.join(q_ar))
+    except: print 'no quests'
+    time.sleep(25)

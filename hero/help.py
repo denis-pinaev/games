@@ -98,6 +98,7 @@ persons = [
               {"pid":"11305565","auth":"40328e38ddaac299a62bafe98d4cfaac","gid":0,"sid":""},#Oleg bosyak
               {"pid":"692795","auth":"77107b46d764d40148b967deaa8cd474","gid":0,"sid":""},#Jenya Babkin
               {"pid":"202787673","auth":"03bda5b072c520d2fc767c708979ad00","gid":0,"sid":""},#DimaUsmar
+              {"pid":"20633660","auth":"587e50e0738885a44b37faee0f214aa6","gid":0,"sid":""},#Udov
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""}#corc
           ]
 start_hero = ['{"rnd":%s,"units":[{"home":0,"x":1,"sceneId":68402,"y":14,"id":364860972,"owner":1,"type":"hero","dir":4}],"index":"default"}',

@@ -30,6 +30,7 @@ persons = [
               {"pid":"56518190","auth":"22f411e60eebd913b689b19705900ab2","gid":0,"sid":""},#ulia 11
               {"pid":"155908147","auth":"38e6c4c6f1a3ca43a78a6c499879ba7e","gid":0,"sid":""},#margo 12
               {"pid":"20633660","auth":"587e50e0738885a44b37faee0f214aa6","gid":0,"sid":""},#Udov 13
+              {"pid":"93902559","auth":"d40ce5e63d99e92fd57859c7be81729c","gid":0,"sid":""},#vadimbot0 14
               
           ]
 pid = persons[person]["pid"]
@@ -72,8 +73,8 @@ for ddd in range(99):
         for q in data['quests']['active']:
             q_ar.append(q)
         
-    #while len(q_ar)>0:
-        if True:
+        while len(q_ar)>0:
+        #if True:
             q = q_ar.pop()
             saveQuest(q, ','.join(q_ar))
     except: print 'no quests'

@@ -56,7 +56,7 @@ request	changeSquadState
 req.append('''
 random	388165203
 viewerId	124520
-params	eNrVk+tOwzAMhd/Fv6MpdrKs7RvwDGhCWclYpd7UCzBNfXecsYyOdppAIMGvqsdufD735ABbgiSSRi2MijQaQiKpBbjSFXtIDtBUm6prIbk/wM7ZvNtBIgVkj/wYxETDGY1mNDWj6WE9CPCzUKPWq9VKGwGNa6u+SV3rzRSusznX2etSwJNlcakNCegbW2Z98f46nPyxXGZT7698gDy3vNTHeu6eXX5p+bO0FsAbIZ5mm2LmI/QdH9KmKvv2YXdxPIXNcWfdZKkbQZkY1ZlJmjETIu8VUlvbNOv2/n9JHtDta3c3s3Pmi06OvoGn/jQeKnN79JHnF9F9gOinCeegcATFQ83p7lxBwykaBjR9DU1eooU9x2Zqt7Ctv5tGf915uG/6H1i/YcnTTDBwGi4chStYU0aemYIPGjN0WcGJ4rRQ8KwpvsZPIevLMTAiE/vKFn2kEc0iMkRaRjGSHt4AkRi6Qw==
+params	eJzVlNtuwyAMht/F16jCQAjkDfYMVTXRjC2RmoNy2FpFefc5aEuzlYvdtbtC+W3jz47xBL721QWyCbrm2Aw9ZPsJCu9OQwEZZ1C+0DGzGw0jmohoMqKpiJbMh5nBq4DMcC13WhqFWqAQXJGMdLlE1DujhVDcWBQkL7SoUKk0TZVmMNblVwHDpfVPS3YGuWtdXg5UorWcU7aTf/enkNd1VfAO7KtBzQcGx6Ye++eiXe3yp/2bHq21DD6ufnrjx24lCiUSQdnOFLztbxzZPAyyDMhm8/ejxI8GjGIzm3/r8RJM01W5fpmve5VwDsr6hP4ZOm6fepwdf7GHLbCWcD/ya/8WJbxPBp3vm7HLfb9syjdHh02UJrCxc3U5Vut35QdHt1laYMk8fwLsPpBQ
 appId	4375733
 authKey	9037dffa6247a0c12e6846044660d736
 request	battleResults
@@ -71,7 +71,7 @@ authKey	9037dffa6247a0c12e6846044660d736
 request	changeSquadState
 ''')
 
-count = 30
+count = 1
 if len(sys.argv) > 1:
     count = int(sys.argv[1])
 

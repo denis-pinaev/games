@@ -12,6 +12,9 @@ import urllib
 import base64
 import zlib
 
+#               CorC      VladKsu      EErem     Mrachnii      Kulich     Yarik
+exceptions = ['124520', '217858589', '132632', '186282895', '221870455', '6514823']
+
 def getRandom():
     s = ''
     for i in range(9):
@@ -36,50 +39,9 @@ def sendRequest(params):
     txt = resp.text
     return txt
     
-result = {
+resultBase = {
   "enemy": {
-    "buildings": [
-      {
-        "health": 0,
-        "id": 0
-      },
-      {
-        "health": 0,
-        "id": 1
-      },
-      {
-        "health": 0,
-        "id": 2
-      },
-      {
-        "health": 0,
-        "id": 3
-      },
-      {
-        "health": 0,
-        "id": 4
-      },
-      {
-        "health": 0,
-        "id": 5
-      },
-      {
-        "health": 0,
-        "id": 6
-      },
-      {
-        "health": 0,
-        "id": 7
-      },
-      {
-        "health": 0,
-        "id": 8
-      },
-      {
-        "health": 0,
-        "id": 9
-      }
-    ]
+    "buildings": []
   },
   "f2": 0,
   "f1": 4696722.395209581,
@@ -116,11 +78,16 @@ result = {
       "x": 10,
       "id": 0
     },
+    
     {
-      "typeId": 3,
-      "capacity": 13000,
+      "typeId": 4,
+      "capacity": 93000,
       "level": 0,
       "arm": [
+        {
+          "id": 2,
+          "level": 4
+        },
         {
           "id": 2,
           "level": 4
@@ -128,12 +95,20 @@ result = {
       ],
       "bonus_hp": [
         {
+          "id": 2,
+          "level": 4
+        },
+        {
           "id": 3,
           "level": 4
         }
       ],
-      "health": 1780,
+      "health": 2950,
       "wp": [
+        {
+          "id": 6,
+          "level": 4
+        },
         {
           "id": 6,
           "level": 4
@@ -148,10 +123,14 @@ result = {
       "id": 1
     },
     {
-      "typeId": 3,
-      "capacity": 8000,
+      "typeId": 4,
+      "capacity": 93000,
       "level": 0,
       "arm": [
+        {
+          "id": 2,
+          "level": 4
+        },
         {
           "id": 2,
           "level": 4
@@ -159,12 +138,20 @@ result = {
       ],
       "bonus_hp": [
         {
+          "id": 2,
+          "level": 4
+        },
+        {
           "id": 3,
           "level": 4
         }
       ],
-      "health": 1780,
+      "health": 2950,
       "wp": [
+        {
+          "id": 6,
+          "level": 4
+        },
         {
           "id": 6,
           "level": 4
@@ -179,10 +166,35 @@ result = {
       "id": 2
     },
     {
-      "typeId": 3,
-      "capacity": 13000,
+      "typeId": 4,
+      "capacity": 93000,
       "level": 0,
+      "arm": [
+        {
+          "id": 2,
+          "level": 4
+        },
+        {
+          "id": 2,
+          "level": 4
+        }
+      ],
+      "bonus_hp": [
+        {
+          "id": 2,
+          "level": 4
+        },
+        {
+          "id": 3,
+          "level": 4
+        }
+      ],
+      "health": 2950,
       "wp": [
+        {
+          "id": 6,
+          "level": 4
+        },
         {
           "id": 6,
           "level": 4
@@ -192,29 +204,40 @@ result = {
           "level": 4
         }
       ],
-      "arm": [
-        {
-          "id": 2,
-          "level": 4
-        }
-      ],
-      "bonus_hp": [
-        {
-          "id": 3,
-          "level": 4
-        }
-      ],
-      "health": 1780,
       "x": 6,
       "y": 24,
-      "mass": 1,
       "id": 3
     },
     {
-      "typeId": 3,
-      "capacity": 13000,
+      "typeId": 4,
+      "capacity": 93000,
       "level": 0,
+      "arm": [
+        {
+          "id": 2,
+          "level": 4
+        },
+        {
+          "id": 2,
+          "level": 4
+        }
+      ],
+      "bonus_hp": [
+        {
+          "id": 2,
+          "level": 4
+        },
+        {
+          "id": 3,
+          "level": 4
+        }
+      ],
+      "health": 2950,
       "wp": [
+        {
+          "id": 6,
+          "level": 4
+        },
         {
           "id": 6,
           "level": 4
@@ -224,39 +247,23 @@ result = {
           "level": 4
         }
       ],
-      "arm": [
-        {
-          "id": 2,
-          "level": 4
-        }
-      ],
-      "bonus_hp": [
-        {
-          "id": 3,
-          "level": 4
-        }
-      ],
-      "health": 1780,
       "x": 10,
       "y": 24,
-      "mass": 1,
       "id": 4
     },
     {
-      "typeId": 3,
-      "capacity": 13000,
+      "typeId": 4,
+      "capacity": 93000,
       "level": 0,
-      "wp": [
+      "arm": [
         {
-          "id": 6,
+          "id": 0,
           "level": 4
         },
         {
-          "id": 6,
+          "id": 1,
           "level": 4
-        }
-      ],
-      "arm": [
+        },
         {
           "id": 2,
           "level": 4
@@ -266,22 +273,47 @@ result = {
         {
           "id": 3,
           "level": 4
+        },
+        {
+          "id": 3,
+          "level": 4
+        },
+        {
+          "id": 3,
+          "level": 4
         }
       ],
-      "health": 1780,
+      "health": 5370,
+      "wp": [
+        {
+          "id": 6,
+          "level": 4
+        },
+        {
+          "id": 6,
+          "level": 4
+        },
+        {
+          "id": 6,
+          "level": 4
+        },
+        {
+          "id": 6,
+          "level": 4
+        },
+        {
+          "id": 6,
+          "level": 4
+        }
+      ],
       "x": 14,
       "y": 24,
-      "mass": 1,
       "id": 5
     }
   ],
   "id": 0
 }
 
-pid = '124520'
-auth = '9037dffa6247a0c12e6846044660d736'
-appId = '4375733'
-squad_id = 0
 
 def decode(s):
     s = base64.decodestring(s)
@@ -324,7 +356,7 @@ def loadBase(p):
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
-            print "Base loaded"
+            print "Base loaded "+str(p['userId'])
             return resp['base']
         else:
             print resp_txt
@@ -333,6 +365,57 @@ def loadBase(p):
         
     return None;
     
+def attackBase(base):
+    request = {
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "params":{
+            "state": 3,
+            "id": squad_id,
+            "ts": getTime(),
+            "trgUser": base
+        },
+        "request":"startBattleVsBase"
+        }
+        
+    request["params"] = encode(json.dumps(request["params"]))
+    resp_txt = sendRequest(request)
+    try:
+        resp = json.loads(resp_txt)
+        if resp.has_key("result") and resp["result"] == "ok":
+            print "startBattleVsBase: "+str(base)
+            return resp
+        else:
+            print resp_txt
+    except:
+        print "Load JSON Error: "+resp_txt
+        
+    return None
+
+def resultBaseFight(builds):
+
+    resultBase['ts'] = getTime()
+    resultBase['enemy']['buildings'] = builds
+    
+    request = {
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "params":resultBase,
+        "request":"battleResults"
+        }
+        
+    
+    request["params"] = encode(json.dumps(request["params"]))
+    resp_txt = sendRequest(request)
+    try:
+        resp = json.loads(resp_txt)
+        if resp.has_key("result") and resp["result"] == "ok":
+            print "battle done!"
+            return resp
+        else:
+            print resp_txt
+    except:
+        print "Load JSON Error: "+resp_txt
+        
+    return None
 def killBase(base):
     res = []
     if base.has_key("buildings"):
@@ -341,22 +424,37 @@ def killBase(base):
                 res.append({'id':b['id'],'health':0})
     return res
     
+def enemyToString(p):
+            s = str(p['userId'])
+            while len(s)<15: s+=" "
+            if p.has_key('firstName'):
+                s+=p['firstName']+u" "+p['lastName']
+                while len(s)<40: s+=" "
+            if p.has_key('level'):
+                s+=u"level:"+str(p['level'])
+                while len(s)<50: s+=" "
+            if p.has_key('rating'):
+                s+=u"\tRate:"+str(p['rating'])
+            return s
+    
+    
 def getEnemy(m):
     min_lvl = 999
     enemy = None
     for p in m:
         if p.has_key('userId'):
-            s = str(p['userId'])
-            while len(s)<15: s+=" "
-            s+=p['firstName']+u" "+p['lastName']
-            while len(s)<40: s+=" "
-            s+=u"level:"+str(p['level'])
-            if p.has_key('rating'):
-                s+=u"\tRate:"+str(p['rating'])
-            print s
-            if int(p['level'])<min_lvl and p["userId"] != pid:
+            print enemyToString(p)
+            if str(enemyId) == str(p["userId"]):
+                enemy = p
+                print "REVENGE: " + str(enemyId)
+                break
+            if (str(p["userId"]) in exceptions):
+                print "EXCEPT: " + enemyToString(p)
+            if int(p['level'])<min_lvl and p["userId"] != pid and not str(p["userId"]) in exceptions:
                 min_lvl = int(p['level'])
                 enemy = p
+    if enemy:
+        print 'ATTACK: '+enemyToString(enemy)
     return enemy
 
 def exitBase():
@@ -435,43 +533,29 @@ def move(x1,y1,x2,y2):
         print "Load JSON Error: "+resp_txt
 
 
-req = []
-
-req.append('''
-random	337078583
-viewerId	124520
-params	eNpdi0EOQDAUBe/y1iXt96v1lw5g4wQNInZoJUTcXWNpOZmZGyeESuucJ83eONKaba2wjBCtcEGKv2anEFNIE6RSSBFi2DCT9Wwy73O/HSHvVH/UrUMbYo6b5wWUFRvk
-appId	4375733
-authKey	9037dffa6247a0c12e6846044660d736
-request	changeSquadState
-''')
-
-req.append('''
-random	388165203
-viewerId	124520
-params	eJzVlNtuwyAMht/F16jCQAjkDfYMVTXRjC2RmoNy2FpFefc5aEuzlYvdtbtC+W3jz47xBL721QWyCbrm2Aw9ZPsJCu9OQwEZZ1C+0DGzGw0jmohoMqKpiJbMh5nBq4DMcC13WhqFWqAQXJGMdLlE1DujhVDcWBQkL7SoUKk0TZVmMNblVwHDpfVPS3YGuWtdXg5UorWcU7aTf/enkNd1VfAO7KtBzQcGx6Ye++eiXe3yp/2bHq21DD6ufnrjx24lCiUSQdnOFLztbxzZPAyyDMhm8/ejxI8GjGIzm3/r8RJM01W5fpmve5VwDsr6hP4ZOm6fepwdf7GHLbCWcD/ya/8WJbxPBp3vm7HLfb9syjdHh02UJrCxc3U5Vut35QdHt1laYMk8fwLsPpBQ
-appId	4375733
-authKey	9037dffa6247a0c12e6846044660d736
-request	battleResults
-''')
-
-req.append('''
-random	105794554
-viewerId	124520
-params	eNqrVspMUbIy0FEqKVayMjQxNDExMrA0AvKLSxJLUoEytQCZHAj7
-appId	4375733
-authKey	9037dffa6247a0c12e6846044660d736
-request	changeSquadState
-''')
-
-count = 1
+person = 0
 if len(sys.argv) > 1:
-    count = int(sys.argv[1])
+    person = int(sys.argv[1])
+
+enemyId = 0
+if len(sys.argv) > 2:
+    enemyId =sys.argv[2]
+
+persons = [
+    {'pid':'124520', 'auth':'9037dffa6247a0c12e6846044660d736'},
+    {'pid':'217858589', 'auth':'b121a65e293ffbe05c1cf1e623eecd97'},
+    {'pid':'93902559', 'auth':'269ca0e4213c689bd8fe974e5073a024'}
+    
+]
+
+pid = persons[person]['pid']
+auth = persons[person]['auth']
+appId = '4375733'
+squad_id = 0
 
 #exitBase()
 #move(None,None,0,0)
 #move(0,0,None,None)
-#enterBase()
 m = getMap()
 if m:
     enemy = getEnemy(m)
@@ -479,4 +563,6 @@ if m:
         base = loadBase(enemy)
         if base:
             b = killBase(base)
-            print b
+            r = attackBase(enemy['userId'])
+            if r: print resultBaseFight(b)
+#enterBase()

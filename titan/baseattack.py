@@ -12,8 +12,8 @@ import urllib
 import base64
 import zlib
 
-#               CorC      VladKsu      EErem     Mrachnii      Kulich     Yarik
-exceptions = ['124520', '217858589', '132632', '186282895', '221870455', '6514823']
+#               CorC      VladKsu      EErem     Mrachnii       Yarik    Kulich
+exceptions = ['124520', '217858589', '132632', '186282895', '6514823']#, '221870455']
 
 def getRandom():
     s = ''

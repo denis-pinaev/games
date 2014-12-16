@@ -28,7 +28,7 @@ building_constants = {
                          'strelbishe':'723972021'
                      }
                      
-buildinds_priority = ['ars','hram','main','altar','kuzn','plav','runa','gnom','mag','rist','iron','wood','stone','sklad','gold','kazarma','strelbishe','palatka']
+buildinds_priority = ['ars','main','altar','plav','kuzn','runa','hram','gnom','mag','rist','iron','wood','stone','sklad','gold','kazarma','strelbishe','palatka']
 
 actionCommand = 'Knights.doAction'
 log_file = 'test'

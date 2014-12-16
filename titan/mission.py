@@ -55,11 +55,41 @@ def sendRequest(params):
     
 resultBase = {
   "enemy": {
+    "units": [
+      {
+        "health": 0, 
+        "id": 0
+      }, 
+      {
+        "health": 0, 
+        "id": 1
+      }, 
+      {
+        "health": 0, 
+        "id": 2
+      }, 
+      {
+        "health": 0, 
+        "id": 3
+      }, 
+      {
+        "health": 0, 
+        "id": 4
+      }, 
+      {
+        "health": 0, 
+        "id": 5
+      }, 
+      {
+        "health": 0, 
+        "id": 6
+      }
+    ], 
     "buildings": []
-  },
-  "f2": 0,
-  "f1": 4696722.395209581,
-  "ts": 1414766004,
+  }, 
+  "mapSquadId": 10, 
+  "missionType": 1, 
+  "ts": 1418655005, 
   "units": [
     {
       "typeId": 7,
@@ -450,37 +480,18 @@ def getMap():
         
     return None;
     
-def loadBase(p):
-    request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
-        "id":p['userId'],
-        "squad_id":squad_id,
-        "request":"loadBase"
-        }
-        
-    resp_txt = sendRequest(request)
-    try:
-        resp = json.loads(resp_txt)
-        if resp.has_key("result") and resp["result"] == "ok":
-            log("Base loaded "+str(p['userId']))
-            return resp['base']
-        else:
-            print resp_txt
-    except:
-        print "Load JSON Error: "+resp_txt
-        
-    return None;
-    
-def attackBase(base):
+def attackBase():
     request = {
         "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
         "params":{
+            "missionType": 1,
             "state": 3,
+            "y": 0,
+            "x": 0,
             "id": squad_id,
             "ts": getTime(),
-            "trgUser": base
         },
-        "request":"startBattleVsBase"
+        "request":"startMission"
         }
         
     request["params"] = encode(json.dumps(request["params"]))
@@ -488,7 +499,7 @@ def attackBase(base):
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
-            print "startBattleVsBase: "+str(base)
+            print "startMission"
             return resp
         else:
             print resp_txt
@@ -497,15 +508,15 @@ def attackBase(base):
         
     return None
 
-def resultBaseFight(builds):
+def resultBaseFight(mid=12):
 
     resultBase['ts'] = getTime()
-    resultBase['enemy']['buildings'] = builds
+    resultBase['mapSquadId'] = mid
     
     request = {
         "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
         "params":resultBase,
-        "request":"battleResults"
+        "request":"missionResults"
         }
         
     
@@ -514,7 +525,7 @@ def resultBaseFight(builds):
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
-            print "battle done!"
+            print "missionResults"
             return resp
         else:
             print resp_txt
@@ -522,132 +533,6 @@ def resultBaseFight(builds):
         print "Load JSON Error: "+resp_txt
         
     return None
-def killBase(base):
-    res = []
-    if base.has_key("buildings"):
-        for b in base["buildings"]:
-            if int(b['typeId']) != 12:
-                res.append({'id':b['id'],'health':0})
-    return res
-    
-def enemyToString(p, first=True):
-            s = str(p['userId'])
-            while len(s)<15: s+=" "
-            if p.has_key('firstName'):
-                if first:
-                    s+=p['firstName']+u" "+p['lastName']
-                else:
-                    s+=u"STRANGE NAME"
-                while len(s)<40: s+=" "
-            if p.has_key('level'):
-                s+=u"level:"+str(p['level'])
-                while len(s)<50: s+=" "
-            if p.has_key('rating'):
-                s+=u"\tRate:"+str(p['rating'])
-            return s
-            
-def printEnemyToString(p, add=""):
-    try:
-        print add+enemyToString(p)
-    except:
-        print add+enemyToString(p, False)
-    
-    
-def getEnemy(m):
-    min_lvl = 999
-    enemy = None
-    for p in m:
-        if p.has_key('userId'):
-            printEnemyToString(p)
-            if str(enemyId) == str(p["userId"]):
-                enemy = p
-                print "REVENGE: " + str(enemyId)
-                break
-            if (str(p["userId"]) in exceptions):
-                print "EXCEPT: " + enemyToString(p)
-            if int(p['level'])<min_lvl and p["userId"] != pid and not str(p["userId"]) in exceptions:
-                min_lvl = int(p['level'])
-                enemy = p
-    if enemy:
-        None
-        printEnemyToString(enemy, 'ATTACK: ')
-    return enemy
-
-def exitBase():
-    request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
-        "params":{
-            "state": 1,
-            "id": squad_id,
-            "ts": getTime()
-        },
-        "request":"changeSquadState"
-        }
-        
-    request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
-    try:
-        resp = json.loads(resp_txt)
-        if resp.has_key("result") and resp["result"] == "ok":
-            print "Squad exit base, id: "+str(squad_id)
-        else:
-            print resp_txt
-    except:
-        print "Load JSON Error: "+resp_txt
-
-def enterBase():
-    request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
-        "params":{
-            "state": 0,
-            "id": squad_id,
-            "ts": getTime()
-        },
-        "request":"changeSquadState"
-        }
-        
-    request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
-    try:
-        resp = json.loads(resp_txt)
-        if resp.has_key("result") and resp["result"] == "ok":
-            print "Squad enter base, id: "+str(squad_id)
-        else:
-            print resp_txt
-    except:
-        print "Load JSON Error: "+resp_txt
-
-def move(x1,y1,x2,y2):
-    base_x = -7.5
-    base_y = 2.5
-    if not x1: x1 = base_x; y1 = base_y;
-    if not x2: x2 = base_x; y2 = base_y;
-    request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
-        "params":{
-            "tx": x2,
-            "ty": y2,
-            "ts": getTime(),
-            "y": y1,
-            "x": x1,
-            "state": 2,
-            "id": squad_id,
-            "ts": getTime()
-        },
-        "request":"changeSquadState"
-        }
-        
-    request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
-    try:
-        resp = json.loads(resp_txt)
-        if resp.has_key("result") and resp["result"] == "ok":
-            print "Squad moved, id: "+str(squad_id)
-        else:
-            print resp_txt
-    except:
-        print "Load JSON Error: "+resp_txt
-
 
 person = 0
 if len(sys.argv) > 1:
@@ -669,16 +554,8 @@ auth = persons[person]['auth']
 appId = '4375733'
 squad_id = 0
 
-#exitBase()
-#move(None,None,0,0)
-#move(0,0,None,None)
-m = getMap()
-if m:
-    enemy = getEnemy(m)
-    if enemy:
-        base = loadBase(enemy)
-        if base:
-            b = killBase(base)
-            r = attackBase(enemy['userId'])
-            if r: print resultBaseFight(b)
-#enterBase()
+
+getMap()
+for i in range(1):
+    attackBase()
+    print resultBaseFight()["eventQuest"]

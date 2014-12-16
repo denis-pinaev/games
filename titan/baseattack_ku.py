@@ -12,8 +12,8 @@ import urllib
 import base64
 import zlib
 
-#               CorC      VladKsu      EErem     Mrachnii       Yarik    Kulich
-exceptions = ['124520', '217858589', '132632', '186282895', '6514823', '221870455']
+#               CorC      VladKsu      EErem     Mrachnii       Yarik    Kulich         Buzunov
+exceptions = ['124520', '217858589', '132632', '186282895', '6514823', '221870455', '27754791']
 
 def log(s, pr=True, filename="attacks", needTime=True):
     if needTime:
@@ -648,6 +648,16 @@ def move(x1,y1,x2,y2):
     except:
         print "Load JSON Error: "+resp_txt
 
+def one_attack():
+    m = getMap()
+    if m:
+        enemy = getEnemy(m)
+        if enemy:
+            base = loadBase(enemy)
+            if base:
+                b = killBase(base)
+                r = attackBase(enemy['userId'])
+                if r: print resultBaseFight(b)
 
 person = 0
 if len(sys.argv) > 1:
@@ -672,13 +682,12 @@ squad_id = 0
 #exitBase()
 #move(None,None,0,0)
 #move(0,0,None,None)
-m = getMap()
-if m:
-    enemy = getEnemy(m)
-    if enemy:
-        base = loadBase(enemy)
-        if base:
-            b = killBase(base)
-            r = attackBase(enemy['userId'])
-            if r: print resultBaseFight(b)
+
+for count in range(300):
+    enemyId = "208553501"#"71972896"
+    one_attack()
+    #enemyId = "7197289622222"
+    #one_attack()
+    print count
+    time.sleep(60*2 + int(60*2*random.random()))
 #enterBase()

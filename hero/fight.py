@@ -82,7 +82,7 @@ if person in [2,3,4]:
     not_attack = {"user":[user_not_attack], "orden":[orden_Dark, [{'name':u'Лемберг'}]]}
 
 if person in [5,17]:
-    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'},{'name':u'Золотая Армия'},{'name':u'МЕДВЕДИ'},{'name':u'Академия Медведей'}]]}
+    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'},{'name':u'Элита Медведей'},{'name':u'МЕДВЕДИ'},{'name':u'Академия Медведей'}]]}
 
 if person in [6]:
     not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Украина'}]]}

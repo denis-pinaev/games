@@ -46,12 +46,17 @@ def sendRequest0(params):
     return txt
     
 def sendRequest(params):
+    params['version'] = version
     url = 'http://titans-vk-sc1.playkot.com/current/server.php?'
     ppp = urllib.urlencode(params)
     url+=ppp
     resp = requests.get(url)
     txt = resp.text
     return txt
+    
+    
+unit_type = 15
+unit_hp = 5700
     
 resultBase = {
   "enemy": {
@@ -62,7 +67,7 @@ resultBase = {
   "ts": 1414766004,
   "units": [
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 13000,
       "level": 0,
       "arm": [
@@ -93,7 +98,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -122,7 +127,7 @@ resultBase = {
     },
     
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -153,7 +158,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -181,7 +186,7 @@ resultBase = {
       "id": 1
     },
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -212,7 +217,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -240,7 +245,7 @@ resultBase = {
       "id": 2
     },
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -271,7 +276,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -299,7 +304,7 @@ resultBase = {
       "id": 3
     },
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -330,7 +335,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -358,7 +363,7 @@ resultBase = {
       "id": 4
     },
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -389,7 +394,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -668,6 +673,7 @@ pid = persons[person]['pid']
 auth = persons[person]['auth']
 appId = '4375733'
 squad_id = 0
+version = '1.1.1.0'
 
 #exitBase()
 #move(None,None,0,0)

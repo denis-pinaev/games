@@ -442,34 +442,35 @@ def init_person():
 
 
 
-
-init_person()
-
-print "energy_value = "+str(energy_value)
-gogo = energy_value>0 or not create or phaza>0
-
-cycle = 1
-if len(sys.argv) > 3:
-    cycle = min(int(sys.argv[3]),energy_value)
-    
-if len(sys.argv) > 4: killFriend = True
-    
-if not gogo: cycle = 0
-
-for i_cycle in range(cycle):
-    res = cycle_proc()
-    if cycle>1:
-        if not res:
-            phaza = 1
-            init_person()
-            res = cycle_proc()
-            if res: phaza = 0
-            else: break
-    
-    if phaza == 0: energy_value = energy_value - 1
-    if create: print "energy_value = "+str(energy_value)
-
-if person in (0,5):
+while True:
     init_person()
-    if init_info.has_key("modules") and init_info["modules"].has_key("PvpChests") and init_info["modules"]["PvpChests"].has_key("keys"):
-        print "Morgeina keys: " + str(init_info["modules"]["PvpChests"]["keys"])
+    
+    print "energy_value = "+str(energy_value)
+    gogo = energy_value>0 or not create or phaza>0
+    
+    cycle = 1
+    if len(sys.argv) > 3:
+        cycle = min(int(sys.argv[3]),energy_value)
+        
+    if len(sys.argv) > 4: killFriend = True
+        
+    if not gogo: cycle = 0
+    
+    for i_cycle in range(cycle):
+        res = cycle_proc()
+        if cycle>1:
+            if not res:
+                phaza = 1
+                init_person()
+                res = cycle_proc()
+                if res: phaza = 0
+                else: break
+        
+        if phaza == 0: energy_value = energy_value - 1
+        if create: print "energy_value = "+str(energy_value)
+    
+    if person in (0,5):
+        init_person()
+        if init_info.has_key("modules") and init_info["modules"].has_key("PvpChests") and init_info["modules"]["PvpChests"].has_key("keys"):
+            print "Morgeina keys: " + str(init_info["modules"]["PvpChests"]["keys"])
+    time.sleep(20*60)

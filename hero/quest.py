@@ -7,7 +7,7 @@ from common import *
 
 print auth
 
-person = 0
+person = 2
 quest_id = '302'
 
 if len(sys.argv) > 1:
@@ -66,6 +66,7 @@ def saveQuest(q, restq):
     return o
 
 for ddd in range(99):
+#if True:
     data, gid, sid = init(pid, auth)
 
     try:
@@ -78,4 +79,4 @@ for ddd in range(99):
             q = q_ar.pop()
             saveQuest(q, ','.join(q_ar))
     except: print 'no quests'
-    time.sleep(25)
+    time.sleep(30)

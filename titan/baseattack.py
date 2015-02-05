@@ -438,7 +438,7 @@ def encode(s):
     
 def getMap():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "request":"getUserMap"
         }
         
@@ -457,7 +457,7 @@ def getMap():
     
 def loadBase(p):
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "id":p['userId'],
         "squad_id":squad_id,
         "request":"loadBase"
@@ -478,7 +478,7 @@ def loadBase(p):
     
 def attackBase(base):
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":{
             "state": 3,
             "id": squad_id,
@@ -508,7 +508,7 @@ def resultBaseFight(builds):
     resultBase['enemy']['buildings'] = builds
     
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":resultBase,
         "request":"battleResults"
         }
@@ -580,7 +580,7 @@ def getEnemy(m):
 
 def exitBase():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":{
             "state": 1,
             "id": squad_id,
@@ -602,7 +602,7 @@ def exitBase():
 
 def enterBase():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":{
             "state": 0,
             "id": squad_id,
@@ -628,7 +628,7 @@ def move(x1,y1,x2,y2):
     if not x1: x1 = base_x; y1 = base_y;
     if not x2: x2 = base_x; y2 = base_y;
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":{
             "tx": x2,
             "ty": y2,

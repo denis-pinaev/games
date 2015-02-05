@@ -53,6 +53,10 @@ def sendRequest(params):
     txt = resp.text
     return txt
     
+unit_type = 15
+unit_hp = 5700
+
+
 resultBase = {
   "enemy": {
     "units": [
@@ -87,12 +91,12 @@ resultBase = {
     ], 
     "buildings": []
   }, 
-  "mapSquadId": 10, 
+  "mapSquadId": 32, 
   "missionType": 1, 
   "ts": 1418655005, 
   "units": [
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 13000,
       "level": 0,
       "arm": [
@@ -123,7 +127,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -152,7 +156,7 @@ resultBase = {
     },
     
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -183,7 +187,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -211,7 +215,7 @@ resultBase = {
       "id": 1
     },
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -242,7 +246,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -270,7 +274,7 @@ resultBase = {
       "id": 2
     },
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -301,7 +305,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -329,7 +333,7 @@ resultBase = {
       "id": 3
     },
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -360,7 +364,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -388,7 +392,7 @@ resultBase = {
       "id": 4
     },
     {
-      "typeId": 7,
+      "typeId": unit_type,
       "capacity": 93000,
       "level": 0,
       "arm": [
@@ -419,7 +423,7 @@ resultBase = {
           "level": 4
         }
       ],
-      "health": 5340,
+      "health": unit_hp,
       "wp": [
         {
           "id": 8,
@@ -463,7 +467,7 @@ def encode(s):
     
 def getMap():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,"version":"1.1.1.0",
         "request":"getUserMap"
         }
         
@@ -482,7 +486,7 @@ def getMap():
     
 def attackBase():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,"version":"1.1.1.0",
         "params":{
             "missionType": 1,
             "state": 3,
@@ -514,7 +518,7 @@ def resultBaseFight(mid=12):
     resultBase['mapSquadId'] = mid
     
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,"version":"1.1.1.0",
         "params":resultBase,
         "request":"missionResults"
         }

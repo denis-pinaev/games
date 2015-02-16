@@ -2021,6 +2021,7 @@
 [05.02 12:44:21]  Rang:23 cash: 146 epower: 1464759 money: 2562091(52324) wood: 20720(1268) stone: 10500 iron: 1591(108) experience: 51(1176)
 [05.02 12:44:25]  Rang:21 cash: 146 epower: 1464759 money: 2587083(24992) wood: 21500(1892) stone: 10500 iron: 1767(176) experience: 51(1452)
 [05.02 12:44:32]  Rang:20 cash: 146 epower: 1464759 money: 2606919(19836) wood: 21500 stone: 10500 iron: 1839(72)
+<<<<<<< cdee6f4aaa05dcb9991dc87fa9ebf167e68d35fa
 [06.02 12:48:07]  Rang:24 cash: 97 epower: 1467839 money: 2098944(37708) wood: 10246(2084) stone: 4641(1132) iron: 941(180) experience: 51(1064)
 [06.02 12:48:09]  Rang:22 cash: 97 epower: 1467839 money: 2132520(33576) wood: 12658(2412) stone: 5649(1008) iron: 1109(168) experience: 51(2288)
 [06.02 12:48:11]  Rang:21 cash: 97 epower: 1467839 money: 2174056(41536) wood: 15478(2820) stone: 6329(680) iron: 1277(168) experience: 51(2232)
@@ -2158,3 +2159,17 @@
 [16.02 23:24:24]  Rang:35 cash: 70 epower: 1529173 money: 603978(17628) wood: 21500 stone: 8416(320) iron: 877(48) experience: 51(728)
 [16.02 23:24:26]  Rang:33 cash: 70 epower: 1529173 money: 623284(19306) wood: 21500 stone: 8700(284) iron: 941(64) experience: 51(658)
 [16.02 23:24:29]  Rang:31 cash: 70 epower: 1529173 money: 640352(17068) wood: 21500 stone: 8928(228) iron: 991(50) experience: 51(932)
+=======
+[05.02 22:43:05]  Rang:27 cash: 146 epower: 1464759 money: 2846089(21142) wood: 17723(952) stone: 9283(538) iron: 418(88) experience: 51(542)
+[05.02 22:43:09]  Rang:26 cash: 146 epower: 1464759 money: 2863627(17538) wood: 18553(830) stone: 9897(614) iron: 526(108) experience: 51(594)
+[05.02 22:43:15]  Rang:24 cash: 146 epower: 1464759 money: 2885359(21732) wood: 19795(1242) stone: 10153(256) iron: 622(96) experience: 51(686)
+[05.02 22:43:18]  Rang:22 cash: 146 epower: 1464759 money: 2900981(15622) wood: 20587(792) stone: 10500(674) iron: 712(90) experience: 51(1060)
+[05.02 22:43:23]  Rang:21 cash: 146 epower: 1464759 money: 2911649(10668) wood: 21500(1142) stone: 10500 iron: 768(56) experience: 51(996)
+[05.02 22:43:28]  Rang:19 cash: 146 epower: 1464759 money: 2931921(20272) wood: 21500 stone: 10500 iron: 860(92) experience: 51(704)
+[05.02 22:43:33]  Rang:18 cash: 146 epower: 1464759 money: 2945775(13854) wood: 21500 stone: 10500 iron: 930(70)
+[05.02 23:58:04]  Rang:17 cash: 97 epower: 1467839 money: 2086289(14974) wood: 7288(864) stone: 2570(350) iron: 726(46) experience: 51(806)
+[05.02 23:58:08]  Rang:16 cash: 97 epower: 1467839 money: 2100713(14424) wood: 8232(944) stone: 2976(406) iron: 766(40) experience: 51(662)
+[06.02 23:20:48]  Rang:20 cash: 97 epower: 1467839 money: 2252993(13446) wood: 21500 stone: 10500 iron: 2100 experience: 51(1084)
+[06.02 23:54:40]  Rang:18 cash: 97 epower: 1467839 money: 2276225(23232) wood: 21500 stone: 10500 iron: 2100 experience: 51(1132)
+[07.02 00:58:46]  Rang:17 cash: 97 epower: 1467839 money: 2289145(12920) wood: 21500 stone: 10500 iron: 2100 experience: 51(1198)
+>>>>>>> 7e9236a3fe280c1d3b95be7434b46f723b30938e

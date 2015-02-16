@@ -57,7 +57,7 @@ select_stage = True
 # vladimir 11    mari kramer 12    NAZAR 13    VanyaM 14     Oleg 15   Jenya16   LenaBRED17
 
 orden_Dark = [
-                 {'name':u'темный культ'}
+                 {'name':u'темный культ'}, {'name':u"культ темных"}
 ]
 
 user_not_attack = [
@@ -82,7 +82,7 @@ if person in [2,3,4]:
     not_attack = {"user":[user_not_attack], "orden":[orden_Dark, [{'name':u'Лемберг'}]]}
 
 if person in [5,17]:
-    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'},{'name':u'Элита Медведей'},{'name':u'МЕДВЕДИ'},{'name':u'Академия Медведей'},{'name':u'Сильные Медведи'},{'name':u'Легион Медведей'},{'name':u'Конкистадоры'}]]}
+    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'},{'name':u'Элита Медведей'},{'name':u'МЕДВЕДИ'},{'name':u'Академия Медведей'},{'name':u'Сильные Медведи'},{'name':u'Легион Медведей'}]]}
 
 if person in [6]:
     not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Украина'}]]}

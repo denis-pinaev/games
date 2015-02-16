@@ -31,7 +31,6 @@ if len(sys.argv) > 3:
 
 persons = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc
-              {"pid":"70711104","auth":"8cb2770434df20b95841e497ceace746","gid":0,"sid":""},#Mitya
               {"pid":"194459289","auth":"e1fc9071463c5a1bad148235fbb4fbfc","gid":0,"sid":""},#LOH1
               {"pid":"191288670","auth":"db466f4da075a381d7bb0e21101255b4","gid":0,"sid":""},#ivan malinin bot
               {"pid":"190850909","auth":"67531b4203e16d19611db56645c42aec","gid":0,"sid":""},#ivan malinin bot
@@ -83,6 +82,7 @@ persons = [
               {"pid":"187983220","auth":"780ab57c2e9d076af714a03c5af687d0","gid":0,"sid":""},#some_bot
               {"pid":"187982281","auth":"1a352b0edca4bd66d8353bcacf43faf0","gid":0,"sid":""},#some_bot
               {"pid":"6432236","auth":"f51966179add0bc14b234ca5d7de9211","gid":0,"sid":""},#KUUSAMO
+              {"pid":"70711104","auth":"8cb2770434df20b95841e497ceace746","gid":0,"sid":""}#Mitya
           ]
 persons_misha = [
               {"pid":"124520","auth":"1e365d477c3207804013abaddbb6a0c4","gid":0,"sid":""},#corc

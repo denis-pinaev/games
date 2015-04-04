@@ -13,9 +13,11 @@ service = ''
 method = ''
 
 
-person = 0
-pids = ["124520"]
-auths = ["1e365d477c3207804013abaddbb6a0c4"]
+person = 1
+pids = ["124520", "102137300"]
+auths = ["1e365d477c3207804013abaddbb6a0c4", "e78c0aad90f427b06653067a45de6c6b"]
+#              {"pid":"102137300","auth":"e78c0aad90f427b06653067a45de6c6b","gid":0,"sid":""},#corcc
+
 start_hero = ''
 pid = pids[person]
 auth = auths[person]
@@ -38,7 +40,7 @@ def battleSay():
     service = actionCommand
     method = 'createPost'
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
-    dataString = '{"image":"levelup","postAward":1,"locKey":"#OG_LEVEL_DESC","userLocale":"russian","sessionKey":"%s","cdn":"http://kn-cdn.playkot.com/vk/content/","imgTemplate":"levelup","ctr":%s,"storyId":"10","method":"%s","text":"!","storyType":"level","v":"4683","storyAction":"reach"}' % (sid, getCTR(), method)
+    dataString = '{"image":"levelup","postAward":1,"locKey":"#OG_LEVEL_DESC","userLocale":"russian","sessionKey":"%s","cdn":"http://kn-cdn.playkot.com/vk/content/","imgTemplate":"levelup","ctr":%s,"storyId":"10","method":"%s","text":"!","storyType":"level","v":"4739","storyAction":"reach"}' % (sid, getCTR(), method)
     #dataString ='{"image":"default","userLocale":"russian","imgTemplate":"","storyAction":"beat","cdn":"","storyId":"1","locKey":"#OG_PVP_WIN_DESC","text":"!","storyType":"profile","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(), sid, method)
     params = createData(method, dataString)
     log("%s:%s %s" % (service, method, json.dumps(params)))
@@ -56,7 +58,7 @@ def battleSay():
 sss = "vk.com/app3289256#post="
 data, gid, sid = init(pid, auth)
 
-for i in range(1):
+for i in range(5):
     o = battleSay()
     hashStr = o['hash']
     log(sss+hashStr, True, "+hero_lvl", False)

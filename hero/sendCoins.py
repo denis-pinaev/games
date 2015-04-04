@@ -133,3 +133,10 @@ if True:
 #            if send<2: sendGift("144536559")
         except: print 'error '+pid
 
+"""
+data	{"module":"FriendsGifts","ctr":3,"sessionKey":"550b1f191b0810.84923161","method":"moduleDoAction","data":{"ids":["124520"],"gift":1},"v":"4683","moduleMethod":"sendGift"}
+sig	4115473396
+pid	155908147
+gid	1052585
+cmd	Knights.doAction
+"""

@@ -133,10 +133,10 @@ if True:
 #            if send<2: sendGift("144536559")
         except: print 'error '+pid
 
-"""
-data	{"module":"FriendsGifts","ctr":3,"sessionKey":"550b1f191b0810.84923161","method":"moduleDoAction","data":{"ids":["124520"],"gift":1},"v":"4683","moduleMethod":"sendGift"}
-sig	4115473396
-pid	155908147
-gid	1052585
-cmd	Knights.doAction
-"""
+'''
+data:{"data":{"gift":1,"ids":["70095023"]},"sessionKey":"54f822a5c0c8e8.39426663","v":"4582","module":"FriendsGifts","moduleMethod":"sendGift","ctr":3,"method":"moduleDoAction"}
+cmd:Knights.doAction
+sig:2827210758
+pid:124520
+gid:999038
+'''

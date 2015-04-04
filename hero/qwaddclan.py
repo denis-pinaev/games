@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys
 import json
 import datetime
@@ -7,7 +9,7 @@ from common import *
 
 print auth
 
-person = 11
+person = 10
 quest_id = '302'
 
 if len(sys.argv) > 1:
@@ -47,7 +49,7 @@ def addUser():
     
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
     
-    dataString = '{"message":"1","clan":11,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
+    dataString = '{"message":"1","clan":5258,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
     params = createData(method, dataString)
     log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
@@ -65,7 +67,7 @@ def getUser():
     method = 'getUserApplications'
     
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
-    
+    #clan 11 - TK 5258 - KT
     dataString = '{"message":"1","clan":11,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
     params = createData(method, dataString)
     log("%s:%s %s" % (service, method, json.dumps(params)))
@@ -98,8 +100,30 @@ def cancelUser():
     return o
 
 
+def search():
+#cmd:Knights.doClanAction
+#data:{"sessionKey":"54e5f07ea67538.10353083","v":"4482","filter":"зев","method":"searchClan","ctr":9}
+    global sid, gid, service, method
+    service = 'Knights.doClanAction'
+    method = 'searchClan'
+    
+    init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
+    
+    dataString = '{"filter":"'+u'культ'+'","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
+    params = createData(method, dataString)
+    log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log("%s %s done" % (method, q), True)
+    else:
+        log(resp["data"], True)
+    return o
+
+
 data, gid, sid = init(pid, auth)
 
-try:
-    addUser()
-except: print 'no quests'
+#try:
+getUser()
+#except: print 'no quests'

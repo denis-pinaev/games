@@ -44,7 +44,8 @@ persons = [
               {"pid":"102137300","auth":"e78c0aad90f427b06653067a45de6c6b","gid":0,"sid":""},#corcc
               {"pid":"160511757","auth":"6dc2dba90c1cc9d935542aa6a60c6fb4","gid":0,"sid":""},#vasya tanakan
               {"pid":"","auth":"","gid":0,"sid":""},#nononon
-              {"pid":"155908147","auth":"38e6c4c6f1a3ca43a78a6c499879ba7e","gid":0,"sid":""}#margo
+              {"pid":"155908147","auth":"38e6c4c6f1a3ca43a78a6c499879ba7e","gid":0,"sid":""},#margo
+              {"pid":"70711104","auth":"8cb2770434df20b95841e497ceace746","gid":0,"sid":""}#Mitya
               
           ]
 pid = persons[person]["pid"]

@@ -15,7 +15,8 @@ def encode(s):
     
 
 ss = [
-      'eNqrVspMUbIy0FEqKVayMjQxMjY0NTcxNdNRKi5JLElVsjIGyhSlhxanFilZKZkbWpobWViaKdUC AJatDpQ='
+      'eNqrViouSE1WsoquVspMUbIy0FHKSS1LzVGyMqnVwRSK1VEqycxNVbKyMDUyQEgAWSWVBameQNWG prUAGhUYoQ==',
+      'eNqrViouSSwqiS/JzE1VsjI0MTIzNDc3MjfQUcpLTU2BCluYGhkY1AIALhwNCw=='
      ]
 
 tfile = open("test", "a")

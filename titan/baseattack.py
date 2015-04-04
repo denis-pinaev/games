@@ -121,6 +121,28 @@ resultBase = {
           "level": 4
         }
       ],
+      "spec": [
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        }
+      ],
       "y": 22,
       "x": 10,
       "id": 0
@@ -178,6 +200,28 @@ resultBase = {
         },
         {
           "id": 8,
+          "level": 4
+        }
+      ],
+      "spec": [
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
           "level": 4
         }
       ],
@@ -240,6 +284,28 @@ resultBase = {
           "level": 4
         }
       ],
+      "spec": [
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        }
+      ],
       "y": 23,
       "x": 12,
       "id": 2
@@ -296,6 +362,28 @@ resultBase = {
         },
         {
           "id": 8,
+          "level": 4
+        }
+      ],
+      "spec": [
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
           "level": 4
         }
       ],
@@ -358,6 +446,28 @@ resultBase = {
           "level": 4
         }
       ],
+      "spec": [
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        }
+      ],
       "x": 10,
       "y": 24,
       "id": 4
@@ -414,6 +524,28 @@ resultBase = {
         },
         {
           "id": 8,
+          "level": 4
+        }
+      ],
+      "spec": [
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
+          "level": 4
+        },
+        {
+          "id": 0,
           "level": 4
         }
       ],

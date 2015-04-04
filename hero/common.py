@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import binascii
 import sys
 import json

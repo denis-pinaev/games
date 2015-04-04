@@ -72,7 +72,6 @@ not_attack = [
                  {'id':'98890676','name':'ORDEN'},
                  {'id':'9499004','name':'ORDEN'},
                  {'id':'29431585','name':'ORDEN'},
-                 {'id':'215526318','name':'ORDEN'},
                  
                  {'id':'9894033','name':'Vadim Tuma'},
                  {'id':'9644769','name':'Andrew Ann'},

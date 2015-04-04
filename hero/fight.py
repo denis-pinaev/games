@@ -75,13 +75,13 @@ user_not_attack = [
              
 not_attack = {"user":[user_not_attack], "orden":[orden_Dark]}
 
-if person in [8,9,11,13]:
+if person in [8,9,13]:
     not_attack = {"user":[], "orden":[orden_Dark]}
     
 if person in [2,3,4]:
     not_attack = {"user":[user_not_attack], "orden":[orden_Dark, [{'name':u'Лемберг'}]]}
 
-if person in [5,17]:
+if person in [5,17,11]:
     not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'},{'name':u'Элита Медведей'},{'name':u'МЕДВЕДИ'},{'name':u'Академия Медведей'},{'name':u'Сильные Медведи'},{'name':u'Легион Медведей'}]]}
 
 if person in [6]:

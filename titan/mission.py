@@ -484,6 +484,27 @@ def getMap():
         
     return None;
     
+    
+def launchDrone():
+
+    request = {
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,"version":"1.1.1.0",
+        "request":"launchDrone","ts": getTime()
+        }
+        
+    resp_txt = sendRequest(request)
+    try:
+        resp = json.loads(resp_txt)
+        if resp.has_key("result") and resp["result"] == "ok":
+            print "launchDrone"
+            return resp
+        else:
+            print resp_txt
+    except:
+        print "Load JSON Error: "+resp_txt
+        
+    return None;
+
 def attackBase():
     request = {
         "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,"version":"1.1.1.0",
@@ -558,8 +579,10 @@ auth = persons[person]['auth']
 appId = '4375733'
 squad_id = 0
 
-
-getMap()
-for i in range(1):
-    attackBase()
-    print resultBaseFight()["eventQuest"]
+#while True:
+#    time.sleep(60*60+10)
+if True:
+    getMap()
+    if launchDrone():
+        if attackBase():
+            print resultBaseFight()["eventQuest"]

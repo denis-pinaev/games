@@ -62,4 +62,4 @@ for i in range(5):
     o = battleSay()
     hashStr = o['hash']
     log(sss+hashStr, True, "+hero_lvl", False)
-    data, gid, sid = init(pid, auth, hashStr)
+    #data, gid, sid = init(pid, auth, hashStr)

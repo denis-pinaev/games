@@ -38,8 +38,9 @@ data_start_level = {
 'method':'level',
 'action':'start',
 'boost_ids':'',
+'v':'1',
 'sig':'e2c0f96c298c7f49bfe75e40f5e51a2f',
-'flashvars':'{"auth_key":"7407366522de227fab8b092baba5e476","pf_version":"177","user_id":"166794948","pf_language":"ru","hash":"","referrer":"unknown","viewer_id":"124520"}',
+'flashvars':'{"pf_language":"ru","pf_version":"358","viewer_id":"124520","referrer":"unknown","auth_key":"7407366522de227fab8b092baba5e476","hash":"","user_id":"124520"}',
 'level_id':'1'
 }
 
@@ -53,18 +54,21 @@ data_end_level = {
 'complete':'yes',
 'point':'7080',
 'level_id':'1',
-'flashvars':'{"auth_key":"7407366522de227fab8b092baba5e476","pf_version":"177","user_id":"166794948","pf_language":"ru","hash":"","referrer":"unknown","viewer_id":"124520"}',
+'v':'1',
+'world_id':'1',
+'flashvars':'{"pf_language":"ru","pf_version":"358","viewer_id":"124520","referrer":"unknown","auth_key":"7407366522de227fab8b092baba5e476","hash":"","user_id":"124520"}',
 'method':'level'
 }
 
 data_virality = {
 'action_id':'0',
-'flashvars':'{"auth_key":"7407366522de227fab8b092baba5e476","hash":"","user_id":"124520","pf_version":"177","referrer":"unknown","pf_language":"ru","viewer_id":"124520"}',
+'flashvars':'{"pf_language":"ru","pf_version":"358","viewer_id":"124520","referrer":"unknown","auth_key":"7407366522de227fab8b092baba5e476","hash":"","user_id":"124520"}',
 'sig':'76abdfc39b880bfaa9fe815652af1458',
 'sid':'442',
 'method':'virality',
 'format':'json',
 'uid':'44211',
+'v':'1',
 'action':'status',
 'time':'1395772445'
 }
@@ -72,6 +76,7 @@ data_virality = {
 
 #auth_key = '7407366522de227fab8b092baba5e476'
 auth_key = 'fe60c3f5c077d9cf53824c0be6f3b3ab'
+flashvars = '{"pf_language":"ru","pf_version":"358","viewer_id":"124520","referrer":"unknown","auth_key":"7407366522de227fab8b092baba5e476","hash":"","user_id":"124520"}'
 
 def sendRequest(command, params):
     url = 'http://indikot-vk.playflock.com/game.php'
@@ -82,7 +87,8 @@ def sendRequest(command, params):
         time.sleep(9999)
 
 def getLevels():
-    url = 'http://dw5.playflock.com/indikot-vk/control/lib_1413385393_ru_http.json'
+    url = 'http://dw5.playflock.com/indikot-vk/control/lib_1428576690_ru_https.json'
+    #url = 'http://dw5.playflock.com/indikot-vk/control/lib_1413385393_ru_http.json'
     resp = requests.get(url)
     level_data = json.loads(resp.text)['library']
     return sorted(level_data['level'], key=lambda x : x['title'], reverse=False)
@@ -108,6 +114,7 @@ def startLevel(level):
     data['level_id'] = str(level)
     data['time'] = getTime()
     data['sid'] = sid
+    data['flashvars'] = flashvars
     sd = sortParams(data)
     sig = getSig(sd, auth_key)
     data['sig'] = sig
@@ -119,7 +126,8 @@ def endLevel(level, point):
     data['point'] = str(point)
     data['time'] = getTime()
     data['sid'] = sid
-    data['world_id'] = 2#comment!!!
+    data['flashvars'] = flashvars
+    data['world_id'] = 1#2#comment!!!
     sd = sortParams(data)
     sig = getSig(sd, auth_key)
     data['sig'] = sig
@@ -129,6 +137,7 @@ def virality():
     data = data_virality
     data['time'] = getTime()
     data['sid'] = sid
+    data['flashvars'] = flashvars
     sd = sortParams(data)
     sig = getSig(sd, auth_key)
     data['sig'] = sig

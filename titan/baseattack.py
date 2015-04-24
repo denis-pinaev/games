@@ -793,6 +793,10 @@ if len(sys.argv) > 1:
 enemyId = 0
 if len(sys.argv) > 2:
     enemyId =sys.argv[2]
+    
+attack = True
+if len(sys.argv) > 3:
+    attack = False
 
 persons = [
     {'pid':'124520', 'auth':'9037dffa6247a0c12e6846044660d736'},
@@ -813,7 +817,7 @@ version = '1.1.1.0'
 m = getMap()
 if m:
     enemy = getEnemy(m)
-    if enemy:
+    if enemy and attack:
         base = loadBase(enemy)
         if base:
             b = killBase(base)

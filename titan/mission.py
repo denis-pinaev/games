@@ -579,10 +579,11 @@ auth = persons[person]['auth']
 appId = '4375733'
 squad_id = 0
 
-#while True:
+while True:
 #    time.sleep(60*60+10)
-if True:
+#if True:
     getMap()
     if launchDrone():
         if attackBase():
             print resultBaseFight()["eventQuest"]
+    time.sleep(60*60+10)

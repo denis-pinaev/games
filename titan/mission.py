@@ -11,6 +11,7 @@ import requests
 import urllib
 import base64
 import zlib
+import hashlib
 
 #               CorC      VladKsu      EErem     Mrachnii       Yarik    Kulich
 exceptions = ['124520', '217858589', '132632', '186282895', '6514823', '221870455']
@@ -467,11 +468,10 @@ def encode(s):
     
 def getMap():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,"version":"1.1.1.0",
         "request":"getUserMap"
         }
         
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -488,11 +488,10 @@ def getMap():
 def launchDrone():
 
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,"version":"1.1.1.0",
         "request":"launchDrone","ts": getTime()
         }
         
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -507,7 +506,6 @@ def launchDrone():
 
 def attackBase():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,"version":"1.1.1.0",
         "params":{
             "missionType": 1,
             "state": 3,
@@ -520,7 +518,7 @@ def attackBase():
         }
         
     request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -539,14 +537,13 @@ def resultBaseFight(mid=12):
     resultBase['mapSquadId'] = mid
     
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId,"version":"1.1.1.0",
         "params":resultBase,
         "request":"missionResults"
         }
         
     
     request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -558,6 +555,53 @@ def resultBaseFight(mid=12):
         print "Load JSON Error: "+resp_txt
         
     return None
+
+
+def getSig(string, key=''):
+    return hashlib.md5(string+key).hexdigest()
+    
+def sortParams(data):
+    pl = []
+    for p in data:
+        pl.append(p+'='+str(data[p]))
+    pl.sort()
+    return "".join(pl)
+
+def genReq(request):
+    global tCount
+    nrequest = {
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
+        "ts":getTime(), "tNN":tCount
+    }
+    for r in request:
+        nrequest[r] = request[r]
+    if tSession != "":
+        nrequest["tSession"] = tSession
+    nrequest["tKey"] = getSig(sortParams(nrequest))
+    tCount+=1
+    return nrequest
+
+
+def init():
+    global tSession
+    request = {
+        "request":"authorize", "source":0
+    }
+        
+    resp_txt = sendRequest(genReq(request))
+    try:
+        resp = json.loads(resp_txt)
+        if resp.has_key("session_id"):
+            print "Auth completed tSession="+resp["session_id"]
+            tSession = resp["session_id"]
+            return resp
+        else:
+            print resp_txt
+    except:
+        print "Load JSON Error: "+resp_txt
+        
+    return None;
+
 
 person = 0
 if len(sys.argv) > 1:
@@ -578,10 +622,15 @@ pid = persons[person]['pid']
 auth = persons[person]['auth']
 appId = '4375733'
 squad_id = 0
+version = '1.1.1.0'
+tCount = 1
+tSession = ""
+
 
 while True:
 #    time.sleep(60*60+10)
 #if True:
+    init()
     getMap()
     if launchDrone():
         if attackBase():

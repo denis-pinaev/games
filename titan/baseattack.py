@@ -11,6 +11,7 @@ import requests
 import urllib
 import base64
 import zlib
+import hashlib
 
 #               CorC      VladKsu      EErem     Mrachnii       Yarik    Kulich
 exceptions = ['124520', '217858589', '132632', '186282895', '6514823', '221870455']
@@ -39,14 +40,7 @@ def getRandom():
 def getTime():
     return str(int(time.time()))
 
-def sendRequest0(params):
-    url = 'http://titans-vk-sc1.playkot.com/current/server.php'
-    resp = requests.get(url, data=params, allow_redirects=True)
-    txt = resp.text
-    return txt
-    
 def sendRequest(params):
-    params['version'] = version
     url = 'http://titans-vk-sc1.playkot.com/current/server.php?'
     ppp = urllib.urlencode(params)
     url+=ppp
@@ -570,11 +564,10 @@ def encode(s):
     
 def getMap():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "request":"getUserMap"
-        }
+    }
         
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -589,13 +582,12 @@ def getMap():
     
 def loadBase(p):
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "id":p['userId'],
         "squad_id":squad_id,
         "request":"loadBase"
         }
         
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -610,7 +602,6 @@ def loadBase(p):
     
 def attackBase(base):
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":{
             "state": 3,
             "id": squad_id,
@@ -621,7 +612,7 @@ def attackBase(base):
         }
         
     request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -640,14 +631,13 @@ def resultBaseFight(builds):
     resultBase['enemy']['buildings'] = builds
     
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":resultBase,
         "request":"battleResults"
         }
         
     
     request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -712,7 +702,6 @@ def getEnemy(m):
 
 def exitBase():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":{
             "state": 1,
             "id": squad_id,
@@ -722,7 +711,7 @@ def exitBase():
         }
         
     request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -734,7 +723,6 @@ def exitBase():
 
 def enterBase():
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":{
             "state": 0,
             "id": squad_id,
@@ -744,7 +732,7 @@ def enterBase():
         }
         
     request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -760,7 +748,6 @@ def move(x1,y1,x2,y2):
     if not x1: x1 = base_x; y1 = base_y;
     if not x2: x2 = base_x; y2 = base_y;
     request = {
-        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
         "params":{
             "tx": x2,
             "ty": y2,
@@ -775,7 +762,7 @@ def move(x1,y1,x2,y2):
         }
         
     request["params"] = encode(json.dumps(request["params"]))
-    resp_txt = sendRequest(request)
+    resp_txt = sendRequest(genReq(request))
     try:
         resp = json.loads(resp_txt)
         if resp.has_key("result") and resp["result"] == "ok":
@@ -786,7 +773,55 @@ def move(x1,y1,x2,y2):
         print "Load JSON Error: "+resp_txt
 
 
-person = 0
+
+def getSig(string, key=''):
+    return hashlib.md5(string+key).hexdigest()
+    
+def sortParams(data):
+    pl = []
+    for p in data:
+        pl.append(p+'='+str(data[p]))
+    pl.sort()
+    return "".join(pl)
+
+def genReq(request):
+    global tCount
+    nrequest = {
+        "random":getRandom(), "viewerId":pid, "authKey":auth, "appId":appId, "version":"1.1.1.0",
+        "ts":getTime(), "tNN":tCount
+    }
+    for r in request:
+        nrequest[r] = request[r]
+    if tSession != "":
+        nrequest["tSession"] = tSession
+    nrequest["tKey"] = getSig(sortParams(nrequest))
+    tCount+=1
+    return nrequest
+
+
+def init():
+    global tSession
+    request = {
+        "request":"authorize", "source":0
+    }
+        
+    resp_txt = sendRequest(genReq(request))
+    try:
+        resp = json.loads(resp_txt)
+        if resp.has_key("session_id"):
+            print "Auth completed tSession="+resp["session_id"]
+            tSession = resp["session_id"]
+            return resp
+        else:
+            print resp_txt
+    except:
+        print "Load JSON Error: "+resp_txt
+        
+    return None;
+
+
+
+person = 2
 if len(sys.argv) > 1:
     person = int(sys.argv[1])
 
@@ -810,10 +845,10 @@ auth = persons[person]['auth']
 appId = '4375733'
 squad_id = 0
 version = '1.1.1.0'
+tCount = 1
+tSession = ""
 
-#exitBase()
-#move(None,None,0,0)
-#move(0,0,None,None)
+init()
 m = getMap()
 if m:
     enemy = getEnemy(m)
@@ -823,4 +858,3 @@ if m:
             b = killBase(base)
             r = attackBase(enemy['userId'])
             if r: print resultBaseFight(b)
-#enterBase()

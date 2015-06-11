@@ -75,7 +75,7 @@ def log(s, pr=False, filename=False, needTime=True):
 
 def sendRequest(command, params):
     try:
-        url = 'http://kn-vk-sc1.playkot.com/current/json-gate.php'
+        url = 'http://kn-vk-sc.playkot.com/current/json-gate.php'
         resp = requests.post(url, data=params, allow_redirects=True)
         txt = resp.text.split('!', 1)[1]
         first = txt.find("adInfo")

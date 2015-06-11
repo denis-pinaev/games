@@ -82,7 +82,7 @@ if person in [2,3,4]:
     not_attack = {"user":[user_not_attack], "orden":[orden_Dark, [{'name':u'Лемберг'}]]}
 
 if person in [5,17,11]:
-    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'},{'name':u'Элита Медведей'},{'name':u'МЕДВЕДИ'},{'name':u'Академия Медведей'},{'name':u'Сильные Медведи'},{'name':u'Легион Медведей'},{'name':u'Бурые Медведи'},{'name':u'МЫ ВМЕСТЕ'}]]}
+    not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Анархия тьмы'}]]}
 
 if person in [6]:
     not_attack = {"user":[], "orden":[orden_Dark, [{'name':u'Украина'}]]}
@@ -119,7 +119,7 @@ def log(s, pr=False, new_file=False, file_name="hero_fights_log_"):
         tfile.close()
 
 def sendRequest(command, params):
-    url = 'http://kn-vk-sc1.playkot.com/current/json-gate.php'
+    url = 'http://kn-vk-sc.playkot.com/current/json-gate.php'
     resp = requests.post(url, data=params, allow_redirects=True)
     txt = resp.text.split('!',1)[1].encode('utf-8')
     first = txt.find("adInfo")

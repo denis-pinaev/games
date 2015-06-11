@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import binascii
 import sys
 import json
@@ -24,10 +26,11 @@ building_constants = {
                          'rist':'2101222815',
                          'mag':'447398184',
                          'palatka':'482206421',
-                         'kazarma':'335153735'
+                         'kazarma':'335153735',
+                         'strelbishe':'723972021'
                      }
                      
-buildinds_priority = ['kuzn','ars','iron','hram','plav','runa','main','altar','gnom','mag','rist','wood','stone','sklad','gold','kazarma','palatka']
+buildinds_priority = ['ars','main','altar','plav','kuzn','runa','hram','gnom','mag','rist','iron','wood','stone','sklad','gold','kazarma','strelbishe','palatka']
 
 actionCommand = 'Knights.doAction'
 log_file = 'test'
@@ -56,8 +59,9 @@ def init_params(npid=None, nauth=None, ngid=None, nsid=None, nmethod=None, nserv
 def getRandom():
     return str(int(random.random()*1000))
     
-def log(s, pr=False, filename=False):
-    s = "[" + datetime.datetime.now().strftime('%d.%m %H:%M:%S')+"] " + s
+def log(s, pr=False, filename=False, needTime=True):
+    if needTime:
+        s = "[" + datetime.datetime.now().strftime('%d.%m %H:%M:%S')+"] " + s
     if pr: print s
     fatype = filename if filename else "hero_"+log_file+"_log"
     try:
@@ -71,7 +75,7 @@ def log(s, pr=False, filename=False):
 
 def sendRequest(command, params):
     try:
-        url = 'http://188.93.20.156/current/json-gate.php'
+        url = 'http://kn-fs-sc.playkot.com/current/json-gate.php'
         resp = requests.post(url, data=params, allow_redirects=True)
         txt = resp.text.split('!', 1)[1]
         first = txt.find("adInfo")
@@ -102,15 +106,20 @@ def createData(method, data):
     o["pid"] = pid
     return o
     
-def init(npid, nauth):
+def init(npid, nauth, post=False):
     global sid, gid, service, method, pid, auth
     init_params(npid=npid, nauth=nauth)
     service = 'Knights.initialize'
     method = 'initialize'
-    initString = '{"age":30,"gender":1,"rnd":%s,"referralType":6,"newDay":false,"owner_id":"","hash":{},"auth_key":"%s","sid":""}'
+    initString = '{"age":30,"gender":1,"rnd":%s,"referralType":6,"newDay":false,"owner_id":"","hash":{%s}%s,"auth_key":"%s","sid":""}'
     sid = ''
     gid = 0
-    params = createData(method, initString % (getRandom(), auth))
+    postString = ''
+    hashString = ''
+    if post:
+        postString = '"post":"%s"' % (post)
+        hashString = ',"postHash":"%s"' % (post)
+    params = createData(method, initString % (getRandom(), postString, hashString, auth))
     log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     #print resp["data"][:100]

@@ -8,9 +8,9 @@ import requests
 from common import *
 service = ''
 method = ''
+game_version = 5423
 
-
-flist = ["4265183","5082962","11796750","15302521","17776767","36535035","40952738","42392799","71187603","73453170","75367792","76312315","76876470","68667021","39057925","329190","32658681","2426488","50746419","73008830","44378967","74895385","43465163","68643636","4509838" "3091478"]
+flist = ["329190","2426488","4125379","4265183","4509838","5082962","11796750","15302521","17776767","20461833","32658681","36535035","39057925","39913577","40952738","41064410","42060268","42392799","43465163","44378967","46816137","50746419","53912829","55006117","62810212","68643636","71187603","71859984","73008830","73234077","73453170","74895385","75367792","76312315","76876470","82413437","83259333","3091478"]
 
 
 person = 0
@@ -41,9 +41,9 @@ def getWorld(pers):
     service = actionCommand
     method = 'friendsGetWorld'
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
-    dataString = '{"rnd":%s,"friendId":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getRandom(), pers, getCTR(), sid, method)
+    dataString = '{"v":"%s","friendId":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (game_version, pers, getCTR(), sid, method)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
@@ -58,9 +58,9 @@ def sendHelp(pers, hbid):
     service = actionCommand
     method = 'friendHelpApply'
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
-    dataString = '{"friendId":"%s","list":[%s],"rnd":%s,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (pers, hbid, getRandom(), getCTR(), sid, method)
+    dataString = '{"friendId":"%s","list":[%s],"v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (pers, hbid, game_version, getCTR(), sid, method)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]

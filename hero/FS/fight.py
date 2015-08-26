@@ -8,6 +8,7 @@ import datetime
 import time
 import random
 import requests
+from buildInfo import *
 service = ''
 method = ''
 
@@ -52,6 +53,7 @@ action = 'hp'
 init_info = None
 killFriend = False;
 select_stage = True
+game_version = getGameVersion()
 
 # corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6      lenaSv7     nagaina8   tanakan 9     VitalikSha10
 # vladimir 11    mari kramer 12    NAZAR 13    VanyaM 14     Oleg 15   Jenya16   LenaBRED17
@@ -151,11 +153,11 @@ def init():
     global sid, gid, service, method
     service = 'Knights.initialize'
     method = 'initialize'
-    initString = '{"age":30,"gender":1,"rnd":%s,"referralType":6,"newDay":false,"owner_id":"","hash":{},"auth_key":"%s","sessionKey":"","ctr":0}'
+    initString = '{"pauth":"%s","userName":"Name","raw_location":"","age":30,"gender":1,"referralType":4,"newDay":false,"owner_id":"","hash":{},"auth_key":"%s","sessionKey":"","ctr":0,"authType":"social","v":"%s","email":null}'
     sid = ''
     gid = 0
-    params = createData(method, initString % (getRandom(), auth))
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    params = createData(method, initString % (getPauth(pid), auth, game_version))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     print resp["data"][:100]
     o = json.loads(resp["data"])
@@ -235,18 +237,18 @@ def killEnemy(dataj2, create, first=False):
                 sunits = '%s,"%s":{"dmg":1000,"dead":1}' % (sunits, i)
             else: sunits = '%s"%s":{"dmg":1000,"dead":1}' % (sunits, i)
 
-    sline = '{"entities":{%s},"rnd":%s,"config":{},"globalSpells":null,"turn":0,"index":"default","aid":%d,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (sunits, getRandom(), new_cheat, getCTR(), sid, method)
+    sline = '{"entities":{%s},"v":"%s","config":{},"globalSpells":null,"turn":0,"index":"default","aid":%d,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (sunits, game_version, new_cheat, getCTR(), sid, method)
     return sline
         
 def battleInit():
     global sid, gid, service, method
     service = actionCommand
     method = 'battleInit'
-    #dataString = '{"rnd":%s,"index":"default"}' % (getRandom())
+    #dataString = '{"v":"%s","index":"default"}' % (game_version)
     #data	{"auth_key":"1e365d477c3207804013abaddbb6a0c4""ctr":%s,"sessionKey":"4639","method":"battleInit","index":"default","rnd":109}
-    dataString = '{"rnd":%s,"index":"default","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getRandom(), getCTR(), sid, method)
+    dataString = '{"v":"%s","index":"default","ctr":%s,"sessionKey":"%s","method":"%s"}' % (game_version, getCTR(), sid, method)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
@@ -263,7 +265,7 @@ def battleUpdate(killstring):
     service = actionCommand
     method = 'battleUpdate'
     params = createData(method, killstring)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
@@ -278,10 +280,10 @@ def battleCreate():
     global sid, gid, service, method
     service = actionCommand
     method = 'battleCreate'
-    dataString = '{"reason":"pvp","debug":false,"data":null,"rnd":%s,"index":"default","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getRandom(), getCTR(), sid, method)
+    dataString = '{"reason":"pvp","debug":false,"data":null,"v":"%s","index":"default","ctr":%s,"sessionKey":"%s","method":"%s"}' % (game_version, getCTR(), sid, method)
     #{"auth_key":"1e365d477c3207804013abaddbb6a0c4""ctr":%s,"sessionKey":"4639","method":"battleCreate"}
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
@@ -295,7 +297,7 @@ def battleCreate():
 def loadPerson(initdata):
     global start_hero, energy_value
     if True:
-        ts = '{"units":[{"owner":1,"id":%d,"type":null,"sceneId":99999,"x":1,"home":%d,"y":14,"dir":4}],"rnd":%s,"index":"default"}'
+        ts = '{"units":[{"owner":1,"id":%d,"type":null,"sceneId":99999,"x":1,"home":%d,"y":14,"dir":4}],"v":"%s","index":"default"}'
         #print initdata["player"]
         energy_value = int(initdata["player"]["energy"])
         for e in initdata["entities"]:
@@ -303,7 +305,7 @@ def loadPerson(initdata):
             if ee.has_key("subtype") and ee["subtype"] == "unit":
                 pid = ee["id"]
                 sid = ee["sceneId"]
-                dataString = ts % (pid, sid, getRandom())
+                dataString = ts % (pid, sid, game_version)
                 start_hero = dataString
                 print "taking person done"
                 break
@@ -319,7 +321,7 @@ def battleStart():
     dataString = start_hero[:-1]+',"ctr":%s,"sessionKey":"%s","method":"%s"}'
     dataString = dataString % (getCTR(), sid, method)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
@@ -336,11 +338,11 @@ def battleFinish():
     global sid, gid, service, method
     service = actionCommand
     method = 'battleFinish'
-    #dataString = '{"reason":"win","index":"default","rnd":%s}' % (getRandom())
+    #dataString = '{"reason":"win","index":"default","v":"%s"}' % (game_version)
     #{"reason":"win","rnd":700,"auth_key":"1e365d477c3207804013abaddbb6a0c4""ctr":%s,"sessionKey":"4639","method":"battleFinish","index":"default"}
-    dataString = '{"reason":"win","index":"default","rnd":%s,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getRandom(), getCTR(), sid, method)
+    dataString = '{"reason":"win","index":"default","v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (game_version, getCTR(), sid, method)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]

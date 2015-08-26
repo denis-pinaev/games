@@ -9,6 +9,7 @@ import time
 import random
 import requests
 from common import *
+from buildInfo import *
 service = ''
 method = ''
 
@@ -40,10 +41,10 @@ def battleSay():
     service = actionCommand
     method = 'createPost'
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
-    dataString = '{"image":"levelup","postAward":1,"locKey":"#OG_LEVEL_DESC","userLocale":"russian","sessionKey":"%s","cdn":"http://kn-cdn.playkot.com/vk/content/","imgTemplate":"levelup","ctr":%s,"storyId":"10","method":"%s","text":"!","storyType":"level","v":"4739","storyAction":"reach"}' % (sid, getCTR(), method)
+    dataString = '{"image":"levelup","postAward":1,"locKey":"#OG_LEVEL_DESC","userLocale":"russian","sessionKey":"%s","cdn":"http://kn-cdn.playkot.com/vk/content/","imgTemplate":"levelup","ctr":%s,"storyId":"10","method":"%s","text":"!","storyType":"level","v":"%s","storyAction":"reach"}' % (sid, getCTR(), method, getGameVersion())
     #dataString ='{"image":"default","userLocale":"russian","imgTemplate":"","storyAction":"beat","cdn":"","storyId":"1","locKey":"#OG_PVP_WIN_DESC","text":"!","storyType":"profile","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(), sid, method)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]

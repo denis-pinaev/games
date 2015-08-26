@@ -31,6 +31,8 @@ persons = [
               {"pid":"155908147","auth":"38e6c4c6f1a3ca43a78a6c499879ba7e","gid":0,"sid":""},#margo 12
               {"pid":"20633660","auth":"587e50e0738885a44b37faee0f214aa6","gid":0,"sid":""},#Udov 13
               {"pid":"93902559","auth":"d40ce5e63d99e92fd57859c7be81729c","gid":0,"sid":""},#vadimbot0 14
+              {"pid":"114233049","auth":"b2c5894ec83e287b4c2563402b064248","gid":0,"sid":""},#VanyaM 15
+              {"pid":"11305565","auth":"40328e38ddaac299a62bafe98d4cfaac","gid":0,"sid":""},#VanyaM 16
               
           ]
 pid = persons[person]["pid"]

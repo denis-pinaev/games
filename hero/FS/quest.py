@@ -40,7 +40,7 @@ def saveQuest(q, restq):
     #print dataString
     #time.sleep(999)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]

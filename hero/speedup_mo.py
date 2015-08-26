@@ -38,7 +38,7 @@ def getHelpSpeed(hbid):
     #data	{"count":33,"type":"entities","method":"recipeFinish","index":"65540"}
     dataString = '{"count":5,"type":"entities","method":"recipeFinish","index":"%s","rnd":%s,"ctr":%s,"sessionKey":"%s"}' % (hbid, getRandom(), getCTR(), sid)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
@@ -59,7 +59,7 @@ def hideOne(hbid):
     #dataString = '{"count":5,"type":"entities","method":"recipeFinish","index":"%s","rnd":%s,"ctr":%s,"sessionKey":"%s"}' % (hbid, getRandom(), getCTR(), sid)
     dataString = '{"method":"entityStore","sceneId":"%s","rnd":%s,"ctr":%s,"sessionKey":"%s"}' % (hbid, getRandom(), getCTR(), sid)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
@@ -79,7 +79,7 @@ def getWorld(pers):
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
     dataString = '{"rnd":%s,"friendId":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getRandom(), pers, getCTR(), sid, method)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
@@ -97,7 +97,7 @@ def showOne(hbid):#frozen!
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
     dataString = '{"x":22,"y":-6,"dir":0,"method":"entityRestore","id":733825800,"sceneId":%d,"rnd":%s,"ctr":%s,"sessionKey":"%s","level":3}' % (hbid, getRandom(), getCTR(), sid)
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
@@ -113,7 +113,7 @@ def moveBuilding(bid, x, y, d):
     dataString = '{"x":%d,"y":%d,"dir":%d,"sceneId":%s,"rnd":%s,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (x, y, d, bid, getRandom(), getCTR(), sid, method)
     print dataString
     params = createData(method, dataString)
-    log("%s:%s %s" % (service, method, json.dumps(params)))
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]

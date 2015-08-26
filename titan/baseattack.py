@@ -41,7 +41,7 @@ def getTime():
     return str(int(time.time()))
 
 def sendRequest(params):
-    url = 'http://titans-vk-sc1.playkot.com/current/server.php?'
+    url = 'http://tt-vk-sc.playkot.com/current/server.php?'
     ppp = urllib.urlencode(params)
     url+=ppp
     resp = requests.get(url)

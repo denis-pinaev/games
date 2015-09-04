@@ -181,7 +181,7 @@ def killEnemy(dataj2, create, first=False):
     if create and dataj2.has_key("mission") and dataj2["mission"].has_key("pvpInfo"):
         info = dataj2["mission"]["pvpInfo"]
         clanName = info['clanInfo']['name'] if info.has_key("clanInfo") else 'no clan'
-        ratingPlace = info['clanInfo']['ratingPlace'] if info.has_key("clanInfo") else '0'
+        #??? ratingPlace = info['clanInfo']['ratingPlace'] if info.has_key("clanInfo") else '0'
         fid = str(info['id']) if info.has_key("id") else ''
         level = str(info['level']) if info.has_key("level") else ''
         power = str(info['power']) if info.has_key("power") else ''
@@ -190,8 +190,9 @@ def killEnemy(dataj2, create, first=False):
         
         try:
             if first: log("TRY: id:%s, level:%s, clan:%s, epower:%s, power:%s, powerlevel:%s" % (fid,level,clanName,epower,power,powerlevel), True, True)
-        except:
-            if first: log("TRY: id:%s, level:%s, clan:%s, epower:%s, power:%s, powerlevel:%s" % (fid,level,ratingPlace,epower,power,powerlevel), True, True)
+        except Exception as ex:
+            print ex
+            #if first: log("TRY: id:%s, level:%s, clan:%s, epower:%s, power:%s, powerlevel:%s" % (fid,level,ratingPlace,epower,power,powerlevel), True, True)
         
         na_user = not_attack['user']
         for uarr in na_user:
@@ -244,7 +245,7 @@ def battleInit():
     global sid, gid, service, method
     service = actionCommand
     method = 'battleInit'
-    #dataString = '{"rnd":%s,"index":"default"}' % (getRandom())
+    #dataString = '{"v":"%s","index":"default"}' % (game_version)
     #data	{"auth_key":"1e365d477c3207804013abaddbb6a0c4""ctr":%s,"sessionKey":"4639","method":"battleInit","index":"default","rnd":109}
     dataString = '{"v":"%s","index":"default","ctr":%s,"sessionKey":"%s","method":"%s"}' % (game_version, getCTR(), sid, method)
     params = createData(method, dataString)
@@ -297,7 +298,7 @@ def battleCreate():
 def loadPerson(initdata):
     global start_hero, energy_value
     if True:
-        ts = '{"units":[{"owner":1,"id":%d,"type":null,"sceneId":99999,"x":1,"home":%d,"y":14,"dir":4}],"rnd":%s,"index":"default"}'
+        ts = '{"units":[{"owner":1,"id":%d,"type":null,"sceneId":99999,"x":1,"home":%d,"y":14,"dir":4}],"v":"%s","index":"default"}'
         #print initdata["player"]
         energy_value = int(initdata["player"]["energy"])
         for e in initdata["entities"]:
@@ -338,7 +339,7 @@ def battleFinish():
     global sid, gid, service, method
     service = actionCommand
     method = 'battleFinish'
-    #dataString = '{"reason":"win","index":"default","rnd":%s}' % (getRandom())
+    #dataString = '{"reason":"win","index":"default","v":"%s"}' % (game_version)
     #{"reason":"win","rnd":700,"auth_key":"1e365d477c3207804013abaddbb6a0c4""ctr":%s,"sessionKey":"4639","method":"battleFinish","index":"default"}
     dataString = '{"reason":"win","index":"default","v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (game_version, getCTR(), sid, method)
     params = createData(method, dataString)
@@ -349,6 +350,24 @@ def battleFinish():
     if error == 0:
         printResults(o)
         log("battleFinish done", True)
+    else:
+        log(resp["data"], True)
+        time.sleep(999999)
+    return o
+    
+def battleFinishTimeout():
+    global sid, gid, service, method
+    service = actionCommand
+    method = 'battleFinish'
+    dataString = '{"reason":"timeout","index":"default","v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (game_version, getCTR(), sid, method)
+    params = createData(method, dataString)
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        printResults(o)
+        log("battleFinishTimeout done", True)
     else:
         log(resp["data"], True)
         time.sleep(999999)
@@ -375,8 +394,19 @@ def cycle_proc():
     global select_stage
     isBattle = False
     try:
-        if gogo: mission = init_info["missions"]["default"]["id"]; isBattle = True; init_info["missions"] = None; print "mission = " + str(mission)
-    except:
+        if gogo:
+            mission = init_info["missions"]["default"]["id"]
+            mission_time = int(init_info["missions"]["default"]["time"])
+            loose = (datetime.datetime.now() - datetime.datetime.fromtimestamp(mission_time)).total_seconds()>0
+            if loose:
+                print "mission LOOSE timeout = " + str(mission)
+                battleFinishTimeout()
+            else:
+                isBattle = True
+                print "mission ACTIVE = " + str(mission)
+            init_info["missions"] = None
+    except Exception as ex:
+        print ex
         print "no mission found"
         if not create:
             return False
@@ -386,48 +416,56 @@ def cycle_proc():
             if gogo and phaza==0 and not isBattle: o = battleCreate(); print "battleCreate ok"
             isBattle = False
             #if phaza==0 and o["success"] == False: print "battleCreate - not energy!"; gogo = False
-        except:
+        except Exception as ex:
+            print ex
             print "Unexpected error:\n", sys.exc_info()
             print "error in battleCreate"
             return False
         try: 
             if gogo: inito = battleInit(); print "battleInit ok"
-        except:
+        except Exception as ex:
+            print ex
             print "error in battleInit"
             return False
         try:
             if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
             if len(killsting)<1: return False
-        except:
+        except Exception as ex:
+            print ex
             print "error in killEnemy"
             return False
         try:
             if gogo and phaza<=1: battleStart(); print "battleStart ok"
             select_stage = False
-        except:
+        except Exception as ex:
+            print ex
             print "error in battleStart"
             return False
     
     try:
         if gogo: inito = battleInit(); print "battleInit done"
-    except:
+    except Exception as ex:
+        print ex
         print "error in battleInit"
         return False
     try:
         if gogo: killsting = killEnemy(inito, create); print "killEnemy done"
         if len(killsting)<1: return False
-    except:
+    except Exception as ex:
+        print ex
         print "error in killEnemy"
         return False
     try:
         if gogo: battleUpdate(killsting); print "battleUpdate done"
-    except:
+    except Exception as ex:
+        print ex
         print "error in battleUpdate"
         return False
     if create or phaza>2:
         try:
             if gogo: battleFinish(); print "battleFinish done"
-        except:
+        except Exception as ex:
+            print ex
             print "Unexpected error:\n", sys.exc_info()
             print "error in battleFinish"
     

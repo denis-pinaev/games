@@ -3,7 +3,7 @@ import json
 
 social = "vk"
 vesionurl = "http://kn-%s-sc.playkot.com/current/get_launch_info.php" % social
-gameurl = "http://kn-cdn.playkot.com/%s/content/game_%s.swf"
+gameurl = "http://kn-scdn.playkot.com/%s/content/game_%s.swf"
 version = "1111"
 
 def get_version():
@@ -24,7 +24,7 @@ def download_file(url, local_filename):
 
 def download(i=0):
     global version
-    if i>=10: print "Failed to found correct SWF file"; return False
+    if i>=100: print "Failed to found correct SWF file"; return False
     i = i + 1
     res = download_file(gameurl % (social,str(version)), "D:/downloads/game_%s_%s.swf" % (social,str(version)))
     if not res:

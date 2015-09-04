@@ -3,7 +3,7 @@ import json
 
 social = "fs"
 vesionurl = "http://kn-%s-sc.playkot.com/current/get_launch_info.php" % social
-gameurl = "http://kn-cdn.playkot.com/%s/content/game_%s.swf"
+gameurl = "http://kn-scdn.playkot.com/%s/content/game_%s.swf"
 version = "1111"
 
 def get_version():

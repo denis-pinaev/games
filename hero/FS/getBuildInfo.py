@@ -14,7 +14,8 @@ def get_version():
 def download_file(url, local_filename):
     # NOTE the stream=True parameter
     r = requests.get(url, stream=True)
-    if r.status_code == 404: return False
+    print r.status_code
+    if r.status_code in [404,403]: return False
     with open(local_filename, 'wb') as f:
         for chunk in r.iter_content(chunk_size=1024): 
             if chunk: # filter out keep-alive new chunks
@@ -24,7 +25,7 @@ def download_file(url, local_filename):
 
 def download(i=0):
     global version
-    if i>=10: print "Failed to found correct SWF file"; return False
+    if i>=100: print "Failed to found correct SWF file"; return False
     i = i + 1
     res = download_file(gameurl % (social,str(version)), "D:/downloads/game_%s_%s.swf" % (social,str(version)))
     if not res:

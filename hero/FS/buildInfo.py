@@ -1,6 +1,6 @@
 import hashlib
 
-buildInfo = {"version":5516,"time":"04.09.2015 9:36","hash":"5ab2d5591d40b3a779549f1d1a21797a"}
+buildInfo = {"version":5671,"time":"14.09.2015 18:52","hash":"fc3f1622d3b1bc40091c4ea89d34c2c9"}
 
 def getPauth(pid):
     return str(hashlib.md5(pid+buildInfo["hash"]).hexdigest())

@@ -14,7 +14,8 @@ def get_version():
 def download_file(url, local_filename):
     # NOTE the stream=True parameter
     r = requests.get(url, stream=True)
-    if r.status_code == 404: return False
+    print r.status_code
+    if r.status_code in [404,403]: return False
     with open(local_filename, 'wb') as f:
         for chunk in r.iter_content(chunk_size=1024): 
             if chunk: # filter out keep-alive new chunks

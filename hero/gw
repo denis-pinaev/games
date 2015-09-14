@@ -1,0 +1,5 @@
+data:{"method":"battleCreate","ctr":21,"data":149,"reason":"gwAttack","debug":false,"sessionKey":"55f6ae580580c1.51049801","v":"5622","index":"default"}
+data:{"method":"battleInit","sessionKey":"55f6ae580580c1.51049801","v":"5622","ctr":22,"index":"default"}
+data:{"method":"battleStart","ctr":23,"sessionKey":"55f6ae580580c1.51049801","v":"5622","conquestBoost":0,"units":[{"owner":1,"x":0,"y":12,"sceneId":74203,"params":0,"id":871340746,"type":"hero","home":0,"dir":4}],"index":"default"}
+data:{"aid":2,"method":"battleUpdate","v":"5627","sessionKey":"55f6b1df1f4ed5.42888670","turn":0,"extraActions":null,"config":{},"ctr":3,"entities":{},"index":"default"}
+data:{"method":"battleFinish","sessionKey":"55f6b1df1f4ed5.42888670","ctr":4,"v":"5627","index":"default","reason":"win"}

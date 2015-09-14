@@ -41,13 +41,13 @@ def getTime():
     return str(int(time.time()))
 
 def sendRequest0(params):
-    url = 'http://titans-vk-sc1.playkot.com/current/server.php'
+    url = 'http://tt-vk-sc.playkot.com/current/server.php'
     resp = requests.get(url, data=params, allow_redirects=True)
     txt = resp.text
     return txt
     
 def sendRequest(params):
-    url = 'http://titans-vk-sc1.playkot.com/current/server.php?'
+    url = 'http://tt-vk-sc.playkot.com/current/server.php?'
     ppp = urllib.urlencode(params)
     url+=ppp
     resp = requests.get(url)
@@ -626,8 +626,9 @@ version = '1.1.1.0'
 tCount = 1
 tSession = ""
 
-
-while True:
+count = 41
+while count>0:
+    count = count - 1
 #    time.sleep(60*60+10)
 #if True:
     init()

@@ -27,7 +27,7 @@ building_constants = {
                          'mag':'447398184',
                          'palatka':'482206421',
                          'kazarma':'335153735',
-                         'strelbishe':'723972021'
+                         'strelbishe':'723972021',
                          'orden':'1166013905'
                      }
                      

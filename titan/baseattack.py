@@ -657,8 +657,10 @@ def killBase(base):
                 res.append({'id':b['id'],'health':0})
     return res
     
-def enemyToString(p, first=True):
-            s = str(p['userId'])
+def enemyToString(p, first=True, pos="0"):
+            s = "["+pos+"] "
+            if len(pos)<2: s+=" "
+            s += str(p['userId'])
             while len(s)<15: s+=" "
             if p.has_key('firstName'):
                 if first:
@@ -673,31 +675,36 @@ def enemyToString(p, first=True):
                 s+=u"\tRate:"+str(p['rating'])
             return s
             
-def printEnemyToString(p, add=""):
+def printEnemyToString(p, pos="0"):
     try:
-        print add+enemyToString(p)
+        print enemyToString(p, True, str(pos))
     except:
-        print add+enemyToString(p, False)
+        print enemyToString(p, False, str(pos))
     
     
 def getEnemy(m):
+    global enemyId
     min_lvl = 999
     enemy = None
+    enemy_pos = 0
+    ai = 0
     for p in m:
         if p.has_key('userId'):
-            printEnemyToString(p)
-            if str(enemyId) == str(p["userId"]):
+            printEnemyToString(p, ai)
+            if str(enemyId) == str(p["userId"]) or (ai>0 and str(enemyId) == str(ai)):
                 enemy = p
-                print "REVENGE: " + str(enemyId)
+                enemy_pos = ai
+                print "REVENGE: " + str(p["userId"])
                 break
             if (str(p["userId"]) in exceptions):
-                print "EXCEPT: " + enemyToString(p)
+                print "EXCEPT: "; printEnemyToString(p, ai)
             if int(p['level'])<min_lvl and p["userId"] != pid and not str(p["userId"]) in exceptions:
                 min_lvl = int(p['level'])
                 enemy = p
+                enemy_pos = ai
+            ai+=1
     if enemy:
-        None
-        printEnemyToString(enemy, 'ATTACK: ')
+        print 'ATTACK: '; printEnemyToString(enemy, enemy_pos)
     return enemy
 
 def exitBase():
@@ -827,7 +834,7 @@ if len(sys.argv) > 1:
 
 enemyId = 0
 if len(sys.argv) > 2:
-    enemyId =sys.argv[2]
+    enemyId = sys.argv[2]
     
 attack = True
 if len(sys.argv) > 3:

@@ -1,8 +1,4 @@
 import hashlib
-
-buildInfo = {"version":5697,"time":"16.09.2015 17:56","hash":"ff5a33268cfe44b0e3c0feae87a5f5bd"}
-
-def getPauth(pid):
-    return str(hashlib.md5(pid+buildInfo["hash"]).hexdigest())
-def getGameVersion():
-    return str(buildInfo["version"])
+buildInfo = {"version":5720,"time":"17.09.2015 19:07","hash":"c292e9ab19d862ef253aa42594aa4ca6"}
+def getPauth(pid): return str(hashlib.md5(pid+buildInfo["hash"]).hexdigest())
+def getGameVersion(): return str(buildInfo["version"])

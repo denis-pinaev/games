@@ -231,15 +231,15 @@ def killEnemy(dataj2, create, first=False):
             if len(sunits)>0:
                 sunits = '%s,"%s":{"dmg":1000,"dead":1}' % (sunits, i)
             else: sunits = '%s"%s":{"dmg":1000,"dead":1}' % (sunits, i)
-            
-        kset = dataj2["mission"]["missionTargets"]["list"]
-        for i2 in kset:
-            i = str(i2)
-            o = dataj[i]
-            if o.has_key("dead"): continue
-            if len(sunits)>0:
-                sunits = '%s,"%s":{"dmg":1000,"dead":1}' % (sunits, i)
-            else: sunits = '%s"%s":{"dmg":1000,"dead":1}' % (sunits, i)
+        if dataj2["mission"]["missionTargets"].has_key("list"):
+            kset = dataj2["mission"]["missionTargets"]["list"]
+            for i2 in kset:
+                i = str(i2)
+                o = dataj[i]
+                if o.has_key("dead"): continue
+                if len(sunits)>0:
+                    sunits = '%s,"%s":{"dmg":1000,"dead":1}' % (sunits, i)
+                else: sunits = '%s"%s":{"dmg":1000,"dead":1}' % (sunits, i)
 
     sline = '{"entities":{%s},"v":"%s","config":{},"globalSpells":null,"turn":0,"index":"default","aid":%d,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (sunits, game_version, new_cheat, getCTR(), sid, method)
     return sline
@@ -275,6 +275,24 @@ def battleUpdate(killstring):
     error = o["error"]
     if error == 0:
         log("battleUpdate done", True)
+    else:
+        log(resp["data"], True)
+        time.sleep(999999)
+    return o
+
+def battleSwitch():
+    global sid, gid, service, method
+    service = actionCommand
+    method = 'battleSwitchMap'
+    dataString = '{"alias":null,"index":"default","ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(), sid, method)
+    #{"alias":null,"method":"battleSwitchMap","sessionKey":"546cec1f907638.67715772","ctr":24,"index":"default"}
+    params = createData(method, dataString)
+    log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log("battleSwitchMap done", True)
     else:
         log(resp["data"], True)
         time.sleep(999999)
@@ -488,6 +506,29 @@ def cycle_proc():
     return True
     
 
+def cycle_proc2():
+    if gogo: o = battleCreate(); print "battleCreate ok"
+    if gogo: inito = battleInit(); print "battleInit ok"
+    if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
+    if len(killsting)<1: return False
+    if gogo: battleStart(); print "battleStart ok"
+    if gogo: battleUpdate(killsting); print "battleUpdate done"
+
+    if gogo: battleSwitch(); print "battleSwitch ok"
+    if gogo: inito = battleInit(); print "battleInit ok"
+    if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
+    if len(killsting)<1: return False
+    if gogo: battleUpdate(killsting); print "battleUpdate done"
+    
+    if gogo: battleSwitch(); print "battleSwitch ok"
+    if gogo: inito = battleInit(); print "battleInit ok"
+    if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
+    if len(killsting)<1: return False
+    if gogo: battleUpdate(killsting); print "battleUpdate done"
+
+    if gogo: battleFinish(); print "battleFinish done"
+    return True    
+
 def init_person():
     global init_info
     initdata = init()
@@ -511,15 +552,18 @@ if len(sys.argv) > 5: killFriend = True
     
 if not gogo: cycle = 0
 
+#d:\srv\python27\python.exe d:\srv\games\hero\gwFight.py 4 0 1 922
+#cycle = 1
+#gogo = True
 for i_cycle in range(cycle):
-    res = cycle_proc()
-    if cycle>1:
-        if not res:
-            phaza = 1
-            init_person()
-            res = cycle_proc()
-            if res: phaza = 0
-            else: break
+    res = cycle_proc2()
+#    if cycle>1:
+#        if not res:
+#            phaza = 1
+#            init_person()
+#            res = cycle_proc()
+#            if res: phaza = 0
+#            else: break
     
     if phaza == 0: energy_value = energy_value - 1
     if create: print "energy_value = "+str(energy_value)

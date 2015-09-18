@@ -33,6 +33,7 @@ persons = [
               {"pid":"93902559","auth":"d40ce5e63d99e92fd57859c7be81729c","gid":0,"sid":""},#vadimbot0 14
               {"pid":"114233049","auth":"b2c5894ec83e287b4c2563402b064248","gid":0,"sid":""},#VanyaM 15
               {"pid":"11305565","auth":"40328e38ddaac299a62bafe98d4cfaac","gid":0,"sid":""},#VanyaM 16
+              {"pid":"9894033","auth":"c17d85f71afbb573fba4a56810ad200b","gid":0,"sid":""},#VadimTuma 17
               
           ]
 pid = persons[person]["pid"]

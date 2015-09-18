@@ -322,7 +322,7 @@ def loadPerson(initdata):
         ts = '{"units":[{"owner":1,"id":%d,"type":null,"sceneId":99999,"x":1,"home":%d,"y":14,"dir":4}],"v":"%s","index":"default"}'
         #print initdata["player"]
         #energy_value = int(initdata["player"]["energy"])
-        td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(initdata["playerStats"]["gwAttacks"]))).total_seconds()
+        td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(initdata["playerStats"]["gwHeals"]))).total_seconds()
         s = int(td)
         m = s/60
         h = m/60
@@ -398,8 +398,24 @@ def battleFinishTimeout():
     o = json.loads(resp["data"])
     error = o["error"]
     if error == 0:
-        printResults(o)
         log("battleFinishTimeout done", True)
+    else:
+        log(resp["data"], True)
+        time.sleep(999999)
+    return o
+    
+def battleHeal():
+    global sid, gid, service, method
+    service = 'Knights.globalMap'
+    method = 'healObject'
+    dataString = '{"id":%s,"v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (str(attack_village), game_version, getCTR(), sid, method)
+    params = createData(method, dataString)
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log(method+" done", True)
     else:
         log(resp["data"], True)
         time.sleep(999999)
@@ -537,7 +553,7 @@ def init_person():
 
 
 
-attack_village = 922
+attack_village = 3150
 
 init_person()
 
@@ -552,18 +568,5 @@ if len(sys.argv) > 5: killFriend = True
     
 if not gogo: cycle = 0
 
-#d:\srv\python27\python.exe d:\srv\games\hero\gwFight.py 4 0 1 922
-#cycle = 1
-#gogo = True
-for i_cycle in range(cycle):
-    res = cycle_proc()
-    if cycle>1:
-        if not res:
-            phaza = 1
-            init_person()
-            res = cycle_proc()
-            if res: phaza = 0
-            else: break
-    
-    if phaza == 0: energy_value = energy_value - 1
-    if create: print "energy_value = "+str(energy_value)
+for i_cycle in range(cycle): battleHeal()
+

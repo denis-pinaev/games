@@ -29,7 +29,7 @@ person = 0
 if len(sys.argv) > 1:
     person = int(sys.argv[1])
 else:
-    raise Exception("#         corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6      lenaSv7     nagaina8   tanakan 9     VitalikSha10   vladimir 11    mari kramer 12    NAZAR 13    VanyaM 14     Oleg 15   Jenya16   LenaBRED17   DimaUsmar18")
+    raise Exception("#         corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6      lenaSv7     nagaina8   tanakan 9     VitalikSha10   vladimir 11    mari kramer 12    NAZAR 13    VanyaM 14     Oleg 15   Jenya16   LenaBRED17   DimaUsmar18   SergUdov19   VadTuma20")
 
 create = False
 if len(sys.argv) > 2:
@@ -37,11 +37,11 @@ if len(sys.argv) > 2:
     create = True
 
 energy_value = 0
-#         corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6      lenaSv7     nagaina8   tanakan 9     VitalikSha10   vladimir 11    mari kramer 12
-#              {"pid":"161702967","auth":"a5738509fb8e7486b45e8ba01436c6bb","gid":0,"sid":""},#mari kremer
-#74163736,"group_id":0,"is_app_user":1,"auth_key":"8943b2c7e241b1a97342d3c87346de23
-pids = ["124520", "29431585", "144536559", '218661879', '56518190', '217858589', '179499220', "169768611", "68487257", "160511757", "73940623", '93902559', '161702967', '74163736', '114233049', '11305565', '692795', '65706308', '202787673', '20633660']
-auths = ["1e365d477c3207804013abaddbb6a0c4", "55f56ea187574da9b2ed69474db78ac0", "731331d4e19d1f5483acd67abf424b58", "4a7a2ac0efcadd1a42499e34ed217e8b", "22f411e60eebd913b689b19705900ab2", '8b9107a32674785b79463d5585ec4918', '49e1540eb72f701a7c0924054ef10fc1', '9bc9bdd4929458a2108f1ae419906f66', "4f66fe9422f3b5f17ab1e90ce34a42d3", "6dc2dba90c1cc9d935542aa6a60c6fb4", "9ba0d48c2a9b701ffa031504b5232451", 'd40ce5e63d99e92fd57859c7be81729c', 'a5738509fb8e7486b45e8ba01436c6bb','8943b2c7e241b1a97342d3c87346de23', 'b2c5894ec83e287b4c2563402b064248', '40328e38ddaac299a62bafe98d4cfaac', '77107b46d764d40148b967deaa8cd474', 'a889a08c37aa0430b62ae6a5928e6950', '03bda5b072c520d2fc767c708979ad00', '587e50e0738885a44b37faee0f214aa6']
+
+#         corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6       lenaSv7     nagaina8    tanakan 9  VitalikSha10 vladimir 11 mari kramer 12 NAZAR 13   VanyaM 14     Oleg 15   Jenya16   LenaBRED17  DimaUsmar18  SergUdov19  VadTuma20"
+pids = ["124520", "29431585", "144536559", '218661879', '56518190', '217858589', '179499220', "169768611", "68487257", "160511757", "73940623", '93902559', '161702967', '74163736', '114233049', '11305565', '692795', '65706308', '202787673', '20633660', '9894033']
+#         corc0                               natali1                            polya2                                 nikita3                           ulia4                               vladimir5                              yura6                            lenaSv7                                nagaina8                          tanakan 9                          VitalikSha10                        vladimir 11                         mari kramer 12                      NAZAR 13                              VanyaM 14                        Oleg 15                             Jenya16                                LenaBRED17                         DimaUsmar18                         SergUdov19                        VadTuma20"
+auths = ["1e365d477c3207804013abaddbb6a0c4", "55f56ea187574da9b2ed69474db78ac0", "731331d4e19d1f5483acd67abf424b58", "4a7a2ac0efcadd1a42499e34ed217e8b", "22f411e60eebd913b689b19705900ab2", '8b9107a32674785b79463d5585ec4918', '49e1540eb72f701a7c0924054ef10fc1', '9bc9bdd4929458a2108f1ae419906f66', "4f66fe9422f3b5f17ab1e90ce34a42d3", "6dc2dba90c1cc9d935542aa6a60c6fb4", "9ba0d48c2a9b701ffa031504b5232451", 'd40ce5e63d99e92fd57859c7be81729c', 'a5738509fb8e7486b45e8ba01436c6bb','8943b2c7e241b1a97342d3c87346de23', 'b2c5894ec83e287b4c2563402b064248', '40328e38ddaac299a62bafe98d4cfaac', '77107b46d764d40148b967deaa8cd474', 'a889a08c37aa0430b62ae6a5928e6950', '03bda5b072c520d2fc767c708979ad00', '587e50e0738885a44b37faee0f214aa6', 'c17d85f71afbb573fba4a56810ad200b']
 start_hero = ''
 pid = pids[person]
 auth = auths[person]
@@ -418,7 +418,7 @@ def cycle_proc():
         if gogo:
             mission = init_info["missions"]["default"]["id"]
             mission_time = int(init_info["missions"]["default"]["time"])
-            loose = (datetime.datetime.now() - datetime.datetime.fromtimestamp(mission_time)).total_seconds()>0
+            loose = False if str(mission) == "0" else (datetime.datetime.now() - datetime.datetime.fromtimestamp(mission_time)).total_seconds()>0
             if loose:
                 print "mission LOOSE timeout = " + str(mission)
                 battleFinishTimeout()
@@ -541,14 +541,14 @@ if len(sys.argv) > 4: killFriend = True
 if not gogo: cycle = 0
 
 for i_cycle in range(cycle):
-    res = cycle_proc2()
-#    if cycle>1:
-#        if not res:
-#            phaza = 1
-#            init_person()
-#            res = cycle_proc()
-#            if res: phaza = 0
-#            else: break
+    res = cycle_proc()
+    if cycle>1:
+        if not res:
+            phaza = 1
+            init_person()
+            res = cycle_proc()
+            if res: phaza = 0
+            else: break
     
     if phaza == 0: energy_value = energy_value - 1
     if create: print "energy_value = "+str(energy_value)

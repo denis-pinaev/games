@@ -32,3 +32,4 @@ d:\srv\python27\python.exe d:\srv\games\hero\mest.py 17
 d:\srv\python27\python.exe d:\srv\games\hero\fight.py 18 0 100
 d:\srv\python27\python.exe d:\srv\games\hero\mest.py 18
 d:\srv\python27\python.exe d:\srv\games\hero\fight.py 19 0 100
+d:\srv\python27\python.exe d:\srv\games\hero\fight.py 20 0 100

@@ -556,14 +556,14 @@ if not gogo: cycle = 0
 #cycle = 1
 #gogo = True
 for i_cycle in range(cycle):
-    res = cycle_proc()
-    if cycle>1:
-        if not res:
-            phaza = 1
-            init_person()
-            res = cycle_proc()
-            if res: phaza = 0
-            else: break
+    res = cycle_proc2()
+#    if cycle>1:
+#        if not res:
+#            phaza = 1
+#            init_person()
+#            res = cycle_proc()
+#            if res: phaza = 0
+#            else: break
     
     if phaza == 0: energy_value = energy_value - 1
     if create: print "energy_value = "+str(energy_value)

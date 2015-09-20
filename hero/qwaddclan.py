@@ -49,14 +49,14 @@ def addUser():
     
     init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
     
-    dataString = '{"message":"1","clan":5258,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
+    dataString = '{"message":"1","clan":11,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
     params = createData(method, dataString)
     log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     o = json.loads(resp["data"])
     error = o["error"]
     if error == 0:
-        log("%s %s done" % (method, q), True)
+        log("%s %s done" % (method, ""), True)
     else:
         log(resp["data"], True)
     return o
@@ -75,7 +75,7 @@ def getUser():
     o = json.loads(resp["data"])
     error = o["error"]
     if error == 0:
-        log("%s %s done" % (method, q), True)
+        log("%s %s done" % (method, ""), True)
     else:
         log(resp["data"], True)
     return o
@@ -95,6 +95,25 @@ def cancelUser():
     error = o["error"]
     if error == 0:
         log("%s %s done" % (method, q), True)
+    else:
+        log(resp["data"], True)
+    return o
+
+def leaveClan():
+    global sid, gid, service, method
+    service = 'Knights.doClanAction'
+    method = 'leaveClan'
+    
+    init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
+    
+    dataString = '{"ctr":%s,"sessionKey":"%s","method":"%s"}' % (getCTR(),sid,method)
+    params = createData(method, dataString)
+    log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log("%s %s done" % (method), True)
     else:
         log(resp["data"], True)
     return o
@@ -121,9 +140,13 @@ def search():
         log(resp["data"], True)
     return o
 
+#cmd	Knights.doClanAction
+#data	{"sessionKey":"55fc3d25c2da40.32778593","v":"5724","method":"leaveClan","ctr":6}
+
 
 data, gid, sid = init(pid, auth)
 
 #try:
-getUser()
+#leaveClan()
+addUser()
 #except: print 'no quests'

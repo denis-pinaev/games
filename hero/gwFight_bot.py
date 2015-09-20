@@ -326,8 +326,8 @@ def loadPerson(initdata):
         s = int(td)
         m = s/60
         h = m/60
-        energy_value = h/4
-        rh = h-energy_value*4
+        energy_value = h/3
+        rh = h-energy_value*3
         rm = m-h*60
         rs = s-m*60
         print "============================="

@@ -5,6 +5,7 @@ d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 2 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 3 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 4 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 7 0 0 %village%
+d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 8 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 10 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 11 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 12 0 0 %village%

@@ -15,4 +15,7 @@ d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 16 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 18 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 19 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 20 0 0 %village%
+d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 21 0 0 %village%
+d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 22 0 0 %village%
+d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 23 0 0 %village%
 set village=3150

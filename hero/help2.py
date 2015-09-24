@@ -85,7 +85,12 @@ print "1 friends count:", len(flist)
 if data.has_key("clan") and data["clan"].has_key("roster"):
     orden = data["clan"]["roster"]
     for p in orden:
-        if p in flist: continue
+        inList = False
+        for pp in flist:
+            if str(p) == str(pp):
+                inList = True
+                break
+        if inList: continue
         flist = flist +[p]
 print "2 friends count:", len(flist)
 

@@ -13,7 +13,7 @@ service = ''
 method = ''
 
 
-#ORDEN NOT IN LIST: 52437466 79670506  196086079
+#ORDEN NOT IN LIST: 52437466 65857702 79670506 179331321 196086079
 #Knights.doBatchAction
 #{"rnd":554,"batchlist":{"0":{"count":1,"method":"recipeFinish","type":"entities","index":"65574"},"1":{"count":1,"method":"recipeFinish","type":"entities","index":"65577"}}}
 #49e1540eb72f701a7c0924054ef10fc1 179499220
@@ -322,7 +322,7 @@ def loadPerson(initdata):
         ts = '{"units":[{"owner":1,"id":%d,"type":null,"sceneId":99999,"x":1,"home":%d,"y":14,"dir":4}],"v":"%s","index":"default"}'
         #print initdata["player"]
         #energy_value = int(initdata["player"]["energy"])
-        td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(initdata["playerStats"]["gwAttacks"]))).total_seconds()
+        td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(initdata["playerStats"]["gwHeals"]))).total_seconds()
         s = int(td)
         m = s/60
         h = m/60
@@ -398,8 +398,24 @@ def battleFinishTimeout():
     o = json.loads(resp["data"])
     error = o["error"]
     if error == 0:
-        printResults(o)
         log("battleFinishTimeout done", True)
+    else:
+        log(resp["data"], True)
+        time.sleep(999999)
+    return o
+    
+def battleHeal():
+    global sid, gid, service, method
+    service = 'Knights.globalMap'
+    method = 'buyBooster'
+    dataString = '{"type":"income","id":%s,"v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (str(attack_village), game_version, getCTR(), sid, method)
+    params = createData(method, dataString)
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log(method+" done", True)
     else:
         log(resp["data"], True)
         time.sleep(999999)
@@ -537,7 +553,7 @@ def init_person():
 
 
 
-attack_village = 922
+attack_village = 3150
 
 init_person()
 
@@ -545,32 +561,12 @@ gogo = energy_value>0 or not create or phaza>0
 
 cycle = 1
 if len(sys.argv) > 3:
-    cycle = min(int(sys.argv[3]),energy_value)
+    cycle = min(int(sys.argv[3]),999)
     
 if len(sys.argv) > 4: attack_village = sys.argv[4]
 if len(sys.argv) > 5: killFriend = True
-
-try:
-    mmmmmm = init_info["missions"]["default"]["id"]
-    gogo = False
-    print "ERROR CAN'T FIGHT. IN FIGHT ALREADY"
-except:
-    print "Can fight"
     
 if not gogo: cycle = 0
 
-#d:\srv\python27\python.exe d:\srv\games\hero\gwFight.py 4 0 1 922
-#cycle = 1
-#gogo = True
-for i_cycle in range(cycle):
-    res = cycle_proc2()
-#    if cycle>1:
-#        if not res:
-#            phaza = 1
-#            init_person()
-#            res = cycle_proc()
-#            if res: phaza = 0
-#            else: break
-    
-    if phaza == 0: energy_value = energy_value - 1
-    if create: print "energy_value = "+str(energy_value)
+for i_cycle in range(cycle): battleHeal()
+

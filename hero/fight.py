@@ -178,7 +178,7 @@ def init():
         
 
 def killEnemy(dataj2, create, first=False):
-    global select_stage
+    global select_stage, bot_fight
 
     # mission => pvpInfo => clanInfo(?) + id + power + epower + level + powerlevel => name
     if create and dataj2.has_key("mission") and dataj2["mission"].has_key("pvpInfo"):
@@ -190,7 +190,11 @@ def killEnemy(dataj2, create, first=False):
         power = str(info['power']) if info.has_key("power") else ''
         epower = str(info['epower']) if info.has_key("epower") else ''
         powerlevel = str(info['powerlevel']) if info.has_key("powerlevel") else ''
-        
+        try:
+            if fid == "BOT": bot_fight = int(info['stage'])
+        except:
+            print "ERROR: fight = BOT but stage not found"
+            bot_fight = 2
         try:
             if first: log("TRY: id:%s, level:%s, clan:%s, epower:%s, power:%s, powerlevel:%s" % (fid,level,clanName,epower,power,powerlevel), True, True)
         except Exception as ex:
@@ -231,15 +235,15 @@ def killEnemy(dataj2, create, first=False):
             if len(sunits)>0:
                 sunits = '%s,"%s":{"dmg":1000,"dead":1}' % (sunits, i)
             else: sunits = '%s"%s":{"dmg":1000,"dead":1}' % (sunits, i)
-            
-        kset = dataj2["mission"]["missionTargets"]["list"]
-        for i2 in kset:
-            i = str(i2)
-            o = dataj[i]
-            if o.has_key("dead"): continue
-            if len(sunits)>0:
-                sunits = '%s,"%s":{"dmg":1000,"dead":1}' % (sunits, i)
-            else: sunits = '%s"%s":{"dmg":1000,"dead":1}' % (sunits, i)
+        if dataj2["mission"]["missionTargets"].has_key("list"):
+            kset = dataj2["mission"]["missionTargets"]["list"]
+            for i2 in kset:
+                i = str(i2)
+                o = dataj[i]
+                if o.has_key("dead"): continue
+                if len(sunits)>0:
+                    sunits = '%s,"%s":{"dmg":1000,"dead":1}' % (sunits, i)
+                else: sunits = '%s"%s":{"dmg":1000,"dead":1}' % (sunits, i)
 
     sline = '{"entities":{%s},"v":"%s","config":{},"globalSpells":null,"turn":0,"index":"default","aid":%d,"ctr":%s,"sessionKey":"%s","method":"%s"}' % (sunits, game_version, new_cheat, getCTR(), sid, method)
     return sline
@@ -412,8 +416,9 @@ def printResults(o):
 
 
 def cycle_proc():
-    global select_stage
+    global select_stage, bot_fight
     isBattle = False
+    bot_fight = 2
     try:
         if gogo:
             mission = init_info["missions"]["default"]["id"]
@@ -482,6 +487,14 @@ def cycle_proc():
         print ex
         print "error in battleUpdate"
         return False
+        
+    while bot_fight<2:
+        if gogo: battleSwitch(); print "battleSwitch ok"
+        if gogo: inito = battleInit(); print "battleInit ok"
+        if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
+        if len(killsting)<1: return False
+        if gogo: battleUpdate(killsting); print "battleUpdate done"
+        
     if create or phaza>2:
         try:
             if gogo: battleFinish(); print "battleFinish done"
@@ -491,6 +504,7 @@ def cycle_proc():
             print "error in battleFinish"
     
     select_stage = True
+    bot_fight = 2
 
     return True
     
@@ -500,7 +514,7 @@ def cycle_proc2():
     if gogo: inito = battleInit(); print "battleInit ok"
     if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
     if len(killsting)<1: return False
-    if gogo: battleStart(); print "battleStart ok"
+    if gogo: battleStart(); print "battleStart ok"; select_stage = False
     if gogo: battleUpdate(killsting); print "battleUpdate done"
 
     if gogo: battleSwitch(); print "battleSwitch ok"
@@ -539,7 +553,7 @@ if len(sys.argv) > 3:
 if len(sys.argv) > 4: killFriend = True
     
 if not gogo: cycle = 0
-
+bot_fight = 2
 for i_cycle in range(cycle):
     res = cycle_proc()
     if cycle>1:

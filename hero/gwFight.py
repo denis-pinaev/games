@@ -13,7 +13,6 @@ service = ''
 method = ''
 
 
-#ORDEN NOT IN LIST: 52437466 79670506 196086079 -1
 #Knights.doBatchAction
 #{"rnd":554,"batchlist":{"0":{"count":1,"method":"recipeFinish","type":"entities","index":"65574"},"1":{"count":1,"method":"recipeFinish","type":"entities","index":"65577"}}}
 #49e1540eb72f701a7c0924054ef10fc1 179499220
@@ -30,7 +29,7 @@ person = 0
 if len(sys.argv) > 1:
     person = int(sys.argv[1])
 else:
-    raise Exception("#         corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6      lenaSv7     nagaina8   tanakan 9     VitalikSha10   vladimir 11    mari kramer 12    NAZAR 13    VanyaM 14     Oleg 15   Jenya16   LenaBRED17   DimaUsmar18")
+    raise Exception("#         corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6       lenaSv7     nagaina8    tanakan 9  VitalikSha10 vladimir 11 mari kramer 12 NAZAR 13   VanyaM 14     Oleg 15   Jenya16   LenaBRED17  DimaUsmar18  SergUdov19  VadTuma20  SmokiSmoki21 ENikolaev22  OksanaCh23")
 
 create = False
 if len(sys.argv) > 2:
@@ -38,6 +37,7 @@ if len(sys.argv) > 2:
     create = True
 
 energy_value = 0
+
 #         corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6       lenaSv7     nagaina8    tanakan 9  VitalikSha10 vladimir 11 mari kramer 12 NAZAR 13   VanyaM 14     Oleg 15   Jenya16   LenaBRED17  DimaUsmar18  SergUdov19  VadTuma20  SmokiSmoki21 ENikolaev22  OksanaCh23
 pids = ["124520", "29431585", "144536559", '218661879', '56518190', '217858589', '179499220', "169768611", "68487257", "160511757", "73940623", '93902559', '161702967', '74163736', '114233049', '11305565', '692795', '65706308', '202787673', '20633660', '9894033', '179331321', '65857702', '106358745']
 #         corc0                               natali1                            polya2                                 nikita3                           ulia4                               vladimir5                              yura6                            lenaSv7                                nagaina8                          tanakan 9                          VitalikSha10                        vladimir 11                         mari kramer 12                      NAZAR 13                              VanyaM 14                        Oleg 15                             Jenya16                                LenaBRED17                         DimaUsmar18                         SergUdov19                        VadTuma20                         SmokiSmoki21                         ENikolaev22                        OksanaCh23
@@ -81,7 +81,7 @@ if person in [8,9,13]:
     not_attack = {"user":[], "orden":[orden_Dark]}
     
 if person in [7]:
-    not_attack = {"user":[{'id':'152441711','name':'Irina Strelnikova'}], "orden":[orden_Dark]}
+    not_attack = {"user":[[{'id':'152441711','name':'Irina Strelnikova'}]], "orden":[orden_Dark]}
     
 if person in [2,3,4]:
     not_attack = {"user":[user_not_attack], "orden":[orden_Dark, [{'name':u'Лемберг'}]]}
@@ -178,7 +178,7 @@ def init():
         
 
 def killEnemy(dataj2, create, first=False):
-    global select_stage
+    global select_stage, bot_fight
 
     # mission => pvpInfo => clanInfo(?) + id + power + epower + level + powerlevel => name
     if create and dataj2.has_key("mission") and dataj2["mission"].has_key("pvpInfo"):
@@ -190,25 +190,29 @@ def killEnemy(dataj2, create, first=False):
         power = str(info['power']) if info.has_key("power") else ''
         epower = str(info['epower']) if info.has_key("epower") else ''
         powerlevel = str(info['powerlevel']) if info.has_key("powerlevel") else ''
-        
+        try:
+            if fid == "BOT": bot_fight = int(info['stage'])
+        except:
+            print "ERROR: fight = BOT but stage not found"
+            bot_fight = 2
         try:
             if first: log("TRY: id:%s, level:%s, clan:%s, epower:%s, power:%s, powerlevel:%s" % (fid,level,clanName,epower,power,powerlevel), True, True)
         except Exception as ex:
             print ex
             #if first: log("TRY: id:%s, level:%s, clan:%s, epower:%s, power:%s, powerlevel:%s" % (fid,level,ratingPlace,epower,power,powerlevel), True, True)
         
-#        na_user = not_attack['user']
-#        for uarr in na_user:
-#            for naid in uarr:
-#                if fid == naid["id"]:
-#                    print "WARNING! Try to kill friend: "+naid["name"]+" id: "+naid["id"]
-#                    if not killFriend: return ''
-#        na_orden = not_attack['orden']
-#        for oarr in na_orden:
-#            for orden in oarr:
-#                if clanName == orden["name"]:
-#                    print "WARNING! Try to kill orden: "+orden["name"]
-#                    if not killFriend: return ''
+        na_user = not_attack['user']
+        for uarr in na_user:
+            for naid in uarr:
+                if fid == naid["id"]:
+                    print "WARNING! Try to kill friend: "+naid["name"]+" id: "+naid["id"]
+                    if not killFriend: return ''
+        na_orden = not_attack['orden']
+        for oarr in na_orden:
+            for orden in oarr:
+                if clanName == orden["name"]:
+                    print "WARNING! Try to kill orden: "+orden["name"]
+                    if not killFriend: return ''
         if first: log("FIGHT ID: vk.com/id"+fid, True, True)
     method = 'battleUpdate'
     new_cheat = 0
@@ -423,13 +427,14 @@ def printResults(o):
 
 
 def cycle_proc():
-    global select_stage
+    global select_stage, bot_fight
     isBattle = False
+    bot_fight = 2
     try:
         if gogo:
             mission = init_info["missions"]["default"]["id"]
             mission_time = int(init_info["missions"]["default"]["time"])
-            loose = (datetime.datetime.now() - datetime.datetime.fromtimestamp(mission_time)).total_seconds()>0
+            loose = False if str(mission) == "0" else (datetime.datetime.now() - datetime.datetime.fromtimestamp(mission_time)).total_seconds()>0
             if loose:
                 print "mission LOOSE timeout = " + str(mission)
                 battleFinishTimeout()
@@ -493,6 +498,13 @@ def cycle_proc():
         print ex
         print "error in battleUpdate"
         return False
+        
+    while bot_fight<2:
+        if gogo: battleSwitch(); print "battleSwitch ok"
+        if gogo: inito = battleInit(); print "battleInit ok"
+        if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
+        if len(killsting)<1: return False
+        if gogo: battleUpdate(killsting); print "battleUpdate done"
     if create or phaza>2:
         try:
             if gogo: battleFinish(); print "battleFinish done"
@@ -511,7 +523,7 @@ def cycle_proc2():
     if gogo: inito = battleInit(); print "battleInit ok"
     if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
     if len(killsting)<1: return False
-    if gogo: battleStart(); print "battleStart ok"
+    if gogo: battleStart(); print "battleStart ok"; select_stage = False
     if gogo: battleUpdate(killsting); print "battleUpdate done"
 
     if gogo: battleSwitch(); print "battleSwitch ok"
@@ -551,7 +563,7 @@ if len(sys.argv) > 4: attack_village = sys.argv[4]
 if len(sys.argv) > 5: killFriend = True
     
 if not gogo: cycle = 0
-
+bot_fight = 2
 #d:\srv\python27\python.exe d:\srv\games\hero\gwFight.py 4 0 1 922
 #cycle = 1
 #gogo = True

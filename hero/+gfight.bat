@@ -1,6 +1,4 @@
-set village=183
-set village=2886
-set village=3536
+set village=44
 d:\srv\python27\python.exe d:\srv\games\hero\gwFight.py 0 0 1 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwFight.py 1 0 1 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwFight.py 2 0 1 %village%

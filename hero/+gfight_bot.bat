@@ -1,4 +1,4 @@
-set village=77
+set village=44
 d:\srv\python27\python.exe d:\srv\games\hero\gwFight_bot.py 0 0 1 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwFight_bot.py 1 0 1 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwFight_bot.py 2 0 1 %village%

@@ -56,6 +56,23 @@ def getVillage(vid):
     else:
         log(resp["data"], True)
     return o
+    
+def upgradeVillage(vid):
+    global sid, gid, service, method
+    service = globalCommand
+    method = 'upgradeObject'
+    init_params(nsid=sid, ngid=gid, nservice=service, nmethod=method)
+    dataString = '{"v":"%s","id":"%s","ctr":%s,"sessionKey":"%s","method":"%s","cash":0}' % (game_version, vid, getCTR(), sid, method)
+    params = createData(method, dataString)
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log("%s done" % method, True)
+    else:
+        log(resp["data"], True)
+    return o
 
 
 pers = persons[person]
@@ -68,5 +85,5 @@ sid =  pers['sid']
 data, gid, sid = init(pid, auth)
 
 
-resp = getVillage(79)
-write(json.dumps(resp, indent=4), 'gwReq79')
+resp = upgradeVillage(77)
+write(json.dumps(resp, indent=4), 'gwReq77')

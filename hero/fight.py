@@ -59,7 +59,7 @@ game_version = getGameVersion()
 # vladimir 11    mari kramer 12    NAZAR 13    VanyaM 14     Oleg 15   Jenya16   LenaBRED17
 
 orden_Dark = [
-                 {'name':u'темный культ'}, {'name':u"культ темных"}
+                 {'name':u'темный культ'}, {'name':u"культ темных"}, {'name':u"Анархия тьмы"}
 ]
 
 user_not_attack = [
@@ -222,7 +222,7 @@ def killEnemy(dataj2, create, first=False):
         dataj = dataj2["mission"]["entities"]
         
         for e in dataj:
-            if str(dataj[e]['owner']) == '1': select_stage = False
+            if dataj[e].has_key('owner') and str(dataj[e]['owner']) == '1': select_stage = False
         
         new_cheat2 = int(dataj2["mission"]["actionId"])
         if new_cheat2 > new_cheat: new_cheat = new_cheat2
@@ -567,7 +567,7 @@ for i_cycle in range(cycle):
     if phaza == 0: energy_value = energy_value - 1
     if create: print "energy_value = "+str(energy_value)
 
-if person in (0,5):
+if person in (0,14):
     init_person()
     if init_info.has_key("modules") and init_info["modules"].has_key("PvpChests") and init_info["modules"]["PvpChests"].has_key("keys"):
         print "Morgeina keys: " + str(init_info["modules"]["PvpChests"]["keys"])

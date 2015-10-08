@@ -222,7 +222,7 @@ def killEnemy(dataj2, create, first=False):
         dataj = dataj2["mission"]["entities"]
         
         for e in dataj:
-            if str(dataj[e]['owner']) == '1': select_stage = False
+            if dataj[e].has_key('owner') and str(dataj[e]['owner']) == '1': select_stage = False
         
         new_cheat2 = int(dataj2["mission"]["actionId"])
         if new_cheat2 > new_cheat: new_cheat = new_cheat2

@@ -28,7 +28,8 @@ building_constants = {
                          'palatka':'482206421',
                          'kazarma':'335153735',
                          'strelbishe':'723972021',
-                         'orden':'1166013905'
+                         'orden':'1166013905',
+                         'tower':'357378297'
                      }
                      
 buildinds_priority = ['orden','ars','main','altar','plav','kuzn','runa','hram','gnom','mag','rist','iron','wood','stone','sklad','gold','kazarma','strelbishe','palatka']

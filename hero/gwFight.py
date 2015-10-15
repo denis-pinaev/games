@@ -38,10 +38,10 @@ if len(sys.argv) > 2:
 
 energy_value = 0
 
-#         corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6       lenaSv7     nagaina8    tanakan 9  VitalikSha10 vladimir 11 mari kramer 12 NAZAR 13   VanyaM 14     Oleg 15   Jenya16   LenaBRED17  DimaUsmar18  SergUdov19  VadTuma20  SmokiSmoki21 ENikolaev22  OksanaCh23
-pids = ["124520", "29431585", "144536559", '218661879', '56518190', '217858589', '179499220', "169768611", "68487257", "160511757", "73940623", '93902559', '161702967', '74163736', '114233049', '11305565', '692795', '65706308', '202787673', '20633660', '9894033', '179331321', '65857702', '106358745']
-#         corc0                               natali1                            polya2                                 nikita3                           ulia4                               vladimir5                              yura6                            lenaSv7                                nagaina8                          tanakan 9                          VitalikSha10                        vladimir 11                         mari kramer 12                      NAZAR 13                              VanyaM 14                        Oleg 15                             Jenya16                                LenaBRED17                         DimaUsmar18                         SergUdov19                        VadTuma20                         SmokiSmoki21                         ENikolaev22                        OksanaCh23
-auths = ["1e365d477c3207804013abaddbb6a0c4", "55f56ea187574da9b2ed69474db78ac0", "731331d4e19d1f5483acd67abf424b58", "4a7a2ac0efcadd1a42499e34ed217e8b", "22f411e60eebd913b689b19705900ab2", '8b9107a32674785b79463d5585ec4918', '49e1540eb72f701a7c0924054ef10fc1', '9bc9bdd4929458a2108f1ae419906f66', "4f66fe9422f3b5f17ab1e90ce34a42d3", "6dc2dba90c1cc9d935542aa6a60c6fb4", "9ba0d48c2a9b701ffa031504b5232451", 'd40ce5e63d99e92fd57859c7be81729c', 'a5738509fb8e7486b45e8ba01436c6bb','8943b2c7e241b1a97342d3c87346de23', 'b2c5894ec83e287b4c2563402b064248', '40328e38ddaac299a62bafe98d4cfaac', '77107b46d764d40148b967deaa8cd474', 'a889a08c37aa0430b62ae6a5928e6950', '03bda5b072c520d2fc767c708979ad00', '587e50e0738885a44b37faee0f214aa6', 'c17d85f71afbb573fba4a56810ad200b','488e67b617b4c9b4208c3accf729117c', '674b30109eeb9e64b1111436e3a302a3', 'fd7c712325973f56aeabd10dca013519']
+#         corc0     natali1      polya2      nikita3      ulia4      vladimir5      yura6       lenaSv7     nagaina8    tanakan 9  VitalikSha10 vladimir 11 mari kramer 12 NAZAR 13   VanyaM 14     Oleg 15   Jenya16   LenaBRED17  DimaUsmar18  SergUdov19  VadTuma20  SmokiSmoki21 ENikolaev22  OksanaCh23  FOR_VLAD24
+pids = ["124520", "29431585", "144536559", '218661879', '56518190', '217858589', '179499220', "169768611", "68487257", "160511757", "73940623", '93902559', '161702967', '74163736', '114233049', '11305565', '692795', '65706308', '202787673', '20633660', '9894033', '179331321', '65857702', '106358745', '216221219']
+#         corc0                               natali1                            polya2                                 nikita3                           ulia4                               vladimir5                              yura6                            lenaSv7                                nagaina8                          tanakan 9                          VitalikSha10                        vladimir 11                         mari kramer 12                      NAZAR 13                              VanyaM 14                        Oleg 15                             Jenya16                                LenaBRED17                         DimaUsmar18                         SergUdov19                        VadTuma20                         SmokiSmoki21                         ENikolaev22                        OksanaCh23                          FOR_VLAD24
+auths = ["1e365d477c3207804013abaddbb6a0c4", "55f56ea187574da9b2ed69474db78ac0", "731331d4e19d1f5483acd67abf424b58", "4a7a2ac0efcadd1a42499e34ed217e8b", "22f411e60eebd913b689b19705900ab2", '8b9107a32674785b79463d5585ec4918', '49e1540eb72f701a7c0924054ef10fc1', '9bc9bdd4929458a2108f1ae419906f66', "4f66fe9422f3b5f17ab1e90ce34a42d3", "6dc2dba90c1cc9d935542aa6a60c6fb4", "9ba0d48c2a9b701ffa031504b5232451", 'd40ce5e63d99e92fd57859c7be81729c', 'a5738509fb8e7486b45e8ba01436c6bb','8943b2c7e241b1a97342d3c87346de23', 'b2c5894ec83e287b4c2563402b064248', '40328e38ddaac299a62bafe98d4cfaac', '77107b46d764d40148b967deaa8cd474', 'a889a08c37aa0430b62ae6a5928e6950', '03bda5b072c520d2fc767c708979ad00', '587e50e0738885a44b37faee0f214aa6', 'c17d85f71afbb573fba4a56810ad200b','488e67b617b4c9b4208c3accf729117c', '674b30109eeb9e64b1111436e3a302a3', 'fd7c712325973f56aeabd10dca013519','30b7c7d5319629bd12a057c6012a673d']
 start_hero = ''
 pid = pids[person]
 auth = auths[person]
@@ -329,8 +329,9 @@ def loadPerson(initdata):
         td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(initdata["playerStats"]["gwAttacks"]))).total_seconds()
         s = int(td)
         m = s/60
-        h = m/60
+        h = m/60+1
         energy_value = h/4
+        #if person==16: energy_value-=1
         rh = h-energy_value*4
         rm = m-h*60
         rs = s-m*60
@@ -409,6 +410,23 @@ def battleFinishTimeout():
         time.sleep(999999)
     return o
     
+def battleFinishRetreat():
+    global sid, gid, service, method
+    service = actionCommand
+    method = 'battleFinish'
+    dataString = '{"reason":"retreat","index":"default","v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (game_version, getCTR(), sid, method)
+    params = createData(method, dataString)
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        printResults(o)
+        log("battleFinishRetreat done", True)
+    else:
+        log(resp["data"], True)
+        time.sleep(999999)
+    return o
     
 def printResults(o):
     s = ''
@@ -466,7 +484,7 @@ def cycle_proc():
             return False
         try:
             if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
-            if len(killsting)<1: return False
+            if len(killsting)<1: battleFinishRetreat(); return False
         except Exception as ex:
             print ex
             print "error in killEnemy1"
@@ -487,7 +505,7 @@ def cycle_proc():
         return False
     try:
         if gogo: killsting = killEnemy(inito, create); print "killEnemy done"
-        if len(killsting)<1: return False
+        if len(killsting)<1: battleFinishRetreat(); return False
     except Exception as ex:
         print ex
         print "error in killEnemy2"
@@ -514,6 +532,7 @@ def cycle_proc():
             print "error in battleFinish"
     
     select_stage = True
+    bot_fight = 2
 
     return True
     

@@ -219,7 +219,7 @@ def killEnemy(dataj2, create, first=False):
         dataj = dataj2["mission"]["entities"]
         
         for e in dataj:
-            if str(dataj[e]['owner']) == '1': select_stage = False
+            if dataj[e].has_key('owner') and str(dataj[e]['owner']) == '1': select_stage = False
         
         new_cheat2 = int(dataj2["mission"]["actionId"])
         if new_cheat2 > new_cheat: new_cheat = new_cheat2
@@ -406,6 +406,23 @@ def battleFinishTimeout():
         time.sleep(999999)
     return o
     
+def battleFinishRetreat():
+    global sid, gid, service, method
+    service = actionCommand
+    method = 'battleFinish'
+    dataString = '{"reason":"retreat","index":"default","v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (game_version, getCTR(), sid, method)
+    params = createData(method, dataString)
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        printResults(o)
+        log("battleFinishRetreat done", True)
+    else:
+        log(resp["data"], True)
+        time.sleep(999999)
+    return o
 def printResults(o):
     s = ''
     if o.has_key('honorValue'): s = '%s Rang:%s' % (s, str(o['honorValue']))
@@ -462,7 +479,7 @@ def cycle_proc():
             return False
         try:
             if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
-            if len(killsting)<1: return False
+            if len(killsting)<1: battleFinishRetreat(); return False
         except Exception as ex:
             print ex
             print "error in killEnemy"
@@ -483,7 +500,7 @@ def cycle_proc():
         return False
     try:
         if gogo: killsting = killEnemy(inito, create); print "killEnemy done"
-        if len(killsting)<1: return False
+        if len(killsting)<1: battleFinishRetreat(); return False
     except Exception as ex:
         print ex
         print "error in killEnemy"

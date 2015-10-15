@@ -42,6 +42,7 @@ energy_value = 0
 pids = ["124520", "29431585", "144536559", '218661879', '56518190', '217858589', '179499220', "169768611", "68487257", "160511757", "73940623", '93902559', '161702967', '74163736', '114233049', '11305565', '692795', '65706308', '202787673', '20633660', '9894033', '179331321', '65857702', '106358745']
 #         corc0                               natali1                            polya2                                 nikita3                           ulia4                               vladimir5                              yura6                            lenaSv7                                nagaina8                          tanakan 9                          VitalikSha10                        vladimir 11                         mari kramer 12                      NAZAR 13                              VanyaM 14                        Oleg 15                             Jenya16                                LenaBRED17                         DimaUsmar18                         SergUdov19                        VadTuma20                         SmokiSmoki21                         ENikolaev22                        OksanaCh23
 auths = ["1e365d477c3207804013abaddbb6a0c4", "55f56ea187574da9b2ed69474db78ac0", "731331d4e19d1f5483acd67abf424b58", "4a7a2ac0efcadd1a42499e34ed217e8b", "22f411e60eebd913b689b19705900ab2", '8b9107a32674785b79463d5585ec4918', '49e1540eb72f701a7c0924054ef10fc1', '9bc9bdd4929458a2108f1ae419906f66', "4f66fe9422f3b5f17ab1e90ce34a42d3", "6dc2dba90c1cc9d935542aa6a60c6fb4", "9ba0d48c2a9b701ffa031504b5232451", 'd40ce5e63d99e92fd57859c7be81729c', 'a5738509fb8e7486b45e8ba01436c6bb','8943b2c7e241b1a97342d3c87346de23', 'b2c5894ec83e287b4c2563402b064248', '40328e38ddaac299a62bafe98d4cfaac', '77107b46d764d40148b967deaa8cd474', 'a889a08c37aa0430b62ae6a5928e6950', '03bda5b072c520d2fc767c708979ad00', '587e50e0738885a44b37faee0f214aa6', 'c17d85f71afbb573fba4a56810ad200b','488e67b617b4c9b4208c3accf729117c', '674b30109eeb9e64b1111436e3a302a3', 'fd7c712325973f56aeabd10dca013519']
+pids2 = ["corc0","natali1","polya2","nikita3","ulia4","vladimir5","yura6","lenaSv7","nagaina8","tanakan","VitalikSha10","vladimir","marikramer","NAZAR","VanyaM","Oleg","Jenya16","LenaBRED17","DimaUsmar18","SergUdov19","VadTuma20","SmokiSmoki21","ENikolaev22","OksanaCh23"]
 start_hero = ''
 pid = pids[person]
 auth = auths[person]
@@ -404,11 +405,30 @@ def battleFinishTimeout():
         time.sleep(999999)
     return o
     
-def battleHeal():
+def battleIncome():
     global sid, gid, service, method
     service = 'Knights.globalMap'
     method = 'buyBooster'
     dataString = '{"type":"income","id":%s,"v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (str(attack_village), game_version, getCTR(), sid, method)
+    params = createData(method, dataString)
+    #log("%s:%s %s" % (service, method, json.dumps(params)))
+    resp = sendRequest(service, params)
+    o = json.loads(resp["data"])
+    error = o["error"]
+    if error == 0:
+        log(method+" done", True)
+    else:
+        log(resp["data"], True)
+        time.sleep(999999)
+    return o
+    
+    
+def battleAttack(mode = 3):
+    global sid, gid, service, method
+    unit = mode#4|3
+    service = 'Knights.globalMap'
+    method = 'mercenaryAttack'
+    dataString = '{"mercenary":%d,"id":%s,"v":"%s","ctr":%s,"sessionKey":"%s","method":"%s"}' % (unit, str(attack_village), game_version, getCTR(), sid, method)
     params = createData(method, dataString)
     #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
@@ -553,20 +573,37 @@ def init_person():
 
 
 
-attack_village = 3150
+attack_village = 7870
 
 init_person()
+
+print "Player#: %d, Cash: %d, ID: %s, Name: %s" % (person, init_info["player"]["cash"], pids[person], pids2[person])
 
 gogo = energy_value>0 or not create or phaza>0
 
 cycle = 1
 if len(sys.argv) > 3:
-    cycle = min(int(sys.argv[3]),999)
+    cycle = min(int(sys.argv[3]),6)
     
 if len(sys.argv) > 4: attack_village = sys.argv[4]
-if len(sys.argv) > 5: killFriend = True
+option = "None"
+if len(sys.argv) > 5:
+    option = sys.argv[5]
+else:
+    print "options: [income,attack4,attack3]" 
     
 if not gogo: cycle = 0
 
-for i_cycle in range(cycle): battleHeal()
-
+if option == "income":
+    for i_cycle in range(cycle): battleIncome()
+if option == "attack4":
+    if init_info["player"]["cash"]>=14:
+        battleAttack(4)
+    else:
+        print "ERROR: not enough CASH"
+        
+if option == "attack3":
+    if init_info["player"]["cash"]>=2:
+        battleAttack(3)
+    else:
+        print "ERROR: not enough CASH"

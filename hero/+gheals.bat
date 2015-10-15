@@ -1,4 +1,4 @@
-set village=3150
+set village=7870
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 0 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 1 0 0 %village%
 d:\srv\python27\python.exe d:\srv\games\hero\gwHeal.py 2 0 0 %village%

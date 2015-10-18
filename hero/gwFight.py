@@ -329,7 +329,7 @@ def loadPerson(initdata):
         td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(initdata["playerStats"]["gwAttacks"])-60*60)).total_seconds()
         s = int(td)
         m = s/60
-        h = m/60+1
+        h = m/60
         energy_value = h/4
         #if person==16: energy_value-=1
         rh = h-energy_value*4

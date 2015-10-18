@@ -3,14 +3,17 @@ import json
 import zlib
 
 social = "vk"
-vesionurl = "http://kn-%s-sc.playkot.com/current/get_launch_info.php" % social
+vesionurl = "http://kn-%s-sc.playkot.com/current/get_launch_info.php?player_id=160511757&rsig=1033055981" % social
 gameurl = "http://kn-scdn.playkot.com/%s/content/game_%s.swf"
 version = "1111"
 
 def get_version():
     resp = requests.post(vesionurl, allow_redirects=True)
     jstxt = json.loads(resp.text)
-    return jstxt["version"]
+    version = jstxt["version"]
+    client = jstxt["version"]
+    if jstxt.has_key("client"): client = jstxt["client"]
+    return int(client), version
 
 def download_file(url, local_filename):
     # NOTE the stream=True parameter
@@ -28,16 +31,16 @@ def download(i=0):
     global version
     if i>=100: print "Failed to found correct SWF file"; return False
     i = i + 1
-    res = download_file(gameurl % (social,str(version)), "D:/downloads/games/game_%s_%s.swf" % (social,str(version)))
+    res = download_file(gameurl % (social,str(version)), "./tmp/game_%s_%s.swf" % (social,str(version)))
     if not res:
         version = version - 1
         res = download(i)
     return res
-version = int(get_version())
+version, last_version = get_version()
 print "server info version =",  version
 if download():
-    print "D:/downloads/games/game_%s_%s.swf" % (social,version)
-    f = open("D:/downloads/games/game_%s_%s.swf" % (social,version), 'rb')
+    print "./tmp/game_%s_%s.swf" % (social,version)
+    f = open("./tmp/game_%s_%s.swf" % (social,version), 'rb')
     f.read(3)
     tmp = 'FWS' + f.read(5) + zlib.decompress(f.read())
     f.close()

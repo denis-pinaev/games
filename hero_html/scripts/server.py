@@ -5,9 +5,9 @@ import BaseHTTPServer
 import subprocess
 
 HOST_NAME = ''
-PORT_NUMBER = 9001
-PYTHON_PATH = './python/python.exe'
-SCRIPTS_PATH = './scripts/'
+PORT_NUMBER = 9000
+PYTHON_PATH = '../python/python.exe'
+SCRIPTS_PATH = './'
 try:
     execfile('settings.ini')
 except:
@@ -59,10 +59,9 @@ def answerPath(path):
     resp += "<html><head><title>Hero game.</title><meta charset=\"UTF-8\"></head>"
     resp += "<body>"
     path = path.replace("?","/").replace("&","/")
-    resp += "<p>Your path: %s</p>" % path
     paths = path.split("/")[1:]
-    if not ("head" in path):
-        resp += runScript(['head'])
+    if path == "/":
+        resp += runScript(['players'])
     if paths[0] == "run":
         answ = runScript(paths[1:])
         answ = answ.replace('\n','<br/>\n')

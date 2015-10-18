@@ -65,7 +65,7 @@ def log(s, pr=False, filename=False, needTime=True):
     if needTime:
         s = "[" + datetime.datetime.now().strftime('%d.%m %H:%M:%S')+"] " + s
     if pr: print s
-    fatype = filename if filename else "hero_"+log_file+"_log"
+    fatype = filename if filename else "./tmp/hero_"+log_file+"_log"
     try:
         tfile = open(fatype, "a")
         tfile.write(s.encode('utf-8')+'\n')
@@ -132,10 +132,10 @@ def init(npid, nauth, post=False):
     if error == 0:
         sid = o["sessionKey"]
         gid = o["player"]["player_id"]
-        log("pid: %s, sid: %s, gid: %s" % (str(npid), str(sid), str(gid)), True)
-    else:
-        log(resp["data"], True)
-        if "BANNED" in error: time.sleep(9999999)
+        #log("pid: %s, sid: %s, gid: %s" % (str(npid), str(sid), str(gid)), True)
+    #else:
+    #    log(resp["data"], True)
+        #if "BANNED" in error: time.sleep(9999999)
         
     return (o, gid, sid)
     

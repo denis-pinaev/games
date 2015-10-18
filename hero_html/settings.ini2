@@ -1,4 +1,0 @@
-HOST_NAME = ''
-PORT_NUMBER = 9000
-PYTHON_PATH = './python/python.exe'
-SCRIPTS_PATH = './scripts/'

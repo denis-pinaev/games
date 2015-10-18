@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
 import subprocess
+import sys
 
 HOST_NAME = ''
 PORT_NUMBER = 9000
@@ -21,12 +22,12 @@ def getRunLog(data):
     return res
     
 def runScript(paths, scriptPath=SCRIPTS_PATH):
-    sp = ["","","","","",""]
-    for i in range(6):
+    sp = ["","","","","","",""]
+    for i in range(7):
         if i<len(paths):
             sp[i] = paths[i]
     try:
-        proc = subprocess.Popen([PYTHON_PATH, scriptPath+sp[0]+'.py', sp[1], sp[2], sp[3], sp[4], sp[5]], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        proc = subprocess.Popen([PYTHON_PATH, scriptPath+sp[0]+'.py', sp[1], sp[2], sp[3], sp[4], sp[5], sp[6]], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         return proc.communicate()[0]
     except Exception as ex:
         print ex

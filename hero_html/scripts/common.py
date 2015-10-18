@@ -67,9 +67,14 @@ def log(s, pr=False, filename=False, needTime=True):
     if pr: print s
     fatype = filename if filename else "./tmp/hero_"+log_file+"_log"
     try:
-        tfile = open(fatype, "a")
-        tfile.write(s.encode('utf-8')+'\n')
-        tfile.close()
+        try:
+            tfile = open(fatype, "a")
+            tfile.write(s.encode('utf-8')+'\n')
+            tfile.close()
+        except:
+            tfile = open(fatype, "a")
+            tfile.write(s+'\n')
+            tfile.close()
     except:
         tfile = open(fatype, "w")
         tfile.write(s.encode('utf-8')+'\n')
@@ -90,8 +95,8 @@ def sendRequest(command, params):
         return {"data":txt}
     except:
         print "Error in sendRequest!"
-        time.sleep(5)
-        return sendRequest(command, params)
+        o = {"error":"Error in sendRequest!","command":command,"params":params}
+        return {"data":json.dumps(o)}
     
 def getSig2(myStr):
     return binascii.crc32(myStr) & 0xffffffff

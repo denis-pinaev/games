@@ -17,6 +17,81 @@ def getPlayerSysParams():
             if p[0] == "pid": pid = p[1]; continue
     return pid, auth, name
     
+def getMapRectParams():
+    name = ""
+    pid = ""
+    x = 0
+    y = 0
+    for p in sys.argv:
+        if "=" in p:
+            p = p.split("=")
+            if p[0] == "x": x = p[1]; continue
+            if p[0] == "y": y = p[1]; continue
+    return x, y
+    
+def getGlobalEnergy(timestamp):
+    td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(timestamp)-60*60)).total_seconds()
+    s = int(td)
+    m = s/60
+    h = m/60
+    energy_value = min(6,h/4)
+    rh = h-energy_value*4
+    rm = m-h*60
+    rs = s-m*60
+    tsl4 = 4*60*60
+    tsl = tsl4 if energy_value>5 else rs + rm*60 + rh*60*60
+    td = str(datetime.datetime.fromtimestamp(tsl4) - datetime.datetime.fromtimestamp(tsl))
+    return int(energy_value), td
+
+def getPrintSity(stype, sity, maps):
+    slevel = str(sity["level"])
+    sincome = str(sity["income"])
+    sclan = ""
+    sclanid = ""
+    if sity.has_key("clan_id"):
+        sclan = str(sity["clan_id"])
+        sclanid = sclan
+        if maps["clans"].has_key(sclan):
+            sclan = u_(maps["clans"][sclan]["name"])
+        else: sclan = "(Орден удален)"
+    sresources = str(int(sity["resources"]))
+    sx = str(sity["x"])
+    sy = str(sity["y"])
+    sname = "%s (%s:%s)" % (stype, sx, sy)
+    if sity.has_key("name"):
+        sname = u_(sity["name"])
+    sid = str(sity["id"])
+    abandoned = sity.has_key("abandoned")
+    dammaged = sity.has_key("maxDamage")
+    mark = ""
+    if sity.has_key("action") and sity["action"] == "abandoning": mark+="Покидается. "
+    if sity.has_key("action") and sity["action"] == "activating": mark+="Открытие. "
+    if(abandoned): mark+="Покинуто. "
+    if(dammaged): mark+="Атаковано. "
+    my_clan = ""
+    try:
+        if maps.has_key("initInfo") and maps["initInfo"].has_key("clan") and maps["initInfo"]["clan"].has_key("info"):
+            my_clan = maps["initInfo"]["playerStats"]["clan_id"]
+    except: None
+    stail = "Нет вариантов"
+    if my_clan != "" and not (sity.has_key("action") and sity["action"] == "activating"):
+        if sclanid == my_clan:
+            energy_value = 0
+            try:
+                energy_value,td = getGlobalEnergy(maps["initInfo"]["playerStats"]["gwHeals"])
+            except: None
+            if dammaged and energy_value>0:
+                stail = '<a href="/run/actions/healSity/%s">Защита</a>' % sid
+        else:
+            energy_value = 0
+            try:
+                energy_value,td = getGlobalEnergy(maps["initInfo"]["playerStats"]["gwAttacks"])
+            except: None
+            if energy_value>0:
+                stail = '<a href="/run/actions/attack/1/gwAttack/%s">Атака</a>' % sid
+    res = '<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s (%s в сутки)</td><td>%s:%s</td><td>%s</td><td>%s</td></tr>' % (stype,slevel,sname,sclan,sresources,sincome,sx,sy,mark,stail)
+    
+    return res
 
 def getHead():
     res = ""
@@ -27,69 +102,102 @@ def getHead():
         print res
         return
     PLAYERS = loadPLAYERS()
+    x,y = getMapRectParams()
     res += '<p><table style="border-spacing:15px">'
     res += '<tr><td><p><a href="/run/actions/getBuildInfo">Получить последнюю версию игры</a><br/></p></td><td> (Любое обновление делает предыдущую версию нерабочей)</td></tr>'
     res += '<tr><td><p><a href="/run/actions/getPlayerInfo">Получить информацю игрока</a><br/></p></td><td> (Ресурсы, энергия, орден)</td></tr>'
+    res += '<tr><td><p><a href="/run/actions/attack/1/pvp/0">Совершить штурм</a><br/></p></td><td> (Лог боя и результаты будут выведены)</td></tr>'
     res += '<tr><td><p><a href="/run/actions/getPresentBox">Получить подарок ежедневку</a><br/>'
     res += '<a href="/run/actions/getPresentEnergy">Получить подарок энергию</a></p>'
     res += '</td><td> (За сутки можно получить суммарно всего 5 подарков.)</td></tr>'
-    res += '<tr><td><p><a href="/run/actions/getMapRect">Получить область карты 100:50</a><br/></p></td><td> (будет доделано из координат по запросу)</td></tr>'
-    res += '</table></p><br/>'
+    res += '<tr><td><p>Получить поселения в области карты: '
+    res += '<form action="/run/actions/getMapRect">'
+    res += 'x <input type="number" name="x" min="-2000" max="2000" value="'+str(x)+'">'
+    res += ' y <input type="number" name="y" min="-2000" max="2000" value="'+str(y)+'">'
+    res += '<input type="submit" value="->">'
+    res += '</form><br/></p></td><td> (будет доделано из координат по запросу)</td></tr>'
 
+    res += '</table></p><br/>'
+    
+    if attack:
+        pid, auth = getPlayer()
+        cycle = None
+        if len(sys.argv)>2: cycle = sys.argv[2]
+        battleType = None
+        if len(sys.argv)>3: battleType = sys.argv[3]
+        sity = None
+        if len(sys.argv)>4: sity = sys.argv[4]
+        if not pid or not auth or not sity or not battleType or not cycle:
+            res += "Не выбран игрок или возникла проблема с его получением."
+        else:
+            answ = runScript(['fight', pid, '0', cycle, battleType, sity])
+            try:
+                ana = answ.split('\n')
+                wasError = False
+                wasFriend = False
+                for anal in ana:
+                    if "error" in anal:
+                        wasError = True
+                        res += '<p>Обнаружена ошибка: <pre>'+anal+'</pre> Скопируйте лог скрипта снизу для анализа.</p>'
+                    if "WARNING" in anal:
+                        wasFriend = True
+                        res += '<p>Атакован игрок из списка исключений: <pre>'+anal+'</pre></p>'
+                    if "TRY" in anal:
+                        trys = 'TRY: id:'
+                        lvls = ', level:'
+                        ids = anal[anal.index(trys)+len(trys):anal.index(lvls)]
+                        res += '<p>Атакован игрок: '+anal.replace(trys, '<a href="https://vk.com/id'+ids+'">https://vk.com/id').replace(lvls, '</a>, Уровень:').replace(', clan:no clan', ', без ордена').replace(', clan:', ', Орден:')+'</p>'
+                    if "START ENERGY =" in anal:
+                        res += '<p>Энергия для атаки в начале боя: '+anal.replace('START ENERGY =', '')+'</p>'
+                    if "END ENERGY =" in anal:
+                        res += '<p>Энергия для атаки в конце боя: '+anal.replace('END ENERGY =', '')+'</p>'
+                if not wasError and not wasFriend:
+                    res += '<p>Бой прошел успешно.</p><br/>'
+            except: None
+            res += getRunLog(answ)
+
+    if healSity:
+        pid, auth = getPlayer()
+        sity = None
+        if len(sys.argv)>2: sity = sys.argv[2]
+        if not pid or not auth or not sity:
+            res += "Не выбран игрок или возникла проблема с его получением."
+        else:
+            answ = runScript(['healSity', pid, auth, sity])
+            try:
+                maps = json.loads(answ)
+                if maps["error"] == 0:
+                    res += '<p>Защита города прошла успешно</p>'
+            except: None
+            res += getRunLog(answ)
+            
     if getMapRect:
+        x,y = getMapRectParams()
         pid, auth = getPlayer()
         if not pid or not auth:
             res += "Не выбран игрок или возникла проблема с его получением."
         else:
-            answ = runScript(['getMapRect', pid, auth])
-            if True:
+            answ = runScript(['getMapRect', pid, auth, x, y])
+            try:
                 maps = json.loads(answ)
                 res += '<p><table border=1 width="100%">'
-                res += '<tr><td>Тип</td><td>Уровень</td><td>Имя</td><td>Орден</td><td>Доход</td><td>Координаты</td><td>Пометки</td><td>Выбрать</td></tr>'
+                res += '<tr><td>Тип</td><td>Уровень</td><td>Имя</td><td>Орден</td><td>Доход</td><td>Координаты</td><td>Пометки</td><td>Действие</td></tr>'
+                for sity_name in maps["map"]:
+                    sity = maps["map"][sity_name]
+                    if sity.has_key("type") and sity["type"] == "castle":
+                        res += getPrintSity("Крепость", sity, maps)
                 for sity_name in maps["map"]:
                     sity = maps["map"][sity_name]
                     if sity.has_key("type") and sity["type"] == "town":
-                        stype = "Город"
-                        slevel = str(sity["level"])
-                        sincome = str(sity["income"])
-                        sclan = ""
-                        if sity.has_key("clan_id"):
-                            sclan = u_(maps["clans"][str(sity["clan_id"])]["name"])
-                        sresources = str(int(sity["resources"]))
-                        sname = u_(sity["name"])
-                        sx = str(sity["x"])
-                        sy = str(sity["y"])
-                        sid = str(sity["id"])
-                        abandoned = sity.has_key("abandoned")
-                        dammaged = sity.has_key("maxDamage")
-                        mark = ""
-                        if(abandoned): mark+="Покинута. "
-                        if(dammaged): mark+="Атакован. "
-                        res += '<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s (%s в сутки)</td><td>%s:%s</td><td>%s</td><td><a href="/run/actions/selectSity/%s">Выбрать</a></td></tr>' % (stype,slevel,sname,sclan,sresources,sincome,sx,sy,mark,sid)
+                        res += getPrintSity("Город", sity, maps)
                 for sity_name in maps["map"]:
                     sity = maps["map"][sity_name]
                     if sity.has_key("type") and sity["type"] == "village":
-                        stype = "Деревня"
-                        slevel = str(sity["level"])
-                        sincome = str(sity["income"])
-                        sclan = ""
-                        if sity.has_key("clan_id"):
-                            sclan = u_(maps["clans"][str(sity["clan_id"])]["name"])
-                        sresources = str(int(sity["resources"]))
-                        sname = u_(sity["name"])
-                        sx = str(sity["x"])
-                        sy = str(sity["y"])
-                        sid = str(sity["id"])
-                        abandoned = sity.has_key("abandoned")
-                        dammaged = sity.has_key("maxDamage")
-                        mark = ""
-                        if(abandoned): mark+="Покинута. "
-                        if(dammaged): mark+="Атакована. "
-                        res += '<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s (%s в сутки)</td><td>%s:%s</td><td>%s</td><td><a href="/run/actions/selectSity/%s">Выбрать</a></td></tr>' % (stype,slevel,sname,sclan,sresources,sincome,sx,sy,mark,sid)
+                        res += getPrintSity("Деревня", sity, maps)
                 res += '</table></p>'    
                 if maps["error"] == 0:
-                    res += '<p>успешно</a></p>'
-            #except: None
+                    res += '<p>успешно</p>'
+            except: None
             res += getRunLog(answ)
             
     if getPresentEnergy:
@@ -160,30 +268,10 @@ def getHead():
                     res += "<br/>Не удалось получить данные об ордене.<br/>"
                     
                 try:
-                    td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(info["playerStats"]["gwAttacks"])-60*60)).total_seconds()
-                    s = int(td)
-                    m = s/60
-                    h = m/60
-                    energy_value = min(6,h/4)
-                    rh = h-energy_value*4
-                    rm = m-h*60
-                    rs = s-m*60
-                    tsl4 = 4*60*60
-                    tsl = tsl4 if energy_value>5 else rs + rm*60 + rh*60*60
-                    td = str(datetime.datetime.fromtimestamp(tsl4) - datetime.datetime.fromtimestamp(tsl))
-                    res += "Энергия для глобальной атаки = "+str(energy_value)+" До следующей осталось "+td+" (иногда таймер сбивается)<br/>"
-                    td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(info["playerStats"]["gwHeals"])-60*60)).total_seconds()
-                    s = int(td)
-                    m = s/60
-                    h = m/60
-                    energy_value = min(6,h/4)
-                    rh = h-energy_value*4
-                    rm = m-h*60
-                    rs = s-m*60
-                    tsl4 = 4*60*60
-                    tsl = tsl4 if energy_value>5 else rs + rm*60 + rh*60*60
-                    td = str(datetime.datetime.fromtimestamp(tsl4) - datetime.datetime.fromtimestamp(tsl))
-                    res += "Энергия для глобальной защиты = "+str(energy_value)+" До следующей осталось "+td+" (иногда таймер сбивается)<br/>"
+                    energy_value,td = getGlobalEnergy(info["playerStats"]["gwAttacks"])
+                    res += "Энергия для глобальной атаки: "+str(energy_value)+". До следующей осталось "+td+" (иногда таймер сбивается)<br/>"
+                    energy_value,td = getGlobalEnergy(info["playerStats"]["gwHeals"])
+                    res += "Энергия для глобальной защиты: "+str(energy_value)+". До следующей осталось "+td+" (иногда таймер сбивается)<br/>"
                 except:
                     res += "Не удалось получить данные о глобальной войне.<br/>"
 
@@ -195,6 +283,8 @@ def getHead():
     res += '<p><a href="/run/actions">Вернуться</a></p>'
     print res
 
+attack = sys.argv[1] == "attack"
+healSity = sys.argv[1] == "healSity"
 getMapRect = sys.argv[1] == "getMapRect"
 getBuildInfo = sys.argv[1] == "getBuildInfo"
 getPlayerInfo = sys.argv[1] == "getPlayerInfo"

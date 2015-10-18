@@ -469,7 +469,7 @@ def cycle_proc():
             return False
         try:
             if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
-            if len(killsting)<1: battleFinishRetreat(); return False
+            if len(killsting)<1: battleFinishRetreat(); select_stage = True; return False
         except Exception as ex:
             print ex
             print "error in killEnemy"
@@ -490,7 +490,7 @@ def cycle_proc():
         return False
     try:
         if gogo: killsting = killEnemy(inito, create); print "killEnemy done"
-        if len(killsting)<1: battleFinishRetreat(); return False
+        if len(killsting)<1: battleFinishRetreat(); select_stage = True; return False
     except Exception as ex:
         print ex
         print "error in killEnemy"

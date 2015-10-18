@@ -326,7 +326,7 @@ def loadPerson(initdata):
         ts = '{"units":[{"owner":1,"id":%d,"type":null,"sceneId":99999,"x":1,"home":%d,"y":14,"dir":4}],"v":"%s","index":"default"}'
         #print initdata["player"]
         #energy_value = int(initdata["player"]["energy"])
-        td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(initdata["playerStats"]["gwAttacks"]))).total_seconds()
+        td = (datetime.datetime.now() - datetime.datetime.fromtimestamp(int(initdata["playerStats"]["gwAttacks"])-60*60)).total_seconds()
         s = int(td)
         m = s/60
         h = m/60+1
@@ -335,8 +335,11 @@ def loadPerson(initdata):
         rh = h-energy_value*4
         rm = m-h*60
         rs = s-m*60
+        tsl4 = 4*60*60
+        tsl = tsl4 if energy_value>5 else rs + rm*60 + rh*60*60
+        td = str(datetime.datetime.fromtimestamp(tsl4) - datetime.datetime.fromtimestamp(tsl))
         print "============================="
-        print "ENERGY: %d (4:0:0-%d:%d:%d)" % (energy_value,rh,rm,rs)
+        print "ENERGY: %d (%s)" % (energy_value,td)
         print "============================="
         for e in initdata["entities"]:
             ee = initdata["entities"][e]
@@ -484,7 +487,7 @@ def cycle_proc():
             return False
         try:
             if gogo: killsting = killEnemy(inito, create, True); print "killEnemy done"
-            if len(killsting)<1: battleFinishRetreat(); return False
+            if len(killsting)<1: battleFinishRetreat(); select_stage = True; return True
         except Exception as ex:
             print ex
             print "error in killEnemy1"
@@ -505,7 +508,7 @@ def cycle_proc():
         return False
     try:
         if gogo: killsting = killEnemy(inito, create); print "killEnemy done"
-        if len(killsting)<1: battleFinishRetreat(); return False
+        if len(killsting)<1: battleFinishRetreat(); select_stage = True; return True
     except Exception as ex:
         print ex
         print "error in killEnemy2"

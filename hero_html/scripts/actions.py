@@ -43,7 +43,7 @@ def getGlobalEnergy(timestamp):
     td = str(datetime.datetime.fromtimestamp(tsl4) - datetime.datetime.fromtimestamp(tsl))
     return int(energy_value), td
 
-def getPrintSity(stype, sity, maps):
+def getPrintSity(stype, sity, maps, player_name):
     slevel = str(sity["level"])
     sincome = str(sity["income"])
     sclan = ""
@@ -81,32 +81,33 @@ def getPrintSity(stype, sity, maps):
                 energy_value,td = getGlobalEnergy(maps["initInfo"]["playerStats"]["gwHeals"])
             except: None
             if dammaged and energy_value>0:
-                stail = '<a href="/run/actions/healSity/%s">Защита</a>' % sid
+                stail = '<a href="/run/actions/healSity/%s" onclick = "if (!confirm(\'Защитить город \\\'%s\\\' игроком \\\'%s\\\'?\')) return false;">Защита</a>' % (sid, sname, player_name)
         else:
             energy_value = 0
             try:
                 energy_value,td = getGlobalEnergy(maps["initInfo"]["playerStats"]["gwAttacks"])
             except: None
             if energy_value>0:
-                stail = '<a href="/run/actions/attack/1/gwAttack/%s">Атака</a>' % sid
+                stail = '<a href="/run/actions/attack/1/gwAttack/%s" onclick = "if (!confirm(\'Атаковать город \\\'%s\\\' игроком \\\'%s\\\'?\')) return false;">Атака</a>' % (sid, sname, player_name)
     res = '<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s (%s в сутки)</td><td>%s:%s</td><td>%s</td><td>%s</td></tr>' % (stype,slevel,sname,sclan,sresources,sincome,sx,sy,mark,stail)
     
     return res
 
 def getHead():
     res = ""
-    selected_pid = getTMPParameter("pid", None)
-    if not selected_pid:
+    pid, auth = getPlayer()
+    if not auth or not pid:
         res += '<p>Для действий в игре выберите игрока.</p>'
         res += '<p>Вернуться к <a href="/run/players/open">выбору активного игрока</a> для дальнейших операций.</p>'
         print res
         return
     PLAYERS = loadPLAYERS()
     x,y = getMapRectParams()
+    player = loadPlayer(pid)
     res += '<p><table style="border-spacing:15px">'
     res += '<tr><td><p><a href="/run/actions/getBuildInfo">Получить последнюю версию игры</a><br/></p></td><td> (Любое обновление делает предыдущую версию нерабочей)</td></tr>'
     res += '<tr><td><p><a href="/run/actions/getPlayerInfo">Получить информацю игрока</a><br/></p></td><td> (Ресурсы, энергия, орден)</td></tr>'
-    res += '<tr><td><p><a href="/run/actions/attack/1/pvp/0">Совершить штурм</a><br/></p></td><td> (Лог боя и результаты будут выведены)</td></tr>'
+    res += '<tr><td><p><a href="/run/actions/attack/1/pvp/0" onclick = "if (!confirm(\'Начать штурм игроком: '+u_(player["name"])+'?\')) return false;">Совершить штурм</a><br/></p></td><td> (Лог боя и результаты будут выведены)</td></tr>'
     res += '<tr><td><p><a href="/run/actions/getPresentBox">Получить подарок ежедневку</a><br/>'
     res += '<a href="/run/actions/getPresentEnergy">Получить подарок энергию</a></p>'
     res += '</td><td> (За сутки можно получить суммарно всего 5 подарков.)</td></tr>'
@@ -115,7 +116,7 @@ def getHead():
     res += 'x <input type="number" name="x" min="-2000" max="2000" value="'+str(x)+'">'
     res += ' y <input type="number" name="y" min="-2000" max="2000" value="'+str(y)+'">'
     res += '<input type="submit" value="->">'
-    res += '</form><br/></p></td><td> (будет доделано из координат по запросу)</td></tr>'
+    res += '</form><br/></p></td><td> (Будут выведены поселения с возможностью атаки/защиты)</td></tr>'
 
     res += '</table></p><br/>'
     
@@ -146,7 +147,7 @@ def getHead():
                         trys = 'TRY: id:'
                         lvls = ', level:'
                         ids = anal[anal.index(trys)+len(trys):anal.index(lvls)]
-                        res += '<p>Атакован игрок: '+anal.replace(trys, '<a href="https://vk.com/id'+ids+'">https://vk.com/id').replace(lvls, '</a>, Уровень:').replace(', clan:no clan', ', без ордена').replace(', clan:', ', Орден:')+'</p>'
+                        res += '<p>Атакован игрок: '+anal.replace(trys, '<a href="https://vk.com/id'+ids+'">https://vk.com/id').replace(lvls, '</a>, Уровень: ').replace(', clan:no clan', ', без ордена').replace(', clan:', ', Орден: ')+'</p>'
                     if "START ENERGY =" in anal:
                         res += '<p>Энергия для атаки в начале боя: '+anal.replace('START ENERGY =', '')+'</p>'
                     if "END ENERGY =" in anal:
@@ -177,27 +178,28 @@ def getHead():
         if not pid or not auth:
             res += "Не выбран игрок или возникла проблема с его получением."
         else:
+            player_name = u_(player["name"])
             answ = runScript(['getMapRect', pid, auth, x, y])
-            try:
+            if True:
                 maps = json.loads(answ)
                 res += '<p><table border=1 width="100%">'
                 res += '<tr><td>Тип</td><td>Уровень</td><td>Имя</td><td>Орден</td><td>Доход</td><td>Координаты</td><td>Пометки</td><td>Действие</td></tr>'
                 for sity_name in maps["map"]:
                     sity = maps["map"][sity_name]
                     if sity.has_key("type") and sity["type"] == "castle":
-                        res += getPrintSity("Крепость", sity, maps)
+                        res += getPrintSity("Крепость", sity, maps, player_name)
                 for sity_name in maps["map"]:
                     sity = maps["map"][sity_name]
                     if sity.has_key("type") and sity["type"] == "town":
-                        res += getPrintSity("Город", sity, maps)
+                        res += getPrintSity("Город", sity, maps, player_name)
                 for sity_name in maps["map"]:
                     sity = maps["map"][sity_name]
                     if sity.has_key("type") and sity["type"] == "village":
-                        res += getPrintSity("Деревня", sity, maps)
+                        res += getPrintSity("Деревня", sity, maps, player_name)
                 res += '</table></p>'    
                 if maps["error"] == 0:
                     res += '<p>успешно</p>'
-            except: None
+           # except: None
             res += getRunLog(answ)
             
     if getPresentEnergy:

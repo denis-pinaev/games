@@ -42,81 +42,87 @@ def removeignores(pid):
             
 
 def getHead():
-    res = ""
+    res = "<p>В данном разделе представлены союзные игроки или ордена,<br/>на которых не будут совершаться атаки в процессе автоматических действий в игре.</p>"
     ignores = loadignores()
     if open_list: setTMPParameter("isignoresListOpen", True)
     if close_list: setTMPParameter("isignoresListOpen", False)
     isignoresListOpen = getTMPParameter("isignoresListOpen", False)
     if create:
         res += '<form action="/run/ignores/save">'
-        res += '<p><b>Исключение атаки игрока:</b></p>'
-        res += '<p>Имя: <input type="text" name="name"><br/>'
-        res += 'ID: <input type="number" name="pid"><br/>'
-        res += '<input type="submit"></p>'
+        res += '<p><b>Добавление игрока союзника:</b></p>'
+        res += '<p><table>'
+        res += '<tr><td>Имя: </td><td><input type="text" name="name"></td><td> (Любая строка: ник, имя. Что бы понять, кто это)</td></tr>'
+        res += '<tr><td>ID: </td><td><input type="number" name="pid"></td><td> (Числовой идентификатор пользователя ВК)</td></tr>'
+        res += '</table></p>'
+        res += '<input type="submit">'
         res += '</form>'
         res += '</br>'
         res += '<form action="/run/ignores/save">'
-        res += '<p><b>Исключение атаки Ордена:</b></p>'
-        res += '<p>Имя: <input type="text" name="name">'
+        res += '<p><b>Добавление союзного ордена:</b></p>'
+        res += '<p>Имя: <input type="text" name="name"> (Точное название ордена из игры с учетом регистра)</p>'
         res += '<input type="hidden" name="pid" value="0">'
-        res += '<input type="submit"></p>'
+        res += '<p><input type="submit"></p>'
         res += '</form>'
     elif save:
         pid, name = getignoresysParams()
         found = False;
         if str(pid) == "0":
             for p in ignores['orden']:
-                if p["name"] == name:
+                if u_(p["name"]) == u_(name):
                     found = True
+                    res += '<p>Орден "'+ u_(name)+'" уже был добавлен</p>'
                     break
             if not found:
                 if pid == "" or name == "":
                     res += '<p>Нельзя пустое имя ордена</p>'
                 else:
                     ignores['orden'].append({"pid":str((datetime.datetime.now() - datetime.datetime.fromtimestamp(0)).total_seconds()),"name":name})
+                    res += '<p>Сохранен орден '+u_(name)+'</p>'
         else:
             for p in ignores['players']:
                 if p["pid"] == pid:
                     p['name'] = name
                     found = True
+                    res += '<p>Союзник "'+ u_(name)+'" уже был добавлен</p>'
                     break
             if not found:
                 if pid == "" or name == "":
-                    res += '<p>Нельзя пустое имя</p>'
+                    res += '<p>Нельзя пустое имя игрока</p>'
                 else:
                     ignores['players'].append({"pid":pid,"name":name})
-        saveignores(ignores)
-        res += '<p>Сохранено '+name+' <a href="/run/ignores">Вернуться</a></p>'
+                    saveignores(ignores)
+                    res += '<p>Сохранен союзник '+u_(name)+'</p>'
+        res += '<p><a href="/run/ignores">Вернуться</a></p>'
     else:
-        res += "<p>Исключения. Игроков "+str(len(ignores['players']))+". Орденов "+str(len(ignores['orden']))+"</p>"
+        res += "<p>Союзники: Игроков "+str(len(ignores['players']))+". Орденов "+str(len(ignores['orden']))+"</p>"
         if isignoresListOpen:
-            res += '<p><a href="/run/ignores/close">Свернуть список</a></p>'
+            res += '<p><a href="/run/ignores/close">Скрыть список союзников</a></p>'
         else:
-            res += '<p><a href="/run/ignores/open">Развернуть список</a></p>'
-        res += '<p><a href="/run/ignores/create">Добавить исключение</a></p>'
+            res += '<p><a href="/run/ignores/open">Показать список союзников</a></p>'
+        res += '<p><a href="/run/ignores/create">Добавить нового союзника</a></p>'
     if isignoresListOpen:
-        res += '<table border="1" width="100%">'
+        res += '<table border="1" width="50%">'
         res += '<tr>'
-        res += '<td>Имя игрока</td>'
-        res += '<td>ID</td>'
-        res += '<td>Удаление исключения</td>'
+        res += '<td width="45%">Имя игрока</td>'
+        res += '<td width="45%">Профиль в ВК</td>'
+        res += '<td width="10%">Удаление союзника</td>'
         res += '</tr>'
         for p in ignores["players"]:
             res += '<tr>'
             res += '<td>'+u_(p['name'])+'</td>'
-            res += '<td>'+p['pid']+'</td>'
-            res += '<td><a href="/run/ignores/remove/'+p['pid']+'">X</a></td>'
+            res += '<td><a target="_blank" href="https://vk.com/id'+p['pid']+'">https://vk.com/id'+p['pid']+'</a></td>'
+            res += '<td><a href="/run/ignores/remove/'+p['pid']+'" onclick = "if (!confirm(\'Действительно хотите удалить \\\''+u_(p['name'])+'\\\'?\')) return false;">X</a></td>'
             res += '</tr>'
-        res += '</table>'
-        res += '<table border="1" width="50%">'
+        res += '</table><br/>'
+        res += '<table border="1" width="25%">'
         res += '<tr>'
-        res += '<td>Имя ордена</td>'
-        res += '<td>Удаление исключения</td>'
+        res += '<td width="80%">Имя ордена</td>'
+        res += '<td width="20%">Удаление ордена</td>'
         res += '</tr>'
         for p in ignores["orden"]:
             res += '<tr>'
             res += '<td>'+u_(p['name'])+'</td>'
-            res += '<td><a href="/run/ignores/remove/'+str(p['pid'])+'">X</a></td>'
+            res += '<td><a href="/run/ignores/remove/'+str(p['pid'])+'" onclick = "if (!confirm(\'Действительно хотите удалить \\\''+u_(p['name'])+'\\\'?\')) return false;">X</a></td>'
             res += '</tr>'
         res += '</table>'
     print res

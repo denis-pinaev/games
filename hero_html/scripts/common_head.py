@@ -100,17 +100,17 @@ def commonHead():
     PLAYERS = loadPLAYERS()
     res += '<table border="1" width="100%">'
     res += '<tr>'
-    res += '<td><a href="/run/players/open">Выбор игрока</a></td>'
-    res += '<td><a href="/run/ignores/open">Настройка исключений</a></td>'
-    res += '<td><a href="/run/actions/open">Игровые действия</a></td>'
-    res += '<td><a href="/">Оставим на потом</a></td>'
+    res += '<td width="25%"><a href="/run/players/open">Настройка игроков</a></td>'
+    res += '<td width="25%"><a href="/run/ignores/open">Настройка союзников</a></td>'
+    res += '<td width="25%"><a href="/run/actions/open">Одиночные действия игрока</a></td>'
+    res += '<td width="25%"><a href="/run/mass/open">Массовые действия (в разработке)</a></td>'
     res += '</tr>'
     res += '</table>'
     
     if selected_pid:
         for p in PLAYERS:
             if p["pid"] == selected_pid:
-                res += "<p>Выбранный игрок: %s [%s]</p>" % (u_(p["name"]), p["pid"])
+                res += "<p><b>Выбранный игрок: %s [%s]</b></p>" % (u_(p["name"]), p["pid"])
                 break;
                 
     print res

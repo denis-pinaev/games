@@ -57,7 +57,7 @@ def loadignores():
         return {"players":[],"orden":[]}
 
 ignores = loadignores()
-not_attack = {"user":[ignores["players"]], "orden":[ignores["orden"]]}
+not_attack = {"user":[ignores["players"]], "orden":[ignores["orden"], [{"name":u"темный культ"}]]}
 
 ctr = int(random.random()*10000)
 def getCTR():

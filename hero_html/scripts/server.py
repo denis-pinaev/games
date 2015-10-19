@@ -5,7 +5,7 @@ import BaseHTTPServer
 import subprocess
 
 HOST_NAME = ''
-PORT_NUMBER = 9000
+PORT_NUMBER = 8080
 PYTHON_PATH = '../python/python.exe'
 SCRIPTS_PATH = './'
 try:
@@ -56,7 +56,7 @@ def runScript(paths, scriptPath=SCRIPTS_PATH):
     
 def answerPath(path):
     resp = ""
-    resp += "<html><head><title>Hero game.</title><meta charset=\"UTF-8\"></head>"
+    resp += "<html><head><title>Hero game (version 1.0.1)</title><meta charset=\"UTF-8\"></head>"
     resp += "<body>"
     path = path.replace("?","/").replace("&","/")
     paths = path.split("/")[1:]

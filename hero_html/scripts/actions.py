@@ -103,7 +103,7 @@ def getPrintSity(stype, sity, maps, player_name, canFight):
     return res
 
 def getHead():
-    res = "<p>В данном разделе представлены операции для выбранного игрока.</p>"
+    res = "<p>В данном разделе представлены действия в игре для выбранного игрока.</p>"
     pid, auth = getPlayer()
     if not auth or not pid:
         res += '<p>Для действий в игре выберите игрока.</p>'

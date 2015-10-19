@@ -626,7 +626,7 @@ version = '1.1.1.0'
 tCount = 1
 tSession = ""
 
-count = 41
+count = 60
 while count>0:
     count = count - 1
 #    time.sleep(60*60+10)

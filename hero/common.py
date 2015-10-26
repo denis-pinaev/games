@@ -113,7 +113,7 @@ def init(npid, nauth, post=False):
     init_params(npid=npid, nauth=nauth)
     service = 'Knights.initialize'
     method = 'initialize'
-    initString = '{"age":30,"gender":1,"rnd":%s,"referralType":6,"newDay":false,"owner_id":"","hash":{%s}%s,"auth_key":"%s","sid":"","pauth":"%s","v":"%s"}'
+    initString = '{"authType":"social","raw_location":"myapps_page","ctr":0,"email":null,"userName":"","sessionKey":"","age":30,"gender":1,"referralType":5,"newDay":false,"owner_id":"","hash":{%s}%s,"authKey":"%s","sid":"","pauth":"%s","v":"%s"}'
     sid = ''
     gid = 0
     postString = ''
@@ -121,7 +121,7 @@ def init(npid, nauth, post=False):
     if post:
         postString = '"post":"%s"' % (post)
         hashString = ',"postHash":"%s"' % (post)
-    params = createData(method, initString % (getRandom(), postString, hashString, auth, getPauth(pid), getGameVersion()))
+    params = createData(method, initString % (postString, hashString, auth, getPauth(pid), getGameVersion()))
     #log("%s:%s %s" % (service, method, json.dumps(params)))
     resp = sendRequest(service, params)
     #print resp["data"][:100]

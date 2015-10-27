@@ -4454,6 +4454,7 @@
 [08.10 23:32:36]  Rang:40 cash: 69 epower: 1719054 money: 2703643(25770) wood: 21500 stone: 10500 iron: 2100 experience: 440(454)
 [08.10 23:32:41]  Rang:37 cash: 69 epower: 1719054 money: 2731331(27688) wood: 21500 stone: 10500 iron: 2100 experience: 440(864)
 [08.10 23:36:09]  Rang:0 cash: 69 epower: 1719054 money: 2751939(20608) wood: 21500 stone: 10500 iron: 2100 experience: 440(1382)
+<<<<<<< HEAD
 [16.10 10:13:24]  Rang:0 cash: 70 epower: 1719054 money: 2401481(37184) wood: 21500(3136) stone: 10500(1300) iron: 2100(96) experience: 440(2612)
 [17.10 00:36:43]  Rang:0 cash: 54 epower: 1719054 money: 2460990(24416) wood: 21500(1636) stone: 10246(404) iron: 2054(106) experience: 440(1266)
 [17.10 00:51:56]  Rang:66 cash: 54 epower: 1719054 money: 2478314(17324) wood: 21500 stone: 10500(262) iron: 2100(84) experience: 440(980)
@@ -4520,3 +4521,11 @@
 [19.10 11:20:10]  Rang:45 cash: 59 epower: 1719054 money: 2646430(15160) wood: 21500 stone: 10500 iron: 2100 experience: 440(1346)
 [19.10 11:20:14]  Rang:41 cash: 59 epower: 1719054 money: 2658784(12354) wood: 21500 stone: 10500 iron: 2100 experience: 440(1016)
 [19.10 11:20:20]  Rang:39 cash: 59 epower: 1719054 money: 2686018(27234) wood: 21500 stone: 10500 iron: 2100
+=======
+[19.10 16:06:51]  Rang:61 cash: 59 epower: 1719054 money: 2432994(15578) wood: 20202(852) stone: 9898(448) iron: 1956(66) experience: 440(1334)
+[19.10 16:06:54]  Rang:57 cash: 59 epower: 1719054 money: 2451736(18742) wood: 21500(1378) stone: 10302(404) iron: 2032(76) experience: 440(562)
+[19.10 16:06:57]  Rang:53 cash: 59 epower: 1719054 money: 2472862(21126) wood: 21500 stone: 10500(626) iron: 2098(66) experience: 440(1278)
+[19.10 16:06:59]  Rang:49 cash: 59 epower: 1719054 money: 2490658(17796) wood: 21500 stone: 10500 iron: 2100(72) experience: 440(1446)
+[19.10 16:07:02]  Rang:46 cash: 59 epower: 1719054 money: 2510302(19644) wood: 21500 stone: 10500 iron: 2100 experience: 440(638)
+[19.10 16:07:06]  Rang:43 cash: 59 epower: 1719054 money: 2540644(30342) wood: 21500 stone: 10500 iron: 2100
+>>>>>>> 3ee42a8... ddd

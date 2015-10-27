@@ -40,12 +40,15 @@ jdata = json.loads(data)
 m = jdata["result"]["data"]["map"]["field"]
 m = sorted(m, key=lambda t: t["type"])
 prev_type = ""
+pca = "miningRunes"
 prev_x = 1
 prev_y = 1
-dangerTypes = ["ballista", "catapulte", "tower"]
+dangerTypes = ["ballista", "catapulta", "tower", "electricThrower", "flamethrower"]
 dangerCoords = [(0, 0), (0, 16), (0, 33), (16, 0), (33, 0), (33, 0), (33, 16), (33, 33)]
 nextD = 0
+maxD = 2
 for item in m:
+    if nextD<maxD: setType(item, "catapulta", 1)
     t, level = getType(item)
     if t not in ["wall", "tree", "stone"]: print json.dumps(item)
     if prev_type != t:
@@ -72,11 +75,16 @@ for item in m:
             #item["stored"] = 99999
     else:
         setType(item, t, 9)
-        if item.has_key("stored"):
-            for p in item["stored"]: item["stored"][p] = 99999
-#        if str(item["id"])=="67":
-#            print True
-#            setType(item, "miningGold", 11)
+#        if item.has_key("stored"):
+#            for p in item["stored"]: item["stored"][p] = 99999
+#        if str(item["id"])=="64":
+#            setType(item, "miningGold", 9)
+    if nextD>maxD:
+        setType(item, pca, 9)
+        if pca == "miningRunes": pca = "miningGold"; setCoords(item, 0, 30)
+        elif pca == "miningGold": pca = "miningWood"; setCoords(item, 5, 30)
+        elif pca == "miningWood": pca = "miningRunes"; setCoords(item, 10, 30)
+        nextD = maxD
 
     
 jdata["result"]["data"]["map"]["field"] = sorted(m, key=lambda t: t["id"])

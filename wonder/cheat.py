@@ -47,7 +47,7 @@ dangerCoords = [(0, 0), (0, 16), (0, 33), (16, 0), (33, 0), (33, 0), (33, 16), (
 nextD = 0
 for item in m:
     t, level = getType(item)
-    print json.dumps(item)
+    if t not in ["wall", "tree", "stone"]: print json.dumps(item)
     if prev_type != t:
         prev_type = t
     #    prev_x, prev_y = getCoords(item)
@@ -56,15 +56,28 @@ for item in m:
     #newType = changeType(prev_type)
     #setType(item, newType, 1)
     if t in dangerTypes:
-        setType(item, t, 1)
+        #setType(item, t, 1)
         x, y = dangerCoords[nextD]
         nextD += 1
         if nextD>=len(dangerCoords): nextD = 0
         setCoords(item, x, y)
     if t in ["wall", "tree", "stone"]:
-        setType(item, t, 1)
+        #setType(item, t, 1)
         setCoords(item, 36, 36)
     if item.has_key("units"): del item["units"]
+    if not ("mining" in t):
+        setType(item, t, 1)
+        #if True:
+            #item.has_key("stored"):
+            #item["stored"] = 99999
+    else:
+        setType(item, t, 9)
+        if item.has_key("stored"):
+            for p in item["stored"]: item["stored"][p] = 99999
+#        if str(item["id"])=="67":
+#            print True
+#            setType(item, "miningGold", 11)
+
     
 jdata["result"]["data"]["map"]["field"] = sorted(m, key=lambda t: t["id"])
 write("in", json.dumps(jdata))

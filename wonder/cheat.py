@@ -43,10 +43,10 @@ prev_type = ""
 pca = "miningRunes"
 prev_x = 1
 prev_y = 1
-dangerTypes = ["ballista", "catapulta", "tower", "electricThrower", "flamethrower"]
-dangerCoords = [(0, 0), (0, 16), (0, 33), (16, 0), (33, 0), (33, 0), (33, 16), (33, 33)]
+dangerTypes = ["ballista", "catapulta", "tower", "electricThrower", "flamethrower", "elementalTower"]
+dangerCoords = [(0, 16), (0, 16), (0, 16), (16, 0), (33, 0), (33, 0), (33, 16), (33, 33)]
 nextD = 0
-maxD = 2
+maxD = 3
 for item in m:
     if nextD<maxD: setType(item, "catapulta", 1)
     t, level = getType(item)
@@ -64,6 +64,7 @@ for item in m:
         nextD += 1
         if nextD>=len(dangerCoords): nextD = 0
         setCoords(item, x, y)
+    else: setCoords(item, 3, 16)
     if t in ["wall", "tree", "stone"]:
         #setType(item, t, 1)
         setCoords(item, 36, 36)
@@ -81,10 +82,12 @@ for item in m:
 #            setType(item, "miningGold", 9)
     if nextD>maxD:
         setType(item, pca, 9)
-        if pca == "miningRunes": pca = "miningGold"; setCoords(item, 0, 30)
-        elif pca == "miningGold": pca = "miningWood"; setCoords(item, 5, 30)
-        elif pca == "miningWood": pca = "miningRunes"; setCoords(item, 10, 30)
+        if pca == "miningRunes": pca = "miningGold"; setCoords(item, 3, 16)
+        elif pca == "miningGold": pca = "miningWood"; setCoords(item, 3, 16)
+        elif pca == "miningWood": pca = "miningRunes"; setCoords(item, 3, 16)
         nextD = maxD
+        
+    #if not t in ["wall", "tree", "stone"]: setCoords(item, 15, 10)
 
     
 jdata["result"]["data"]["map"]["field"] = sorted(m, key=lambda t: t["id"])

@@ -1,6 +1,7 @@
 import requests
 import json
 import zlib
+import os
 
 social = "vk"
 vesionurl = "http://kn-%s-sc.playkot.com/current/get_launch_info.php?player_id=160511757&rsig=1033055981" % social
@@ -54,3 +55,4 @@ if download():
     f = open("buildInfo.py","w")
     f.write(fileData)
     f.close()
+    os.remove("./tmp/game_%s_%s.swf" % (social,version))

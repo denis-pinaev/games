@@ -65,7 +65,7 @@ def log(s, pr=False, filename=False, needTime=True):
     if needTime:
         s = "[" + datetime.datetime.now().strftime('%d.%m %H:%M:%S')+"] " + s
     if pr: print s
-    fatype = filename if filename else "./tmp/hero_"+log_file+"_log"
+    fatype = filename if filename else "./tmp/"+pid+"_hero_"+log_file+"_log"
     try:
         try:
             tfile = open(fatype, "a")

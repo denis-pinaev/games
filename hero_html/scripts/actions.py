@@ -115,16 +115,33 @@ def getHead():
     player = loadPlayer(pid)
     needVersion = not os.path.exists('./buildInfo.py')
     canFight = os.path.exists('./fight.py')
+    
+    if (not needVersion) and getBuildInfoLight:
+        answ = runScript(['getBuildInfoLight'])
+        ana = answ.split('\n')
+        new_version = "None"
+        for anal in ana:
+            preLine = "server info version = "
+            if preLine in anal: new_version = anal[anal.index(preLine)+len(preLine):]
+        old_version = getTMPParameter("game_version", "No old version")
+        
+        if str(new_version) != str(old_version):
+            res += '<p>Вышла новая версия игры! Необходимо обновить версию с "%s" до "%s"</p>' % (str(old_version), str(new_version))
+            needVersion = True
+        
+    
+    
     res += '<p><table style="border-spacing:15px">'
     res += '<tr><td><p><a href="/run/actions/getBuildInfo">Получить последнюю версию игры</a><br/></p></td><td> (Любое обновление в игре делает предыдущую версию нерабочей)</td></tr>'
     if needVersion:
-        res += 'Не найдена версия игры.<br/>Для дальнейших действий нужно получить последнюю версию игры.'
+        res += 'Не найдена или устарела версия игры.<br/>Для дальнейших действий нужно получить последнюю версию игры.'
     else:
         res += '<tr><td><p><a href="/run/actions/getPlayerInfo">Получить информацю игрока</a><br/></p></td><td> (Ресурсы, энергия, орден)</td></tr>'
         if canFight: res += '<tr><td><p><a href="/run/actions/attack/1/pvp/0" onclick = "if (!confirm(\'Начать штурм игроком: '+u_(player["name"])+'?\')) return false;">Совершить штурм</a><br/></p></td><td> (Лог боя и результаты будут выведены)</td></tr>'
         res += '<tr><td><p><a href="/run/actions/getPresentBox">Получить подарок ежедневку</a><br/>'
         res += '<a href="/run/actions/getPresentEnergy">Получить подарок энергию</a></p>'
         res += '</td><td> (За сутки можно получить суммарно всего 5 подарков.)</td></tr>'
+        res += '<tr><td><p><a href="/run/actions/quest">Выполнить квесты</a><br/></p></td><td> (Выполняются активные квесты, для новых этапов нужно войти в игру)</td></tr>'
         res += '<tr><td><p>Получить поселения в области карты: '
         res += '<form action="/run/actions/getMapRect">'
         res += 'x <input type="number" name="x" min="-2000" max="2000" value="'+str(x)+'">'
@@ -246,9 +263,33 @@ def getHead():
             except: None
             res += getRunLog(answ)
     
+    if quest:
+        pid, auth = getPlayer()
+        if not pid or not auth:
+            res += "Не выбран игрок или возникла проблема с его получением."
+        else:
+            answ = runScript(['quest', pid, auth])
+            try:
+                answ2 = json.loads(answ)
+                if not answ2["error"] == 0: res += getErrorLog(answ2["error"])
+                else:
+                    q_ar = answ2["questsDone"]
+                    qs = ""
+                    for q in q_ar: qs+=str(q) + " "
+                    res += '<p>Выполненные квесты: (Всего '+str(len(q_ar))+')'+qs+'</p>'
+            except: None
+            res += getRunLog(answ)
+    
     if getBuildInfo:
         answ = runScript(['getBuildInfo'])
-        if "200" in answ: res += "<p>Версия игры успешно обновлена</p>"
+        ana = answ.split('\n')
+        new_version = "None"
+        for anal in ana:
+            preLine = "server info version = "
+            if preLine in anal: new_version = anal[anal.index(preLine)+len(preLine):]
+
+        if new_version != "None": setTMPParameter("game_version", str(new_version))
+        if "200" in answ: res += "<p>Версия игры успешно обновлена до "+str(new_version)+"</p>"
         res += getRunLog(answ)
         
     if getPlayerInfo:
@@ -308,9 +349,11 @@ attack = sys.argv[1] == "attack"
 healSity = sys.argv[1] == "healSity"
 getMapRect = sys.argv[1] == "getMapRect"
 getBuildInfo = sys.argv[1] == "getBuildInfo"
+getBuildInfoLight = sys.argv[1] == "open"
 getPlayerInfo = sys.argv[1] == "getPlayerInfo"
 getPresentBox = sys.argv[1] == "getPresentBox"
 getPresentEnergy = sys.argv[1] == "getPresentEnergy"
+quest = sys.argv[1] == "quest"
 
 commonHead()
 getHead()

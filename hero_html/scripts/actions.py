@@ -138,6 +138,7 @@ def getHead():
     else:
         res += '<tr><td><p><a href="/run/actions/getPlayerInfo">Получить информацю игрока</a><br/></p></td><td> (Ресурсы, энергия, орден)</td></tr>'
         if canFight: res += '<tr><td><p><a href="/run/actions/attack/1/pvp/0" onclick = "if (!confirm(\'Начать штурм игроком: '+u_(player["name"])+'?\')) return false;">Совершить штурм</a><br/></p></td><td> (Лог боя и результаты будут выведены)</td></tr>'
+        if canFight: res += '<tr><td><p><a href="/run/actions/attack/12/pvp/0" onclick = "if (!confirm(\'Начать штурм (12) игроком: '+u_(player["name"])+'?\')) return false;">Совершить штурм (12)</a><br/></p></td><td> (Лог боя и результаты будут выведены)</td></tr>'
         res += '<tr><td><p><a href="/run/actions/getPresentBox">Получить подарок ежедневку</a><br/>'
         res += '<a href="/run/actions/getPresentEnergy">Получить подарок энергию</a></p>'
         res += '</td><td> (За сутки можно получить суммарно всего 5 подарков.)</td></tr>'

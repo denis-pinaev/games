@@ -110,7 +110,7 @@ def commonHead():
     if selected_pid:
         for p in PLAYERS:
             if p["pid"] == selected_pid:
-                res += "<p><b>Выбранный игрок: %s [%s]</b></p>" % (u_(p["name"]), p["pid"])
+                res += "<p><b>Выбранный игрок: %s [%s]</b></p>" % (u_(p["name"]), u_(p["pid"]))
                 break;
                 
     print res

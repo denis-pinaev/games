@@ -60,7 +60,7 @@ for item in m:
     if item.has_key("units"): del item["units"]
     print wasS, getType(item)
 nid = len(m)
-for i in range(100):
+for i in range(10):
     m.append({"y": 16, "x": 0, "state": 0, "type": "catapulta_1", "id": nid+i+1})
 nid = len(m)
 for i in range(10):

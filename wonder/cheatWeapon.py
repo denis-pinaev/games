@@ -55,7 +55,7 @@ for item in m:
         setType(item, "catapulta", 1)
         setCoords(item, 0, 16)
     else:
-        if t == "townhall": setType(item, t, 9)
+        if t == "townhall": setType(item, t, 10)
         setCoords(item, 3, 16)
     if item.has_key("units"): del item["units"]
     print wasS, getType(item)

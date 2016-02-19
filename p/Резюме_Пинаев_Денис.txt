@@ -19,10 +19,10 @@ E-mail: denis.pinaev@mail.ru
 
 Октябрь 2014 г. - н.в.
 Smilart Ltd.
-Должность: программист, релиз инженер
+Должность: программист
 Обязанности: 
 -java (7/8) программирование
--организация модульных проектов (java/maven) в agile системе
+-организация модульных проектов (java/maven)
 
 
 Июнь 2011 г. – Октябрь 2014 г.
@@ -65,10 +65,10 @@ Smilart Ltd.
 Навыки:
 
 Flash-программирование:
-ActionScript 2.0, ActionScript 3.0, Adobe Flash, FLEX, XMl
+ActionScript 2.0, ActionScript 3.0, Adobe Flash, FLEX, XML
 
 Web-программирование:
-Python (Django), PHP, MySQL, JavaScript, HTML, CSS, DOM, AJAX, XML
+Python (Django), PHP, SQL, JavaScript, HTML, CSS, DOM, AJAX, XML
 
 Операционные системы:
 Windows, MacOS, Unix

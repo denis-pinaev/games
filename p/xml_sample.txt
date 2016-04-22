@@ -1,0 +1,7 @@
+<root>
+	<var name='id' value='{unique_string}'/>
+	<var name='level' value='{random_int}'/>
+	<objects>
+		{random_lines}
+	</objects>
+</root>

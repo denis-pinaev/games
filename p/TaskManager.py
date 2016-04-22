@@ -5,6 +5,7 @@ import os
 import uuid
 import random
 import zipfile
+import csv
 
 class TimeCounter():
     start_time = datetime.datetime.now()
@@ -86,6 +87,22 @@ class TaskExecutor():
 
         return self.result
 
+def clear_tests():
+    timer = TimeCounter()
+    rm_rf(input_file_path)
+    rm_rf(output_file_path)
+    print timer.stop(), "final test data removed"
+
+def run_tasks(task, iterator, final_callback=lambda _:None, on_error=lambda _e,_o:None):
+    r = TaskExecutor(10).run(task, iterator, on_error)
+    while True:
+        try:
+            r.result()
+        except: None
+        if r.stats["delayed"] == 0:
+            final_callback(r)
+            break
+    
 
 def read_file(file_name):
     f = open(file_name, "r")
@@ -99,6 +116,7 @@ def save_file(data, file_name):
     f.close()
 
 def rm_rf(d):
+    if not os.path.exists(d): return
     for path in (os.path.join(d, f) for f in os.listdir(d)):
         if os.path.isdir(path):
             rm_rf(path)
@@ -125,7 +143,7 @@ def generate_lines(times = 1):
     lines = ""
     sample_line = "<object name='%s'/>"
     for _ in xrange(times):
-        lines += sample_line % get_random_string(10)
+        lines += sample_line % get_random_string(count_max_lines_per_xml)
     return lines
         
 def generate_xml_file():
@@ -150,7 +168,7 @@ def generate_zip_file(file_count=1):
         if not os.path.exists(input_file_path):
             os.mkdir(input_file_path)
         directory = "%stmp_%02d/" % (input_file_path, file_count)
-        generate_save_files(directory, 10)
+        generate_save_files(directory, count_xml_in_zip_create)
         file_name = "%szip_%02d.zip" % (input_file_path, file_count)
         zip_file = zipfile.ZipFile(file_name, "w")
         for d, dirs, files in os.walk(directory):
@@ -166,35 +184,56 @@ def create_zip_files():
     if os.path.exists(input_file_path):
         timer = TimeCounter()
         rm_rf(input_file_path)
-        print timer.stop(), '- clear old files'
+        print timer.stop(), 'clear old files'
     timer = TimeCounter()
-    run_tasks(generate_zip_file, iter(xrange(100)), create_zip_files_final_callback)
+    run_tasks(generate_zip_file, iter(xrange(count_zip_files_create)), create_zip_files_final_callback)
     
 def create_zip_files_final_callback(r):
     global timer
     print timer.stop(), r.stats["done"], "zip files created"
     extract_zip_files()
     
+def error_zip_extracted(error, future):
+    print "ERROR:", error
+    
 def extract_zip_files():
     global timer
     if os.path.exists(output_file_path):
         timer = TimeCounter()
         rm_rf(output_file_path)
-        print timer.stop(), '- clear old files'
+        print timer.stop(), 'clear old files'
+    zip_file_names = []
+    for d, dirs, files in os.walk(input_file_path):
+        for f in files:
+            if f[-3:] == "zip":
+                zip_file_names.append(os.path.join(d, f))
+    timer = TimeCounter()
+    run_tasks(extract_zip_file, iter(zip_file_names), final_zip_extracted_callback, error_zip_extracted)
     
-
-def run_tasks(task, iterator, final_callback=lambda _:None):
-    r = TaskExecutor(10).run(task, iterator)
-    while True:
-        try:
-            r.result()
-        except: None
-        if r.stats["delayed"] == 0:
-            final_callback(r)
-            break
+def final_zip_extracted_callback(r):
+    global timer
+    print timer.stop(), r.stats["done"], "zip files extracted"
     
+def extract_zip_file(file_name):
+    try:
+        if not os.path.exists(output_file_path):
+            os.mkdir(output_file_path)
+        output_directory = os.path.join(output_file_path, file_name[len(input_file_path):-4])
+        if not os.path.exists(output_directory):
+            os.mkdir(output_directory)
+        zip_file = zipfile.ZipFile(file_name, "r")
+        for file_name_in_zip in zip_file.namelist():
+            zip_file.extract(file_name_in_zip, output_directory)
+        zip_file.close()
+    except Exception as e:
+        print type(e), e
+    
+count_xml_in_zip_create = 100
+count_zip_files_create = 10
+count_max_lines_per_xml = 10
 input_file_path = "./input/"
 output_file_path = "./output/"
+clear_tests()
 create_zip_files()
 
-#rm_rf(input_file_path)
+#clear_tests()

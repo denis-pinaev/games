@@ -147,11 +147,11 @@ def generate_save_files(direcory="./", count=10):
 
 def generate_zip_file(file_count=1):
     try:
-        if not os.path.exists(tmp_file_path):
-            os.mkdir(tmp_file_path)
-        directory = "%stmp_%02d/" % (tmp_file_path, file_count)
+        if not os.path.exists(input_file_path):
+            os.mkdir(input_file_path)
+        directory = "%stmp_%02d/" % (input_file_path, file_count)
         generate_save_files(directory, 10)
-        file_name = "%szip_%02d.zip" % (tmp_file_path, file_count)
+        file_name = "%szip_%02d.zip" % (input_file_path, file_count)
         zip_file = zipfile.ZipFile(file_name, "w")
         for d, dirs, files in os.walk(directory):
             for f in files:
@@ -163,9 +163,9 @@ def generate_zip_file(file_count=1):
         
 def create_zip_files():
     global timer
-    if os.path.exists(tmp_file_path):
+    if os.path.exists(input_file_path):
         timer = TimeCounter()
-        rm_rf(tmp_file_path)
+        rm_rf(input_file_path)
         print timer.stop(), '- clear old files'
     timer = TimeCounter()
     run_tasks(generate_zip_file, iter(xrange(100)), create_zip_files_final_callback)
@@ -173,6 +173,15 @@ def create_zip_files():
 def create_zip_files_final_callback(r):
     global timer
     print timer.stop(), r.stats["done"], "zip files created"
+    extract_zip_files()
+    
+def extract_zip_files():
+    global timer
+    if os.path.exists(output_file_path):
+        timer = TimeCounter()
+        rm_rf(output_file_path)
+        print timer.stop(), '- clear old files'
+    
 
 def run_tasks(task, iterator, final_callback=lambda _:None):
     r = TaskExecutor(10).run(task, iterator)
@@ -184,6 +193,8 @@ def run_tasks(task, iterator, final_callback=lambda _:None):
             final_callback(r)
             break
     
-tmp_file_path = "./tmp2/"
+input_file_path = "./input/"
+output_file_path = "./output/"
 create_zip_files()
-#rm_rf(tmp_file_path)
+
+#rm_rf(input_file_path)

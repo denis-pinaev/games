@@ -1,3 +1,7 @@
+"""Includes functions for first task
+"""
+
+
 import os
 import zipfile
 import random

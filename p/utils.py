@@ -4,6 +4,9 @@ import uuid
 import random
 
 class TimeCounter():
+    """
+    counts process timing
+    """
     start_time = datetime.datetime.now()
     finish_time = datetime.datetime.now()
     

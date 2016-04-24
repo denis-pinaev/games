@@ -1,7 +1,17 @@
+"""Package for concurrent operations
+"""
+
 from concurrent.futures import ThreadPoolExecutor, Future
 import threading
 
 class TaskExecutor():
+    """
+    Runs concurrent tasks
+    
+    - initial parameter is number of concurrent threads
+    
+    - run method applies task, iterator, fail_function
+    """
     
     _executor = None
     _io_lock = threading.RLock()
@@ -62,6 +72,10 @@ class TaskExecutor():
         return self.result
 
 def run_tasks(task, iterator, final_callback=lambda _:None, on_error=lambda _e,_o:None):
+    """
+    runs task for each element in iterator, if failed with raised error returned on_error
+    when completed future returned to final_callback 
+    """
     r = TaskExecutor(10).run(task, iterator, on_error)
     while True:
         try:

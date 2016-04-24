@@ -1,3 +1,6 @@
+"""Includes functions for second task
+"""
+
 import threading
 import os
 import zipfile
